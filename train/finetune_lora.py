@@ -6,6 +6,7 @@ pipeline-verification run, or omit it (use --epochs) for a full run.
 """
 import argparse
 import json
+import os
 
 import torch
 from datasets import Dataset
@@ -136,7 +137,13 @@ def main():
     trainer.train()
     trainer.save_model(args.output_dir)
     tokenizer.save_pretrained(args.output_dir)
+
+    log_history_path = os.path.join(args.output_dir, "log_history.json")
+    with open(log_history_path, "w", encoding="utf-8") as f:
+        json.dump(trainer.state.log_history, f, indent=2)
+
     print(f"Saved LoRA adapter to {args.output_dir}")
+    print(f"Saved training log history to {log_history_path}")
 
 
 if __name__ == "__main__":
