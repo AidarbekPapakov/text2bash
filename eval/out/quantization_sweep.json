@@ -1,0 +1,69 @@
+{
+  "bf16": {
+    "label": "bf16",
+    "n": 300,
+    "en_exact_match": 0.1255,
+    "en_fuzzy": 0.5693,
+    "en_valid_bash": 0.9889,
+    "en_n": 271,
+    "ru_exact_match": 0.3103,
+    "ru_fuzzy": 0.676,
+    "ru_valid_bash": 1.0,
+    "ru_n": 29,
+    "overall_exact_match": 0.1433,
+    "overall_fuzzy": 0.5796,
+    "overall_valid_bash": 0.99,
+    "footprint_mb": 1136.9
+  },
+  "fp8": {
+    "label": "fp8",
+    "n": 300,
+    "en_exact_match": 0.1218,
+    "en_fuzzy": 0.5703,
+    "en_valid_bash": 0.9963,
+    "en_n": 271,
+    "ru_exact_match": 0.2759,
+    "ru_fuzzy": 0.6865,
+    "ru_valid_bash": 1.0,
+    "ru_n": 29,
+    "overall_exact_match": 0.1367,
+    "overall_fuzzy": 0.5815,
+    "overall_valid_bash": 0.9967,
+    "footprint_mb": 1433.6
+  },
+  "int4": {
+    "error": "Requires mslk >= 1.0.0"
+  },
+  "int8": {
+    "label": "int8",
+    "n": 300,
+    "en_exact_match": 0.1218,
+    "en_fuzzy": 0.5499,
+    "en_valid_bash": 0.9815,
+    "en_n": 271,
+    "ru_exact_match": 0.3103,
+    "ru_fuzzy": 0.6658,
+    "ru_valid_bash": 0.9655,
+    "ru_n": 29,
+    "overall_exact_match": 0.14,
+    "overall_fuzzy": 0.5611,
+    "overall_valid_bash": 0.98,
+    "footprint_mb": 716.9
+  },
+  "fp4": {
+    "label": "fp4",
+    "n": 300,
+    "en_exact_match": 0.0664,
+    "en_fuzzy": 0.4942,
+    "en_valid_bash": 0.9631,
+    "en_n": 271,
+    "ru_exact_match": 0.1379,
+    "ru_fuzzy": 0.5061,
+    "ru_valid_bash": 1.0,
+    "ru_n": 29,
+    "overall_exact_match": 0.0733,
+    "overall_fuzzy": 0.4954,
+    "overall_valid_bash": 0.9667,
+    "footprint_mb": 506.9
+  }
+}
