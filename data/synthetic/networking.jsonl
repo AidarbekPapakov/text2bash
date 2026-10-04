@@ -1,0 +1,600 @@
+{"instruction": "Download the webpage at example.com and show it in the terminal", "command": "curl example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Fetch only the HTTP headers from example.com", "command": "curl -I example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Send a GET request to example.com and save the output to response.html", "command": "curl -o response.html example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Follow redirects when requesting example.com", "command": "curl -L example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download the webpage at example.org and show it in the terminal", "command": "curl example.org", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Fetch only the HTTP headers from example.org", "command": "curl -I example.org", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Send a GET request to example.org and save the output to response.html", "command": "curl -o response.html example.org", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Follow redirects when requesting example.org", "command": "curl -L example.org", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download the webpage at api.example.com and show it in the terminal", "command": "curl api.example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Fetch only the HTTP headers from api.example.com", "command": "curl -I api.example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Send a GET request to api.example.com and save the output to response.html", "command": "curl -o response.html api.example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Follow redirects when requesting api.example.com", "command": "curl -L api.example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download the webpage at server1.local and show it in the terminal", "command": "curl server1.local", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Fetch only the HTTP headers from server1.local", "command": "curl -I server1.local", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Send a GET request to server1.local and save the output to response.html", "command": "curl -o response.html server1.local", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Follow redirects when requesting server1.local", "command": "curl -L server1.local", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download the webpage at db.internal and show it in the terminal", "command": "curl db.internal", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Fetch only the HTTP headers from db.internal", "command": "curl -I db.internal", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Send a GET request to db.internal and save the output to response.html", "command": "curl -o response.html db.internal", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Follow redirects when requesting db.internal", "command": "curl -L db.internal", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download the webpage at 192.168.1.10 and show it in the terminal", "command": "curl 192.168.1.10", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Fetch only the HTTP headers from 192.168.1.10", "command": "curl -I 192.168.1.10", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Send a GET request to 192.168.1.10 and save the output to response.html", "command": "curl -o response.html 192.168.1.10", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Follow redirects when requesting 192.168.1.10", "command": "curl -L 192.168.1.10", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download the webpage at 192.168.1.1 and show it in the terminal", "command": "curl 192.168.1.1", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Fetch only the HTTP headers from 192.168.1.1", "command": "curl -I 192.168.1.1", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Send a GET request to 192.168.1.1 and save the output to response.html", "command": "curl -o response.html 192.168.1.1", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Follow redirects when requesting 192.168.1.1", "command": "curl -L 192.168.1.1", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download the webpage at 10.0.0.5 and show it in the terminal", "command": "curl 10.0.0.5", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Fetch only the HTTP headers from 10.0.0.5", "command": "curl -I 10.0.0.5", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Send a GET request to 10.0.0.5 and save the output to response.html", "command": "curl -o response.html 10.0.0.5", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Follow redirects when requesting 10.0.0.5", "command": "curl -L 10.0.0.5", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download the webpage at 10.0.0.1 and show it in the terminal", "command": "curl 10.0.0.1", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Fetch only the HTTP headers from 10.0.0.1", "command": "curl -I 10.0.0.1", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Send a GET request to 10.0.0.1 and save the output to response.html", "command": "curl -o response.html 10.0.0.1", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Follow redirects when requesting 10.0.0.1", "command": "curl -L 10.0.0.1", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download the webpage at 172.16.0.20 and show it in the terminal", "command": "curl 172.16.0.20", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Fetch only the HTTP headers from 172.16.0.20", "command": "curl -I 172.16.0.20", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Send a GET request to 172.16.0.20 and save the output to response.html", "command": "curl -o response.html 172.16.0.20", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Follow redirects when requesting 172.16.0.20", "command": "curl -L 172.16.0.20", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download the webpage at myserver.com and show it in the terminal", "command": "curl myserver.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Fetch only the HTTP headers from myserver.com", "command": "curl -I myserver.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Send a GET request to myserver.com and save the output to response.html", "command": "curl -o response.html myserver.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Follow redirects when requesting myserver.com", "command": "curl -L myserver.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download the webpage at staging.example.net and show it in the terminal", "command": "curl staging.example.net", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Fetch only the HTTP headers from staging.example.net", "command": "curl -I staging.example.net", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Send a GET request to staging.example.net and save the output to response.html", "command": "curl -o response.html staging.example.net", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Follow redirects when requesting staging.example.net", "command": "curl -L staging.example.net", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Make a silent curl request to backup.example.net showing only errors", "command": "curl -s -S backup.example.net", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Check the HTTP status code returned by backup.example.net", "command": "curl -o /dev/null -s -w '%{http_code}\\n' backup.example.net", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Make a silent curl request to files.example.com showing only errors", "command": "curl -s -S files.example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Check the HTTP status code returned by files.example.com", "command": "curl -o /dev/null -s -w '%{http_code}\\n' files.example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Make a silent curl request to google.com showing only errors", "command": "curl -s -S google.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Check the HTTP status code returned by google.com", "command": "curl -o /dev/null -s -w '%{http_code}\\n' google.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Make a silent curl request to github.com showing only errors", "command": "curl -s -S github.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Check the HTTP status code returned by github.com", "command": "curl -o /dev/null -s -w '%{http_code}\\n' github.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Send a POST request with JSON data to https://api.example.com/users", "command": "curl -X POST -H 'Content-Type: application/json' -d '{\"name\":\"john\"}' https://api.example.com/users", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download a file with curl and resume if interrupted", "command": "curl -C - -O https://example.com/archive.zip", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Use curl to test a URL with a custom user agent", "command": "curl -A 'MyAgent/1.0' https://example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download multiple files in parallel with curl", "command": "curl -Z -O https://example.com/file1.zip -O https://example.com/file2.zip", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Authenticate with basic auth using curl", "command": "curl -u admin:secret https://example.com/private", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Measure how long a curl request to example.com takes", "command": "curl -o /dev/null -s -w 'Time: %{time_total}s\\n' https://example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Send a request through a proxy using curl", "command": "curl -x http://proxy.example.com:8080 https://example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download a file and rename it locally with curl", "command": "curl -o myfile.pdf https://example.com/report.pdf", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Check if a website supports HTTP/2 using curl", "command": "curl -I --http2 https://example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Upload a file with curl using PUT", "command": "curl -X PUT -T report.pdf https://example.com/upload/report.pdf", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Ignore SSL certificate errors with curl", "command": "curl -k https://self-signed.example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Get just the response body with no progress meter", "command": "curl -s https://example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Show verbose curl output including request and response headers", "command": "curl -v https://example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Send a DELETE request to an API endpoint", "command": "curl -X DELETE https://api.example.com/users/42", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download a file keeping the remote filename", "command": "curl -O https://example.com/data.csv", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Pass a cookie file to curl for an authenticated request", "command": "curl -b cookies.txt https://example.com/dashboard", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Save cookies from a curl response to a file", "command": "curl -c cookies.txt https://example.com/login", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download example.com recursively mirroring the whole site", "command": "wget -r -np example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download the homepage of example.com with wget", "command": "wget example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download example.org recursively mirroring the whole site", "command": "wget -r -np example.org", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download the homepage of example.org with wget", "command": "wget example.org", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download api.example.com recursively mirroring the whole site", "command": "wget -r -np api.example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download the homepage of api.example.com with wget", "command": "wget api.example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download server1.local recursively mirroring the whole site", "command": "wget -r -np server1.local", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download the homepage of server1.local with wget", "command": "wget server1.local", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download db.internal recursively mirroring the whole site", "command": "wget -r -np db.internal", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download the homepage of db.internal with wget", "command": "wget db.internal", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download 192.168.1.10 recursively mirroring the whole site", "command": "wget -r -np 192.168.1.10", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download the homepage of 192.168.1.10 with wget", "command": "wget 192.168.1.10", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download 192.168.1.1 recursively mirroring the whole site", "command": "wget -r -np 192.168.1.1", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download the homepage of 192.168.1.1 with wget", "command": "wget 192.168.1.1", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download 10.0.0.5 recursively mirroring the whole site", "command": "wget -r -np 10.0.0.5", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download the homepage of 10.0.0.5 with wget", "command": "wget 10.0.0.5", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download a file in the background with wget", "command": "wget -b https://example.com/backup.tar.gz", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Resume an interrupted download with wget", "command": "wget -c https://example.com/archive.zip", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Limit wget download speed to 200KB/s", "command": "wget --limit-rate=200k https://example.com/data.csv", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download a file with wget and save it under a different name", "command": "wget -O myarchive.zip https://example.com/archive.zip", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Mirror an entire website for offline browsing", "command": "wget --mirror --convert-links --page-requisites --no-parent https://example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download a list of URLs from a text file using wget", "command": "wget -i urls.txt", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Quietly download a file with wget without output", "command": "wget -q https://example.com/report.pdf", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Set a custom user agent for wget", "command": "wget --user-agent='Mozilla/5.0' https://example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download a file via wget using an HTTP basic auth login", "command": "wget --user=admin --password=secret https://example.com/private/data.csv", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Retry a failed wget download up to 5 times", "command": "wget --tries=5 https://example.com/video.mp4", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download only files with a .pdf extension recursively", "command": "wget -r -A pdf https://example.com/docs/", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Check if a URL is reachable without downloading using wget", "command": "wget --spider https://example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Connect to example.com as user user via SSH", "command": "ssh user@example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Connect to example.org as user deploy via SSH", "command": "ssh deploy@example.org", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Connect to api.example.com as user root via SSH", "command": "ssh root@api.example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Connect to server1.local as user admin via SSH", "command": "ssh admin@server1.local", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Connect to db.internal as user ubuntu via SSH", "command": "ssh ubuntu@db.internal", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Connect to 192.168.1.10 as user ivan via SSH", "command": "ssh ivan@192.168.1.10", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Connect to 192.168.1.1 as user alex via SSH", "command": "ssh alex@192.168.1.1", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Connect to 10.0.0.5 as user backup via SSH", "command": "ssh backup@10.0.0.5", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Connect to 10.0.0.1 as user user via SSH", "command": "ssh user@10.0.0.1", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Connect to 172.16.0.20 as user deploy via SSH", "command": "ssh deploy@172.16.0.20", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Connect to a remote server on a non-default SSH port", "command": "ssh -p 2222 user@example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "SSH into a server using a specific private key", "command": "ssh -i ~/.ssh/id_rsa_deploy deploy@example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Run a remote command over SSH without opening an interactive shell", "command": "ssh user@example.com 'df -h'", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Set up a local port forward over SSH to access a remote database", "command": "ssh -L 5432:localhost:5432 user@db.internal", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Set up a remote port forward with SSH", "command": "ssh -R 8080:localhost:3000 user@example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Open a SOCKS proxy tunnel through SSH", "command": "ssh -D 1080 user@example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Keep an SSH connection alive by sending keepalive packets", "command": "ssh -o ServerAliveInterval=60 user@example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Copy my SSH public key to a remote server for passwordless login", "command": "ssh-copy-id user@example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Generate a new SSH key pair using ed25519", "command": "ssh-keygen -t ed25519 -C 'me@example.com'", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Check the fingerprint of the local SSH public key", "command": "ssh-keygen -lf ~/.ssh/id_rsa.pub", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "SSH into a server and keep the session running in the background", "command": "ssh -fN user@example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Connect to a host through a jump server with SSH", "command": "ssh -J jumpuser@jump.example.com user@internal.example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Disable strict host key checking for an SSH connection", "command": "ssh -o StrictHostKeyChecking=no user@example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Add a passphrase-protected SSH key to the ssh-agent", "command": "ssh-add ~/.ssh/id_rsa", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "List the keys currently loaded into the ssh-agent", "command": "ssh-add -l", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Copy report.pdf to example.com using scp", "command": "scp report.pdf user@example.com:/home/user/", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download report.pdf from example.com using scp", "command": "scp user@example.com:/home/user/report.pdf .", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Copy backup.tar.gz to example.org using scp", "command": "scp backup.tar.gz user@example.org:/home/user/", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download backup.tar.gz from example.org using scp", "command": "scp user@example.org:/home/user/backup.tar.gz .", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Copy data.csv to api.example.com using scp", "command": "scp data.csv user@api.example.com:/home/user/", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download data.csv from api.example.com using scp", "command": "scp user@api.example.com:/home/user/data.csv .", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Copy image.png to server1.local using scp", "command": "scp image.png user@server1.local:/home/user/", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download image.png from server1.local using scp", "command": "scp user@server1.local:/home/user/image.png .", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Copy archive.zip to db.internal using scp", "command": "scp archive.zip user@db.internal:/home/user/", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download archive.zip from db.internal using scp", "command": "scp user@db.internal:/home/user/archive.zip .", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Copy site.html to 192.168.1.10 using scp", "command": "scp site.html user@192.168.1.10:/home/user/", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download site.html from 192.168.1.10 using scp", "command": "scp user@192.168.1.10:/home/user/site.html .", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Copy notes.txt to 192.168.1.1 using scp", "command": "scp notes.txt user@192.168.1.1:/home/user/", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download notes.txt from 192.168.1.1 using scp", "command": "scp user@192.168.1.1:/home/user/notes.txt .", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Copy dump.sql to 10.0.0.5 using scp", "command": "scp dump.sql user@10.0.0.5:/home/user/", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Download dump.sql from 10.0.0.5 using scp", "command": "scp user@10.0.0.5:/home/user/dump.sql .", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Copy a whole directory to a remote server using scp", "command": "scp -r /home/user/project user@example.com:/home/user/", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Copy a file via scp using a custom SSH port", "command": "scp -P 2222 report.pdf user@example.com:/home/user/", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Copy a file between two remote servers using scp", "command": "scp user1@server1.local:/data/file.csv user2@server2.local:/data/", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Copy a file with scp while preserving file modification times", "command": "scp -p report.pdf user@example.com:/home/user/", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Copy a file via scp using a specific identity file", "command": "scp -i ~/.ssh/deploy_key backup.tar.gz deploy@example.com:/backups/", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Show progress while copying a large file with scp", "command": "scp -v bigfile.iso user@example.com:/data/", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Limit scp bandwidth usage to 1000 Kbit/s", "command": "scp -l 1000 archive.zip user@example.com:/data/", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Sync the local directory /var/www/html to example.com with rsync", "command": "rsync -avz /var/www/html/ user@example.com:/var/www/html/", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Sync the local directory /home/user/project to example.org with rsync", "command": "rsync -avz /home/user/project/ user@example.org:/home/user/project/", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Sync the local directory /opt/app to api.example.com with rsync", "command": "rsync -avz /opt/app/ user@api.example.com:/opt/app/", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Sync the local directory /data/backups to server1.local with rsync", "command": "rsync -avz /data/backups/ user@server1.local:/data/backups/", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Sync the local directory /etc/nginx to db.internal with rsync", "command": "rsync -avz /etc/nginx/ user@db.internal:/etc/nginx/", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Sync the local directory /home/user/logs to 192.168.1.10 with rsync", "command": "rsync -avz /home/user/logs/ user@192.168.1.10:/home/user/logs/", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Sync the local directory /srv/data to 192.168.1.1 with rsync", "command": "rsync -avz /srv/data/ user@192.168.1.1:/srv/data/", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Dry run an rsync sync to see what would change without copying", "command": "rsync -avzn /home/user/project/ user@example.com:/home/user/project/", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Sync a directory with rsync and delete files that no longer exist locally", "command": "rsync -avz --delete /home/user/project/ user@example.com:/home/user/project/", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Sync files over SSH with rsync using compression", "command": "rsync -avzP -e ssh /data/backups/ user@backup.example.net:/data/backups/", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Exclude node_modules when syncing a project with rsync", "command": "rsync -avz --exclude 'node_modules' /home/user/project/ user@example.com:/home/user/project/", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Resume a large rsync transfer that was interrupted", "command": "rsync -avzP --partial user@example.com:/data/backup.tar.gz .", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Mirror a local backup folder to an external rsync daemon", "command": "rsync -avz /data/backups/ rsync://backup.example.net/backups/", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Sync only files newer than the destination with rsync", "command": "rsync -avzu /home/user/project/ user@example.com:/home/user/project/", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Show rsync transfer progress for each file", "command": "rsync -avz --progress /data/backups/ user@backup.example.net:/data/backups/", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Limit rsync bandwidth to 5000 KB/s", "command": "rsync -avz --bwlimit=5000 /data/backups/ user@backup.example.net:/data/backups/", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Ping example.com to check if it's reachable", "command": "ping example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Ping example.com exactly 4 times", "command": "ping -c 4 example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Ping example.org to check if it's reachable", "command": "ping example.org", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Ping example.org exactly 4 times", "command": "ping -c 4 example.org", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Ping api.example.com to check if it's reachable", "command": "ping api.example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Ping api.example.com exactly 4 times", "command": "ping -c 4 api.example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Ping server1.local to check if it's reachable", "command": "ping server1.local", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Ping server1.local exactly 4 times", "command": "ping -c 4 server1.local", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Ping db.internal to check if it's reachable", "command": "ping db.internal", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Ping db.internal exactly 4 times", "command": "ping -c 4 db.internal", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Ping 192.168.1.10 to check if it's reachable", "command": "ping 192.168.1.10", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Ping 192.168.1.10 exactly 4 times", "command": "ping -c 4 192.168.1.10", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Ping 192.168.1.1 to check if it's reachable", "command": "ping 192.168.1.1", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Ping 192.168.1.1 exactly 4 times", "command": "ping -c 4 192.168.1.1", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Ping 10.0.0.5 to check if it's reachable", "command": "ping 10.0.0.5", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Ping 10.0.0.5 exactly 4 times", "command": "ping -c 4 10.0.0.5", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Ping 10.0.0.1 to check if it's reachable", "command": "ping 10.0.0.1", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Ping 10.0.0.1 exactly 4 times", "command": "ping -c 4 10.0.0.1", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Ping 172.16.0.20 to check if it's reachable", "command": "ping 172.16.0.20", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Ping 172.16.0.20 exactly 4 times", "command": "ping -c 4 172.16.0.20", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Ping a host continuously until stopped", "command": "ping example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Ping a host with a 2 second interval between packets", "command": "ping -i 2 example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Send a ping with a larger packet size of 1000 bytes", "command": "ping -s 1000 example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Ping a host with a timeout of 5 seconds per packet", "command": "ping -W 5 example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Ping an IPv6 address", "command": "ping6 2001:db8::1", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Flood ping a host for stress testing (as root)", "command": "ping -f example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Ping a host quietly, only showing summary statistics", "command": "ping -c 10 -q example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "List all listening TCP ports on this machine", "command": "ss -tlnp", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Show all active network connections", "command": "netstat -an", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "List all listening ports with the process name using them", "command": "sudo ss -tulpn", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Check which process is using port 8080", "command": "sudo lsof -i :8080", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Show all established TCP connections", "command": "ss -t state established", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Display network statistics for each protocol", "command": "netstat -s", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "List all UDP listening sockets", "command": "ss -ulnp", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Show the routing table", "command": "netstat -r", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Count the number of established connections to this server", "command": "ss -tn state established | wc -l", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Show all sockets along with their process IDs", "command": "ss -p", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Check if port 443 is open and listening locally", "command": "ss -tln | grep ':443'", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "List all network connections for a specific process by PID", "command": "sudo netstat -anp | grep 1234", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Show summary statistics of all socket types", "command": "ss -s", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Find which process is listening on port 22", "command": "sudo netstat -tlnp | grep ':22'", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Scan example.com for open ports with nmap", "command": "nmap example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Scan example.org for open ports with nmap", "command": "nmap example.org", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Scan api.example.com for open ports with nmap", "command": "nmap api.example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Scan server1.local for open ports with nmap", "command": "nmap server1.local", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Scan db.internal for open ports with nmap", "command": "nmap db.internal", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Scan 192.168.1.10 for open ports with nmap", "command": "nmap 192.168.1.10", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Scan the most common 1000 ports on a target with nmap", "command": "nmap -F example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Scan a specific port range with nmap", "command": "nmap -p 1-1000 example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Detect the operating system of a remote host with nmap", "command": "sudo nmap -O example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Run a service version detection scan with nmap", "command": "nmap -sV example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Scan an entire subnet for live hosts with nmap", "command": "nmap -sn 192.168.1.0/24", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Perform a fast scan of only common ports with nmap", "command": "nmap -F --top-ports 100 example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Scan a target with nmap using TCP SYN scan", "command": "sudo nmap -sS example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Scan UDP ports on a host with nmap", "command": "sudo nmap -sU example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Check if a specific port is open on a host using nmap", "command": "nmap -p 443 example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Run an aggressive nmap scan with OS and version detection", "command": "sudo nmap -A example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Scan multiple hosts listed in a file with nmap", "command": "nmap -iL hosts.txt", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Save nmap scan results to a file in normal format", "command": "nmap -oN scan_results.txt example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Look up the DNS A record for example.com", "command": "dig example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Find the IP address of example.com using nslookup", "command": "nslookup example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Look up the DNS A record for example.org", "command": "dig example.org", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Find the IP address of example.org using nslookup", "command": "nslookup example.org", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Look up the DNS A record for api.example.com", "command": "dig api.example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Find the IP address of api.example.com using nslookup", "command": "nslookup api.example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Look up the DNS A record for server1.local", "command": "dig server1.local", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Find the IP address of server1.local using nslookup", "command": "nslookup server1.local", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Look up the DNS A record for db.internal", "command": "dig db.internal", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Find the IP address of db.internal using nslookup", "command": "nslookup db.internal", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Look up the DNS A record for 192.168.1.10", "command": "dig 192.168.1.10", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Find the IP address of 192.168.1.10 using nslookup", "command": "nslookup 192.168.1.10", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Look up the DNS A record for 192.168.1.1", "command": "dig 192.168.1.1", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Find the IP address of 192.168.1.1 using nslookup", "command": "nslookup 192.168.1.1", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Look up the DNS A record for 10.0.0.5", "command": "dig 10.0.0.5", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Find the IP address of 10.0.0.5 using nslookup", "command": "nslookup 10.0.0.5", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Query the MX records for a domain", "command": "dig example.com MX", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Query the TXT records for a domain", "command": "dig example.com TXT", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Do a reverse DNS lookup for an IP address", "command": "dig -x 192.168.1.1", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Query a specific DNS server for a domain's records", "command": "dig @8.8.8.8 example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Get only the short answer from a dig query", "command": "dig +short example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Trace the full DNS resolution path for a domain", "command": "dig +trace example.com", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Query the NS records for a domain", "command": "dig example.com NS", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Look up the CNAME record for a subdomain", "command": "dig www.example.com CNAME", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Check all DNS record types for a domain at once", "command": "dig example.com ANY", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Query the SOA record of a domain", "command": "dig example.com SOA", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Show the IP address assigned to interface eth0", "command": "ip addr show eth0", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Bring the network interface eth0 up", "command": "sudo ip link set eth0 up", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Bring the network interface eth0 down", "command": "sudo ip link set eth0 down", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Show the IP address assigned to interface wlan0", "command": "ip addr show wlan0", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Bring the network interface wlan0 up", "command": "sudo ip link set wlan0 up", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Bring the network interface wlan0 down", "command": "sudo ip link set wlan0 down", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Show the IP address assigned to interface enp0s3", "command": "ip addr show enp0s3", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Bring the network interface enp0s3 up", "command": "sudo ip link set enp0s3 up", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Bring the network interface enp0s3 down", "command": "sudo ip link set enp0s3 down", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Show the IP address assigned to interface ens33", "command": "ip addr show ens33", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Bring the network interface ens33 up", "command": "sudo ip link set ens33 up", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Bring the network interface ens33 down", "command": "sudo ip link set ens33 down", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Show the IP address assigned to interface eth1", "command": "ip addr show eth1", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Bring the network interface eth1 up", "command": "sudo ip link set eth1 up", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Bring the network interface eth1 down", "command": "sudo ip link set eth1 down", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "List all network interfaces and their IP addresses", "command": "ip addr", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Show the current default route", "command": "ip route show default", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Add a static route to a destination network", "command": "sudo ip route add 10.0.0.0/24 via 192.168.1.1", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Delete a static route", "command": "sudo ip route del 10.0.0.0/24", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Assign a new IP address to an interface", "command": "sudo ip addr add 192.168.1.50/24 dev eth0", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Show the MAC address of all network interfaces", "command": "ip link show", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Display all network interfaces using the legacy ifconfig command", "command": "ifconfig -a", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Show the IP address for eth0 using ifconfig", "command": "ifconfig eth0", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Set a static IP address on eth0 using ifconfig", "command": "sudo ifconfig eth0 192.168.1.100 netmask 255.255.255.0", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Show the current ARP table", "command": "ip neigh show", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Flush all IP addresses from an interface", "command": "sudo ip addr flush dev eth0", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Display routing table in a numeric format", "command": "ip route show", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "List all current iptables rules", "command": "sudo iptables -L -n -v", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Allow incoming traffic on port 22 for SSH", "command": "sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Block all incoming traffic from a specific IP address", "command": "sudo iptables -A INPUT -s 192.168.1.50 -j DROP", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Allow incoming traffic on port 80 for HTTP", "command": "sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Set the default policy to drop all incoming traffic", "command": "sudo iptables -P INPUT DROP", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Flush all iptables rules", "command": "sudo iptables -F", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Allow established and related connections through the firewall", "command": "sudo iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Save current iptables rules so they persist after reboot", "command": "sudo iptables-save > /etc/iptables/rules.v4", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Delete a specific iptables rule allowing port 8080", "command": "sudo iptables -D INPUT -p tcp --dport 8080 -j ACCEPT", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Block all outgoing traffic to a specific IP", "command": "sudo iptables -A OUTPUT -d 10.0.0.5 -j DROP", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Allow loopback traffic through the firewall", "command": "sudo iptables -A INPUT -i lo -j ACCEPT", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Redirect incoming traffic on port 80 to port 8080", "command": "sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8080", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "List iptables rules with line numbers", "command": "sudo iptables -L --line-numbers", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Allow a range of ports through the firewall", "command": "sudo iptables -A INPUT -p tcp --dport 6000:6100 -j ACCEPT", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Check if port 22 is open on example.com", "command": "nc -zv example.com 22", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Check if port 80 is open on example.org", "command": "nc -zv example.org 80", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Check if port 443 is open on api.example.com", "command": "nc -zv api.example.com 443", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Check if port 8080 is open on server1.local", "command": "nc -zv server1.local 8080", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Check if port 3306 is open on db.internal", "command": "nc -zv db.internal 3306", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Check if port 5432 is open on 192.168.1.10", "command": "nc -zv 192.168.1.10 5432", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Check if port 6379 is open on 192.168.1.1", "command": "nc -zv 192.168.1.1 6379", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Check if port 9000 is open on 10.0.0.5", "command": "nc -zv 10.0.0.5 9000", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Check if port 21 is open on 10.0.0.1", "command": "nc -zv 10.0.0.1 21", "lang": "en", "source": "synthetic-networking"}
+{"instruction": "Скачай страницу example.com и покажи её содержимое в терминале", "command": "curl example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Получи только HTTP-заголовки сайта example.com", "command": "curl -I example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Отправь GET-запрос к example.com и сохрани результат в response.html", "command": "curl -o response.html example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Сделай запрос к example.com с переходом по редиректам", "command": "curl -L example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай страницу example.org и покажи её содержимое в терминале", "command": "curl example.org", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Получи только HTTP-заголовки сайта example.org", "command": "curl -I example.org", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Отправь GET-запрос к example.org и сохрани результат в response.html", "command": "curl -o response.html example.org", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Сделай запрос к example.org с переходом по редиректам", "command": "curl -L example.org", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай страницу api.example.com и покажи её содержимое в терминале", "command": "curl api.example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Получи только HTTP-заголовки сайта api.example.com", "command": "curl -I api.example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Отправь GET-запрос к api.example.com и сохрани результат в response.html", "command": "curl -o response.html api.example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Сделай запрос к api.example.com с переходом по редиректам", "command": "curl -L api.example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай страницу server1.local и покажи её содержимое в терминале", "command": "curl server1.local", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Получи только HTTP-заголовки сайта server1.local", "command": "curl -I server1.local", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Отправь GET-запрос к server1.local и сохрани результат в response.html", "command": "curl -o response.html server1.local", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Сделай запрос к server1.local с переходом по редиректам", "command": "curl -L server1.local", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай страницу db.internal и покажи её содержимое в терминале", "command": "curl db.internal", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Получи только HTTP-заголовки сайта db.internal", "command": "curl -I db.internal", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Отправь GET-запрос к db.internal и сохрани результат в response.html", "command": "curl -o response.html db.internal", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Сделай запрос к db.internal с переходом по редиректам", "command": "curl -L db.internal", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай страницу 192.168.1.10 и покажи её содержимое в терминале", "command": "curl 192.168.1.10", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Получи только HTTP-заголовки сайта 192.168.1.10", "command": "curl -I 192.168.1.10", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Отправь GET-запрос к 192.168.1.10 и сохрани результат в response.html", "command": "curl -o response.html 192.168.1.10", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Сделай запрос к 192.168.1.10 с переходом по редиректам", "command": "curl -L 192.168.1.10", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай страницу 192.168.1.1 и покажи её содержимое в терминале", "command": "curl 192.168.1.1", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Получи только HTTP-заголовки сайта 192.168.1.1", "command": "curl -I 192.168.1.1", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Отправь GET-запрос к 192.168.1.1 и сохрани результат в response.html", "command": "curl -o response.html 192.168.1.1", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Сделай запрос к 192.168.1.1 с переходом по редиректам", "command": "curl -L 192.168.1.1", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай страницу 10.0.0.5 и покажи её содержимое в терминале", "command": "curl 10.0.0.5", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Получи только HTTP-заголовки сайта 10.0.0.5", "command": "curl -I 10.0.0.5", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Отправь GET-запрос к 10.0.0.5 и сохрани результат в response.html", "command": "curl -o response.html 10.0.0.5", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Сделай запрос к 10.0.0.5 с переходом по редиректам", "command": "curl -L 10.0.0.5", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай страницу 10.0.0.1 и покажи её содержимое в терминале", "command": "curl 10.0.0.1", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Получи только HTTP-заголовки сайта 10.0.0.1", "command": "curl -I 10.0.0.1", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Отправь GET-запрос к 10.0.0.1 и сохрани результат в response.html", "command": "curl -o response.html 10.0.0.1", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Сделай запрос к 10.0.0.1 с переходом по редиректам", "command": "curl -L 10.0.0.1", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай страницу 172.16.0.20 и покажи её содержимое в терминале", "command": "curl 172.16.0.20", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Получи только HTTP-заголовки сайта 172.16.0.20", "command": "curl -I 172.16.0.20", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Отправь GET-запрос к 172.16.0.20 и сохрани результат в response.html", "command": "curl -o response.html 172.16.0.20", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Сделай запрос к 172.16.0.20 с переходом по редиректам", "command": "curl -L 172.16.0.20", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай страницу myserver.com и покажи её содержимое в терминале", "command": "curl myserver.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Получи только HTTP-заголовки сайта myserver.com", "command": "curl -I myserver.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Отправь GET-запрос к myserver.com и сохрани результат в response.html", "command": "curl -o response.html myserver.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Сделай запрос к myserver.com с переходом по редиректам", "command": "curl -L myserver.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай страницу staging.example.net и покажи её содержимое в терминале", "command": "curl staging.example.net", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Получи только HTTP-заголовки сайта staging.example.net", "command": "curl -I staging.example.net", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Отправь GET-запрос к staging.example.net и сохрани результат в response.html", "command": "curl -o response.html staging.example.net", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Сделай запрос к staging.example.net с переходом по редиректам", "command": "curl -L staging.example.net", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Выполни тихий curl-запрос к backup.example.net, показывая только ошибки", "command": "curl -s -S backup.example.net", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Узнай HTTP код ответа сервера backup.example.net", "command": "curl -o /dev/null -s -w '%{http_code}\\n' backup.example.net", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Выполни тихий curl-запрос к files.example.com, показывая только ошибки", "command": "curl -s -S files.example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Узнай HTTP код ответа сервера files.example.com", "command": "curl -o /dev/null -s -w '%{http_code}\\n' files.example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Выполни тихий curl-запрос к google.com, показывая только ошибки", "command": "curl -s -S google.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Узнай HTTP код ответа сервера google.com", "command": "curl -o /dev/null -s -w '%{http_code}\\n' google.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Выполни тихий curl-запрос к github.com, показывая только ошибки", "command": "curl -s -S github.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Узнай HTTP код ответа сервера github.com", "command": "curl -o /dev/null -s -w '%{http_code}\\n' github.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Отправь POST-запрос с JSON-данными на https://api.example.com/users", "command": "curl -X POST -H 'Content-Type: application/json' -d '{\"name\":\"john\"}' https://api.example.com/users", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай файл через curl с возможностью продолжить при обрыве", "command": "curl -C - -O https://example.com/archive.zip", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Сделай запрос curl с кастомным User-Agent", "command": "curl -A 'MyAgent/1.0' https://example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай несколько файлов параллельно через curl", "command": "curl -Z -O https://example.com/file1.zip -O https://example.com/file2.zip", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Авторизуйся через basic auth с помощью curl", "command": "curl -u admin:secret https://example.com/private", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Замерь время выполнения запроса curl к example.com", "command": "curl -o /dev/null -s -w 'Time: %{time_total}s\\n' https://example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Отправь запрос через proxy с помощью curl", "command": "curl -x http://proxy.example.com:8080 https://example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай файл и сохрани его под другим именем через curl", "command": "curl -o myfile.pdf https://example.com/report.pdf", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Проверь поддержку HTTP/2 сайтом с помощью curl", "command": "curl -I --http2 https://example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Загрузи файл на сервер методом PUT через curl", "command": "curl -X PUT -T report.pdf https://example.com/upload/report.pdf", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Игнорируй ошибки SSL-сертификата в curl", "command": "curl -k https://self-signed.example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Получи только тело ответа без индикатора прогресса", "command": "curl -s https://example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Покажи подробный вывод curl с заголовками запроса и ответа", "command": "curl -v https://example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Отправь DELETE-запрос на API эндпоинт", "command": "curl -X DELETE https://api.example.com/users/42", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай файл, сохранив оригинальное имя", "command": "curl -O https://example.com/data.csv", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Передай файл с куками в curl для авторизованного запроса", "command": "curl -b cookies.txt https://example.com/dashboard", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Сохрани куки из ответа curl в файл", "command": "curl -c cookies.txt https://example.com/login", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай сайт example.com рекурсивно, зеркалируя весь ресурс", "command": "wget -r -np example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай главную страницу example.com с помощью wget", "command": "wget example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай сайт example.org рекурсивно, зеркалируя весь ресурс", "command": "wget -r -np example.org", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай главную страницу example.org с помощью wget", "command": "wget example.org", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай сайт api.example.com рекурсивно, зеркалируя весь ресурс", "command": "wget -r -np api.example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай главную страницу api.example.com с помощью wget", "command": "wget api.example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай сайт server1.local рекурсивно, зеркалируя весь ресурс", "command": "wget -r -np server1.local", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай главную страницу server1.local с помощью wget", "command": "wget server1.local", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай сайт db.internal рекурсивно, зеркалируя весь ресурс", "command": "wget -r -np db.internal", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай главную страницу db.internal с помощью wget", "command": "wget db.internal", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай сайт 192.168.1.10 рекурсивно, зеркалируя весь ресурс", "command": "wget -r -np 192.168.1.10", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай главную страницу 192.168.1.10 с помощью wget", "command": "wget 192.168.1.10", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай сайт 192.168.1.1 рекурсивно, зеркалируя весь ресурс", "command": "wget -r -np 192.168.1.1", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай главную страницу 192.168.1.1 с помощью wget", "command": "wget 192.168.1.1", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай сайт 10.0.0.5 рекурсивно, зеркалируя весь ресурс", "command": "wget -r -np 10.0.0.5", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай главную страницу 10.0.0.5 с помощью wget", "command": "wget 10.0.0.5", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай файл в фоновом режиме через wget", "command": "wget -b https://example.com/backup.tar.gz", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Продолжи прерванную загрузку файла через wget", "command": "wget -c https://example.com/archive.zip", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Ограничь скорость загрузки wget до 200 КБ/с", "command": "wget --limit-rate=200k https://example.com/data.csv", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай файл через wget и сохрани под другим именем", "command": "wget -O myarchive.zip https://example.com/archive.zip", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Сделай полное зеркало сайта для просмотра офлайн", "command": "wget --mirror --convert-links --page-requisites --no-parent https://example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай список URL из текстового файла с помощью wget", "command": "wget -i urls.txt", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай файл через wget без вывода лишней информации", "command": "wget -q https://example.com/report.pdf", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Укажи кастомный User-Agent для wget", "command": "wget --user-agent='Mozilla/5.0' https://example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай файл через wget с базовой авторизацией по логину и паролю", "command": "wget --user=admin --password=secret https://example.com/private/data.csv", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Повтори неудачную загрузку wget до 5 раз", "command": "wget --tries=5 https://example.com/video.mp4", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай рекурсивно только файлы с расширением .pdf", "command": "wget -r -A pdf https://example.com/docs/", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Проверь доступность URL без скачивания через wget", "command": "wget --spider https://example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Подключись к example.com по SSH под пользователем user", "command": "ssh user@example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Подключись к example.org по SSH под пользователем deploy", "command": "ssh deploy@example.org", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Подключись к api.example.com по SSH под пользователем root", "command": "ssh root@api.example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Подключись к server1.local по SSH под пользователем admin", "command": "ssh admin@server1.local", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Подключись к db.internal по SSH под пользователем ubuntu", "command": "ssh ubuntu@db.internal", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Подключись к 192.168.1.10 по SSH под пользователем ivan", "command": "ssh ivan@192.168.1.10", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Подключись к 192.168.1.1 по SSH под пользователем alex", "command": "ssh alex@192.168.1.1", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Подключись к 10.0.0.5 по SSH под пользователем backup", "command": "ssh backup@10.0.0.5", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Подключись к 10.0.0.1 по SSH под пользователем user", "command": "ssh user@10.0.0.1", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Подключись к 172.16.0.20 по SSH под пользователем deploy", "command": "ssh deploy@172.16.0.20", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Подключись к удалённому серверу по SSH на нестандартном порту", "command": "ssh -p 2222 user@example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Подключись по SSH используя конкретный приватный ключ", "command": "ssh -i ~/.ssh/id_rsa_deploy deploy@example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Выполни команду на удалённом сервере через SSH без открытия интерактивной сессии", "command": "ssh user@example.com 'df -h'", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Настрой локальное перенаправление порта через SSH для доступа к удалённой базе данных", "command": "ssh -L 5432:localhost:5432 user@db.internal", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Настрой удалённое перенаправление порта через SSH", "command": "ssh -R 8080:localhost:3000 user@example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Открой SOCKS-туннель через SSH", "command": "ssh -D 1080 user@example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Поддерживай SSH-соединение активным с помощью keepalive-пакетов", "command": "ssh -o ServerAliveInterval=60 user@example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скопируй свой публичный SSH-ключ на удалённый сервер для входа без пароля", "command": "ssh-copy-id user@example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Сгенерируй новую пару SSH-ключей по алгоритму ed25519", "command": "ssh-keygen -t ed25519 -C 'me@example.com'", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Проверь отпечаток локального публичного SSH-ключа", "command": "ssh-keygen -lf ~/.ssh/id_rsa.pub", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Подключись по SSH и оставь сессию работать в фоне", "command": "ssh -fN user@example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Подключись к хосту через промежуточный jump-сервер по SSH", "command": "ssh -J jumpuser@jump.example.com user@internal.example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Отключи строгую проверку ключа хоста при подключении по SSH", "command": "ssh -o StrictHostKeyChecking=no user@example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Добавь защищённый паролем SSH-ключ в ssh-agent", "command": "ssh-add ~/.ssh/id_rsa", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Покажи список ключей, загруженных в ssh-agent", "command": "ssh-add -l", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скопируй файл report.pdf на сервер example.com через scp", "command": "scp report.pdf user@example.com:/home/user/", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай файл report.pdf с сервера example.com через scp", "command": "scp user@example.com:/home/user/report.pdf .", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скопируй файл backup.tar.gz на сервер example.org через scp", "command": "scp backup.tar.gz user@example.org:/home/user/", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай файл backup.tar.gz с сервера example.org через scp", "command": "scp user@example.org:/home/user/backup.tar.gz .", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скопируй файл data.csv на сервер api.example.com через scp", "command": "scp data.csv user@api.example.com:/home/user/", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай файл data.csv с сервера api.example.com через scp", "command": "scp user@api.example.com:/home/user/data.csv .", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скопируй файл image.png на сервер server1.local через scp", "command": "scp image.png user@server1.local:/home/user/", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай файл image.png с сервера server1.local через scp", "command": "scp user@server1.local:/home/user/image.png .", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скопируй файл archive.zip на сервер db.internal через scp", "command": "scp archive.zip user@db.internal:/home/user/", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай файл archive.zip с сервера db.internal через scp", "command": "scp user@db.internal:/home/user/archive.zip .", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скопируй файл site.html на сервер 192.168.1.10 через scp", "command": "scp site.html user@192.168.1.10:/home/user/", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай файл site.html с сервера 192.168.1.10 через scp", "command": "scp user@192.168.1.10:/home/user/site.html .", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скопируй файл notes.txt на сервер 192.168.1.1 через scp", "command": "scp notes.txt user@192.168.1.1:/home/user/", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай файл notes.txt с сервера 192.168.1.1 через scp", "command": "scp user@192.168.1.1:/home/user/notes.txt .", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скопируй файл dump.sql на сервер 10.0.0.5 через scp", "command": "scp dump.sql user@10.0.0.5:/home/user/", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скачай файл dump.sql с сервера 10.0.0.5 через scp", "command": "scp user@10.0.0.5:/home/user/dump.sql .", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скопируй целую директорию на удалённый сервер через scp", "command": "scp -r /home/user/project user@example.com:/home/user/", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скопируй файл через scp, используя нестандартный SSH-порт", "command": "scp -P 2222 report.pdf user@example.com:/home/user/", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скопируй файл между двумя удалёнными серверами через scp", "command": "scp user1@server1.local:/data/file.csv user2@server2.local:/data/", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скопируй файл через scp с сохранением времени модификации", "command": "scp -p report.pdf user@example.com:/home/user/", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Скопируй файл через scp используя конкретный ключ идентификации", "command": "scp -i ~/.ssh/deploy_key backup.tar.gz deploy@example.com:/backups/", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Покажи прогресс при копировании большого файла через scp", "command": "scp -v bigfile.iso user@example.com:/data/", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Ограничь скорость передачи данных через scp до 1000 Кбит/с", "command": "scp -l 1000 archive.zip user@example.com:/data/", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Синхронизируй локальную директорию /var/www/html с сервером example.com через rsync", "command": "rsync -avz /var/www/html/ user@example.com:/var/www/html/", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Синхронизируй локальную директорию /home/user/project с сервером example.org через rsync", "command": "rsync -avz /home/user/project/ user@example.org:/home/user/project/", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Синхронизируй локальную директорию /opt/app с сервером api.example.com через rsync", "command": "rsync -avz /opt/app/ user@api.example.com:/opt/app/", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Синхронизируй локальную директорию /data/backups с сервером server1.local через rsync", "command": "rsync -avz /data/backups/ user@server1.local:/data/backups/", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Синхронизируй локальную директорию /etc/nginx с сервером db.internal через rsync", "command": "rsync -avz /etc/nginx/ user@db.internal:/etc/nginx/", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Синхронизируй локальную директорию /home/user/logs с сервером 192.168.1.10 через rsync", "command": "rsync -avz /home/user/logs/ user@192.168.1.10:/home/user/logs/", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Синхронизируй локальную директорию /srv/data с сервером 192.168.1.1 через rsync", "command": "rsync -avz /srv/data/ user@192.168.1.1:/srv/data/", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Запусти rsync в тестовом режиме, чтобы увидеть изменения без копирования", "command": "rsync -avzn /home/user/project/ user@example.com:/home/user/project/", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Синхронизируй директорию через rsync, удаляя файлы, отсутствующие локально", "command": "rsync -avz --delete /home/user/project/ user@example.com:/home/user/project/", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Синхронизируй файлы через SSH с помощью rsync используя сжатие", "command": "rsync -avzP -e ssh /data/backups/ user@backup.example.net:/data/backups/", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Исключи папку node_modules при синхронизации проекта через rsync", "command": "rsync -avz --exclude 'node_modules' /home/user/project/ user@example.com:/home/user/project/", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Возобнови прерванную передачу большого файла через rsync", "command": "rsync -avzP --partial user@example.com:/data/backup.tar.gz .", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Зеркалируй локальную папку с бэкапами на rsync-демон", "command": "rsync -avz /data/backups/ rsync://backup.example.net/backups/", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Синхронизируй только файлы новее, чем на удалённом сервере, через rsync", "command": "rsync -avzu /home/user/project/ user@example.com:/home/user/project/", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Покажи прогресс передачи каждого файла в rsync", "command": "rsync -avz --progress /data/backups/ user@backup.example.net:/data/backups/", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Ограничь скорость передачи rsync до 5000 КБ/с", "command": "rsync -avz --bwlimit=5000 /data/backups/ user@backup.example.net:/data/backups/", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Проверь доступность хоста example.com с помощью ping", "command": "ping example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Отправь на example.com ровно 4 пинга", "command": "ping -c 4 example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Проверь доступность хоста example.org с помощью ping", "command": "ping example.org", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Отправь на example.org ровно 4 пинга", "command": "ping -c 4 example.org", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Проверь доступность хоста api.example.com с помощью ping", "command": "ping api.example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Отправь на api.example.com ровно 4 пинга", "command": "ping -c 4 api.example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Проверь доступность хоста server1.local с помощью ping", "command": "ping server1.local", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Отправь на server1.local ровно 4 пинга", "command": "ping -c 4 server1.local", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Проверь доступность хоста db.internal с помощью ping", "command": "ping db.internal", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Отправь на db.internal ровно 4 пинга", "command": "ping -c 4 db.internal", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Проверь доступность хоста 192.168.1.10 с помощью ping", "command": "ping 192.168.1.10", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Отправь на 192.168.1.10 ровно 4 пинга", "command": "ping -c 4 192.168.1.10", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Проверь доступность хоста 192.168.1.1 с помощью ping", "command": "ping 192.168.1.1", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Отправь на 192.168.1.1 ровно 4 пинга", "command": "ping -c 4 192.168.1.1", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Проверь доступность хоста 10.0.0.5 с помощью ping", "command": "ping 10.0.0.5", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Отправь на 10.0.0.5 ровно 4 пинга", "command": "ping -c 4 10.0.0.5", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Проверь доступность хоста 10.0.0.1 с помощью ping", "command": "ping 10.0.0.1", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Отправь на 10.0.0.1 ровно 4 пинга", "command": "ping -c 4 10.0.0.1", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Проверь доступность хоста 172.16.0.20 с помощью ping", "command": "ping 172.16.0.20", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Отправь на 172.16.0.20 ровно 4 пинга", "command": "ping -c 4 172.16.0.20", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Пингуй хост непрерывно, пока не остановишь вручную", "command": "ping example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Пингуй хост с интервалом 2 секунды между пакетами", "command": "ping -i 2 example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Отправь пинг с увеличенным размером пакета 1000 байт", "command": "ping -s 1000 example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Укажи таймаут 5 секунд на пакет при пинге", "command": "ping -W 5 example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Пингуй IPv6-адрес", "command": "ping6 2001:db8::1", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Выполни flood-пинг хоста для стресс-теста (от root)", "command": "ping -f example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Пингуй хост тихо, показывая только итоговую статистику", "command": "ping -c 10 -q example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Покажи все прослушиваемые TCP-порты на этой машине", "command": "ss -tlnp", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Покажи все активные сетевые соединения", "command": "netstat -an", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Выведи все прослушиваемые порты вместе с именами процессов", "command": "sudo ss -tulpn", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Узнай, какой процесс использует порт 8080", "command": "sudo lsof -i :8080", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Покажи все установленные TCP-соединения", "command": "ss -t state established", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Выведи сетевую статистику по каждому протоколу", "command": "netstat -s", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Покажи все прослушиваемые UDP-сокеты", "command": "ss -ulnp", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Покажи таблицу маршрутизации", "command": "netstat -r", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Посчитай количество установленных соединений к серверу", "command": "ss -tn state established | wc -l", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Покажи все сокеты вместе с их PID", "command": "ss -p", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Проверь, открыт ли и слушает ли порт 443 локально", "command": "ss -tln | grep ':443'", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Покажи сетевые соединения конкретного процесса по его PID", "command": "sudo netstat -anp | grep 1234", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Выведи сводную статистику по всем типам сокетов", "command": "ss -s", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Найди, какой процесс слушает порт 22", "command": "sudo netstat -tlnp | grep ':22'", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Просканируй example.com на открытые порты с помощью nmap", "command": "nmap example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Просканируй example.org на открытые порты с помощью nmap", "command": "nmap example.org", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Просканируй api.example.com на открытые порты с помощью nmap", "command": "nmap api.example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Просканируй server1.local на открытые порты с помощью nmap", "command": "nmap server1.local", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Просканируй db.internal на открытые порты с помощью nmap", "command": "nmap db.internal", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Просканируй 192.168.1.10 на открытые порты с помощью nmap", "command": "nmap 192.168.1.10", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Просканируй 1000 самых распространённых портов цели с помощью nmap", "command": "nmap -F example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Просканируй определённый диапазон портов с помощью nmap", "command": "nmap -p 1-1000 example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Определи операционную систему удалённого хоста с помощью nmap", "command": "sudo nmap -O example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Запусти сканирование версий сервисов с помощью nmap", "command": "nmap -sV example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Просканируй всю подсеть на наличие активных хостов с помощью nmap", "command": "nmap -sn 192.168.1.0/24", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Сделай быстрое сканирование только распространённых портов через nmap", "command": "nmap -F --top-ports 100 example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Просканируй цель с помощью TCP SYN-сканирования в nmap", "command": "sudo nmap -sS example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Просканируй UDP-порты хоста с помощью nmap", "command": "sudo nmap -sU example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Проверь, открыт ли конкретный порт на хосте с помощью nmap", "command": "nmap -p 443 example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Запусти агрессивное сканирование nmap с определением ОС и версий", "command": "sudo nmap -A example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Просканируй несколько хостов из списка в файле через nmap", "command": "nmap -iL hosts.txt", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Сохрани результаты сканирования nmap в файл в обычном формате", "command": "nmap -oN scan_results.txt example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Узнай A-запись DNS для example.com", "command": "dig example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Узнай IP-адрес example.com с помощью nslookup", "command": "nslookup example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Узнай A-запись DNS для example.org", "command": "dig example.org", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Узнай IP-адрес example.org с помощью nslookup", "command": "nslookup example.org", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Узнай A-запись DNS для api.example.com", "command": "dig api.example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Узнай IP-адрес api.example.com с помощью nslookup", "command": "nslookup api.example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Узнай A-запись DNS для server1.local", "command": "dig server1.local", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Узнай IP-адрес server1.local с помощью nslookup", "command": "nslookup server1.local", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Узнай A-запись DNS для db.internal", "command": "dig db.internal", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Узнай IP-адрес db.internal с помощью nslookup", "command": "nslookup db.internal", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Узнай A-запись DNS для 192.168.1.10", "command": "dig 192.168.1.10", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Узнай IP-адрес 192.168.1.10 с помощью nslookup", "command": "nslookup 192.168.1.10", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Узнай A-запись DNS для 192.168.1.1", "command": "dig 192.168.1.1", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Узнай IP-адрес 192.168.1.1 с помощью nslookup", "command": "nslookup 192.168.1.1", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Узнай A-запись DNS для 10.0.0.5", "command": "dig 10.0.0.5", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Узнай IP-адрес 10.0.0.5 с помощью nslookup", "command": "nslookup 10.0.0.5", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Запроси MX-записи домена", "command": "dig example.com MX", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Запроси TXT-записи домена", "command": "dig example.com TXT", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Сделай обратный DNS-запрос для IP-адреса", "command": "dig -x 192.168.1.1", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Запроси записи домена у конкретного DNS-сервера", "command": "dig @8.8.8.8 example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Получи только короткий ответ от запроса dig", "command": "dig +short example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Проследи полный путь разрешения DNS для домена", "command": "dig +trace example.com", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Запроси NS-записи домена", "command": "dig example.com NS", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Узнай CNAME-запись поддомена", "command": "dig www.example.com CNAME", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Проверь все типы DNS-записей домена сразу", "command": "dig example.com ANY", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Запроси SOA-запись домена", "command": "dig example.com SOA", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Покажи IP-адрес, присвоенный интерфейсу eth0", "command": "ip addr show eth0", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Поднимай сетевой интерфейс eth0", "command": "sudo ip link set eth0 up", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Опусти сетевой интерфейс eth0", "command": "sudo ip link set eth0 down", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Покажи IP-адрес, присвоенный интерфейсу wlan0", "command": "ip addr show wlan0", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Поднимай сетевой интерфейс wlan0", "command": "sudo ip link set wlan0 up", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Опусти сетевой интерфейс wlan0", "command": "sudo ip link set wlan0 down", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Покажи IP-адрес, присвоенный интерфейсу enp0s3", "command": "ip addr show enp0s3", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Поднимай сетевой интерфейс enp0s3", "command": "sudo ip link set enp0s3 up", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Опусти сетевой интерфейс enp0s3", "command": "sudo ip link set enp0s3 down", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Покажи IP-адрес, присвоенный интерфейсу ens33", "command": "ip addr show ens33", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Поднимай сетевой интерфейс ens33", "command": "sudo ip link set ens33 up", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Опусти сетевой интерфейс ens33", "command": "sudo ip link set ens33 down", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Покажи IP-адрес, присвоенный интерфейсу eth1", "command": "ip addr show eth1", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Поднимай сетевой интерфейс eth1", "command": "sudo ip link set eth1 up", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Опусти сетевой интерфейс eth1", "command": "sudo ip link set eth1 down", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Покажи все сетевые интерфейсы и их IP-адреса", "command": "ip addr", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Покажи текущий маршрут по умолчанию", "command": "ip route show default", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Добавь статический маршрут к целевой сети", "command": "sudo ip route add 10.0.0.0/24 via 192.168.1.1", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Удали статический маршрут", "command": "sudo ip route del 10.0.0.0/24", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Присвой интерфейсу новый IP-адрес", "command": "sudo ip addr add 192.168.1.50/24 dev eth0", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Покажи MAC-адреса всех сетевых интерфейсов", "command": "ip link show", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Покажи все сетевые интерфейсы с помощью устаревшей команды ifconfig", "command": "ifconfig -a", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Покажи IP-адрес интерфейса eth0 с помощью ifconfig", "command": "ifconfig eth0", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Задай статический IP-адрес для eth0 через ifconfig", "command": "sudo ifconfig eth0 192.168.1.100 netmask 255.255.255.0", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Покажи текущую ARP-таблицу", "command": "ip neigh show", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Очисти все IP-адреса с интерфейса", "command": "sudo ip addr flush dev eth0", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Покажи таблицу маршрутизации в числовом формате", "command": "ip route show", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Выведи список всех текущих правил iptables", "command": "sudo iptables -L -n -v", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Разреши входящий трафик на порт 22 для SSH", "command": "sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Заблокируй весь входящий трафик с конкретного IP-адреса", "command": "sudo iptables -A INPUT -s 192.168.1.50 -j DROP", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Разреши входящий трафик на порт 80 для HTTP", "command": "sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Установи политику по умолчанию — блокировать весь входящий трафик", "command": "sudo iptables -P INPUT DROP", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Сбрось все правила iptables", "command": "sudo iptables -F", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Разреши установленные и связанные соединения через firewall", "command": "sudo iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Сохрани текущие правила iptables, чтобы они применялись после перезагрузки", "command": "sudo iptables-save > /etc/iptables/rules.v4", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Удали конкретное правило iptables, разрешающее порт 8080", "command": "sudo iptables -D INPUT -p tcp --dport 8080 -j ACCEPT", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Заблокируй весь исходящий трафик на конкретный IP", "command": "sudo iptables -A OUTPUT -d 10.0.0.5 -j DROP", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Разреши трафик через loopback-интерфейс в firewall", "command": "sudo iptables -A INPUT -i lo -j ACCEPT", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Перенаправь входящий трафик с порта 80 на порт 8080", "command": "sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 8080", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Выведи правила iptables с номерами строк", "command": "sudo iptables -L --line-numbers", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Разреши диапазон портов через firewall", "command": "sudo iptables -A INPUT -p tcp --dport 6000:6100 -j ACCEPT", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Проверь, открыт ли порт 22 на example.com", "command": "nc -zv example.com 22", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Проверь, открыт ли порт 80 на example.org", "command": "nc -zv example.org 80", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Проверь, открыт ли порт 443 на api.example.com", "command": "nc -zv api.example.com 443", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Проверь, открыт ли порт 8080 на server1.local", "command": "nc -zv server1.local 8080", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Проверь, открыт ли порт 3306 на db.internal", "command": "nc -zv db.internal 3306", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Проверь, открыт ли порт 5432 на 192.168.1.10", "command": "nc -zv 192.168.1.10 5432", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Проверь, открыт ли порт 6379 на 192.168.1.1", "command": "nc -zv 192.168.1.1 6379", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Проверь, открыт ли порт 9000 на 10.0.0.5", "command": "nc -zv 10.0.0.5 9000", "lang": "ru", "source": "synthetic-networking"}
+{"instruction": "Проверь, открыт ли порт 21 на 10.0.0.1", "command": "nc -zv 10.0.0.1 21", "lang": "ru", "source": "synthetic-networking"}

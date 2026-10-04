@@ -1,0 +1,600 @@
+{"instruction": "Back up /home/user/Pictures to the remote server with rsync, preserving permissions and compressing", "command": "rsync -avz /home/user/Pictures backup@remote-server:/data/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи список файлов внутри presentation.zip без распаковки", "command": "unzip -l presentation.zip", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Extract archive.7z into /tmp/out", "command": "7z x archive.7z -o/tmp/out", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Mount /dev/sdb2 at /mnt/nas", "command": "mount /dev/sdb2 /mnt/nas", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "What's the command to untar exports.tar.gz right here in the current directory?", "command": "tar -xzf exports.tar.gz", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Compress trace.log using gzip", "command": "gzip trace.log", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй файл server.log.gz", "command": "gunzip server.log.gz", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Check how much a gzip file compresses the original by listing both sizes", "command": "gzip -l data.csv.gz", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Сожми файл output.sql с помощью gzip", "command": "gzip output.sql", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Создай 7z-архив project.7z из папки project/", "command": "7z a project.7z project/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Смонтируй флешку /dev/sdb1 с файловой системой vfat в /mnt/usb", "command": "sudo mount -t vfat /dev/sdb1 /mnt/usb", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Сделай сжатый backup папки /home/user/scripts и сохрани его как scripts.tar.gz", "command": "tar -czf scripts.tar.gz /home/user/scripts", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Calculate the SHA256 checksum of image.iso and save it to a file", "command": "sha256sum image.iso > image.iso.sha256", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи список файлов внутри invoice.zip без распаковки", "command": "unzip -l invoice.zip", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Extract the tar archive www-backup.tar.gz into /tmp/restore", "command": "tar -xzf www-backup.tar.gz -C /tmp/restore", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "List the contents of etc-backup.tar.gz without extracting it", "command": "tar -tzf etc-backup.tar.gz", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Calculate the MD5 checksum of install.iso", "command": "md5sum install.iso", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Append the file notes.txt to an existing tar archive full.tar", "command": "tar -rf full.tar notes.txt", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Show UUIDs of all block devices", "command": "lsblk -o NAME,UUID", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Извлеки содержимое full.tar в каталог /opt", "command": "tar -xf full.tar -C /opt", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "gzip raw.csv and keep verbose output on", "command": "gzip -v raw.csv", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Back up /var/www/html to the remote server with rsync, preserving permissions and compressing", "command": "rsync -avz /var/www/html backup@remote-server:/data/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "How much free disk space is left on /home?", "command": "df -h /home", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Check the UUID of /dev/sda1 before editing fstab", "command": "sudo blkid /dev/sda1", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Unzip report.zip but overwrite existing files without asking", "command": "unzip -o report.zip", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Compress bigfile.txt using the highest gzip compression level", "command": "gzip -9 bigfile.txt", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Пережми все .log файлы в текущей папке через gzip", "command": "gzip *.log", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Calculate the MD5 checksum of debian-13.iso", "command": "md5sum debian-13.iso", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Сделай сжатый backup папки /srv/backups и сохрани его как backups.tar.gz", "command": "tar -czf backups.tar.gz /srv/backups", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "What partitions exist on the second disk, /dev/sdb?", "command": "sudo fdisk -l /dev/sdb", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй notes.zip в папку /tmp/extracted", "command": "unzip notes.zip -d /tmp/extracted", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Extract the tar archive db-dump.tar.gz into /tmp/restore", "command": "tar -xzf db-dump.tar.gz -C /tmp/restore", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Синхронизируй две локальные папки, удаляя лишние файлы в приёмнике", "command": "rsync -av --delete /home/user/photos/ /mnt/backup/photos/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Какие партиции есть на втором диске /dev/sdb?", "command": "sudo fdisk -l /dev/sdb", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Show the partition table of /dev/sda", "command": "sudo fdisk -l /dev/sda", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Упакуй /opt/configs в tar.gz архив с именем configs-backup.tar.gz и подробным выводом", "command": "tar -czvf configs-backup.tar.gz /opt/configs", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Сгенерируй SHA1-сумму для backup.tar.gz", "command": "sha1sum backup.tar.gz", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "List block devices sorted by size", "command": "lsblk -o NAME,SIZE | sort -k2 -h", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Pack /opt/app into a tar.gz archive named app-backup.tar.gz with verbose output", "command": "tar -czvf app-backup.tar.gz /opt/app", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "List block devices with name, size, filesystem type and mountpoint columns", "command": "lsblk -o NAME,SIZE,FSTYPE,MOUNTPOINT", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Unzip presentation.zip into /tmp/extracted", "command": "unzip presentation.zip -d /tmp/extracted", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Сделай gzip-архив конфигов nginx из папки /etc/nginx и сохрани как nginx-backup.tar.gz", "command": "tar -czf nginx-backup.tar.gz /etc/nginx", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи содержимое архива backup.7z", "command": "7z l backup.7z", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй docs.7z в папку /tmp/out", "command": "7z x docs.7z -o/tmp/out", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Создай 7z-архив папки docs/ с паролем", "command": "7z a -pMySecret123 -mhe=on docs.7z docs/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Выведи все swap-партиции в системе", "command": "lsblk -o NAME,FSTYPE | grep swap", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Sync two local directories, deleting extraneous files in destination", "command": "rsync -av --delete /home/user/photos/ /mnt/backup/photos/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Проверь свободное место на всех дисках, кроме tmpfs", "command": "df -h -x tmpfs", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Pack /home/user/docs into a tar.gz archive named docs-backup.tar.gz with verbose output", "command": "tar -czvf docs-backup.tar.gz /home/user/docs", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй report.zip в папку /tmp/extracted", "command": "unzip report.zip -d /tmp/extracted", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Make a compressed tar backup of /home/user/scripts, saving it as scripts.tar.gz", "command": "tar -czf scripts.tar.gz /home/user/scripts", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй backup.7z в папку /tmp/out", "command": "7z x backup.7z -o/tmp/out", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "List only disk-type block devices, excluding partitions", "command": "lsblk -d", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй архив projects.tar.xz", "command": "tar -xJf projects.tar.xz", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Back up /home/user/notes to the remote server with rsync, preserving permissions and compressing", "command": "rsync -avz /home/user/notes user@backupbox:/mnt/storage/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй архив assets.tar.gz в папку /tmp/restore", "command": "tar -xzf assets.tar.gz -C /tmp/restore", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Safely eject /mnt/usb after unmounting it", "command": "sudo umount /mnt/usb && sudo eject /mnt/usb", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Find files larger than 100MB in /data before archiving them", "command": "find /data -type f -size +100M", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй archive.zip в папку /tmp/extracted", "command": "unzip archive.zip -d /tmp/extracted", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Generate a SHA1 checksum for backup.tar.gz", "command": "sha1sum backup.tar.gz", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Extract the tar archive monthly-backup.tar.xz into /tmp/restore", "command": "tar -xzf monthly-backup.tar.xz -C /tmp/restore", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Unmount /mnt/nas", "command": "umount /mnt/nas", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Заархивируй /home/user/projects/myapp в tar.gz, исключив node_modules", "command": "tar --exclude='node_modules' -czf myapp-backup.tar.gz /home/user/projects/myapp", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Добавь файл readme.txt в уже существующий архив project.zip", "command": "zip project.zip readme.txt", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "List the files inside backup.zip without extracting", "command": "unzip -l backup.zip", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Back up /etc/nginx to the remote server with rsync, preserving permissions and compressing", "command": "rsync -avz /etc/nginx admin@nas.local:/share/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Show disk usage for ext4 filesystems only", "command": "df -h -t ext4", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "List the files inside report.zip without extracting", "command": "unzip -l report.zip", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Сделай rsync-бэкап и запиши вывод в лог-файл", "command": "rsync -av /home/user/docs/ /mnt/backup/docs/ --log-file=rsync.log", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Сделай backup /home/user/code/backend на удалённый сервер через rsync со сжатием и сохранением прав", "command": "rsync -avz /home/user/code/backend user@192.168.1.50:/backup/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Show all currently mounted filesystems that mention sdb", "command": "mount | grep sdb", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Сделай backup /etc на удалённый хост с ограничением скорости в 5000 КБ/с", "command": "rsync -avz --bwlimit=5000 /etc user@remote:/backup/etc/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй архив monthly-backup.tar.xz в папку /tmp/restore", "command": "tar -xzf monthly-backup.tar.xz -C /tmp/restore", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Decompress events.json.gz", "command": "gunzip events.json.gz", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Create a tar archive excluding hidden dotfiles from /home/user", "command": "tar --exclude='.*' -czf home-clean.tar.gz /home/user", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Perform an rsync backup and log the output to a file", "command": "rsync -av /home/user/docs/ /mnt/backup/docs/ --log-file=rsync.log", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Упакуй /etc/nginx в tar.gz архив с именем nginx-backup.tar.gz и подробным выводом", "command": "tar -czvf nginx-backup.tar.gz /etc/nginx", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи таблицу партиций диска /dev/sda", "command": "sudo fdisk -l /dev/sda", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Сделай backup /opt/configs на удалённый сервер через rsync со сжатием и сохранением прав", "command": "rsync -avz /opt/configs deploy@192.168.0.10:/srv/backup/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Create a gzip-compressed tar archive of /etc/nginx called nginx-backup.tar.gz", "command": "tar -czf nginx-backup.tar.gz /etc/nginx", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Unmount /mnt/share", "command": "umount /mnt/share", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Pack /opt/configs into a tar.gz archive named configs-backup.tar.gz with verbose output", "command": "tar -czvf configs-backup.tar.gz /opt/configs", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Create a 7z archive named archive.7z from the archive/ folder", "command": "7z a archive.7z archive/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Создай 7z-архив photos.7z из папки photos/", "command": "7z a photos.7z photos/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи список файлов внутри project.zip без распаковки", "command": "unzip -l project.zip", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "What's the command to untar data.tar.gz right here in the current directory?", "command": "tar -xzf data.tar.gz", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "What command decompresses raw.csv.gz while keeping the .gz file?", "command": "gunzip -k raw.csv.gz", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй images.zip прямо тут, без отдельной папки назначения", "command": "unzip images.zip", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй файл trace.log.gz", "command": "gunzip trace.log.gz", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Сделай gzip-архив входящих данных из папки /mnt/data/incoming и сохрани как incoming-backup.tar.gz", "command": "tar -czf incoming-backup.tar.gz /mnt/data/incoming", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "List the files inside invoice.zip without extracting", "command": "unzip -l invoice.zip", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Быстро заархивируй всё в текущей папке в images.zip", "command": "zip -r images.zip .", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи содержимое архива assets.tar.gz без извлечения", "command": "tar -tzf assets.tar.gz", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи список файлов внутри src.zip без распаковки", "command": "unzip -l src.zip", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Какой командой распаковать payload.json.gz, но оставить .gz файл на месте?", "command": "gunzip -k payload.json.gz", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Create a gzip-compressed tar archive of /opt/app called app-backup.tar.gz", "command": "tar -czf app-backup.tar.gz /opt/app", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй архив photos-archive.tar.gz в папку /tmp/restore", "command": "tar -xzf photos-archive.tar.gz -C /tmp/restore", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Quick, zip everything in the current directory into export.zip", "command": "zip -r export.zip .", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Search inside archive.tar for files with a .conf extension", "command": "tar -tf archive.tar | grep '.conf'", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Сделай gzip-архив музыки из папки /home/user/music и сохрани как music-backup.tar.gz", "command": "tar -czf music-backup.tar.gz /home/user/music", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи содержимое архива configs.tar.gz без извлечения", "command": "tar -tzf configs.tar.gz", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Unmount /media/external", "command": "umount /media/external", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Create a gzip-compressed tar archive of /var/www/html called html-backup.tar.gz", "command": "tar -czf html-backup.tar.gz /var/www/html", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Unzip backup.zip into /tmp/extracted", "command": "unzip backup.zip -d /tmp/extracted", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Hash every file in /opt/configs recursively with md5sum", "command": "find /opt/configs -type f -exec md5sum {} \\;", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Force unmount /mnt/usb even if it's busy", "command": "sudo umount -f /mnt/usb", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Создай zip-архив presentation.zip из папки project/ рекурсивно", "command": "zip -r presentation.zip project/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй файл error.log.gz", "command": "gunzip error.log.gz", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Compress output.sql using gzip", "command": "gzip output.sql", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи содержимое архива archive.7z", "command": "7z l archive.7z", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Смонтируй /dev/sdc1 в /mnt/data", "command": "mount /dev/sdc1 /mnt/data", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Отмонтируй /mnt/usb", "command": "umount /mnt/usb", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Pack /var/www/html into a tar.gz archive named html-backup.tar.gz with verbose output", "command": "tar -czvf html-backup.tar.gz /var/www/html", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "List the files inside src.zip without extracting", "command": "unzip -l src.zip", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Смонтируй образ install.iso как loop-устройство в /mnt/iso", "command": "sudo mount -o loop install.iso /mnt/iso", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Backup project/ to /mnt/usb/project_backup excluding log files", "command": "rsync -av --exclude='*.log' project/ /mnt/usb/project_backup/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Продолжи прерванную передачу большого файла через rsync на удалённый хост", "command": "rsync -avzP --partial bigfile.iso user@remote:/backup/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй архив project.tar.gz в папку /tmp/restore", "command": "tar -xzf project.tar.gz -C /tmp/restore", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Extract only the file config.yml from backup-2026.tar.gz", "command": "tar -xzf backup-2026.tar.gz config.yml", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Compress data.csv using gzip", "command": "gzip data.csv", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Make a compressed tar backup of /home/user/Downloads, saving it as downloads.tar.gz", "command": "tar -czf downloads.tar.gz /home/user/Downloads", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Как распаковать data.tar.gz прямо в текущую директорию?", "command": "tar -xzf data.tar.gz", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Проверь, не заполнен ли почти полностью какой-нибудь диск в системе", "command": "df -h | awk '$5+0 > 90'", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Create a gzip-compressed tar archive of /home/user/projects/myapp called myapp-backup.tar.gz", "command": "tar -czf myapp-backup.tar.gz /home/user/projects/myapp", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Сколько свободного места осталось на /home?", "command": "df -h /home", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Создай zip-архив invoice.zip из папки build/ рекурсивно", "command": "zip -r invoice.zip build/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Quick, zip everything in the current directory into archive2.zip", "command": "zip -r archive2.zip .", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй project.7z в папку /tmp/out", "command": "7z x project.7z -o/tmp/out", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй logs.zip в папку /tmp/extracted", "command": "unzip logs.zip -d /tmp/extracted", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Unzip data.zip into /tmp/extracted", "command": "unzip data.zip -d /tmp/extracted", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Сделай gzip-архив сайта из папки /var/www/html и сохрани как html-backup.tar.gz", "command": "tar -czf html-backup.tar.gz /var/www/html", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Extract the tar archive backup-2026.tar.gz into /tmp/restore", "command": "tar -xzf backup-2026.tar.gz -C /tmp/restore", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Сделай backup /home/user/Desktop на удалённый сервер через rsync со сжатием и сохранением прав", "command": "rsync -avz /home/user/Desktop admin@nas.local:/share/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Create a password-protected 7z archive of the docs/ folder", "command": "7z a -pMySecret123 -mhe=on docs.7z docs/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Sync /home/user/docs to /mnt/usb, showing progress for each file", "command": "rsync -av --progress /home/user/docs/ /mnt/usb/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Создай архив /etc с сохранением прав доступа и назови его etc-backup.tar.gz", "command": "tar -czpf etc-backup.tar.gz /etc", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "List the files inside presentation.zip without extracting", "command": "unzip -l presentation.zip", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "List all currently mounted filesystems", "command": "mount", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Создай tar-архив из /home/user, исключив скрытые файлы с точкой", "command": "tar --exclude='.*' -czf home-clean.tar.gz /home/user", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Сделай backup /home/user/music на удалённый сервер через rsync со сжатием и сохранением прав", "command": "rsync -avz /home/user/music deploy@192.168.0.10:/srv/backup/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Pack /data/reports into a tar.gz archive named reports-backup.tar.gz with verbose output", "command": "tar -czvf reports-backup.tar.gz /data/reports", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Создай zip-архив archive.zip из папки app/ рекурсивно", "command": "zip -r archive.zip app/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Extract the tar archive logs-2026-10-02.tar.gz into /tmp/restore", "command": "tar -xzf logs-2026-10-02.tar.gz -C /tmp/restore", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй файл data.csv.gz", "command": "gunzip data.csv.gz", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Создай 7z-архив docs.7z из папки docs/", "command": "7z a docs.7z docs/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Show disk space usage in human-readable form", "command": "df -h", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи содержимое архива www-backup.tar.gz без извлечения", "command": "tar -tzf www-backup.tar.gz", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Найди в архиве archive.tar файлы с расширением .conf", "command": "tar -tf archive.tar | grep '.conf'", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Can you unzip archive1.zip right here without a destination folder?", "command": "unzip archive1.zip", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Какой командой распаковать access2.log.gz, но оставить .gz файл на месте?", "command": "gunzip -k access2.log.gz", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Unzip report.zip into /tmp/extracted", "command": "unzip report.zip -d /tmp/extracted", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Смонтируй /dev/sdc1 в режиме только для чтения в /mnt/data", "command": "sudo mount -o ro /dev/sdc1 /mnt/data", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Сделай backup /home/user/notes на удалённый сервер через rsync со сжатием и сохранением прав", "command": "rsync -avz /home/user/notes user@backupbox:/mnt/storage/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Создай zip-архив photos.zip из папки src/ рекурсивно", "command": "zip -r photos.zip src/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Extract the tar archive site-backup.tar.bz2 into /tmp/restore", "command": "tar -xzf site-backup.tar.bz2 -C /tmp/restore", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи содержимое архива logs-2026-10-02.tar.gz без извлечения", "command": "tar -tzf logs-2026-10-02.tar.gz", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Decompress dataset.csv.gz", "command": "gunzip dataset.csv.gz", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Decompress trace.log.gz", "command": "gunzip trace.log.gz", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "List partitions on /dev/sdb only", "command": "sudo fdisk -l /dev/sdb", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй архив etc-backup.tar.gz в папку /tmp/restore", "command": "tar -xzf etc-backup.tar.gz -C /tmp/restore", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Как распаковать logs2.tar.gz прямо в текущую директорию?", "command": "tar -xzf logs2.tar.gz", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Extract the tar archive home-backup.tar.gz into /tmp/restore", "command": "tar -xzf home-backup.tar.gz -C /tmp/restore", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Сожми raw.csv через gzip с подробным выводом", "command": "gzip -v raw.csv", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Compress bigfile.txt using gzip", "command": "gzip bigfile.txt", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Сделай сжатый backup папки /home/user/mail и сохрани его как mail.tar.gz", "command": "tar -czf mail.tar.gz /home/user/mail", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Dump the partition table of every disk to a text file", "command": "sudo fdisk -l > partitions.txt", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Mount an ISO file install.iso as a loop device at /mnt/iso", "command": "sudo mount -o loop install.iso /mnt/iso", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Проверь свободное место на диске перед большой загрузкой", "command": "df -h /home", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Сделай инкрементный backup /srv/data с помощью снапшота tar", "command": "tar --listed-incremental=snapshot.file -czf incr-backup.tar.gz /srv/data", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Restore a gzip-compressed SQL dump into MySQL", "command": "gunzip -c mydb-backup.sql.gz | mysql mydb", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Test the integrity of an existing 7z archive called backup.7z", "command": "7z t backup.7z", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Посчитай MD5-суммы для всех zip-файлов в текущей папке", "command": "md5sum *.zip", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Mount /dev/sdc1 at /mnt/data", "command": "mount /dev/sdc1 /mnt/data", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Сделай backup /opt/app на удалённый сервер через rsync со сжатием и сохранением прав", "command": "rsync -avz /opt/app deploy@192.168.0.10:/srv/backup/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "List the contents of code-snapshot.tar.gz without extracting it", "command": "tar -tzf code-snapshot.tar.gz", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи партиции только на /dev/sdb", "command": "sudo fdisk -l /dev/sdb", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Посчитай SHA256-сумму файла image.iso и сохрани её в файл", "command": "sha256sum image.iso > image.iso.sha256", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй архив home-backup.tar.gz в папку /tmp/restore", "command": "tar -xzf home-backup.tar.gz -C /tmp/restore", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Сделай backup /srv/data на удалённый сервер через rsync со сжатием и сохранением прав", "command": "rsync -avz /srv/data admin@nas.local:/share/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Show disk usage of the root filesystem only", "command": "df -h /", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Quick, zip everything in the current directory into mydata.zip", "command": "zip -r mydata.zip .", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Создай zip-архив logs.zip из папки website/ рекурсивно", "command": "zip -r logs.zip website/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Извлеки из архива archive.7z только файл config.json", "command": "7z e archive.7z config.json", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Mount /dev/sda1 at /media/external", "command": "mount /dev/sda1 /media/external", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Calculate the SHA256 checksum of install.iso and save it to a file", "command": "sha256sum install.iso > install.iso.sha256", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Сделай gzip-архив заметок из папки /home/user/notes и сохрани как notes-backup.tar.gz", "command": "tar -czf notes-backup.tar.gz /home/user/notes", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Pipe a directory listing into du to see how big /var/log is before archiving", "command": "du -sh /var/log", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Decompress bigfile.txt.gz", "command": "gunzip bigfile.txt.gz", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Back up /home/user/code/backend to the remote server with rsync, preserving permissions and compressing", "command": "rsync -avz /home/user/code/backend user@192.168.1.50:/backup/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи блочные устройства с колонками имя, размер, тип ФС и точка монтирования", "command": "lsblk -o NAME,SIZE,FSTYPE,MOUNTPOINT", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Какой командой распаковать stream.log.gz, но оставить .gz файл на месте?", "command": "gunzip -k stream.log.gz", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи содержимое архива backup-2026.tar.gz без извлечения", "command": "tar -tzf backup-2026.tar.gz", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй invoice.zip в папку /tmp/extracted", "command": "unzip invoice.zip -d /tmp/extracted", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Упакуй /home/user/Desktop в tar.gz архив с именем Desktop-backup.tar.gz и подробным выводом", "command": "tar -czvf Desktop-backup.tar.gz /home/user/Desktop", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "List the files inside docs.zip without extracting", "command": "unzip -l docs.zip", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Compare the MD5 of two ISO files side by side", "command": "md5sum ubuntu-24.04.iso debian-13.iso", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй архив full-backup.tar в папку /tmp/restore", "command": "tar -xzf full-backup.tar -C /tmp/restore", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Сожми stream.log через gzip с подробным выводом", "command": "gzip -v stream.log", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй архив weekly-backup.tar.gz в папку /tmp/restore", "command": "tar -xzf weekly-backup.tar.gz -C /tmp/restore", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "List the files inside logs.zip without extracting", "command": "unzip -l logs.zip", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Принудительно отмонтируй /mnt/usb, даже если он занят", "command": "sudo umount -f /mnt/usb", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Calculate the SHA256 checksum of centos.iso and save it to a file", "command": "sha256sum centos.iso > centos.iso.sha256", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи использование всех смонтированных ФС с итоговой суммой", "command": "df -h --total", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "What command decompresses payload.json.gz while keeping the .gz file?", "command": "gunzip -k payload.json.gz", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Make a compressed tar backup of /home/user/mail, saving it as mail.tar.gz", "command": "tar -czf mail.tar.gz /home/user/mail", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "What command shows disk usage per directory one level down from /home?", "command": "du -h --max-depth=1 /home", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй файл events.json.gz", "command": "gunzip events.json.gz", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Extract a tar.xz archive called projects.tar.xz", "command": "tar -xJf projects.tar.xz", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Сделай backup project/ в /mnt/usb/project_backup, исключив лог-файлы", "command": "rsync -av --exclude='*.log' project/ /mnt/usb/project_backup/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй архив site-backup.tar.bz2 в папку /tmp/restore", "command": "tar -xzf site-backup.tar.bz2 -C /tmp/restore", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Compress events.json using gzip", "command": "gzip events.json", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Создай 7z-архив backup.7z из папки backup/", "command": "7z a backup.7z backup/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи список файлов внутри backup.zip без распаковки", "command": "unzip -l backup.zip", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Смонтируй /dev/sdb1 в /mnt/usb", "command": "mount /dev/sdb1 /mnt/usb", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Создай zip-архив notes.zip из папки myapp/ рекурсивно", "command": "zip -r notes.zip myapp/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Упакуй /var/log в tar.gz архив с именем log-backup.tar.gz и подробным выводом", "command": "tar -czvf log-backup.tar.gz /var/log", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй bzip2-архив project.tar.bz2", "command": "tar -xjf project.tar.bz2", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Сделай gzip-архив бэкенда из папки /home/user/code/backend и сохрани как backend-backup.tar.gz", "command": "tar -czf backend-backup.tar.gz /home/user/code/backend", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи использование инодов вместо блоков", "command": "df -i", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Сделай gzip-архив фотографий из папки /home/user/Pictures и сохрани как Pictures-backup.tar.gz", "command": "tar -czf Pictures-backup.tar.gz /home/user/Pictures", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Извлеки только файл config.yml из архива backup-2026.tar.gz", "command": "tar -xzf backup-2026.tar.gz config.yml", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Create a gzip-compressed tar archive of /home/user/docs called docs-backup.tar.gz", "command": "tar -czf docs-backup.tar.gz /home/user/docs", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи содержимое архива code-snapshot.tar.gz без извлечения", "command": "tar -tzf code-snapshot.tar.gz", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Decompress access.log.gz", "command": "gunzip access.log.gz", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Unzip project.zip into /tmp/extracted", "command": "unzip project.zip -d /tmp/extracted", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Сделай gzip-архив отчётов из папки /data/reports и сохрани как reports-backup.tar.gz", "command": "tar -czf reports-backup.tar.gz /data/reports", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Сожми файл bigfile.txt с помощью gzip", "command": "gzip bigfile.txt", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Unzip logs.zip into /tmp/extracted", "command": "unzip logs.zip -d /tmp/extracted", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Can you unzip images.zip right here without a destination folder?", "command": "unzip images.zip", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Back up /opt/configs to the remote server with rsync, preserving permissions and compressing", "command": "rsync -avz /opt/configs deploy@192.168.0.10:/srv/backup/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Выведи блочные устройства в формате JSON", "command": "lsblk -J", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Сожми файл access.log с помощью gzip", "command": "gzip access.log", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Восстанови базу MySQL из сжатого gzip-дампа", "command": "gunzip -c mydb-backup.sql.gz | mysql mydb", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Упакуй /home/user/Pictures в tar.gz архив с именем Pictures-backup.tar.gz и подробным выводом", "command": "tar -czvf Pictures-backup.tar.gz /home/user/Pictures", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "What's the command to untar cache.tar.gz right here in the current directory?", "command": "tar -xzf cache.tar.gz", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Back up a MySQL dump file with gzip right after exporting it", "command": "mysqldump mydb | gzip > mydb-backup.sql.gz", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Упакуй /opt/app в tar.gz архив с именем app-backup.tar.gz и подробным выводом", "command": "tar -czvf app-backup.tar.gz /opt/app", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Создай zip-архив docs.zip из папки myapp/ рекурсивно", "command": "zip -r docs.zip myapp/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Собери обратно один tar.gz файл из разбитых частей архива", "command": "cat data-backup.tar.gz.part* > data-backup.tar.gz", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Quick, zip everything in the current directory into images.zip", "command": "zip -r images.zip .", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Упакуй /var/www/html в tar.gz архив с именем html-backup.tar.gz и подробным выводом", "command": "tar -czvf html-backup.tar.gz /var/www/html", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи содержимое архива etc-backup.tar.gz без извлечения", "command": "tar -tzf etc-backup.tar.gz", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Unmount /mnt/data", "command": "umount /mnt/data", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Calculate the MD5 checksum of centos.iso", "command": "md5sum centos.iso", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Resume an interrupted rsync transfer of a large file to a remote host", "command": "rsync -avzP --partial bigfile.iso user@remote:/backup/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Back up /home/user/Desktop to the remote server with rsync, preserving permissions and compressing", "command": "rsync -avz /home/user/Desktop admin@nas.local:/share/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Отмонтируй /media/external", "command": "umount /media/external", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи содержимое архива site-backup.tar.bz2 без извлечения", "command": "tar -tzf site-backup.tar.bz2", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Unmount every USB drive currently mounted under /media", "command": "sudo umount /media/*", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Create a zip archive called presentation.zip from the project/ directory, recursively", "command": "zip -r presentation.zip project/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Быстро заархивируй всё в текущей папке в mydata.zip", "command": "zip -r mydata.zip .", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Сделай backup /home/user/Pictures на удалённый сервер через rsync со сжатием и сохранением прав", "command": "rsync -avz /home/user/Pictures backup@remote-server:/data/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Create a gzip-compressed tar archive of /opt/configs called configs-backup.tar.gz", "command": "tar -czf configs-backup.tar.gz /opt/configs", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Compress dump.sql using gzip", "command": "gzip dump.sql", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Сожми metrics.csv через gzip с подробным выводом", "command": "gzip -v metrics.csv", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Смонтируй сетевую папку по NFS в /mnt/nas", "command": "sudo mount -t nfs 192.168.1.10:/export /mnt/nas", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Смонтируй /dev/sde1 в /mnt/backup с правами на чтение и запись", "command": "sudo mount -o rw /dev/sde1 /mnt/backup", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Unzip archive.zip into /tmp/extracted", "command": "unzip archive.zip -d /tmp/extracted", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Create an incremental backup archive using tar's snapshot feature for /srv/data", "command": "tar --listed-incremental=snapshot.file -czf incr-backup.tar.gz /srv/data", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Pack /var/log into a tar.gz archive named log-backup.tar.gz with verbose output", "command": "tar -czvf log-backup.tar.gz /var/log", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Сделай backup /srv/data на удалённый NAS через rsync, сохраняя только новые или изменённые файлы", "command": "rsync -avz --update /srv/data/ backup@nas.local:/volume1/backup/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи содержимое архива full-backup.tar без извлечения", "command": "tar -tzf full-backup.tar", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Make a compressed tar backup of /home/user/videos, saving it as videos.tar.gz", "command": "tar -czf videos.tar.gz /home/user/videos", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй photos.zip в папку /tmp/extracted", "command": "unzip photos.zip -d /tmp/extracted", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "List all swap partitions on the system", "command": "lsblk -o NAME,FSTYPE | grep swap", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Сделай backup /var/log на удалённый сервер через rsync со сжатием и сохранением прав", "command": "rsync -avz /var/log user@192.168.1.50:/backup/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй файл bigfile.txt.gz", "command": "gunzip bigfile.txt.gz", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Pack /home/user/Pictures into a tar.gz archive named Pictures-backup.tar.gz with verbose output", "command": "tar -czvf Pictures-backup.tar.gz /home/user/Pictures", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Create a zip archive called notes.zip from the myapp/ directory, recursively", "command": "zip -r notes.zip myapp/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Make a compressed tar backup of /srv/backups, saving it as backups.tar.gz", "command": "tar -czf backups.tar.gz /srv/backups", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Смонтируй /dev/sdd1 в /mnt/backup", "command": "mount /dev/sdd1 /mnt/backup", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Как заархивировать /etc/nginx в tar.gz и сразу передать по ssh на другой сервер?", "command": "tar -czf - /etc/nginx | ssh user@remote 'cat > nginx-backup.tar.gz'", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Extract photos.7z into /tmp/out", "command": "7z x photos.7z -o/tmp/out", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Как вывести 10 самых больших файлов внутри архива backup-2026.tar.gz?", "command": "tar -tzvf backup-2026.tar.gz | sort -k5 -n -r | head -10", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Decompress server.log.gz", "command": "gunzip server.log.gz", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Заархивируй /var/log в logs-2026-10-02.tar.gz, но исключи файлы .tmp", "command": "tar -czvf logs-2026-10-02.tar.gz /var/log --exclude='*.tmp'", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Decompress output.sql.gz", "command": "gunzip output.sql.gz", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Как узнать суммарный размер файлов внутри несжатого tar-архива перед извлечением?", "command": "tar -tvf full.tar | awk '{sum+=$3} END {print sum}'", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Reassemble split archive parts back into a single tar.gz file", "command": "cat data-backup.tar.gz.part* > data-backup.tar.gz", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Calculate the SHA256 checksum of debian-13.iso and save it to a file", "command": "sha256sum debian-13.iso > debian-13.iso.sha256", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Create a zip archive called data.zip from the src/ directory, recursively", "command": "zip -r data.zip src/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Сделай backup домашней папки на внешний диск, удаляя удалённые файлы и там", "command": "rsync -av --delete /home/user/ /mnt/backup/home/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи содержимое архива home-backup.tar.gz без извлечения", "command": "tar -tzf home-backup.tar.gz", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "List the contents of backup.7z", "command": "7z l backup.7z", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Display inode usage instead of block usage", "command": "df -i", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Найди слово ERROR внутри сжатого лог-файла без его распаковки", "command": "zgrep ERROR server.log.gz", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Смонтируй /dev/nvme0n1p1 в /mnt/share", "command": "mount /dev/nvme0n1p1 /mnt/share", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй файл access.log.gz", "command": "gunzip access.log.gz", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "List the contents of project.tar.gz without extracting it", "command": "tar -tzf project.tar.gz", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Unmount /mnt/usb", "command": "umount /mnt/usb", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Unzip docs.zip into /tmp/extracted", "command": "unzip docs.zip -d /tmp/extracted", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Show filesystem usage for all mounted devices with totals", "command": "df -h --total", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Unzip notes.zip into /tmp/extracted", "command": "unzip notes.zip -d /tmp/extracted", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Смонтируй /dev/sda1 в /media/external", "command": "mount /dev/sda1 /media/external", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Show which filesystem type is used on /dev/sdb1", "command": "lsblk -f /dev/sdb1", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Сделай backup /etc/nginx на удалённый сервер через rsync со сжатием и сохранением прав", "command": "rsync -avz /etc/nginx admin@nas.local:/share/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Create a zip archive called logs.zip from the website/ directory, recursively", "command": "zip -r logs.zip website/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Extract the tar archive weekly-backup.tar.gz into /tmp/restore", "command": "tar -xzf weekly-backup.tar.gz -C /tmp/restore", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи блочные устройства в виде дерева без заголовков", "command": "lsblk -n", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Pack /srv/data into a tar.gz archive named data-backup.tar.gz with verbose output", "command": "tar -czvf data-backup.tar.gz /srv/data", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Back up /home/user/music to the remote server with rsync, preserving permissions and compressing", "command": "rsync -avz /home/user/music deploy@192.168.0.10:/srv/backup/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй archive1.zip прямо тут, без отдельной папки назначения", "command": "unzip archive1.zip", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Compress access.log using gzip", "command": "gzip access.log", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Convert a zip archive into a tar.gz archive", "command": "unzip -p project.zip | tar -czf project.tar.gz -", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи список файлов внутри report.zip без распаковки", "command": "unzip -l report.zip", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Синхронизируй /home/user/docs с /mnt/usb, показывая прогресс по каждому файлу", "command": "rsync -av --progress /home/user/docs/ /mnt/usb/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Create a gzip-compressed tar archive of /home/user/code/backend called backend-backup.tar.gz", "command": "tar -czf backend-backup.tar.gz /home/user/code/backend", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Extract the tar archive photos-archive.tar.gz into /tmp/restore", "command": "tar -xzf photos-archive.tar.gz -C /tmp/restore", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи список всех смонтированных файловых систем", "command": "mount", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Найди файлы больше 100 МБ в /data перед их архивацией", "command": "find /data -type f -size +100M", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Создай zip-архив report.zip из папки website/ рекурсивно", "command": "zip -r report.zip website/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Create a zip archive called photos.zip from the src/ directory, recursively", "command": "zip -r photos.zip src/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй архив logs-2026-10-02.tar.gz в папку /tmp/restore", "command": "tar -xzf logs-2026-10-02.tar.gz -C /tmp/restore", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Extract the tar archive code-snapshot.tar.gz into /tmp/restore", "command": "tar -xzf code-snapshot.tar.gz -C /tmp/restore", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "List the files inside archive.zip without extracting", "command": "unzip -l archive.zip", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи содержимое архива photos-archive.tar.gz без извлечения", "command": "tar -tzf photos-archive.tar.gz", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Выведи список всех дисковых партиций в системе", "command": "sudo fdisk -l", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Извлеки из архива full.tar.gz только директорию etc/", "command": "tar -xzf full.tar.gz etc/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Посчитай MD5-сумму файла centos.iso", "command": "md5sum centos.iso", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Create a password-protected zip archive of secrets.txt", "command": "zip -e secrets.zip secrets.txt", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Упакуй /srv/data в tar.gz архив с именем data-backup.tar.gz и подробным выводом", "command": "tar -czvf data-backup.tar.gz /srv/data", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Быстро заархивируй всё в текущей папке в export.zip", "command": "zip -r export.zip .", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Back up my home directory to an external backup drive, deleting removed files too", "command": "rsync -av --delete /home/user/ /mnt/backup/home/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Show the first 20 lines of a gzipped CSV file without decompressing it", "command": "zcat data.csv.gz | head -20", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй photos.7z в папку /tmp/out", "command": "7z x photos.7z -o/tmp/out", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Rsync /data to a remote backup server over SSH", "command": "rsync -e ssh -avz /data user@remote:/backup/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Extract the tar archive project.tar.gz into /tmp/restore", "command": "tar -xzf project.tar.gz -C /tmp/restore", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Сделай gzip-архив приложения из папки /opt/app и сохрани как app-backup.tar.gz", "command": "tar -czf app-backup.tar.gz /opt/app", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Display block devices in JSON format", "command": "lsblk -J", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Create a zip archive called project.zip from the project/ directory, recursively", "command": "zip -r project.zip project/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Compress dataset.csv using gzip", "command": "gzip dataset.csv", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Zip up the photos/ folder with maximum compression, excluding .tmp files", "command": "zip -r9 photos.zip photos/ -x '*.tmp'", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Recursively compute SHA256 checksums for every file in a directory", "command": "find /data/reports -type f -exec sha256sum {} \\;", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Сравни два файла по их SHA256-суммам", "command": "sha256sum file1.iso file2.iso", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Mount a network share at /mnt/nas using NFS", "command": "sudo mount -t nfs 192.168.1.10:/export /mnt/nas", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Создай многотомный zip-архив папки big_dataset/ с частями по 100 МБ", "command": "zip -r -s 100m dataset.zip big_dataset/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Quick, zip everything in the current directory into archive1.zip", "command": "zip -r archive1.zip .", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Смонтируй /dev/sdb2 в /mnt/nas", "command": "mount /dev/sdb2 /mnt/nas", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Посчитай MD5-сумму файла image.iso", "command": "md5sum image.iso", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Отмонтируй /mnt/share", "command": "umount /mnt/share", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Check available disk space before starting a big download", "command": "df -h /home", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Сожми файл dump.sql с помощью gzip", "command": "gzip dump.sql", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "List the contents of backup-2026.tar.gz without extracting it", "command": "tar -tzf backup-2026.tar.gz", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Backup /etc to a remote host while limiting bandwidth to 5000 KB/s", "command": "rsync -avz --bwlimit=5000 /etc user@remote:/backup/etc/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Какая файловая система используется на /dev/sdb1?", "command": "lsblk -f /dev/sdb1", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "List the contents of project.7z", "command": "7z l project.7z", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Mount /dev/sdb1 at /mnt/usb", "command": "mount /dev/sdb1 /mnt/usb", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Добавь файл notes.txt в уже существующий архив full.tar", "command": "tar -rf full.tar notes.txt", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Create a bzip2-compressed tar archive of the project/ folder", "command": "tar -cjf project.tar.bz2 project/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Pack /home/user/code/backend into a tar.gz archive named backend-backup.tar.gz with verbose output", "command": "tar -czvf backend-backup.tar.gz /home/user/code/backend", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Быстро заархивируй всё в текущей папке в archive1.zip", "command": "zip -r archive1.zip .", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй файл output.sql.gz", "command": "gunzip output.sql.gz", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "List the contents of weekly-backup.tar.gz without extracting it", "command": "tar -tzf weekly-backup.tar.gz", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Unzip invoice.zip into /tmp/extracted", "command": "unzip invoice.zip -d /tmp/extracted", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Сожми bigfile.txt с максимальным уровнем сжатия gzip", "command": "gzip -9 bigfile.txt", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Посчитай MD5-сумму файла debian-13.iso", "command": "md5sum debian-13.iso", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Create a 7z archive named photos.7z from the photos/ folder", "command": "7z a photos.7z photos/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "List the contents of full-backup.tar without extracting it", "command": "tar -tzf full-backup.tar", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "List the contents of photos-archive.tar.gz without extracting it", "command": "tar -tzf photos-archive.tar.gz", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Какой командой посмотреть использование диска по подкаталогам в /home?", "command": "du -h --max-depth=1 /home", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи содержимое архива project.tar.gz без извлечения", "command": "tar -tzf project.tar.gz", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Выведи информацию о партициях через fdisk постранично", "command": "sudo fdisk -l | less", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Mount /dev/sdc1 read-only at /mnt/data", "command": "sudo mount -o ro /dev/sdc1 /mnt/data", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Заархивируй папку photos/ с максимальным сжатием, исключив файлы .tmp", "command": "zip -r9 photos.zip photos/ -x '*.tmp'", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй report.zip, перезаписывая существующие файлы без вопросов", "command": "unzip -o report.zip", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Сожми файл error.log с помощью gzip", "command": "gzip error.log", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Отправь /data на удалённый сервер бэкапов через rsync по SSH", "command": "rsync -e ssh -avz /data user@remote:/backup/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Do a dry run of an rsync backup from /home/user to /mnt/backup to see what would change", "command": "rsync -avzn /home/user/ /mnt/backup/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Decompress data.csv.gz", "command": "gunzip data.csv.gz", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "List the contents of db-dump.tar.gz without extracting it", "command": "tar -tzf db-dump.tar.gz", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "List the files inside project.zip without extracting", "command": "unzip -l project.zip", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Create a gzip-compressed tar archive of /var/log called log-backup.tar.gz", "command": "tar -czf log-backup.tar.gz /var/log", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Создай zip-архив secrets.txt с паролем", "command": "zip -e secrets.zip secrets.txt", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Pack /home/user/Desktop into a tar.gz archive named Desktop-backup.tar.gz with verbose output", "command": "tar -czvf Desktop-backup.tar.gz /home/user/Desktop", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Скопируй /opt/app на другой сервер со сжатием данных при передаче", "command": "rsync -avz /opt/app/ deploy@192.168.0.10:/srv/backup/app/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Сделай backup /home/user/projects/myapp на удалённый сервер через rsync со сжатием и сохранением прав", "command": "rsync -avz /home/user/projects/myapp user@backupbox:/mnt/storage/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Create a zip archive called report.zip from the website/ directory, recursively", "command": "zip -r report.zip website/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Посчитай md5-хэш для всех файлов в /opt/configs рекурсивно", "command": "find /opt/configs -type f -exec md5sum {} \\;", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Сожми файл events.json с помощью gzip", "command": "gzip events.json", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи использование диска только для файловых систем ext4", "command": "df -h -t ext4", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Упакуй /home/user/music в tar.gz архив с именем music-backup.tar.gz и подробным выводом", "command": "tar -czvf music-backup.tar.gz /home/user/music", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "List all disk partitions on the system", "command": "sudo fdisk -l", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Сожми access2.log через gzip с подробным выводом", "command": "gzip -v access2.log", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Mount a USB drive /dev/sdb1 as vfat at /mnt/usb", "command": "sudo mount -t vfat /dev/sdb1 /mnt/usb", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Extract project.7z into /tmp/out", "command": "7z x project.7z -o/tmp/out", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Create a tar.xz archive of /home/user/projects named projects.tar.xz", "command": "tar -cJf projects.tar.xz /home/user/projects", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Create a 7z archive named docs.7z from the docs/ folder", "command": "7z a docs.7z docs/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "What command decompresses access2.log.gz while keeping the .gz file?", "command": "gunzip -k access2.log.gz", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Сожми файл trace.log с помощью gzip", "command": "gzip trace.log", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Сделай backup /mnt/data/incoming на удалённый сервер через rsync со сжатием и сохранением прав", "command": "rsync -avz /mnt/data/incoming backup@remote-server:/data/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй архив backup-2026.tar.gz в папку /tmp/restore", "command": "tar -xzf backup-2026.tar.gz -C /tmp/restore", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Проверь скачанный ISO по SHA256SUMS и покажи только ошибки", "command": "sha256sum -c SHA256SUMS --quiet", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Create a zip archive called archive.zip from the app/ directory, recursively", "command": "zip -r archive.zip app/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Отмонтируй /mnt/data", "command": "umount /mnt/data", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Extract a bzip2 tar archive called project.tar.bz2", "command": "tar -xjf project.tar.bz2", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Add a new file readme.txt to an existing zip archive project.zip", "command": "zip project.zip readme.txt", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Create a zip archive called docs.zip from the myapp/ directory, recursively", "command": "zip -r docs.zip myapp/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Use rsync to copy only files newer than those on the destination", "command": "rsync -avu /home/user/docs/ /mnt/backup/docs/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Copy /opt/app to another server, compressing data in transit", "command": "rsync -avz /opt/app/ deploy@192.168.0.10:/srv/backup/app/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Verify files against a checksums.txt list using sha256sum", "command": "sha256sum -c checksums.txt", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Упакуй /mnt/data/incoming в tar.gz архив с именем incoming-backup.tar.gz и подробным выводом", "command": "tar -czvf incoming-backup.tar.gz /mnt/data/incoming", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Calculate the MD5 checksum of image.iso", "command": "md5sum image.iso", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Compress error.log using gzip", "command": "gzip error.log", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Calculate the SHA256 checksum of ubuntu-24.04.iso and save it to a file", "command": "sha256sum ubuntu-24.04.iso > ubuntu-24.04.iso.sha256", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй файл dump.sql.gz", "command": "gunzip dump.sql.gz", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Отмонтируй /mnt/backup", "command": "umount /mnt/backup", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Calculate the MD5 checksum of ubuntu-24.04.iso", "command": "md5sum ubuntu-24.04.iso", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Back up /mnt/data/incoming to the remote server with rsync, preserving permissions and compressing", "command": "rsync -avz /mnt/data/incoming backup@remote-server:/data/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Сожми data.csv через gzip, но оставь оригинальный файл на месте", "command": "gzip -k data.csv", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Создай tar-архив со сжатием bzip2 из папки project/", "command": "tar -cjf project.tar.bz2 project/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "List the contents of archive.7z", "command": "7z l archive.7z", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "List all block devices", "command": "lsblk", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Compare two files by comparing their SHA256 checksums", "command": "sha256sum file1.iso file2.iso", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Unmount /mnt/backup", "command": "umount /mnt/backup", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Archive /var/log to logs-2026-10-02.tar.gz but exclude .tmp files", "command": "tar -czvf logs-2026-10-02.tar.gz /var/log --exclude='*.tmp'", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Back up /srv/data to a remote NAS over rsync, keeping only new or changed files", "command": "rsync -avz --update /srv/data/ backup@nas.local:/volume1/backup/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи содержимое архива docs.7z", "command": "7z l docs.7z", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Быстро заархивируй всё в текущей папке в archive2.zip", "command": "zip -r archive2.zip .", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Compute MD5 checksums for every zip file in the current directory", "command": "md5sum *.zip", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи все блочные устройства", "command": "lsblk", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Decompress error.log.gz", "command": "gunzip error.log.gz", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Сделай gzip-архив проекта myapp из папки /home/user/projects/myapp и сохрани как myapp-backup.tar.gz", "command": "tar -czf myapp-backup.tar.gz /home/user/projects/myapp", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "gzip access2.log and keep verbose output on", "command": "gzip -v access2.log", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Сделай gzip-архив рабочего стола из папки /home/user/Desktop и сохрани как Desktop-backup.tar.gz", "command": "tar -czf Desktop-backup.tar.gz /home/user/Desktop", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи список файлов внутри photos.zip без распаковки", "command": "unzip -l photos.zip", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Сделай gzip-архив конфигураций из папки /opt/configs и сохрани как configs-backup.tar.gz", "command": "tar -czf configs-backup.tar.gz /opt/configs", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Проверь целостность архива archive.zip без распаковки", "command": "unzip -t archive.zip", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Create a gzip-compressed tar archive of /mnt/data/incoming called incoming-backup.tar.gz", "command": "tar -czf incoming-backup.tar.gz /mnt/data/incoming", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Безопасно извлеки /mnt/usb после отмонтирования", "command": "sudo umount /mnt/usb && sudo eject /mnt/usb", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Mount /dev/sde1 at /mnt/backup and make it read-write", "command": "sudo mount -o rw /dev/sde1 /mnt/backup", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Back up /home/user/docs to the remote server with rsync, preserving permissions and compressing", "command": "rsync -avz /home/user/docs user@192.168.1.50:/backup/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Сделай gzip-архив документов из папки /home/user/docs и сохрани как docs-backup.tar.gz", "command": "tar -czf docs-backup.tar.gz /home/user/docs", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи содержимое архива weekly-backup.tar.gz без извлечения", "command": "tar -tzf weekly-backup.tar.gz", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Create a gzip-compressed tar archive of /data/reports called reports-backup.tar.gz", "command": "tar -czf reports-backup.tar.gz /data/reports", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй backup.zip в папку /tmp/extracted", "command": "unzip backup.zip -d /tmp/extracted", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Сравни MD5 двух ISO-образов рядом друг с другом", "command": "md5sum ubuntu-24.04.iso debian-13.iso", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Mount /dev/nvme0n1p1 at /mnt/share", "command": "mount /dev/nvme0n1p1 /mnt/share", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Extract the tar archive assets.tar.gz into /tmp/restore", "command": "tar -xzf assets.tar.gz -C /tmp/restore", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Extract the tar archive configs.tar.gz into /tmp/restore", "command": "tar -xzf configs.tar.gz -C /tmp/restore", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Create a zip archive called src.zip from the build/ directory, recursively", "command": "zip -r src.zip build/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи UUID и метки всех блочных устройств", "command": "sudo blkid", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Create a gzip-compressed tar archive of /srv/data called data-backup.tar.gz", "command": "tar -czf data-backup.tar.gz /srv/data", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй archive.7z в папку /tmp/out", "command": "7z x archive.7z -o/tmp/out", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Посчитай SHA256-сумму файла ubuntu-24.04.iso и сохрани её в файл", "command": "sha256sum ubuntu-24.04.iso > ubuntu-24.04.iso.sha256", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Check if any disk is almost full across the whole system", "command": "df -h | awk '$5+0 > 90'", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи список файлов внутри data.zip без распаковки", "command": "unzip -l data.zip", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "List the contents of logs-2026-10-02.tar.gz without extracting it", "command": "tar -tzf logs-2026-10-02.tar.gz", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Pack /home/user/music into a tar.gz archive named music-backup.tar.gz with verbose output", "command": "tar -czvf music-backup.tar.gz /home/user/music", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "List the contents of docs.7z", "command": "7z l docs.7z", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Заархивируй весь проект в 7z, исключив папки .git", "command": "7z a -xr'!.git' project.7z project/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй project.zip в папку /tmp/extracted", "command": "unzip project.zip -d /tmp/extracted", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Extract docs.7z into /tmp/out", "command": "7z x docs.7z -o/tmp/out", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Create a gzip-compressed tar archive of /home/user/notes called notes-backup.tar.gz", "command": "tar -czf notes-backup.tar.gz /home/user/notes", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Display disk partition info in a human readable way using fdisk", "command": "sudo fdisk -l | less", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Проверь контрольную сумму install.iso по значению sha256 из файла", "command": "sha256sum -c install.iso.sha256", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Back up /data/reports to the remote server with rsync, preserving permissions and compressing", "command": "rsync -avz /data/reports user@backupbox:/mnt/storage/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Удали файл old.log из архива logs.zip", "command": "zip -d logs.zip old.log", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Back up /srv/data to the remote server with rsync, preserving permissions and compressing", "command": "rsync -avz /srv/data admin@nas.local:/share/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Сделай дамп MySQL и сразу сожми его через gzip", "command": "mysqldump mydb | gzip > mydb-backup.sql.gz", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Создай 7z-архив с максимальным уровнем сжатия", "command": "7z a -mx=9 archive.7z project/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи первые 20 строк сжатого CSV-файла без его распаковки", "command": "zcat data.csv.gz | head -20", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй export.zip прямо тут, без отдельной папки назначения", "command": "unzip export.zip", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Отмонтируй /mnt/nas", "command": "umount /mnt/nas", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Рекурсивно посчитай SHA256-суммы для всех файлов в папке", "command": "find /data/reports -type f -exec sha256sum {} \\;", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Сожми файл data.csv с помощью gzip", "command": "gzip data.csv", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "gzip metrics.csv and keep verbose output on", "command": "gzip -v metrics.csv", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Recompress all .log files in the current directory with gzip", "command": "gzip *.log", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй archive2.zip прямо тут, без отдельной папки назначения", "command": "unzip archive2.zip", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи UUID всех блочных устройств", "command": "lsblk -o NAME,UUID", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Создай zip-архив backup.zip из папки app/ рекурсивно", "command": "zip -r backup.zip app/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй presentation.zip в папку /tmp/extracted", "command": "unzip presentation.zip -d /tmp/extracted", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Generate a sha256 manifest for all files in the release/ folder", "command": "sha256sum release/* > release.sha256", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Show me how to list the top 10 largest files inside a tar.gz archive", "command": "tar -tzvf backup-2026.tar.gz | sort -k5 -n -r | head -10", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Какой командой распаковать raw.csv.gz, но оставить .gz файл на месте?", "command": "gunzip -k raw.csv.gz", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "List UUIDs and labels of all block devices", "command": "sudo blkid", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Create a 7z archive named project.7z from the project/ folder", "command": "7z a project.7z project/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи содержимое архива db-dump.tar.gz без извлечения", "command": "tar -tzf db-dump.tar.gz", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Упакуй /home/user/code/backend в tar.gz архив с именем backend-backup.tar.gz и подробным выводом", "command": "tar -czvf backend-backup.tar.gz /home/user/code/backend", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "List the contents of configs.tar.gz without extracting it", "command": "tar -tzf configs.tar.gz", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Посчитай MD5-сумму файла install.iso", "command": "md5sum install.iso", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Сожми payload.json через gzip с подробным выводом", "command": "gzip -v payload.json", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Unzip photos.zip into /tmp/extracted", "command": "unzip photos.zip -d /tmp/extracted", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Create a gzip-compressed tar archive of /home/user/music called music-backup.tar.gz", "command": "tar -czf music-backup.tar.gz /home/user/music", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "List the contents of monthly-backup.tar.xz without extracting it", "command": "tar -tzf monthly-backup.tar.xz", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Create a tar.gz archive but split it into 500MB chunks for easier transfer", "command": "tar -czf - /srv/data | split -b 500M - data-backup.tar.gz.part", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Заархивируй /srv/data и разбей результат на части по 500 МБ", "command": "tar -czf - /srv/data | split -b 500M - data-backup.tar.gz.part", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи использование диска в удобочитаемом виде", "command": "df -h", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Как распаковать cache.tar.gz прямо в текущую директорию?", "command": "tar -xzf cache.tar.gz", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи все смонтированные файловые системы, где упоминается sdb", "command": "mount | grep sdb", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Выведи все диски и партиции с размером и типом", "command": "lsblk -o NAME,SIZE,TYPE,FSTYPE,MOUNTPOINT", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Создай 7z-архив archive.7z из папки archive/", "command": "7z a archive.7z archive/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Упакуй /data/reports в tar.gz архив с именем reports-backup.tar.gz и подробным выводом", "command": "tar -czvf reports-backup.tar.gz /data/reports", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй src.zip в папку /tmp/extracted", "command": "unzip src.zip -d /tmp/extracted", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Сделай сжатый backup папки /home/user/videos и сохрани его как videos.tar.gz", "command": "tar -czf videos.tar.gz /home/user/videos", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Compress server.log using gzip", "command": "gzip server.log", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй файл dataset.csv.gz", "command": "gunzip dataset.csv.gz", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Check available space on all mounted drives excluding tmpfs", "command": "df -h -x tmpfs", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи только диски, без отдельных партиций", "command": "lsblk -d", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "What command decompresses stream.log.gz while keeping the .gz file?", "command": "gunzip -k stream.log.gz", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "7zip a whole directory tree while excluding .git folders", "command": "7z a -xr'!.git' project.7z project/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи содержимое архива photos.7z", "command": "7z l photos.7z", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Create a zip archive called backup.zip from the app/ directory, recursively", "command": "zip -r backup.zip app/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Create a 7z archive using maximum compression level", "command": "7z a -mx=9 archive.7z project/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи содержимое архива project.7z", "command": "7z l project.7z", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "What's a one-liner to tar and gzip /etc/nginx straight to stdout, piping it to ssh for a remote backup?", "command": "tar -czf - /etc/nginx | ssh user@remote 'cat > nginx-backup.tar.gz'", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Create a gzip-compressed tar archive of /home/user/Desktop called Desktop-backup.tar.gz", "command": "tar -czf Desktop-backup.tar.gz /home/user/Desktop", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Decompress all .gz files in /var/log in place", "command": "gunzip /var/log/*.gz", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Show block devices as a tree without headers", "command": "lsblk -n", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Создай zip-архив data.zip из папки src/ рекурсивно", "command": "zip -r data.zip src/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Remove the file old.log from the archive logs.zip", "command": "zip -d logs.zip old.log", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Сделай backup /data/reports на удалённый сервер через rsync со сжатием и сохранением прав", "command": "rsync -avz /data/reports user@backupbox:/mnt/storage/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Verify an ISO download against SHA256SUMS and only show failures", "command": "sha256sum -c SHA256SUMS --quiet", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Сохрани таблицу партиций всех дисков в текстовый файл", "command": "sudo fdisk -l > partitions.txt", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Create a zip archive called invoice.zip from the build/ directory, recursively", "command": "zip -r invoice.zip build/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "What command decompresses metrics.csv.gz while keeping the .gz file?", "command": "gunzip -k metrics.csv.gz", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Create a 7z archive named backup.7z from the backup/ folder", "command": "7z a backup.7z backup/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Create an uncompressed tar archive of /var/www named full.tar", "command": "tar -cf full.tar /var/www", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй архив code-snapshot.tar.gz в папку /tmp/restore", "command": "tar -xzf code-snapshot.tar.gz -C /tmp/restore", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Back up /home/user/projects/myapp to the remote server with rsync, preserving permissions and compressing", "command": "rsync -avz /home/user/projects/myapp user@backupbox:/mnt/storage/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Pack /etc/nginx into a tar.gz archive named nginx-backup.tar.gz with verbose output", "command": "tar -czvf nginx-backup.tar.gz /etc/nginx", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Сделай gzip-архив логов из папки /var/log и сохрани как log-backup.tar.gz", "command": "tar -czf log-backup.tar.gz /var/log", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Pack /home/user/projects/myapp into a tar.gz archive named myapp-backup.tar.gz with verbose output", "command": "tar -czvf myapp-backup.tar.gz /home/user/projects/myapp", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Pack /mnt/data/incoming into a tar.gz archive named incoming-backup.tar.gz with verbose output", "command": "tar -czvf incoming-backup.tar.gz /mnt/data/incoming", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Сделай tar.xz архив из /home/user/projects с именем projects.tar.xz", "command": "tar -cJf projects.tar.xz /home/user/projects", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Show block devices along with their filesystem types", "command": "lsblk -f", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Отмонтируй все флешки, смонтированные в /media", "command": "sudo umount /media/*", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Преобразуй zip-архив в tar.gz архив", "command": "unzip -p project.zip | tar -czf project.tar.gz -", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Посчитай SHA256-сумму файла centos.iso и сохрани её в файл", "command": "sha256sum centos.iso > centos.iso.sha256", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Проверь целостность архива backup.7z", "command": "7z t backup.7z", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "List the contents of photos.7z", "command": "7z l photos.7z", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй data.zip в папку /tmp/extracted", "command": "unzip data.zip -d /tmp/extracted", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Сделай backup /var/www/html на удалённый сервер через rsync со сжатием и сохранением прав", "command": "rsync -avz /var/www/html backup@remote-server:/data/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "List every disk and partition with size and type information", "command": "lsblk -o NAME,SIZE,TYPE,FSTYPE,MOUNTPOINT", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Remount /mnt/data as read-write", "command": "sudo mount -o remount,rw /mnt/data", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Extract backup.7z into /tmp/out", "command": "7z x backup.7z -o/tmp/out", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи блочные устройства, отсортированные по размеру", "command": "lsblk -o NAME,SIZE | sort -k2 -h", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Combine tar and gzip, excluding node_modules, for /home/user/projects/myapp", "command": "tar --exclude='node_modules' -czf myapp-backup.tar.gz /home/user/projects/myapp", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй mydata.zip прямо тут, без отдельной папки назначения", "command": "unzip mydata.zip", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "List the files inside photos.zip without extracting", "command": "unzip -l photos.zip", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй все .gz файлы в /var/log прямо там же", "command": "gunzip /var/log/*.gz", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Создай zip-архив project.zip из папки project/ рекурсивно", "command": "zip -r project.zip project/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "What's the command to untar work-backup.tar.gz right here in the current directory?", "command": "tar -xzf work-backup.tar.gz", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Test the integrity of archive.zip without extracting it", "command": "unzip -t archive.zip", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Какой командой распаковать metrics.csv.gz, но оставить .gz файл на месте?", "command": "gunzip -k metrics.csv.gz", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Is /dev/sdd1 currently mounted anywhere?", "command": "mount | grep /dev/sdd1", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Как распаковать work-backup.tar.gz прямо в текущую директорию?", "command": "tar -xzf work-backup.tar.gz", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Перемонтируй /mnt/data в режим чтения и записи", "command": "sudo mount -o remount,rw /mnt/data", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Проверь файлы по списку checksums.txt через sha256sum", "command": "sha256sum -c checksums.txt", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "List the contents of site-backup.tar.bz2 without extracting it", "command": "tar -tzf site-backup.tar.bz2", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Проверь сколько свободного места на /mnt/usb", "command": "df -h /mnt/usb", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй архив www-backup.tar.gz в папку /tmp/restore", "command": "tar -xzf www-backup.tar.gz -C /tmp/restore", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "gzip payload.json and keep verbose output on", "command": "gzip -v payload.json", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Decompress dump.sql.gz", "command": "gunzip dump.sql.gz", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи список файлов внутри docs.zip без распаковки", "command": "unzip -l docs.zip", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Create a tar archive of /etc preserving permissions, named etc-backup.tar.gz", "command": "tar -czpf etc-backup.tar.gz /etc", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй docs.zip в папку /tmp/extracted", "command": "unzip docs.zip -d /tmp/extracted", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Синхронизируй src/ с dest/ через rsync, удаляя файлы, которых больше нет в источнике", "command": "rsync -avzP --delete src/ dest/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Скопируй через rsync только файлы, которые новее чем на приёмнике", "command": "rsync -avu /home/user/docs/ /mnt/backup/docs/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Узнай насколько gzip сжал файл, сравнив размеры", "command": "gzip -l data.csv.gz", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи использование диска только для корневой файловой системы", "command": "df -h /", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Extract the tar archive full-backup.tar into /tmp/restore", "command": "tar -xzf full-backup.tar -C /tmp/restore", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Упакуй /home/user/projects/myapp в tar.gz архив с именем myapp-backup.tar.gz и подробным выводом", "command": "tar -czvf myapp-backup.tar.gz /home/user/projects/myapp", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Выведи блочные устройства вместе с типами файловых систем", "command": "lsblk -f", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Back up /opt/app to the remote server with rsync, preserving permissions and compressing", "command": "rsync -avz /opt/app deploy@192.168.0.10:/srv/backup/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй архив configs.tar.gz в папку /tmp/restore", "command": "tar -xzf configs.tar.gz -C /tmp/restore", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Сделай backup /home/user/docs на удалённый сервер через rsync со сжатием и сохранением прав", "command": "rsync -avz /home/user/docs user@192.168.1.50:/backup/", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Mount /dev/sdd1 at /mnt/backup", "command": "mount /dev/sdd1 /mnt/backup", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "gzip stream.log and keep verbose output on", "command": "gzip -v stream.log", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи содержимое архива monthly-backup.tar.xz без извлечения", "command": "tar -tzf monthly-backup.tar.xz", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Узнай размер папки /var/log перед её архивацией", "command": "du -sh /var/log", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи список файлов внутри notes.zip без распаковки", "command": "unzip -l notes.zip", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Упакуй /home/user/docs в tar.gz архив с именем docs-backup.tar.gz и подробным выводом", "command": "tar -czvf docs-backup.tar.gz /home/user/docs", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Сделай gzip-архив данных из папки /srv/data и сохрани как data-backup.tar.gz", "command": "tar -czf data-backup.tar.gz /srv/data", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Распакуй архив db-dump.tar.gz в папку /tmp/restore", "command": "tar -xzf db-dump.tar.gz -C /tmp/restore", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Verify the checksum of install.iso against a provided sha256 value in a file", "command": "sha256sum -c install.iso.sha256", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Extract just the etc/ directory from a full system backup full.tar.gz", "command": "tar -xzf full.tar.gz etc/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Mirror src/ to dest/ with rsync, deleting files that no longer exist in the source", "command": "rsync -avzP --delete src/ dest/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Покажи список файлов внутри logs.zip без распаковки", "command": "unzip -l logs.zip", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Compress data.csv with gzip but keep the original file", "command": "gzip -k data.csv", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Check available disk space on /mnt/usb", "command": "df -h /mnt/usb", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Can you unzip archive2.zip right here without a destination folder?", "command": "unzip archive2.zip", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Extract a specific file called config.json from archive.7z", "command": "7z e archive.7z config.json", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Сделай сжатый backup папки /home/user/Downloads и сохрани его как downloads.tar.gz", "command": "tar -czf downloads.tar.gz /home/user/Downloads", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Смонтирован ли сейчас /dev/sdd1 куда-нибудь?", "command": "mount | grep /dev/sdd1", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Создай обычный несжатый tar-архив из /var/www и назови его full.tar", "command": "tar -cf full.tar /var/www", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Back up /var/log to the remote server with rsync, preserving permissions and compressing", "command": "rsync -avz /var/log user@192.168.1.50:/backup/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Grep for the word ERROR inside a gzipped log file without unpacking it", "command": "zgrep ERROR server.log.gz", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "List the files inside data.zip without extracting", "command": "unzip -l data.zip", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Create a split zip archive of the big_dataset/ folder with 100MB parts", "command": "zip -r -s 100m dataset.zip big_dataset/", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Посчитай SHA256-сумму файла install.iso и сохрани её в файл", "command": "sha256sum install.iso > install.iso.sha256", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "What's the command to untar logs2.tar.gz right here in the current directory?", "command": "tar -xzf logs2.tar.gz", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "List the contents of home-backup.tar.gz without extracting it", "command": "tar -tzf home-backup.tar.gz", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Посчитай SHA256-сумму файла debian-13.iso и сохрани её в файл", "command": "sha256sum debian-13.iso > debian-13.iso.sha256", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Посчитай MD5-сумму файла ubuntu-24.04.iso", "command": "md5sum ubuntu-24.04.iso", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Can you unzip export.zip right here without a destination folder?", "command": "unzip export.zip", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "List the contents of www-backup.tar.gz without extracting it", "command": "tar -tzf www-backup.tar.gz", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Extract full.tar into /opt", "command": "tar -xf full.tar -C /opt", "lang": "en", "source": "synthetic-archive_disk"}
+{"instruction": "Узнай UUID диска /dev/sda1 перед редактированием fstab", "command": "sudo blkid /dev/sda1", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Сожми файл server.log с помощью gzip", "command": "gzip server.log", "lang": "ru", "source": "synthetic-archive_disk"}
+{"instruction": "Pack /home/user/notes into a tar.gz archive named notes-backup.tar.gz with verbose output", "command": "tar -czvf notes-backup.tar.gz /home/user/notes", "lang": "en", "source": "synthetic-archive_disk"}

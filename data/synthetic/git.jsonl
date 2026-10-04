@@ -1,0 +1,600 @@
+{"instruction": "Show the current git status", "command": "git status", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Check what files have changed", "command": "git status -s", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show a short status summary", "command": "git status --short", "lang": "en", "source": "synthetic-git"}
+{"instruction": "What's the diff of unstaged changes?", "command": "git diff", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show staged changes", "command": "git diff --cached", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Diff between two branches", "command": "git diff main feature/login", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show diff stats only", "command": "git diff --stat", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Compare the working directory to the last commit", "command": "git diff HEAD", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show diff for a single file", "command": "git diff src/main.py", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show word-level diff instead of line-level", "command": "git diff --word-diff", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Diff a specific commit against its parent", "command": "git diff a1b2c3d^ a1b2c3d", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show diff between two tags", "command": "git diff v1.0.0 v1.2.3", "lang": "en", "source": "synthetic-git"}
+{"instruction": "List files changed between two commits", "command": "git diff --name-only a1b2c3d f4e5d6c", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show only the names of changed files in the diff", "command": "git diff --name-only", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show changes staged for the next commit, stat only", "command": "git diff --cached --stat", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Check if there are any uncommitted changes", "command": "git status --porcelain", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show diff ignoring whitespace changes", "command": "git diff -w", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Diff a file between two branches", "command": "git diff main feature/login -- src/main.py", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Stage all changes", "command": "git add .", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Stage a specific file", "command": "git add src/main.py", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Stage all python files", "command": "git add '*.py'", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Stage everything including deletions", "command": "git add -A", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Interactively choose what to stage", "command": "git add -p", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Commit staged changes with a message", "command": "git commit -m 'fix login bug'", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Commit all tracked changes directly, skipping staging", "command": "git commit -am 'fix typo in README'", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Amend the last commit message", "command": "git commit --amend -m 'add dark mode toggle'", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Amend the last commit without changing the message", "command": "git commit --amend --no-edit", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Create an empty commit", "command": "git commit --allow-empty -m 'trigger CI rebuild'", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Commit with a multi-line message", "command": "git commit -m 'fix login bug' -m 'closes issue #42'", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Unstage a file", "command": "git restore --staged src/main.py", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Unstage a file the old way", "command": "git reset src/main.py", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Undo the last commit but keep the changes staged", "command": "git reset --soft HEAD~1", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Undo the last commit and unstage the changes", "command": "git reset HEAD~1", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Discard all local changes to a file", "command": "git restore src/main.py", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Discard all local changes to a file, old syntax", "command": "git checkout -- src/main.py", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Completely wipe local changes and reset to last commit", "command": "git reset --hard HEAD", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Reset the branch to match a specific commit", "command": "git reset --hard a1b2c3d", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Revert a specific commit", "command": "git revert a1b2c3d", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Revert a commit without committing immediately", "command": "git revert --no-commit a1b2c3d", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Revert a merge commit", "command": "git revert -m 1 f4e5d6c", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Create a new branch", "command": "git branch feature/export-csv", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Create and switch to a new branch", "command": "git checkout -b feature/notifications", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Create and switch to a new branch, modern syntax", "command": "git switch -c feature/search", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Switch to an existing branch", "command": "git checkout develop", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Switch to an existing branch, modern syntax", "command": "git switch main", "lang": "en", "source": "synthetic-git"}
+{"instruction": "List all local branches", "command": "git branch", "lang": "en", "source": "synthetic-git"}
+{"instruction": "List all branches including remotes", "command": "git branch -a", "lang": "en", "source": "synthetic-git"}
+{"instruction": "List remote branches only", "command": "git branch -r", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Delete a local branch", "command": "git branch -d bugfix/null-pointer", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Force delete a local branch", "command": "git branch -D experiment/new-ui", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Delete a remote branch", "command": "git push origin --delete feature/dark-mode", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Rename the current branch", "command": "git branch -m feature/login feature/login-v2", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show which branch each local branch is tracking", "command": "git branch -vv", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Create a branch from a specific commit", "command": "git branch hotfix/crash-on-start a1b2c3d", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Check which branch I'm currently on", "command": "git branch --show-current", "lang": "en", "source": "synthetic-git"}
+{"instruction": "List branches merged into main", "command": "git branch --merged main", "lang": "en", "source": "synthetic-git"}
+{"instruction": "List branches not yet merged into main", "command": "git branch --no-merged main", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Merge a feature branch into main", "command": "git merge feature/login", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Merge without creating a merge commit if possible", "command": "git merge --ff-only feature/payments", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Force a merge commit even if fast-forward is possible", "command": "git merge --no-ff feature/dark-mode", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Abort a merge in progress", "command": "git merge --abort", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Continue a merge after resolving conflicts", "command": "git merge --continue", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Merge and squash all commits into one", "command": "git merge --squash feature/search", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Merge a remote branch into the current one", "command": "git merge origin/develop", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Rebase the current branch onto main", "command": "git rebase main", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Interactively rebase the last 5 commits", "command": "git rebase -i HEAD~5", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Continue a rebase after resolving conflicts", "command": "git rebase --continue", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Abort an in-progress rebase", "command": "git rebase --abort", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Skip the current commit during a rebase", "command": "git rebase --skip", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Rebase feature branch onto develop interactively", "command": "git rebase -i develop", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Rebase with autosquash enabled", "command": "git rebase -i --autosquash HEAD~10", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Rebase and preserve merge commits", "command": "git rebase --rebase-merges main", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Pull with rebase instead of merge", "command": "git pull --rebase origin main", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Stash current changes", "command": "git stash", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Stash changes with a message", "command": "git stash save 'wip: search feature'", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Stash including untracked files", "command": "git stash -u", "lang": "en", "source": "synthetic-git"}
+{"instruction": "List all stashes", "command": "git stash list", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Apply the latest stash", "command": "git stash apply", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Apply a specific stash", "command": "git stash apply stash@{1}", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Pop the latest stash", "command": "git stash pop", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show the diff of the latest stash", "command": "git stash show -p", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Drop the latest stash", "command": "git stash drop", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Drop a specific stash", "command": "git stash drop stash@{2}", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Clear all stashes", "command": "git stash clear", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Create a branch from a stash", "command": "git stash branch feature/from-stash stash@{0}", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show the commit log", "command": "git log", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show a one-line log", "command": "git log --oneline", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show the last 5 commits", "command": "git log -5", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show log as a graph", "command": "git log --oneline --graph --all", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show commits by a specific author", "command": "git log --author=alice", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show commits touching a specific file", "command": "git log -- src/main.py", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show commits since a specific date", "command": "git log --since='2024-01-01'", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show commits between two dates", "command": "git log --since='2024-01-01' --until='2024-06-01'", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Search commit messages for a keyword", "command": "git log --grep='fix login bug'", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show commit log with diffs included", "command": "git log -p", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show stats of changes per commit", "command": "git log --stat", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show commits that changed a function in a file", "command": "git log -L :main:src/main.py", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show the last commit details", "command": "git show HEAD", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show details of a specific commit", "command": "git show a1b2c3d", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show only files changed in a commit", "command": "git show --name-only f4e5d6c", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Find who last modified each line of a file", "command": "git blame src/utils/helpers.py", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show commits reachable from one branch but not another", "command": "git log main..feature/login", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show commit count on current branch", "command": "git rev-list --count HEAD", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show the log formatted with author and date", "command": "git log --pretty=format:'%h %an %ad %s'", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show remote repositories", "command": "git remote -v", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Add a new remote", "command": "git remote add upstream https://github.com/example/repo.git", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Remove a remote", "command": "git remote remove backup", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Rename a remote", "command": "git remote rename origin upstream", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Fetch all branches from origin", "command": "git fetch origin", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Fetch and prune deleted remote branches", "command": "git fetch --prune origin", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Pull the latest changes from origin main", "command": "git pull origin main", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Push the current branch to origin", "command": "git push origin feature/login", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Push and set upstream tracking", "command": "git push -u origin feature/payments", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Force push the current branch", "command": "git push --force origin feature/login", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Push with lease to avoid overwriting others' work", "command": "git push --force-with-lease origin feature/login", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Push all tags to the remote", "command": "git push origin --tags", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Push all branches to the remote", "command": "git push origin --all", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show information about the origin remote", "command": "git remote show origin", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Change the URL of a remote", "command": "git remote set-url origin git@github.com:example/repo.git", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Create a lightweight tag", "command": "git tag v1.2.3", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Create an annotated tag", "command": "git tag -a v2.0.0-beta -m 'beta release'", "lang": "en", "source": "synthetic-git"}
+{"instruction": "List all tags", "command": "git tag", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Delete a local tag", "command": "git tag -d v1.0.0", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Delete a remote tag", "command": "git push origin --delete tag v1.0.0", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Push a specific tag to the remote", "command": "git push origin v2.0.0-beta", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Tag a specific older commit", "command": "git tag -a v1.0.0 a1b2c3d -m 'first release'", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Check out a specific tag", "command": "git checkout tags/v1.2.3", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show details of a tag", "command": "git show v2.0.0-beta", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Cherry-pick a commit into the current branch", "command": "git cherry-pick a1b2c3d", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Cherry-pick a commit without committing", "command": "git cherry-pick -n f4e5d6c", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Cherry-pick a range of commits", "command": "git cherry-pick a1b2c3d..f4e5d6c", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Continue a cherry-pick after resolving conflicts", "command": "git cherry-pick --continue", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Abort an in-progress cherry-pick", "command": "git cherry-pick --abort", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Stage everything and commit in one go", "command": "git add . && git commit -m 'update dependencies'", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Create a new branch and push it upstream immediately", "command": "git checkout -b feature/api-v2 && git push -u origin feature/api-v2", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Fetch, then rebase current branch onto origin/main", "command": "git fetch origin && git rebase origin/main", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Switch to main, pull latest, then delete the merged feature branch", "command": "git checkout main && git pull && git branch -d feature/login", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Stash changes, pull latest, then reapply the stash", "command": "git stash && git pull origin main && git stash pop", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Commit everything then push to origin", "command": "git commit -am 'fix memory leak' && git push origin fix/memory-leak", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Create a tag and push it right away", "command": "git tag -a v3.1.0 -m 'release 3.1.0' && git push origin v3.1.0", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Reset hard to origin/main and clean untracked files", "command": "git reset --hard origin/main && git clean -fd", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Rebase onto main interactively, then force push with lease", "command": "git rebase -i main && git push --force-with-lease origin feature/search", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Fetch all remotes and prune stale branches", "command": "git fetch --all --prune", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Check out main, merge in the feature branch, then push", "command": "git checkout main && git merge feature/payments && git push origin main", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Add a file, amend the last commit, and force push", "command": "git add README.md && git commit --amend --no-edit && git push --force origin develop", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Create a new branch from a tag and switch to it", "command": "git checkout -b hotfix/from-release v2.0.0-beta", "lang": "en", "source": "synthetic-git"}
+{"instruction": "List the 10 most recent commits across all branches as a graph", "command": "git log --all --graph --oneline -10", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Clean untracked files and directories, but show what would be removed first", "command": "git clean -nd && git clean -fd", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Squash the last 3 commits interactively", "command": "git rebase -i HEAD~3", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Find commits that introduced a bug using bisect start", "command": "git bisect start", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Mark the current commit as bad during bisect", "command": "git bisect bad", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Mark the current commit as good during bisect", "command": "git bisect good", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Reset bisect session", "command": "git bisect reset", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show which commits are in feature branch but not yet in main", "command": "git log main..feature/login --oneline", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show which commits are in main but not in the feature branch", "command": "git log feature/login..main --oneline", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Compare local branch with its remote tracking branch", "command": "git diff feature/login origin/feature/login", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Check how many commits ahead/behind the branch is from origin", "command": "git rev-list --left-right --count feature/login...origin/feature/login", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Set the upstream for an existing local branch", "command": "git branch --set-upstream-to=origin/develop develop", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Undo a push by reverting the last commit and pushing again", "command": "git revert HEAD && git push origin main", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Rename the local main branch to master", "command": "git branch -m main master", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show a compact graph log limited to the last 20 commits", "command": "git log --graph --oneline --decorate -20", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Apply a patch file to the working tree", "command": "git apply fix.patch", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Create a patch file from the last commit", "command": "git format-patch -1 HEAD", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Generate patches for the last 3 commits", "command": "git format-patch -3", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Check which commit introduced a specific line, with more context", "command": "git log -p -S 'def login' -- src/main.py", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Find commits that added or removed a specific string", "command": "git log -S 'TODO' --oneline", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show the reflog to find a lost commit", "command": "git reflog", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Recover a branch that was accidentally deleted using reflog", "command": "git checkout -b feature/login a1b2c3d", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Set git to use rebase by default when pulling", "command": "git config pull.rebase true", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Set the default branch name for new repos", "command": "git config --global init.defaultBranch main", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Set your git username", "command": "git config --global user.name 'papakovdar@gmail.com'", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Set your git email", "command": "git config --global user.email 'papakovdar@gmail.com'", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Initialize a new git repository", "command": "git init", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Clone a repository", "command": "git clone https://github.com/example/repo.git", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Clone a repository into a specific folder", "command": "git clone https://github.com/example/repo.git my-project", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Clone only a single branch", "command": "git clone -b develop --single-branch https://github.com/example/repo.git", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Clone with limited history depth", "command": "git clone --depth 1 https://github.com/example/repo.git", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show which files are ignored", "command": "git status --ignored", "lang": "en", "source": "synthetic-git"}
+{"instruction": "List files tracked by git", "command": "git ls-files", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Remove a file from git tracking but keep it locally", "command": "git rm --cached config/settings.yaml", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Remove a file from git and the filesystem", "command": "git rm src/components/Login.jsx", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Move or rename a tracked file", "command": "git mv src/main.py src/app.py", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show the contents of a file at a specific commit", "command": "git show a1b2c3d:src/main.py", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Check out a file from another branch into the current one", "command": "git checkout feature/login -- src/main.py", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Restore a file from a specific commit", "command": "git restore --source=a1b2c3d src/main.py", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show a summary of changes per author", "command": "git shortlog -sn", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Count total commits in the repository", "command": "git rev-list --all --count", "lang": "en", "source": "synthetic-git"}
+{"instruction": "List all contributors sorted by commit count", "command": "git shortlog -sn --all", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show the first commit in the repository", "command": "git log --reverse --oneline | head -1", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Verify the integrity of the repository", "command": "git fsck", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Run garbage collection to optimize the repo", "command": "git gc", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Check out a previous commit in detached HEAD state", "command": "git checkout a1b2c3d", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Return to the latest commit on the branch after a detached HEAD checkout", "command": "git checkout main", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show which branch contains a specific commit", "command": "git branch --contains a1b2c3d", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Find the common ancestor of two branches", "command": "git merge-base main feature/login", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Squash merge a branch without a fast-forward", "command": "git merge --squash --no-ff feature/payments", "lang": "en", "source": "synthetic-git"}
+{"instruction": "List stashes with their branch and message", "command": "git stash list --date=local", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show the alias configuration for git", "command": "git config --get-regexp alias", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Create a shortcut alias for checkout", "command": "git config --global alias.co checkout", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Create an alias for a one-line log", "command": "git config --global alias.lg 'log --oneline --graph --all'", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Ignore local changes to a tracked file without removing it", "command": "git update-index --assume-unchanged config/settings.yaml", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Stop ignoring local changes to a tracked file", "command": "git update-index --no-assume-unchanged config/settings.yaml", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show diff of a merge commit against both parents", "command": "git diff f4e5d6c^1 f4e5d6c^2", "lang": "en", "source": "synthetic-git"}
+{"instruction": "List files with merge conflicts", "command": "git diff --name-only --diff-filter=U", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Mark a conflicted file as resolved", "command": "git add src/main.py", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Check which files currently have conflicts", "command": "git status --short | grep '^UU'", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Rebase and drop a specific commit from history", "command": "git rebase -i HEAD~5", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Combine the last two commits into one", "command": "git reset --soft HEAD~2 && git commit -m 'combined commit'", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Undo the most recent git commit entirely, deleting its changes", "command": "git reset --hard HEAD~1", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Pull with fast-forward only, failing if not possible", "command": "git pull --ff-only origin main", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Fetch a specific pull request branch from origin", "command": "git fetch origin pull/42/head:pr-42", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Check out the fetched pull request branch", "command": "git checkout pr-42", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show diff between working tree and a specific stash", "command": "git diff stash@{0}", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show the commit hash of HEAD", "command": "git rev-parse HEAD", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show the short commit hash of HEAD", "command": "git rev-parse --short HEAD", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Check if the working directory is clean", "command": "git diff --quiet && git diff --cached --quiet", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Archive the current branch as a zip file", "command": "git archive --format=zip --output=release.zip main", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show the total size of the git repository", "command": "du -sh .git", "lang": "en", "source": "synthetic-git"}
+{"instruction": "List all configured remotes with their fetch and push URLs", "command": "git remote -v", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Set a remote tracking branch explicitly", "command": "git push --set-upstream origin feature/notifications", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Delete multiple local branches at once", "command": "git branch -D bugfix/null-pointer experiment/new-ui", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Soft reset to a specific commit, keeping changes staged", "command": "git reset --soft a1b2c3d", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Mixed reset to a specific commit, unstaging changes", "command": "git reset --mixed a1b2c3d", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Check out the previous branch you were on", "command": "git checkout -", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Switch back to the previous branch", "command": "git switch -", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show commits unique to each of two branches", "command": "git log --left-right --graph --oneline main...feature/login", "lang": "en", "source": "synthetic-git"}
+{"instruction": "List all tags sorted by creation date", "command": "git tag --sort=-creatordate", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show the message of the most recent tag", "command": "git tag -n -l v3.1.0", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Fetch tags from the remote", "command": "git fetch --tags", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Check out a commit by relative reference", "command": "git checkout HEAD~3", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show the diff between HEAD and three commits ago", "command": "git diff HEAD~3 HEAD", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Remove untracked files from the working directory", "command": "git clean -f", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Remove untracked files and directories, dry run first", "command": "git clean -nd", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Force remove untracked directories as well as files", "command": "git clean -fd", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Interactively clean untracked files", "command": "git clean -i", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show which remote branches have been merged", "command": "git branch -r --merged main", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Rebase the feature branch onto the latest main after fetching", "command": "git fetch origin && git rebase origin/main", "lang": "en", "source": "synthetic-git"}
+{"instruction": "List commits with full hash and commit date", "command": "git log --pretty=format:'%H %cd'", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Export the repository history to a bundle file", "command": "git bundle create repo.bundle --all", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Clone from a bundle file", "command": "git clone repo.bundle restored-repo", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Check which files were added in the last commit", "command": "git show --name-status HEAD", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Compare two commits and show only added/deleted files", "command": "git diff --diff-filter=AD a1b2c3d f4e5d6c", "lang": "en", "source": "synthetic-git"}
+{"instruction": "List all stashes with patch previews", "command": "git stash list -p", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Squash all commits on a feature branch into main with one commit", "command": "git merge --squash feature/login && git commit -m 'merge feature/login'", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show a diff limited to 3 lines of context", "command": "git diff -U3", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show which commit each line of a file came from, with email", "command": "git blame -e src/main.py", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Blame only a range of lines in a file", "command": "git blame -L 10,30 src/main.py", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Check the current remote tracking branch", "command": "git rev-parse --abbrev-ref --symbolic-full-name @{u}", "lang": "en", "source": "synthetic-git"}
+{"instruction": "List tags that match a pattern", "command": "git tag -l 'v1.*'", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show all commits with a particular file deleted", "command": "git log --diff-filter=D --summary", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Find deleted files in the repository history", "command": "git log --diff-filter=D --name-only", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Restore a deleted file from history", "command": "git checkout a1b2c3d^ -- src/main.py", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show which commit deleted a specific file", "command": "git log --all --full-history -- src/main.py", "lang": "en", "source": "synthetic-git"}
+{"instruction": "List all submodules in the repo", "command": "git submodule status", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Initialize and update all submodules", "command": "git submodule update --init --recursive", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Add a new submodule", "command": "git submodule add https://github.com/example/lib.git libs/lib", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Pull the latest changes for all submodules", "command": "git submodule update --remote", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Remove a submodule", "command": "git submodule deinit libs/lib && git rm libs/lib", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show the current worktrees", "command": "git worktree list", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Add a new worktree for a branch", "command": "git worktree add ../hotfix hotfix/crash-on-start", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Remove a worktree", "command": "git worktree remove ../hotfix", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show the config settings for this repo", "command": "git config --list", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show only local repo config", "command": "git config --local --list", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Edit the global git config file", "command": "git config --global --edit", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Unset a git config value", "command": "git config --global --unset alias.co", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Check if a branch exists locally", "command": "git show-ref --verify --quiet refs/heads/feature/login", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Compare the file content across three different commits", "command": "git diff a1b2c3d f4e5d6c -- src/main.py", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Count commits by a specific author", "command": "git log --author=bob --oneline | wc -l", "lang": "en", "source": "synthetic-git"}
+{"instruction": "List commits made today", "command": "git log --since=midnight --oneline", "lang": "en", "source": "synthetic-git"}
+{"instruction": "List commits from the last week", "command": "git log --since='1 week ago' --oneline", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show the file tree at a specific commit", "command": "git ls-tree -r a1b2c3d", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Check differences between working tree and a remote branch", "command": "git diff origin/main", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Rebase onto main and resolve conflicts with ours strategy", "command": "git rebase -X ours main", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Merge with a strategy that favors incoming changes", "command": "git merge -X theirs feature/payments", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Checkout a file and prefer our version during conflict", "command": "git checkout --ours src/main.py", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Checkout a file and prefer their version during conflict", "command": "git checkout --theirs src/main.py", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Abort a cherry-pick that went wrong and revert index", "command": "git cherry-pick --abort", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Reapply a previously aborted cherry-pick", "command": "git cherry-pick a1b2c3d", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Set a global gitignore file", "command": "git config --global core.excludesfile ~/.gitignore_global", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show commits that are only in the local branch and not pushed", "command": "git log origin/feature/login..feature/login", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Prune remote-tracking branches that no longer exist", "command": "git remote prune origin", "lang": "en", "source": "synthetic-git"}
+{"instruction": "List the tags pointing at the current commit", "command": "git tag --points-at HEAD", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show the date of the first commit", "command": "git log --reverse --format='%ad' | head -1", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Find which commit broke a test using bisect run", "command": "git bisect run ./run_tests.sh", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Start an interactive rebase to reorder commits", "command": "git rebase -i HEAD~4", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Mark a commit for squashing in interactive rebase using a fixup commit", "command": "git commit --fixup=a1b2c3d", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Apply all pending fixup commits automatically during rebase", "command": "git rebase -i --autosquash HEAD~6", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show a diff with function context headers", "command": "git diff --function-context", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Export a list of changed files as a patch per commit", "command": "git format-patch main..feature/login", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Apply a mailbox-formatted patch", "command": "git am fix.patch", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show the last modification commit for every file in a directory", "command": "git log --follow -- src/utils/helpers.py", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Track renames when viewing file history", "command": "git log --follow --oneline -- src/app.py", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show a condensed view of stashes with timestamps", "command": "git stash list --date=relative", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Check which stash corresponds to a specific branch", "command": "git stash list | grep feature/login", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Verify a signed tag", "command": "git tag -v v1.2.3", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Create a signed annotated tag", "command": "git tag -s v2.0.0-beta -m 'signed beta release'", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Sign the last commit with GPG", "command": "git commit --amend -S --no-edit", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Show whether the last commit is signed", "command": "git log --show-signature -1", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Set up git to always sign commits", "command": "git config --global commit.gpgsign true", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Compare current branch against the merge base with main", "command": "git diff $(git merge-base main HEAD)", "lang": "en", "source": "synthetic-git"}
+{"instruction": "Покажи текущий статус репозитория", "command": "git status", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Выведи краткий статус изменений", "command": "git status -s", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Что изменилось в рабочей директории?", "command": "git diff", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи изменения, которые уже в индексе", "command": "git diff --cached", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Сравни две ветки", "command": "git diff main feature/login", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи только статистику изменений в диффе", "command": "git diff --stat", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Сравни рабочую копию с последним коммитом", "command": "git diff HEAD", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи диф по конкретному файлу", "command": "git diff src/main.py", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Включи построчный дифф по словам", "command": "git diff --word-diff", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Сравни коммит с его родителем", "command": "git diff a1b2c3d^ a1b2c3d", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи разницу между двумя тегами", "command": "git diff v1.0.0 v1.2.3", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Выведи только имена изменённых файлов между коммитами", "command": "git diff --name-only a1b2c3d f4e5d6c", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Проверь, есть ли незакоммиченные изменения", "command": "git status --porcelain", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи дифф, игнорируя пробелы", "command": "git diff -w", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Сравни файл в двух ветках", "command": "git diff main feature/login -- src/main.py", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Добавь все изменения в индекс", "command": "git add .", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Добавь конкретный файл в индекс", "command": "git add src/main.py", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Добавь все python-файлы в индекс", "command": "git add '*.py'", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Добавь все изменения включая удаления", "command": "git add -A", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Выбери интерактивно, что добавить в индекс", "command": "git add -p", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Закоммить проиндексированные изменения с сообщением", "command": "git commit -m 'fix login bug'", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Закоммить все отслеживаемые изменения без явного добавления в индекс", "command": "git commit -am 'fix typo in README'", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Исправь сообщение последнего коммита", "command": "git commit --amend -m 'add dark mode toggle'", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Дополни последний коммит без изменения сообщения", "command": "git commit --amend --no-edit", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Создай пустой коммит", "command": "git commit --allow-empty -m 'trigger CI rebuild'", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Сделай коммит с многострочным сообщением", "command": "git commit -m 'fix login bug' -m 'closes issue #42'", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Убери файл из индекса", "command": "git restore --staged src/main.py", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Убери файл из индекса старым способом", "command": "git reset src/main.py", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Отмени последний коммит, но оставь изменения в индексе", "command": "git reset --soft HEAD~1", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Отмени последний коммит и убери изменения из индекса", "command": "git reset HEAD~1", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Отмени локальные изменения в файле", "command": "git restore src/main.py", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Отмени изменения файла старым способом через checkout", "command": "git checkout -- src/main.py", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Полностью сбрось все локальные изменения до последнего коммита", "command": "git reset --hard HEAD", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Сбрось ветку на конкретный коммит", "command": "git reset --hard a1b2c3d", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Отмени конкретный коммит новым коммитом", "command": "git revert a1b2c3d", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Отмени коммит, но не коммить сразу", "command": "git revert --no-commit a1b2c3d", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Отмени мерж-коммит", "command": "git revert -m 1 f4e5d6c", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Создай новую ветку", "command": "git branch feature/export-csv", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Создай ветку и сразу переключись на неё", "command": "git checkout -b feature/notifications", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Создай и переключись на новую ветку современным синтаксисом", "command": "git switch -c feature/search", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Переключись на существующую ветку", "command": "git checkout develop", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Переключись на ветку через switch", "command": "git switch main", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи список всех локальных веток", "command": "git branch", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи список всех веток включая удалённые", "command": "git branch -a", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи только удалённые ветки", "command": "git branch -r", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Удали локальную ветку", "command": "git branch -d bugfix/null-pointer", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Принудительно удали локальную ветку", "command": "git branch -D experiment/new-ui", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Удали ветку на удалённом репозитории", "command": "git push origin --delete feature/dark-mode", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Переименуй текущую ветку", "command": "git branch -m feature/login feature/login-v2", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи, какую удалённую ветку отслеживает каждая локальная", "command": "git branch -vv", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Создай ветку от конкретного коммита", "command": "git branch hotfix/crash-on-start a1b2c3d", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Узнай, на какой ветке я сейчас нахожусь", "command": "git branch --show-current", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи ветки, слитые в main", "command": "git branch --merged main", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи ветки, не слитые в main", "command": "git branch --no-merged main", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Слей ветку с фичей в main", "command": "git merge feature/login", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Слей ветку только если возможен fast-forward", "command": "git merge --ff-only feature/payments", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Принудительно создай мерж-коммит даже при fast-forward", "command": "git merge --no-ff feature/dark-mode", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Прерви текущий мерж", "command": "git merge --abort", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Продолжи мерж после разрешения конфликтов", "command": "git merge --continue", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Слей ветку со сквошем всех коммитов в один", "command": "git merge --squash feature/search", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Слей удалённую ветку в текущую", "command": "git merge origin/develop", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Перебазируй текущую ветку на main", "command": "git rebase main", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Интерактивно перебазируй последние 5 коммитов", "command": "git rebase -i HEAD~5", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Продолжи ребейз после разрешения конфликтов", "command": "git rebase --continue", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Прерви ребейз, который идёт сейчас", "command": "git rebase --abort", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Пропусти текущий коммит при ребейзе", "command": "git rebase --skip", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Перебазируй фичу на develop интерактивно", "command": "git rebase -i develop", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Перебазируй с автосквошем", "command": "git rebase -i --autosquash HEAD~10", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Перебазируй, сохраняя мерж-коммиты", "command": "git rebase --rebase-merges main", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Сделай пул с ребейзом вместо мержа", "command": "git pull --rebase origin main", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Заскладируй текущие изменения во стэш", "command": "git stash", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Заскладируй изменения в стэш с сообщением", "command": "git stash save 'wip: search feature'", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Заскладируй в стэш включая неотслеживаемые файлы", "command": "git stash -u", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи список всех стэшей", "command": "git stash list", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Примени последний стэш", "command": "git stash apply", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Примени конкретный стэш", "command": "git stash apply stash@{1}", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Извлеки последний стэш и удали его", "command": "git stash pop", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи дифф последнего стэша", "command": "git stash show -p", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Удали последний стэш", "command": "git stash drop", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Удали конкретный стэш", "command": "git stash drop stash@{2}", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Очисти все стэши", "command": "git stash clear", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Создай ветку из стэша", "command": "git stash branch feature/from-stash stash@{0}", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи историю коммитов", "command": "git log", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи историю коммитов в одну строку на коммит", "command": "git log --oneline", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи последние 5 коммитов", "command": "git log -5", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи историю коммитов как граф", "command": "git log --oneline --graph --all", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи коммиты конкретного автора", "command": "git log --author=alice", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи коммиты, затрагивающие конкретный файл", "command": "git log -- src/main.py", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи коммиты начиная с конкретной даты", "command": "git log --since='2024-01-01'", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи коммиты между двумя датами", "command": "git log --since='2024-01-01' --until='2024-06-01'", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Найди коммит по ключевому слову в сообщении", "command": "git log --grep='fix login bug'", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи лог коммитов вместе с диффами", "command": "git log -p", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи статистику изменений по каждому коммиту", "command": "git log --stat", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи изменения конкретной функции в файле по истории", "command": "git log -L :main:src/main.py", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи детали последнего коммита", "command": "git show HEAD", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи детали конкретного коммита", "command": "git show a1b2c3d", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи только имена файлов, изменённых в коммите", "command": "git show --name-only f4e5d6c", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Узнай, кто последний менял каждую строку файла", "command": "git blame src/utils/helpers.py", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи коммиты, которые есть в одной ветке, но нет в другой", "command": "git log main..feature/login", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи количество коммитов в текущей ветке", "command": "git rev-list --count HEAD", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи лог с автором и датой в кастомном формате", "command": "git log --pretty=format:'%h %an %ad %s'", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи список удалённых репозиториев", "command": "git remote -v", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Добавь новый удалённый репозиторий", "command": "git remote add upstream https://github.com/example/repo.git", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Удали удалённый репозиторий из конфигурации", "command": "git remote remove backup", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Переименуй удалённый репозиторий", "command": "git remote rename origin upstream", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Сделай fetch всех веток с origin", "command": "git fetch origin", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Сделай fetch с удалением несуществующих удалённых веток", "command": "git fetch --prune origin", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Подтяни последние изменения с origin main", "command": "git pull origin main", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Отправь текущую ветку на origin", "command": "git push origin feature/login", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Отправь ветку и настрой отслеживание upstream", "command": "git push -u origin feature/payments", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Сделай принудительный push текущей ветки", "command": "git push --force origin feature/login", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Сделай push с lease, чтобы не перезатереть чужие изменения", "command": "git push --force-with-lease origin feature/login", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Отправь все теги на удалённый репозиторий", "command": "git push origin --tags", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Отправь все ветки на удалённый репозиторий", "command": "git push origin --all", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи подробную информацию про origin", "command": "git remote show origin", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Смени URL удалённого репозитория", "command": "git remote set-url origin git@github.com:example/repo.git", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Создай легковесный тег", "command": "git tag v1.2.3", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Создай аннотированный тег", "command": "git tag -a v2.0.0-beta -m 'beta release'", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи список всех тегов", "command": "git tag", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Удали локальный тег", "command": "git tag -d v1.0.0", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Удали тег на удалённом репозитории", "command": "git push origin --delete tag v1.0.0", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Отправь конкретный тег на удалённый репозиторий", "command": "git push origin v2.0.0-beta", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Поставь тег на более старый коммит", "command": "git tag -a v1.0.0 a1b2c3d -m 'first release'", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Переключись на конкретный тег", "command": "git checkout tags/v1.2.3", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи детали тега", "command": "git show v2.0.0-beta", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Накатай коммит из другой ветки через cherry-pick", "command": "git cherry-pick a1b2c3d", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Сделай cherry-pick без автоматического коммита", "command": "git cherry-pick -n f4e5d6c", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Накатай диапазон коммитов через cherry-pick", "command": "git cherry-pick a1b2c3d..f4e5d6c", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Продолжи cherry-pick после разрешения конфликтов", "command": "git cherry-pick --continue", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Прерви cherry-pick, который сейчас выполняется", "command": "git cherry-pick --abort", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Добавь всё в индекс и закоммить одной командой", "command": "git add . && git commit -m 'update dependencies'", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Создай новую ветку и сразу запушь её на upstream", "command": "git checkout -b feature/api-v2 && git push -u origin feature/api-v2", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Сделай fetch, а затем перебазируй текущую ветку на origin/main", "command": "git fetch origin && git rebase origin/main", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Переключись на main, подтяни изменения и удали влитую фичу-ветку", "command": "git checkout main && git pull && git branch -d feature/login", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Заскладируй изменения, подтяни обновления и верни стэш обратно", "command": "git stash && git pull origin main && git stash pop", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Закоммить всё и запушить в origin одной командой", "command": "git commit -am 'fix memory leak' && git push origin fix/memory-leak", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Создай тег и сразу отправь его на удалённый репозиторий", "command": "git tag -a v3.1.0 -m 'release 3.1.0' && git push origin v3.1.0", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Сбрось ветку на origin/main и удали неотслеживаемые файлы", "command": "git reset --hard origin/main && git clean -fd", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Перебазируй интерактивно на main и запушь с force-with-lease", "command": "git rebase -i main && git push --force-with-lease origin feature/search", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Сделай fetch всех remote и удали неактуальные ветки", "command": "git fetch --all --prune", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Переключись на main, влей ветку с фичей и запушь результат", "command": "git checkout main && git merge feature/payments && git push origin main", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Добавь файл, дополни последний коммит и сделай force push", "command": "git add README.md && git commit --amend --no-edit && git push --force origin develop", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Создай ветку от тега и переключись на неё", "command": "git checkout -b hotfix/from-release v2.0.0-beta", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи 10 последних коммитов по всем веткам в виде графа", "command": "git log --all --graph --oneline -10", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи, что будет удалено при очистке, а потом удали неотслеживаемые файлы", "command": "git clean -nd && git clean -fd", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Сквошни последние 3 коммита интерактивным ребейзом", "command": "git rebase -i HEAD~3", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Начни бисект для поиска бага", "command": "git bisect start", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Отметь текущий коммит как плохой в бисекте", "command": "git bisect bad", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Отметь текущий коммит как хороший в бисекте", "command": "git bisect good", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Сбрось сессию бисекта", "command": "git bisect reset", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи коммиты, которые есть в фиче, но ещё не в main", "command": "git log main..feature/login --oneline", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи коммиты, которые есть в main, но нет в фиче", "command": "git log feature/login..main --oneline", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Сравни локальную ветку с её удалённым отслеживаемым аналогом", "command": "git diff feature/login origin/feature/login", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Проверь на сколько коммитов ветка опережает или отстаёт от origin", "command": "git rev-list --left-right --count feature/login...origin/feature/login", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Настрой upstream для уже существующей локальной ветки", "command": "git branch --set-upstream-to=origin/develop develop", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Отмени пуш через revert последнего коммита и запушь снова", "command": "git revert HEAD && git push origin main", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Переименуй локальную ветку main в master", "command": "git branch -m main master", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи компактный граф лога, ограниченный 20 коммитами", "command": "git log --graph --oneline --decorate -20", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Примени патч-файл к рабочей копии", "command": "git apply fix.patch", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Создай патч-файл из последнего коммита", "command": "git format-patch -1 HEAD", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Сгенерируй патчи для последних 3 коммитов", "command": "git format-patch -3", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Найди, какой коммит добавил или удалил определённую строку", "command": "git log -S 'TODO' --oneline", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи reflog, чтобы найти потерянный коммит", "command": "git reflog", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Восстанови случайно удалённую ветку через reflog", "command": "git checkout -b feature/login a1b2c3d", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Настрой git всегда делать ребейз при пуле", "command": "git config pull.rebase true", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Задай имя ветки по умолчанию для новых репозиториев", "command": "git config --global init.defaultBranch main", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Установи имя пользователя git", "command": "git config --global user.name 'papakovdar@gmail.com'", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Установи почту пользователя git", "command": "git config --global user.email 'papakovdar@gmail.com'", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Инициализируй новый репозиторий git", "command": "git init", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Склонируй репозиторий", "command": "git clone https://github.com/example/repo.git", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Склонируй репозиторий в конкретную папку", "command": "git clone https://github.com/example/repo.git my-project", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Склонируй только одну ветку", "command": "git clone -b develop --single-branch https://github.com/example/repo.git", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Склонируй с ограниченной глубиной истории", "command": "git clone --depth 1 https://github.com/example/repo.git", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи, какие файлы игнорируются", "command": "git status --ignored", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Выведи список всех отслеживаемых файлов", "command": "git ls-files", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Убери файл из отслеживания git, но оставь его локально", "command": "git rm --cached config/settings.yaml", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Удали файл и из git, и с файловой системы", "command": "git rm src/components/Login.jsx", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Переименуй или перемести отслеживаемый файл", "command": "git mv src/main.py src/app.py", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи содержимое файла на конкретном коммите", "command": "git show a1b2c3d:src/main.py", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Извлеки файл из другой ветки в текущую", "command": "git checkout feature/login -- src/main.py", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Восстанови файл из конкретного коммита", "command": "git restore --source=a1b2c3d src/main.py", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи сводку изменений по каждому автору", "command": "git shortlog -sn", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Посчитай общее количество коммитов в репозитории", "command": "git rev-list --all --count", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи всех контрибьюторов, отсортированных по числу коммитов", "command": "git shortlog -sn --all", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Проверь целостность репозитория", "command": "git fsck", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Запусти сборку мусора для оптимизации репозитория", "command": "git gc", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Переключись на старый коммит в состоянии detached HEAD", "command": "git checkout a1b2c3d", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Вернись на последний коммит ветки после detached HEAD", "command": "git checkout main", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи, какая ветка содержит конкретный коммит", "command": "git branch --contains a1b2c3d", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Найди общего предка двух веток", "command": "git merge-base main feature/login", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Сделай squash merge ветки без fast-forward", "command": "git merge --squash --no-ff feature/payments", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи алиасы, настроенные в git", "command": "git config --get-regexp alias", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Создай алиас для команды checkout", "command": "git config --global alias.co checkout", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Создай алиас для однострочного лога", "command": "git config --global alias.lg 'log --oneline --graph --all'", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Пометь файл как неизменяемый для git, игнорируя локальные изменения", "command": "git update-index --assume-unchanged config/settings.yaml", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Сними отметку игнорирования локальных изменений файла", "command": "git update-index --no-assume-unchanged config/settings.yaml", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи дифф мерж-коммита относительно обоих родителей", "command": "git diff f4e5d6c^1 f4e5d6c^2", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Выведи список файлов с конфликтами слияния", "command": "git diff --name-only --diff-filter=U", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Отметь конфликтующий файл как разрешённый", "command": "git add src/main.py", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Удали конкретный коммит из истории через интерактивный ребейз", "command": "git rebase -i HEAD~5", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Объедини последние два коммита в один", "command": "git reset --soft HEAD~2 && git commit -m 'combined commit'", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Полностью удали последний коммит вместе с изменениями", "command": "git reset --hard HEAD~1", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Сделай пул только если возможен fast-forward, иначе выдай ошибку", "command": "git pull --ff-only origin main", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Подтяни ветку конкретного pull request с origin", "command": "git fetch origin pull/42/head:pr-42", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Переключись на подтянутую ветку pull request", "command": "git checkout pr-42", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи дифф между рабочим деревом и конкретным стэшем", "command": "git diff stash@{0}", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи хэш коммита HEAD", "command": "git rev-parse HEAD", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи короткий хэш коммита HEAD", "command": "git rev-parse --short HEAD", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Заархивируй текущую ветку в zip-файл", "command": "git archive --format=zip --output=release.zip main", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи размер git-репозитория на диске", "command": "du -sh .git", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Настрой явное отслеживание удалённой ветки", "command": "git push --set-upstream origin feature/notifications", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Удали несколько локальных веток одной командой", "command": "git branch -D bugfix/null-pointer experiment/new-ui", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Сделай soft reset на конкретный коммит, оставив изменения в индексе", "command": "git reset --soft a1b2c3d", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Сделай mixed reset на конкретный коммит, убрав изменения из индекса", "command": "git reset --mixed a1b2c3d", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Переключись на предыдущую ветку, на которой был", "command": "git checkout -", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Вернись на предыдущую ветку через switch", "command": "git switch -", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи список тегов, отсортированный по дате создания", "command": "git tag --sort=-creatordate", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Подтяни теги с удалённого репозитория", "command": "git fetch --tags", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Переключись на коммит через относительную ссылку", "command": "git checkout HEAD~3", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи дифф между HEAD и коммитом три шага назад", "command": "git diff HEAD~3 HEAD", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Удали неотслеживаемые файлы из рабочей директории", "command": "git clean -f", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи, какие неотслеживаемые файлы удалятся, без реального удаления", "command": "git clean -nd", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Принудительно удали неотслеживаемые файлы и папки", "command": "git clean -fd", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Удали неотслеживаемые файлы в интерактивном режиме", "command": "git clean -i", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи удалённые ветки, которые уже слиты", "command": "git branch -r --merged main", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Подтяни origin и перебазируй фичу на свежий main", "command": "git fetch origin && git rebase origin/main", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Выведи лог коммитов с полным хэшем и датой", "command": "git log --pretty=format:'%H %cd'", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Экспортируй историю репозитория в bundle-файл", "command": "git bundle create repo.bundle --all", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Склонируй репозиторий из bundle-файла", "command": "git clone repo.bundle restored-repo", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи, какие файлы были изменены в последнем коммите с их статусом", "command": "git show --name-status HEAD", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Сравни два коммита, показав только добавленные и удалённые файлы", "command": "git diff --diff-filter=AD a1b2c3d f4e5d6c", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи список стэшей с предпросмотром патчей", "command": "git stash list -p", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Слей фичу в main одним squash-коммитом", "command": "git merge --squash feature/login && git commit -m 'merge feature/login'", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи дифф с тремя строками контекста", "command": "git diff -U3", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи блэйм с email автора каждой строки", "command": "git blame -e src/main.py", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Сделай блэйм только по диапазону строк файла", "command": "git blame -L 10,30 src/main.py", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Узнай, какую удалённую ветку отслеживает текущая", "command": "git rev-parse --abbrev-ref --symbolic-full-name @{u}", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Найди теги по шаблону имени", "command": "git tag -l 'v1.*'", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи коммиты, где конкретный файл был удалён", "command": "git log --diff-filter=D --summary", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Найди удалённые файлы в истории репозитория", "command": "git log --diff-filter=D --name-only", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Восстанови удалённый файл из истории коммитов", "command": "git checkout a1b2c3d^ -- src/main.py", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Найди, в каком коммите был удалён конкретный файл", "command": "git log --all --full-history -- src/main.py", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи статус всех сабмодулей", "command": "git submodule status", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Инициализируй и обнови все сабмодули рекурсивно", "command": "git submodule update --init --recursive", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Добавь новый сабмодуль", "command": "git submodule add https://github.com/example/lib.git libs/lib", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Подтяни последние изменения во всех сабмодулях", "command": "git submodule update --remote", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Удали сабмодуль из репозитория", "command": "git submodule deinit libs/lib && git rm libs/lib", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи список текущих worktree", "command": "git worktree list", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Добавь новый worktree для ветки", "command": "git worktree add ../hotfix hotfix/crash-on-start", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Удали worktree", "command": "git worktree remove ../hotfix", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи все настройки конфигурации репозитория", "command": "git config --list", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи только локальные настройки репозитория", "command": "git config --local --list", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Открой глобальный конфиг git для редактирования", "command": "git config --global --edit", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Убери значение из конфига git", "command": "git config --global --unset alias.co", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Проверь, существует ли ветка локально", "command": "git show-ref --verify --quiet refs/heads/feature/login", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Сравни содержимое файла в двух разных коммитах", "command": "git diff a1b2c3d f4e5d6c -- src/main.py", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Посчитай количество коммитов конкретного автора", "command": "git log --author=bob --oneline | wc -l", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи коммиты, сделанные сегодня", "command": "git log --since=midnight --oneline", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи коммиты за последнюю неделю", "command": "git log --since='1 week ago' --oneline", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи дерево файлов на конкретном коммите", "command": "git ls-tree -r a1b2c3d", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Сравни рабочее дерево с удалённой веткой", "command": "git diff origin/main", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Перебазируй на main, разрешая конфликты в пользу своей версии", "command": "git rebase -X ours main", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Слей ветку со стратегией в пользу входящих изменений", "command": "git merge -X theirs feature/payments", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "При конфликте оставь свою версию файла", "command": "git checkout --ours src/main.py", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "При конфликте возьми версию файла из другой ветки", "command": "git checkout --theirs src/main.py", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Повторно накатай коммит после прерванного cherry-pick", "command": "git cherry-pick a1b2c3d", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Настрой глобальный файл gitignore", "command": "git config --global core.excludesfile ~/.gitignore_global", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи коммиты, которые есть локально, но не отправлены на сервер", "command": "git log origin/feature/login..feature/login", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Удали устаревшие ссылки на удалённые ветки", "command": "git remote prune origin", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи теги, указывающие на текущий коммит", "command": "git tag --points-at HEAD", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Найди коммит, который сломал тесты, через bisect run", "command": "git bisect run ./run_tests.sh", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Начни интерактивный ребейз, чтобы поменять порядок коммитов", "command": "git rebase -i HEAD~4", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Создай fixup-коммит для последующего автосквоша", "command": "git commit --fixup=a1b2c3d", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Примени все fixup-коммиты автоматически при ребейзе", "command": "git rebase -i --autosquash HEAD~6", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи дифф с заголовками контекста функций", "command": "git diff --function-context", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Сформируй патчи по коммитам между двумя ветками", "command": "git format-patch main..feature/login", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Примени патч в формате mailbox", "command": "git am fix.patch", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи историю изменений файла с учётом переименований", "command": "git log --follow -- src/utils/helpers.py", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи список стэшей с относительным временем", "command": "git stash list --date=relative", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Найди стэш, относящийся к конкретной ветке", "command": "git stash list | grep feature/login", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Проверь подпись тега", "command": "git tag -v v1.2.3", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Создай подписанный аннотированный тег", "command": "git tag -s v2.0.0-beta -m 'signed beta release'", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Подпиши последний коммит GPG-ключом", "command": "git commit --amend -S --no-edit", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Проверь, подписан ли последний коммит", "command": "git log --show-signature -1", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Настрой git всегда подписывать коммиты", "command": "git config --global commit.gpgsign true", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Сравни текущую ветку с общим предком с main", "command": "git diff $(git merge-base main HEAD)", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Извлеки только одну директорию из другой ветки", "command": "git checkout feature/login -- src/components", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи ветки, отсортированные по дате последнего коммита", "command": "git branch --sort=-committerdate", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Удали все локальные ветки, уже слитые в main", "command": "git branch --merged main | grep -v main | xargs git branch -d", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи, сколько коммитов всего сделал каждый автор, включая все ветки", "command": "git shortlog -sn --all", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Выведи дату самого первого коммита в репозитории", "command": "git log --reverse --format='%ad' | head -1", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Создай ветку и укажи явный upstream при первом пуше", "command": "git push -u origin feature/export-csv", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Удали удалённую ветку и соответствующую локальную одной серией команд", "command": "git branch -d feature/dark-mode && git push origin --delete feature/dark-mode", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи полный хэш и сообщение для каждого коммита за последний месяц", "command": "git log --since='1 month ago' --pretty=format:'%H %s'", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Сравни содержимое двух тегов построчно", "command": "git diff v1.0.0 v1.2.3 -- src/main.py", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Проверь, отслеживается ли текущая ветка удалённым репозиторием", "command": "git status -sb", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Покажи только добавленные строки в последнем коммите", "command": "git show HEAD | grep '^+'", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Выгрузи список коммитов в CSV через форматированный лог", "command": "git log --pretty=format:'%h,%an,%ad,%s' --date=short", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Запусти ребейз и сразу реши конфликты в пользу входящей ветки", "command": "git rebase -X theirs feature/payments", "lang": "ru", "source": "synthetic-git"}
+{"instruction": "Проверь, какие файлы отличаются между рабочей копией и индексом по статистике", "command": "git diff --stat --cached", "lang": "ru", "source": "synthetic-git"}

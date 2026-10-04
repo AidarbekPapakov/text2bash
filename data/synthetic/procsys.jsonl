@@ -1,0 +1,600 @@
+{"instruction": "Show all processes matching nginx", "command": "ps aux | grep nginx", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Find the PID of nginx", "command": "pgrep nginx", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "List processes named nginx with full command line", "command": "ps aux | grep -i nginx | grep -v grep", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show all processes matching postgres", "command": "ps aux | grep postgres", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Find the PID of postgres", "command": "pgrep postgres", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "List processes named postgres with full command line", "command": "ps aux | grep -i postgres | grep -v grep", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show all processes matching redis-server", "command": "ps aux | grep redis-server", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Find the PID of redis-server", "command": "pgrep redis-server", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "List processes named redis-server with full command line", "command": "ps aux | grep -i redis-server | grep -v grep", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show all processes matching docker", "command": "ps aux | grep docker", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Find the PID of docker", "command": "pgrep docker", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "List processes named docker with full command line", "command": "ps aux | grep -i docker | grep -v grep", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show all processes matching sshd", "command": "ps aux | grep sshd", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Find the PID of sshd", "command": "pgrep sshd", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "List processes named sshd with full command line", "command": "ps aux | grep -i sshd | grep -v grep", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show all processes matching python3", "command": "ps aux | grep python3", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Find the PID of python3", "command": "pgrep python3", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "List processes named python3 with full command line", "command": "ps aux | grep -i python3 | grep -v grep", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show all processes matching node", "command": "ps aux | grep node", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Find the PID of node", "command": "pgrep node", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "List processes named node with full command line", "command": "ps aux | grep -i node | grep -v grep", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show all processes matching java", "command": "ps aux | grep java", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Find the PID of java", "command": "pgrep java", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "List processes named java with full command line", "command": "ps aux | grep -i java | grep -v grep", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show all processes matching mysqld", "command": "ps aux | grep mysqld", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Find the PID of mysqld", "command": "pgrep mysqld", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "List processes named mysqld with full command line", "command": "ps aux | grep -i mysqld | grep -v grep", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show all processes matching firefox", "command": "ps aux | grep firefox", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Find the PID of firefox", "command": "pgrep firefox", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "List processes named firefox with full command line", "command": "ps aux | grep -i firefox | grep -v grep", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show all processes owned by user alice", "command": "ps -u alice", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "List processes for alice sorted by CPU usage", "command": "ps -u alice --sort=-%cpu", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show all processes owned by user bob", "command": "ps -u bob", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "List processes for bob sorted by CPU usage", "command": "ps -u bob --sort=-%cpu", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show all processes owned by user root", "command": "ps -u root", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "List processes for root sorted by CPU usage", "command": "ps -u root --sort=-%cpu", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show all processes owned by user deploy", "command": "ps -u deploy", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "List processes for deploy sorted by CPU usage", "command": "ps -u deploy --sort=-%cpu", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show all processes owned by user ivan", "command": "ps -u ivan", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "List processes for ivan sorted by CPU usage", "command": "ps -u ivan --sort=-%cpu", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show a full process tree", "command": "ps -ejH", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Display process tree with parent-child relationships", "command": "pstree -p", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "List every process on the system in full format", "command": "ps -ef", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show processes sorted by memory usage, highest first", "command": "ps aux --sort=-%mem", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show processes sorted by CPU usage, highest first", "command": "ps aux --sort=-%cpu", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show top 10 memory-consuming processes", "command": "ps aux --sort=-%mem | head -n 11", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show top 10 CPU-consuming processes", "command": "ps aux --sort=-%cpu | head -n 11", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "What is using the most memory right now?", "command": "ps aux --sort=-%mem | head -n 5", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Count how many nginx worker processes are running", "command": "ps aux | grep nginx | grep -v grep | wc -l", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show processes with their start time", "command": "ps -eo pid,comm,lstart", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show process state codes for all processes", "command": "ps -eo pid,stat,comm", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Find zombie processes", "command": "ps aux | awk '$8==\"Z\"'", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "List all zombie processes with their PPID", "command": "ps -eo pid,ppid,stat,comm | awk '$3==\"Z\"'", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show the process that is listening on port 8080", "command": "sudo lsof -i :8080", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show which process holds port 5432", "command": "sudo ss -ltnp | grep 5432", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show process info for PID 1234", "command": "ps -p 1234 -f", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Check if process with PID 5678 is still running", "command": "ps -p 5678", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show the parent process of PID 9012", "command": "ps -o ppid= -p 9012", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "List processes using more than 50% CPU", "command": "ps aux | awk '$3 > 50.0'", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "List processes using more than 1GB of resident memory", "command": "ps aux | awk '$6 > 1000000'", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show number of threads for each process", "command": "ps -eLf | wc -l", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show thread count for the postgres process", "command": "ps -o nlwp= -C postgres", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "List processes with their nice value", "command": "ps -eo pid,ni,comm", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show elapsed run time for every process", "command": "ps -eo pid,comm,etime", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "List processes along with their working directory", "command": "ls -l /proc/*/cwd 2>/dev/null", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show open files for process 1234", "command": "sudo lsof -p 1234", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "What command launched PID 4321?", "command": "cat /proc/4321/cmdline", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show environment variables of process 8765", "command": "cat /proc/8765/environ | tr '\\0' '\\n'", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Open top to monitor system resources", "command": "top", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Run top once and exit", "command": "top -bn1", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Run top in batch mode for 5 iterations", "command": "top -bn5", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show top sorted by memory usage", "command": "top -o %MEM", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show top filtered to a specific user", "command": "top -u alice", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Run top refreshing every 2 seconds", "command": "top -d 2", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Get a one-shot snapshot of top CPU consumers", "command": "top -bn1 | head -n 15", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Open htop", "command": "htop", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Open htop filtered to a specific user", "command": "htop -u bob", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Open htop sorted by memory", "command": "htop --sort-key PERCENT_MEM", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Open htop showing a specific PID tree", "command": "htop -p 1234", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Run htop in tree view", "command": "htop -t", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Kill all nginx processes", "command": "pkill nginx", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Forcefully kill all nginx processes", "command": "pkill -9 nginx", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Gracefully terminate nginx", "command": "pkill -SIGTERM nginx", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Kill all postgres processes", "command": "pkill postgres", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Forcefully kill all postgres processes", "command": "pkill -9 postgres", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Gracefully terminate postgres", "command": "pkill -SIGTERM postgres", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Kill all redis-server processes", "command": "pkill redis-server", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Forcefully kill all redis-server processes", "command": "pkill -9 redis-server", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Gracefully terminate redis-server", "command": "pkill -SIGTERM redis-server", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Kill all docker processes", "command": "pkill docker", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Forcefully kill all docker processes", "command": "pkill -9 docker", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Gracefully terminate docker", "command": "pkill -SIGTERM docker", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Kill all sshd processes", "command": "pkill sshd", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Forcefully kill all sshd processes", "command": "pkill -9 sshd", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Gracefully terminate sshd", "command": "pkill -SIGTERM sshd", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Kill all python3 processes", "command": "pkill python3", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Forcefully kill all python3 processes", "command": "pkill -9 python3", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Gracefully terminate python3", "command": "pkill -SIGTERM python3", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Kill all node processes", "command": "pkill node", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Forcefully kill all node processes", "command": "pkill -9 node", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Gracefully terminate node", "command": "pkill -SIGTERM node", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Kill all java processes", "command": "pkill java", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Forcefully kill all java processes", "command": "pkill -9 java", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Gracefully terminate java", "command": "pkill -SIGTERM java", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Kill all mysqld processes", "command": "pkill mysqld", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Forcefully kill all mysqld processes", "command": "pkill -9 mysqld", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Gracefully terminate mysqld", "command": "pkill -SIGTERM mysqld", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Kill all firefox processes", "command": "pkill firefox", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Forcefully kill all firefox processes", "command": "pkill -9 firefox", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Gracefully terminate firefox", "command": "pkill -SIGTERM firefox", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Kill process with PID 1234", "command": "kill 1234", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Force kill process with PID 1234", "command": "kill -9 1234", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Kill process with PID 5678", "command": "kill 5678", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Force kill process with PID 5678", "command": "kill -9 5678", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Kill process with PID 9012", "command": "kill 9012", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Force kill process with PID 9012", "command": "kill -9 9012", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Kill process with PID 4321", "command": "kill 4321", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Force kill process with PID 4321", "command": "kill -9 4321", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Kill process with PID 8765", "command": "kill 8765", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Force kill process with PID 8765", "command": "kill -9 8765", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Send SIGTERM to process 4321", "command": "kill -TERM 4321", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Send SIGKILL to process 4321", "command": "kill -KILL 4321", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Send SIGHUP to process 4321", "command": "kill -HUP 4321", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Send SIGINT to process 4321", "command": "kill -INT 4321", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Kill every process owned by user bob", "command": "pkill -u bob", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Kill processes matching a pattern in full command line", "command": "pkill -f 'worker.py --queue=emails'", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Find and kill the process holding port 8080", "command": "sudo fuser -k 8080/tcp", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Kill all processes by name interactively with confirmation", "command": "killall -i nginx", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Kill all instances of firefox", "command": "killall firefox", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Send SIGHUP to reload nginx configuration", "command": "kill -HUP $(pgrep -o nginx)", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "List all signals that can be sent with kill", "command": "kill -l", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Kill the process using the most memory", "command": "kill -9 $(ps aux --sort=-%mem | awk 'NR==2{print $2}')", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Kill the process using the most CPU", "command": "kill -9 $(ps aux --sort=-%cpu | awk 'NR==2{print $2}')", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Check the status of docker.service", "command": "systemctl status docker.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Start docker.service", "command": "sudo systemctl start docker.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Stop docker.service", "command": "sudo systemctl stop docker.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Restart docker.service", "command": "sudo systemctl restart docker.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Reload docker.service without restarting", "command": "sudo systemctl reload docker.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Enable docker.service to start on boot", "command": "sudo systemctl enable docker.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Disable docker.service from starting on boot", "command": "sudo systemctl disable docker.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Check if docker.service is enabled on boot", "command": "systemctl is-enabled docker.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Check if docker.service is currently active", "command": "systemctl is-active docker.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Check the status of nginx.service", "command": "systemctl status nginx.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Start nginx.service", "command": "sudo systemctl start nginx.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Stop nginx.service", "command": "sudo systemctl stop nginx.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Restart nginx.service", "command": "sudo systemctl restart nginx.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Reload nginx.service without restarting", "command": "sudo systemctl reload nginx.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Enable nginx.service to start on boot", "command": "sudo systemctl enable nginx.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Disable nginx.service from starting on boot", "command": "sudo systemctl disable nginx.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Check if nginx.service is enabled on boot", "command": "systemctl is-enabled nginx.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Check if nginx.service is currently active", "command": "systemctl is-active nginx.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Check the status of ssh.service", "command": "systemctl status ssh.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Start ssh.service", "command": "sudo systemctl start ssh.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Stop ssh.service", "command": "sudo systemctl stop ssh.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Restart ssh.service", "command": "sudo systemctl restart ssh.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Reload ssh.service without restarting", "command": "sudo systemctl reload ssh.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Enable ssh.service to start on boot", "command": "sudo systemctl enable ssh.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Disable ssh.service from starting on boot", "command": "sudo systemctl disable ssh.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Check if ssh.service is enabled on boot", "command": "systemctl is-enabled ssh.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Check if ssh.service is currently active", "command": "systemctl is-active ssh.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Check the status of postgresql.service", "command": "systemctl status postgresql.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Start postgresql.service", "command": "sudo systemctl start postgresql.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Stop postgresql.service", "command": "sudo systemctl stop postgresql.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Restart postgresql.service", "command": "sudo systemctl restart postgresql.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Reload postgresql.service without restarting", "command": "sudo systemctl reload postgresql.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Enable postgresql.service to start on boot", "command": "sudo systemctl enable postgresql.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Disable postgresql.service from starting on boot", "command": "sudo systemctl disable postgresql.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Check if postgresql.service is enabled on boot", "command": "systemctl is-enabled postgresql.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Check if postgresql.service is currently active", "command": "systemctl is-active postgresql.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Check the status of cron.service", "command": "systemctl status cron.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Start cron.service", "command": "sudo systemctl start cron.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Stop cron.service", "command": "sudo systemctl stop cron.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Restart cron.service", "command": "sudo systemctl restart cron.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Reload cron.service without restarting", "command": "sudo systemctl reload cron.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Enable cron.service to start on boot", "command": "sudo systemctl enable cron.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Disable cron.service from starting on boot", "command": "sudo systemctl disable cron.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Check if cron.service is enabled on boot", "command": "systemctl is-enabled cron.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Check if cron.service is currently active", "command": "systemctl is-active cron.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Check the status of networkd-dispatcher.service", "command": "systemctl status networkd-dispatcher.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Start networkd-dispatcher.service", "command": "sudo systemctl start networkd-dispatcher.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Stop networkd-dispatcher.service", "command": "sudo systemctl stop networkd-dispatcher.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Restart networkd-dispatcher.service", "command": "sudo systemctl restart networkd-dispatcher.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Reload networkd-dispatcher.service without restarting", "command": "sudo systemctl reload networkd-dispatcher.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Enable networkd-dispatcher.service to start on boot", "command": "sudo systemctl enable networkd-dispatcher.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Disable networkd-dispatcher.service from starting on boot", "command": "sudo systemctl disable networkd-dispatcher.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Check if networkd-dispatcher.service is enabled on boot", "command": "systemctl is-enabled networkd-dispatcher.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Check if networkd-dispatcher.service is currently active", "command": "systemctl is-active networkd-dispatcher.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Check the status of sshd.service", "command": "systemctl status sshd.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Start sshd.service", "command": "sudo systemctl start sshd.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Stop sshd.service", "command": "sudo systemctl stop sshd.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Restart sshd.service", "command": "sudo systemctl restart sshd.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Reload sshd.service without restarting", "command": "sudo systemctl reload sshd.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Enable sshd.service to start on boot", "command": "sudo systemctl enable sshd.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Disable sshd.service from starting on boot", "command": "sudo systemctl disable sshd.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Check if sshd.service is enabled on boot", "command": "systemctl is-enabled sshd.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Check if sshd.service is currently active", "command": "systemctl is-active sshd.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Check the status of mysql.service", "command": "systemctl status mysql.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Start mysql.service", "command": "sudo systemctl start mysql.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Stop mysql.service", "command": "sudo systemctl stop mysql.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Restart mysql.service", "command": "sudo systemctl restart mysql.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Reload mysql.service without restarting", "command": "sudo systemctl reload mysql.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Enable mysql.service to start on boot", "command": "sudo systemctl enable mysql.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Disable mysql.service from starting on boot", "command": "sudo systemctl disable mysql.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Check if mysql.service is enabled on boot", "command": "systemctl is-enabled mysql.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Check if mysql.service is currently active", "command": "systemctl is-active mysql.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Check the status of redis.service", "command": "systemctl status redis.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Start redis.service", "command": "sudo systemctl start redis.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Stop redis.service", "command": "sudo systemctl stop redis.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Restart redis.service", "command": "sudo systemctl restart redis.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Reload redis.service without restarting", "command": "sudo systemctl reload redis.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Enable redis.service to start on boot", "command": "sudo systemctl enable redis.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Disable redis.service from starting on boot", "command": "sudo systemctl disable redis.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Check if redis.service is enabled on boot", "command": "systemctl is-enabled redis.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Check if redis.service is currently active", "command": "systemctl is-active redis.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Check the status of NetworkManager.service", "command": "systemctl status NetworkManager.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Start NetworkManager.service", "command": "sudo systemctl start NetworkManager.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Stop NetworkManager.service", "command": "sudo systemctl stop NetworkManager.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Restart NetworkManager.service", "command": "sudo systemctl restart NetworkManager.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Reload NetworkManager.service without restarting", "command": "sudo systemctl reload NetworkManager.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Enable NetworkManager.service to start on boot", "command": "sudo systemctl enable NetworkManager.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Disable NetworkManager.service from starting on boot", "command": "sudo systemctl disable NetworkManager.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Check if NetworkManager.service is enabled on boot", "command": "systemctl is-enabled NetworkManager.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Check if NetworkManager.service is currently active", "command": "systemctl is-active NetworkManager.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "List all running services", "command": "systemctl list-units --type=service --state=running", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "List all failed services", "command": "systemctl --failed", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "List all enabled services", "command": "systemctl list-unit-files --type=service --state=enabled", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show all unit files of type service", "command": "systemctl list-unit-files --type=service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Reload the systemd daemon after editing a unit file", "command": "sudo systemctl daemon-reload", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Mask a service so it can't be started", "command": "sudo systemctl mask docker.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Unmask a previously masked service", "command": "sudo systemctl unmask docker.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show dependencies of docker.service", "command": "systemctl list-dependencies docker.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show which services are currently active and running", "command": "systemctl list-units --state=active", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Check the current runlevel / target", "command": "systemctl get-default", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Set the default boot target to multi-user", "command": "sudo systemctl set-default multi-user.target", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show logs for docker.service", "command": "journalctl -u docker.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Follow logs for docker.service in real time", "command": "journalctl -u docker.service -f", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show the last 50 log lines for docker.service", "command": "journalctl -u docker.service -n 50", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show logs for nginx.service", "command": "journalctl -u nginx.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Follow logs for nginx.service in real time", "command": "journalctl -u nginx.service -f", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show the last 50 log lines for nginx.service", "command": "journalctl -u nginx.service -n 50", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show logs for ssh.service", "command": "journalctl -u ssh.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Follow logs for ssh.service in real time", "command": "journalctl -u ssh.service -f", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show the last 50 log lines for ssh.service", "command": "journalctl -u ssh.service -n 50", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show logs for postgresql.service", "command": "journalctl -u postgresql.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Follow logs for postgresql.service in real time", "command": "journalctl -u postgresql.service -f", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show the last 50 log lines for postgresql.service", "command": "journalctl -u postgresql.service -n 50", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show logs for cron.service", "command": "journalctl -u cron.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Follow logs for cron.service in real time", "command": "journalctl -u cron.service -f", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show the last 50 log lines for cron.service", "command": "journalctl -u cron.service -n 50", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show logs for networkd-dispatcher.service", "command": "journalctl -u networkd-dispatcher.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Follow logs for networkd-dispatcher.service in real time", "command": "journalctl -u networkd-dispatcher.service -f", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show the last 50 log lines for networkd-dispatcher.service", "command": "journalctl -u networkd-dispatcher.service -n 50", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show logs for sshd.service", "command": "journalctl -u sshd.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Follow logs for sshd.service in real time", "command": "journalctl -u sshd.service -f", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show the last 50 log lines for sshd.service", "command": "journalctl -u sshd.service -n 50", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show logs for mysql.service", "command": "journalctl -u mysql.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Follow logs for mysql.service in real time", "command": "journalctl -u mysql.service -f", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show the last 50 log lines for mysql.service", "command": "journalctl -u mysql.service -n 50", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show logs for redis.service", "command": "journalctl -u redis.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Follow logs for redis.service in real time", "command": "journalctl -u redis.service -f", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show the last 50 log lines for redis.service", "command": "journalctl -u redis.service -n 50", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show logs for NetworkManager.service", "command": "journalctl -u NetworkManager.service", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Follow logs for NetworkManager.service in real time", "command": "journalctl -u NetworkManager.service -f", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show the last 50 log lines for NetworkManager.service", "command": "journalctl -u NetworkManager.service -n 50", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show logs since this morning", "command": "journalctl --since today", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show logs from the last hour", "command": "journalctl --since '1 hour ago'", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show logs between two timestamps", "command": "journalctl --since '2026-10-01 00:00:00' --until '2026-10-02 00:00:00'", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show only error-level log messages", "command": "journalctl -p err", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show kernel ring buffer messages", "command": "journalctl -k", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show logs from the previous boot", "command": "journalctl -b -1", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show logs since the last boot", "command": "journalctl -b", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show disk space used by journal logs", "command": "journalctl --disk-usage", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Clean up journal logs older than 2 weeks", "command": "sudo journalctl --vacuum-time=2weeks", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Shrink journal logs to 500 megabytes", "command": "sudo journalctl --vacuum-size=500M", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show logs for a specific process ID", "command": "journalctl _PID=1234", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show logs in JSON format", "command": "journalctl -o json -n 20", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Grep journal logs for out-of-memory events", "command": "journalctl -k | grep -i 'out of memory'", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show logs for the current boot sorted newest first", "command": "journalctl -b -r", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show disk space usage for all filesystems", "command": "df -h", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show disk usage in human readable form excluding tmpfs", "command": "df -h --exclude-type=tmpfs", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show inode usage for all filesystems", "command": "df -i", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show disk usage for a specific partition", "command": "df -h /dev/sda1", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Check free space on the root filesystem", "command": "df -h /", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show disk usage sorted by percentage used", "command": "df -h | sort -k5 -rn", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Find filesystems that are more than 90% full", "command": "df -h | awk '$5+0 > 90'", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show disk usage in megabytes", "command": "df -m", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show the filesystem type for each mount", "command": "df -T", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show total size of /var/log", "command": "du -sh /var/log", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show size of each subdirectory in /var/log", "command": "du -h --max-depth=1 /var/log", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show total size of /home/alice", "command": "du -sh /home/alice", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show size of each subdirectory in /home/alice", "command": "du -h --max-depth=1 /home/alice", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show total size of /tmp", "command": "du -sh /tmp", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show size of each subdirectory in /tmp", "command": "du -h --max-depth=1 /tmp", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show total size of /var/lib/docker", "command": "du -sh /var/lib/docker", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show size of each subdirectory in /var/lib/docker", "command": "du -h --max-depth=1 /var/lib/docker", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show total size of /opt/app", "command": "du -sh /opt/app", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show size of each subdirectory in /opt/app", "command": "du -h --max-depth=1 /opt/app", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Find the 10 largest directories under /var", "command": "du -ah /var | sort -rh | head -n 10", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Find the 10 largest files under /home", "command": "find /home -type f -exec du -h {} + | sort -rh | head -n 10", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Show disk usage summary without listing subdirectories", "command": "du -sh *", "lang": "en", "source": "synthetic-procsys"}
+{"instruction": "Покажи все процессы, соответствующие nginx", "command": "ps aux | grep nginx", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Найди PID процесса nginx", "command": "pgrep nginx", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Выведи процессы с именем nginx и полной командной строкой", "command": "ps aux | grep -i nginx | grep -v grep", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи все процессы, соответствующие postgres", "command": "ps aux | grep postgres", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Найди PID процесса postgres", "command": "pgrep postgres", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Выведи процессы с именем postgres и полной командной строкой", "command": "ps aux | grep -i postgres | grep -v grep", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи все процессы, соответствующие redis-server", "command": "ps aux | grep redis-server", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Найди PID процесса redis-server", "command": "pgrep redis-server", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Выведи процессы с именем redis-server и полной командной строкой", "command": "ps aux | grep -i redis-server | grep -v grep", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи все процессы, соответствующие docker", "command": "ps aux | grep docker", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Найди PID процесса docker", "command": "pgrep docker", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Выведи процессы с именем docker и полной командной строкой", "command": "ps aux | grep -i docker | grep -v grep", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи все процессы, соответствующие sshd", "command": "ps aux | grep sshd", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Найди PID процесса sshd", "command": "pgrep sshd", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Выведи процессы с именем sshd и полной командной строкой", "command": "ps aux | grep -i sshd | grep -v grep", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи все процессы, соответствующие python3", "command": "ps aux | grep python3", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Найди PID процесса python3", "command": "pgrep python3", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Выведи процессы с именем python3 и полной командной строкой", "command": "ps aux | grep -i python3 | grep -v grep", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи все процессы, соответствующие node", "command": "ps aux | grep node", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Найди PID процесса node", "command": "pgrep node", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Выведи процессы с именем node и полной командной строкой", "command": "ps aux | grep -i node | grep -v grep", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи все процессы, соответствующие java", "command": "ps aux | grep java", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Найди PID процесса java", "command": "pgrep java", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Выведи процессы с именем java и полной командной строкой", "command": "ps aux | grep -i java | grep -v grep", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи все процессы, соответствующие mysqld", "command": "ps aux | grep mysqld", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Найди PID процесса mysqld", "command": "pgrep mysqld", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Выведи процессы с именем mysqld и полной командной строкой", "command": "ps aux | grep -i mysqld | grep -v grep", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи все процессы, соответствующие firefox", "command": "ps aux | grep firefox", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Найди PID процесса firefox", "command": "pgrep firefox", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Выведи процессы с именем firefox и полной командной строкой", "command": "ps aux | grep -i firefox | grep -v grep", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи все процессы пользователя alice", "command": "ps -u alice", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Выведи процессы пользователя alice, отсортированные по загрузке CPU", "command": "ps -u alice --sort=-%cpu", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи все процессы пользователя bob", "command": "ps -u bob", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Выведи процессы пользователя bob, отсортированные по загрузке CPU", "command": "ps -u bob --sort=-%cpu", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи все процессы пользователя root", "command": "ps -u root", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Выведи процессы пользователя root, отсортированные по загрузке CPU", "command": "ps -u root --sort=-%cpu", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи все процессы пользователя deploy", "command": "ps -u deploy", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Выведи процессы пользователя deploy, отсортированные по загрузке CPU", "command": "ps -u deploy --sort=-%cpu", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи все процессы пользователя ivan", "command": "ps -u ivan", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Выведи процессы пользователя ivan, отсортированные по загрузке CPU", "command": "ps -u ivan --sort=-%cpu", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи дерево процессов", "command": "ps -ejH", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Выведи дерево процессов с PID", "command": "pstree -p", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Выведи все процессы системы в полном формате", "command": "ps -ef", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи процессы, отсортированные по использованию памяти, по убыванию", "command": "ps aux --sort=-%mem", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи процессы, отсортированные по загрузке CPU, по убыванию", "command": "ps aux --sort=-%cpu", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи топ-10 процессов по потреблению памяти", "command": "ps aux --sort=-%mem | head -n 11", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи топ-10 процессов по загрузке CPU", "command": "ps aux --sort=-%cpu | head -n 11", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Какой процесс сейчас потребляет больше всего памяти?", "command": "ps aux --sort=-%mem | head -n 5", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Посчитай сколько воркеров nginx сейчас запущено", "command": "ps aux | grep nginx | grep -v grep | wc -l", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи процессы с временем их запуска", "command": "ps -eo pid,comm,lstart", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи коды состояния для всех процессов", "command": "ps -eo pid,stat,comm", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Найди зомби-процессы", "command": "ps aux | awk '$8==\"Z\"'", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Выведи все зомби-процессы с их PPID", "command": "ps -eo pid,ppid,stat,comm | awk '$3==\"Z\"'", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи какой процесс слушает порт 8080", "command": "sudo lsof -i :8080", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи какой процесс занимает порт 5432", "command": "sudo ss -ltnp | grep 5432", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи информацию о процессе с PID 1234", "command": "ps -p 1234 -f", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Проверь, работает ли ещё процесс с PID 5678", "command": "ps -p 5678", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи родительский процесс для PID 9012", "command": "ps -o ppid= -p 9012", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Выведи процессы, использующие больше 50% CPU", "command": "ps aux | awk '$3 > 50.0'", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Выведи процессы, занимающие больше 1 ГБ оперативной памяти", "command": "ps aux | awk '$6 > 1000000'", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи количество потоков для каждого процесса", "command": "ps -eLf | wc -l", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи количество потоков процесса postgres", "command": "ps -o nlwp= -C postgres", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Выведи процессы с их значением nice", "command": "ps -eo pid,ni,comm", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи время работы каждого процесса", "command": "ps -eo pid,comm,etime", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Выведи процессы с их текущим рабочим каталогом", "command": "ls -l /proc/*/cwd 2>/dev/null", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи открытые файлы процесса 1234", "command": "sudo lsof -p 1234", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Какая команда запустила процесс с PID 4321?", "command": "cat /proc/4321/cmdline", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи переменные окружения процесса 8765", "command": "cat /proc/8765/environ | tr '\\0' '\\n'", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Открой top для мониторинга ресурсов системы", "command": "top", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Запусти top один раз и выйди", "command": "top -bn1", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Запусти top в пакетном режиме на 5 итераций", "command": "top -bn5", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Запусти top с сортировкой по памяти", "command": "top -o %MEM", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Запусти top только для пользователя alice", "command": "top -u alice", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Запусти top с обновлением каждые 2 секунды", "command": "top -d 2", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Сделай один снимок top с основными потребителями CPU", "command": "top -bn1 | head -n 15", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Открой htop", "command": "htop", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Открой htop только для пользователя bob", "command": "htop -u bob", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Открой htop с сортировкой по памяти", "command": "htop --sort-key PERCENT_MEM", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Открой htop и покажи дерево для указанного PID", "command": "htop -p 1234", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Запусти htop в режиме дерева процессов", "command": "htop -t", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Убей все процессы nginx", "command": "pkill nginx", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Жёстко убей все процессы nginx", "command": "pkill -9 nginx", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Аккуратно завершить процесс nginx", "command": "pkill -SIGTERM nginx", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Убей все процессы postgres", "command": "pkill postgres", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Жёстко убей все процессы postgres", "command": "pkill -9 postgres", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Аккуратно завершить процесс postgres", "command": "pkill -SIGTERM postgres", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Убей все процессы redis-server", "command": "pkill redis-server", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Жёстко убей все процессы redis-server", "command": "pkill -9 redis-server", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Аккуратно завершить процесс redis-server", "command": "pkill -SIGTERM redis-server", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Убей все процессы docker", "command": "pkill docker", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Жёстко убей все процессы docker", "command": "pkill -9 docker", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Аккуратно завершить процесс docker", "command": "pkill -SIGTERM docker", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Убей все процессы sshd", "command": "pkill sshd", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Жёстко убей все процессы sshd", "command": "pkill -9 sshd", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Аккуратно завершить процесс sshd", "command": "pkill -SIGTERM sshd", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Убей все процессы python3", "command": "pkill python3", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Жёстко убей все процессы python3", "command": "pkill -9 python3", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Аккуратно завершить процесс python3", "command": "pkill -SIGTERM python3", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Убей все процессы node", "command": "pkill node", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Жёстко убей все процессы node", "command": "pkill -9 node", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Аккуратно завершить процесс node", "command": "pkill -SIGTERM node", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Убей все процессы java", "command": "pkill java", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Жёстко убей все процессы java", "command": "pkill -9 java", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Аккуратно завершить процесс java", "command": "pkill -SIGTERM java", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Убей все процессы mysqld", "command": "pkill mysqld", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Жёстко убей все процессы mysqld", "command": "pkill -9 mysqld", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Аккуратно завершить процесс mysqld", "command": "pkill -SIGTERM mysqld", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Убей все процессы firefox", "command": "pkill firefox", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Жёстко убей все процессы firefox", "command": "pkill -9 firefox", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Аккуратно завершить процесс firefox", "command": "pkill -SIGTERM firefox", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Убей процесс с PID 1234", "command": "kill 1234", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Жёстко убей процесс с PID 1234", "command": "kill -9 1234", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Убей процесс с PID 5678", "command": "kill 5678", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Жёстко убей процесс с PID 5678", "command": "kill -9 5678", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Убей процесс с PID 9012", "command": "kill 9012", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Жёстко убей процесс с PID 9012", "command": "kill -9 9012", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Убей процесс с PID 4321", "command": "kill 4321", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Жёстко убей процесс с PID 4321", "command": "kill -9 4321", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Убей процесс с PID 8765", "command": "kill 8765", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Жёстко убей процесс с PID 8765", "command": "kill -9 8765", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Отправь сигнал SIGTERM процессу 4321", "command": "kill -TERM 4321", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Отправь сигнал SIGKILL процессу 4321", "command": "kill -KILL 4321", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Отправь сигнал SIGHUP процессу 4321", "command": "kill -HUP 4321", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Отправь сигнал SIGINT процессу 4321", "command": "kill -INT 4321", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Убей все процессы пользователя bob", "command": "pkill -u bob", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Убей процессы, соответствующие шаблону в полной командной строке", "command": "pkill -f 'worker.py --queue=emails'", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Найди и убей процесс, занимающий порт 8080", "command": "sudo fuser -k 8080/tcp", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Убей все процессы по имени с подтверждением", "command": "killall -i nginx", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Убей все экземпляры firefox", "command": "killall firefox", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Отправь SIGHUP чтобы перечитать конфигурацию nginx", "command": "kill -HUP $(pgrep -o nginx)", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Выведи список всех сигналов, поддерживаемых kill", "command": "kill -l", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Убей процесс, потребляющий больше всего памяти", "command": "kill -9 $(ps aux --sort=-%mem | awk 'NR==2{print $2}')", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Убей процесс, потребляющий больше всего CPU", "command": "kill -9 $(ps aux --sort=-%cpu | awk 'NR==2{print $2}')", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Проверь статус docker.service", "command": "systemctl status docker.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Запусти docker.service", "command": "sudo systemctl start docker.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Останови docker.service", "command": "sudo systemctl stop docker.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Перезапусти docker.service", "command": "sudo systemctl restart docker.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Перечитай конфигурацию docker.service без перезапуска", "command": "sudo systemctl reload docker.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Включи автозапуск docker.service при загрузке системы", "command": "sudo systemctl enable docker.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Отключи автозапуск docker.service при загрузке", "command": "sudo systemctl disable docker.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Проверь, включён ли автозапуск docker.service", "command": "systemctl is-enabled docker.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Проверь, активен ли сейчас docker.service", "command": "systemctl is-active docker.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Проверь статус nginx.service", "command": "systemctl status nginx.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Запусти nginx.service", "command": "sudo systemctl start nginx.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Останови nginx.service", "command": "sudo systemctl stop nginx.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Перезапусти nginx.service", "command": "sudo systemctl restart nginx.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Перечитай конфигурацию nginx.service без перезапуска", "command": "sudo systemctl reload nginx.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Включи автозапуск nginx.service при загрузке системы", "command": "sudo systemctl enable nginx.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Отключи автозапуск nginx.service при загрузке", "command": "sudo systemctl disable nginx.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Проверь, включён ли автозапуск nginx.service", "command": "systemctl is-enabled nginx.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Проверь, активен ли сейчас nginx.service", "command": "systemctl is-active nginx.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Проверь статус ssh.service", "command": "systemctl status ssh.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Запусти ssh.service", "command": "sudo systemctl start ssh.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Останови ssh.service", "command": "sudo systemctl stop ssh.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Перезапусти ssh.service", "command": "sudo systemctl restart ssh.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Перечитай конфигурацию ssh.service без перезапуска", "command": "sudo systemctl reload ssh.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Включи автозапуск ssh.service при загрузке системы", "command": "sudo systemctl enable ssh.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Отключи автозапуск ssh.service при загрузке", "command": "sudo systemctl disable ssh.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Проверь, включён ли автозапуск ssh.service", "command": "systemctl is-enabled ssh.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Проверь, активен ли сейчас ssh.service", "command": "systemctl is-active ssh.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Проверь статус postgresql.service", "command": "systemctl status postgresql.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Запусти postgresql.service", "command": "sudo systemctl start postgresql.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Останови postgresql.service", "command": "sudo systemctl stop postgresql.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Перезапусти postgresql.service", "command": "sudo systemctl restart postgresql.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Перечитай конфигурацию postgresql.service без перезапуска", "command": "sudo systemctl reload postgresql.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Включи автозапуск postgresql.service при загрузке системы", "command": "sudo systemctl enable postgresql.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Отключи автозапуск postgresql.service при загрузке", "command": "sudo systemctl disable postgresql.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Проверь, включён ли автозапуск postgresql.service", "command": "systemctl is-enabled postgresql.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Проверь, активен ли сейчас postgresql.service", "command": "systemctl is-active postgresql.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Проверь статус cron.service", "command": "systemctl status cron.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Запусти cron.service", "command": "sudo systemctl start cron.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Останови cron.service", "command": "sudo systemctl stop cron.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Перезапусти cron.service", "command": "sudo systemctl restart cron.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Перечитай конфигурацию cron.service без перезапуска", "command": "sudo systemctl reload cron.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Включи автозапуск cron.service при загрузке системы", "command": "sudo systemctl enable cron.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Отключи автозапуск cron.service при загрузке", "command": "sudo systemctl disable cron.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Проверь, включён ли автозапуск cron.service", "command": "systemctl is-enabled cron.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Проверь, активен ли сейчас cron.service", "command": "systemctl is-active cron.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Проверь статус networkd-dispatcher.service", "command": "systemctl status networkd-dispatcher.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Запусти networkd-dispatcher.service", "command": "sudo systemctl start networkd-dispatcher.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Останови networkd-dispatcher.service", "command": "sudo systemctl stop networkd-dispatcher.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Перезапусти networkd-dispatcher.service", "command": "sudo systemctl restart networkd-dispatcher.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Перечитай конфигурацию networkd-dispatcher.service без перезапуска", "command": "sudo systemctl reload networkd-dispatcher.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Включи автозапуск networkd-dispatcher.service при загрузке системы", "command": "sudo systemctl enable networkd-dispatcher.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Отключи автозапуск networkd-dispatcher.service при загрузке", "command": "sudo systemctl disable networkd-dispatcher.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Проверь, включён ли автозапуск networkd-dispatcher.service", "command": "systemctl is-enabled networkd-dispatcher.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Проверь, активен ли сейчас networkd-dispatcher.service", "command": "systemctl is-active networkd-dispatcher.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Проверь статус sshd.service", "command": "systemctl status sshd.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Запусти sshd.service", "command": "sudo systemctl start sshd.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Останови sshd.service", "command": "sudo systemctl stop sshd.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Перезапусти sshd.service", "command": "sudo systemctl restart sshd.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Перечитай конфигурацию sshd.service без перезапуска", "command": "sudo systemctl reload sshd.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Включи автозапуск sshd.service при загрузке системы", "command": "sudo systemctl enable sshd.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Отключи автозапуск sshd.service при загрузке", "command": "sudo systemctl disable sshd.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Проверь, включён ли автозапуск sshd.service", "command": "systemctl is-enabled sshd.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Проверь, активен ли сейчас sshd.service", "command": "systemctl is-active sshd.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Проверь статус mysql.service", "command": "systemctl status mysql.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Запусти mysql.service", "command": "sudo systemctl start mysql.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Останови mysql.service", "command": "sudo systemctl stop mysql.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Перезапусти mysql.service", "command": "sudo systemctl restart mysql.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Перечитай конфигурацию mysql.service без перезапуска", "command": "sudo systemctl reload mysql.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Включи автозапуск mysql.service при загрузке системы", "command": "sudo systemctl enable mysql.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Отключи автозапуск mysql.service при загрузке", "command": "sudo systemctl disable mysql.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Проверь, включён ли автозапуск mysql.service", "command": "systemctl is-enabled mysql.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Проверь, активен ли сейчас mysql.service", "command": "systemctl is-active mysql.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Проверь статус redis.service", "command": "systemctl status redis.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Запусти redis.service", "command": "sudo systemctl start redis.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Останови redis.service", "command": "sudo systemctl stop redis.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Перезапусти redis.service", "command": "sudo systemctl restart redis.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Перечитай конфигурацию redis.service без перезапуска", "command": "sudo systemctl reload redis.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Включи автозапуск redis.service при загрузке системы", "command": "sudo systemctl enable redis.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Отключи автозапуск redis.service при загрузке", "command": "sudo systemctl disable redis.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Проверь, включён ли автозапуск redis.service", "command": "systemctl is-enabled redis.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Проверь, активен ли сейчас redis.service", "command": "systemctl is-active redis.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Проверь статус NetworkManager.service", "command": "systemctl status NetworkManager.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Запусти NetworkManager.service", "command": "sudo systemctl start NetworkManager.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Останови NetworkManager.service", "command": "sudo systemctl stop NetworkManager.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Перезапусти NetworkManager.service", "command": "sudo systemctl restart NetworkManager.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Перечитай конфигурацию NetworkManager.service без перезапуска", "command": "sudo systemctl reload NetworkManager.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Включи автозапуск NetworkManager.service при загрузке системы", "command": "sudo systemctl enable NetworkManager.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Отключи автозапуск NetworkManager.service при загрузке", "command": "sudo systemctl disable NetworkManager.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Проверь, включён ли автозапуск NetworkManager.service", "command": "systemctl is-enabled NetworkManager.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Проверь, активен ли сейчас NetworkManager.service", "command": "systemctl is-active NetworkManager.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Выведи список всех запущенных служб", "command": "systemctl list-units --type=service --state=running", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Выведи список всех служб, завершившихся с ошибкой", "command": "systemctl --failed", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Выведи список всех включённых служб", "command": "systemctl list-unit-files --type=service --state=enabled", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи все юнит-файлы типа service", "command": "systemctl list-unit-files --type=service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Перечитай конфигурацию systemd после изменения юнит-файла", "command": "sudo systemctl daemon-reload", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Замаскируй службу, чтобы её нельзя было запустить", "command": "sudo systemctl mask docker.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Размаскируй ранее замаскированную службу", "command": "sudo systemctl unmask docker.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи зависимости docker.service", "command": "systemctl list-dependencies docker.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи какие службы сейчас активны и работают", "command": "systemctl list-units --state=active", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи текущий уровень запуска системы", "command": "systemctl get-default", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Установи целевой уровень загрузки по умолчанию multi-user", "command": "sudo systemctl set-default multi-user.target", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи логи для docker.service", "command": "journalctl -u docker.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Следи за логами docker.service в реальном времени", "command": "journalctl -u docker.service -f", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи последние 50 строк логов docker.service", "command": "journalctl -u docker.service -n 50", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи логи для nginx.service", "command": "journalctl -u nginx.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Следи за логами nginx.service в реальном времени", "command": "journalctl -u nginx.service -f", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи последние 50 строк логов nginx.service", "command": "journalctl -u nginx.service -n 50", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи логи для ssh.service", "command": "journalctl -u ssh.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Следи за логами ssh.service в реальном времени", "command": "journalctl -u ssh.service -f", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи последние 50 строк логов ssh.service", "command": "journalctl -u ssh.service -n 50", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи логи для postgresql.service", "command": "journalctl -u postgresql.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Следи за логами postgresql.service в реальном времени", "command": "journalctl -u postgresql.service -f", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи последние 50 строк логов postgresql.service", "command": "journalctl -u postgresql.service -n 50", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи логи для cron.service", "command": "journalctl -u cron.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Следи за логами cron.service в реальном времени", "command": "journalctl -u cron.service -f", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи последние 50 строк логов cron.service", "command": "journalctl -u cron.service -n 50", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи логи для networkd-dispatcher.service", "command": "journalctl -u networkd-dispatcher.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Следи за логами networkd-dispatcher.service в реальном времени", "command": "journalctl -u networkd-dispatcher.service -f", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи последние 50 строк логов networkd-dispatcher.service", "command": "journalctl -u networkd-dispatcher.service -n 50", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи логи для sshd.service", "command": "journalctl -u sshd.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Следи за логами sshd.service в реальном времени", "command": "journalctl -u sshd.service -f", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи последние 50 строк логов sshd.service", "command": "journalctl -u sshd.service -n 50", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи логи для mysql.service", "command": "journalctl -u mysql.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Следи за логами mysql.service в реальном времени", "command": "journalctl -u mysql.service -f", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи последние 50 строк логов mysql.service", "command": "journalctl -u mysql.service -n 50", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи логи для redis.service", "command": "journalctl -u redis.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Следи за логами redis.service в реальном времени", "command": "journalctl -u redis.service -f", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи последние 50 строк логов redis.service", "command": "journalctl -u redis.service -n 50", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи логи для NetworkManager.service", "command": "journalctl -u NetworkManager.service", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Следи за логами NetworkManager.service в реальном времени", "command": "journalctl -u NetworkManager.service -f", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи последние 50 строк логов NetworkManager.service", "command": "journalctl -u NetworkManager.service -n 50", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи логи с начала сегодняшнего дня", "command": "journalctl --since today", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи логи за последний час", "command": "journalctl --since '1 hour ago'", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи логи за указанный период между двумя временными метками", "command": "journalctl --since '2026-10-01 00:00:00' --until '2026-10-02 00:00:00'", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи только сообщения уровня ошибка", "command": "journalctl -p err", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи сообщения кольцевого буфера ядра", "command": "journalctl -k", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи логи предыдущей загрузки системы", "command": "journalctl -b -1", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи логи с момента последней загрузки системы", "command": "journalctl -b", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи сколько места на диске занимают логи journal", "command": "journalctl --disk-usage", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Удали логи journal старше 2 недель", "command": "sudo journalctl --vacuum-time=2weeks", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Уменьши размер логов journal до 500 мегабайт", "command": "sudo journalctl --vacuum-size=500M", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи логи для конкретного PID процесса", "command": "journalctl _PID=1234", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи логи в формате JSON", "command": "journalctl -o json -n 20", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Найди в логах journal события нехватки памяти", "command": "journalctl -k | grep -i 'out of memory'", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи логи текущей загрузки, новые сверху", "command": "journalctl -b -r", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи использование дискового пространства для всех файловых систем", "command": "df -h", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи использование диска в удобочитаемом виде, исключая tmpfs", "command": "df -h --exclude-type=tmpfs", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи использование inode для всех файловых систем", "command": "df -i", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи использование диска для конкретного раздела", "command": "df -h /dev/sda1", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Проверь свободное место в корневой файловой системе", "command": "df -h /", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи использование диска, отсортированное по процентам", "command": "df -h | sort -k5 -rn", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Найди файловые системы, заполненные более чем на 90%", "command": "df -h | awk '$5+0 > 90'", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи использование диска в мегабайтах", "command": "df -m", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи тип файловой системы для каждой точки монтирования", "command": "df -T", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи общий размер /var/log", "command": "du -sh /var/log", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи размер каждого подкаталога в /var/log", "command": "du -h --max-depth=1 /var/log", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи общий размер /home/alice", "command": "du -sh /home/alice", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи размер каждого подкаталога в /home/alice", "command": "du -h --max-depth=1 /home/alice", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи общий размер /tmp", "command": "du -sh /tmp", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи размер каждого подкаталога в /tmp", "command": "du -h --max-depth=1 /tmp", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи общий размер /var/lib/docker", "command": "du -sh /var/lib/docker", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи размер каждого подкаталога в /var/lib/docker", "command": "du -h --max-depth=1 /var/lib/docker", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи общий размер /opt/app", "command": "du -sh /opt/app", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи размер каждого подкаталога в /opt/app", "command": "du -h --max-depth=1 /opt/app", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Найди 10 самых больших каталогов в /var", "command": "du -ah /var | sort -rh | head -n 10", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Найди 10 самых больших файлов в /home", "command": "find /home -type f -exec du -h {} + | sort -rh | head -n 10", "lang": "ru", "source": "synthetic-procsys"}
+{"instruction": "Покажи сводку использования диска без списка подкаталогов", "command": "du -sh *", "lang": "ru", "source": "synthetic-procsys"}

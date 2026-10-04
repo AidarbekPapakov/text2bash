@@ -1,0 +1,600 @@
+{"instruction": "Count the number of lines in access.log", "command": "wc -l access.log", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "How many words are in notes.txt?", "command": "wc -w notes.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Show the number of characters in readme.md", "command": "wc -c readme.md", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Print line, word and byte counts for data.csv", "command": "wc data.csv", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Find all lines containing 'ERROR' in app.log", "command": "grep 'ERROR' app.log", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Search for 'timeout' case-insensitively in server.log", "command": "grep -i 'timeout' server.log", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Count how many lines contain 'WARNING' in app.log", "command": "grep -c 'WARNING' app.log", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Show lines NOT containing 'DEBUG' in app.log", "command": "grep -v 'DEBUG' app.log", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Recursively search for 'TODO' in the src directory", "command": "grep -r 'TODO' src/", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Find 'main' as a whole word in main.c", "command": "grep -w 'main' main.c", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Print line numbers for matches of 'fail' in build.log", "command": "grep -n 'fail' build.log", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Search for lines matching the regex '^[0-9]+' in data.txt", "command": "grep -E '^[0-9]+' data.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "List filenames that contain 'password' under /etc", "command": "grep -rl 'password' /etc", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Show 2 lines of context around matches of 'exception' in app.log", "command": "grep -C 2 'exception' app.log", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Find lines ending with '.com' in domains.txt", "command": "grep '\\.com$' domains.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Match lines that start with '#' in config.yaml", "command": "grep '^#' config.yaml", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Search multiple files access.log and error.log for '404'", "command": "grep '404' access.log error.log", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Find lines with either 'cat' or 'dog' in pets.txt", "command": "grep -E 'cat|dog' pets.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Count unique IP addresses that returned 500 in access.log", "command": "grep ' 500 ' access.log | awk '{print $1}' | sort -u | wc -l", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Replace 'foo' with 'bar' in config.txt", "command": "sed 's/foo/bar/' config.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Replace all occurrences of 'foo' with 'bar' in config.txt and save in place", "command": "sed -i 's/foo/bar/g' config.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Delete blank lines from notes.txt", "command": "sed '/^$/d' notes.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Delete the first line of header.csv", "command": "sed '1d' header.csv", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Print only lines 10 through 20 of big.log", "command": "sed -n '10,20p' big.log", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Remove trailing whitespace from lines.txt", "command": "sed 's/[ \\t]*$//' lines.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Insert a line before line 1 of script.sh", "command": "sed '1i\\#!/bin/bash' script.sh", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Append 'END' after the last line of report.txt", "command": "sed '$a\\END' report.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Replace tabs with commas in data.tsv", "command": "sed 's/\\t/,/g' data.tsv", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Comment out every line in init.sql by prefixing with --", "command": "sed 's/^/--/' init.sql", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Change the word 'localhost' to '127.0.0.1' in hosts.conf in place", "command": "sed -i 's/localhost/127.0.0.1/g' hosts.conf", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Print only the lines that match 'ERROR' using sed", "command": "sed -n '/ERROR/p' app.log", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Delete lines matching 'DEBUG' from app.log and print result", "command": "sed '/DEBUG/d' app.log", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Print the 3rd column of data.csv using a comma delimiter", "command": "awk -F',' '{print $3}' data.csv", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Sum the values in the second column of sales.csv", "command": "awk -F',' '{sum += $2} END {print sum}' sales.csv", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Print lines where the 5th field is greater than 100 in report.csv", "command": "awk -F',' '$5 > 100' report.csv", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Print the number of fields in each line of data.txt", "command": "awk '{print NF}' data.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Print the total number of lines using awk on data.txt", "command": "awk 'END {print NR}' data.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Print lines longer than 80 characters from code.py", "command": "awk 'length($0) > 80' code.py", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Print the first and third columns of users.csv separated by a space", "command": "awk -F',' '{print $1, $3}' users.csv", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Compute the average of column 4 in metrics.csv", "command": "awk -F',' '{sum+=$4; n++} END {print sum/n}' metrics.csv", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Print only unique values of column 1 in log.csv", "command": "awk -F',' '{print $1}' log.csv | sort -u", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Use awk to print lines where column 2 equals 'active'", "command": "awk -F',' '$2 == \"active\"' users.csv", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Reformat data.csv so fields are separated by tabs instead of commas", "command": "awk -F',' 'BEGIN{OFS=\"\\t\"} {$1=$1; print}' data.csv", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Sort names.txt alphabetically", "command": "sort names.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Sort numbers.txt numerically", "command": "sort -n numbers.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Sort scores.csv by the second column numerically", "command": "sort -t',' -k2,2n scores.csv", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Sort file sizes.txt in reverse order", "command": "sort -r sizes.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Sort data.csv by column 3 then column 1", "command": "sort -t',' -k3,3 -k1,1 data.csv", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Sort and remove duplicate lines from list.txt", "command": "sort -u list.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Sort lines of big.txt ignoring case", "command": "sort -f big.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Sort IP addresses in access.log by human-readable version order", "command": "sort -V ips.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Find duplicate lines in list.txt", "command": "sort list.txt | uniq -d", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Count occurrences of each line in log.txt", "command": "sort log.txt | uniq -c", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Show only lines that appear exactly once in data.txt", "command": "sort data.txt | uniq -u", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "List unique values with counts, sorted by frequency descending", "command": "sort names.txt | uniq -c | sort -rn", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Remove consecutive duplicate lines from output.txt without sorting", "command": "uniq output.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Extract the first field of /etc/passwd using ':' as delimiter", "command": "cut -d':' -f1 /etc/passwd", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Get columns 2 through 4 from data.csv", "command": "cut -d',' -f2-4 data.csv", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Print only the first 10 characters of each line in names.txt", "command": "cut -c1-10 names.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Extract the username and shell fields from /etc/passwd", "command": "cut -d':' -f1,7 /etc/passwd", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Convert lowercase to uppercase in input.txt", "command": "tr 'a-z' 'A-Z' < input.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Remove all digits from text.txt", "command": "tr -d '0-9' < text.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Squeeze multiple spaces into one in messy.txt", "command": "tr -s ' ' < messy.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Translate spaces to newlines in words.txt", "command": "tr ' ' '\\n' < words.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Delete carriage returns from windows_file.txt", "command": "tr -d '\\r' < windows_file.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Compare two files old.txt and new.txt", "command": "diff old.txt new.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Show a unified diff of v1.py and v2.py", "command": "diff -u v1.py v2.py", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Check if file_a.txt and file_b.txt are identical", "command": "diff -q file_a.txt file_b.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Compare two directories dir1 and dir2 recursively", "command": "diff -r dir1 dir2", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Show differences between config.yaml and config.yaml.bak ignoring whitespace", "command": "diff -w config.yaml config.yaml.bak", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Display the first 10 lines of access.log", "command": "head access.log", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Show the first 5 lines of data.csv", "command": "head -n 5 data.csv", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Display the last 10 lines of error.log", "command": "tail error.log", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Show the last 20 lines of error.log", "command": "tail -n 20 error.log", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Follow the live updates of server.log", "command": "tail -f server.log", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Show everything except the last 5 lines of report.txt", "command": "head -n -5 report.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Show all lines after the first 3 in data.txt", "command": "tail -n +4 data.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Pretty-print a JSON file config.json", "command": "jq '.' config.json", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Extract the 'name' field from each object in users.json", "command": "jq '.[].name' users.json", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Get the value of 'version' from package.json", "command": "jq -r '.version' package.json", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Filter users.json for entries where age is greater than 30", "command": "jq '.[] | select(.age > 30)' users.json", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Count the number of objects in the array in data.json", "command": "jq 'length' data.json", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Convert JSON array in data.json into a CSV of name and email fields", "command": "jq -r '.[] | [.name, .email] | @csv' data.json", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Extract all keys from the top-level object in config.json", "command": "jq 'keys' config.json", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Compact a multi-line JSON file pretty.json into one line", "command": "jq -c '.' pretty.json", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Get a nested field user.address.city from profile.json", "command": "jq -r '.user.address.city' profile.json", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Merge two JSON files a.json and b.json", "command": "jq -s '.[0] * .[1]' a.json b.json", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Count the number of unique IPs in access.log", "command": "awk '{print $1}' access.log | sort -u | wc -l", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Find the top 10 most frequent words in essay.txt", "command": "tr -s ' \\t' '\\n' < essay.txt | sort | uniq -c | sort -rn | head -10", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Show the top 5 IP addresses by request count in access.log", "command": "awk '{print $1}' access.log | sort | uniq -c | sort -rn | head -5", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Extract all email addresses from contacts.txt", "command": "grep -Eo '[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}' contacts.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Find and list all 404 response lines from access.log and show only the URL field", "command": "grep ' 404 ' access.log | awk '{print $7}'", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Count how many times each HTTP status code appears in access.log", "command": "awk '{print $9}' access.log | sort | uniq -c | sort -rn", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Replace all tabs with 4 spaces in code.py and overwrite the file", "command": "sed -i 's/\\t/    /g' code.py", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Strip HTML tags from page.html", "command": "sed 's/<[^>]*>//g' page.html", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Find lines in diff output that were added (start with +)", "command": "grep '^+' changes.diff", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "List all .log files in /var/log sorted by size", "command": "ls -lS /var/log/*.log", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Extract the second word of every line in sentence.txt", "command": "awk '{print $2}' sentence.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Remove the last column from table.csv", "command": "awk -F',' 'BEGIN{OFS=\",\"} {NF--; print}' table.csv", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Show lines from data.txt that are duplicated more than 3 times", "command": "sort data.txt | uniq -c | awk '$1 > 3'", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Trim leading and trailing whitespace from each line in messy.txt", "command": "sed -e 's/^[ \\t]*//' -e 's/[ \\t]*$//' messy.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Count how many lines are empty in file.txt", "command": "grep -c '^$' file.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Join lines of pairs.txt two at a time", "command": "paste -d' ' - - < pairs.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Number each line of poem.txt", "command": "nl poem.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Reverse the order of lines in list.txt", "command": "tac list.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Reverse the characters in each line of words.txt", "command": "rev words.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Find lines that are present in file1.txt but not in file2.txt", "command": "comm -23 <(sort file1.txt) <(sort file2.txt)", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Find common lines between file1.txt and file2.txt", "command": "comm -12 <(sort file1.txt) <(sort file2.txt)", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Split big.log into 1000-line chunks with prefix part_", "command": "split -l 1000 big.log part_", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Extract all numbers from mixed.txt", "command": "grep -Eo '[0-9]+' mixed.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Remove duplicate lines from data.csv while keeping the original order", "command": "awk '!seen[$0]++' data.csv", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Print every other line (odd lines) of data.txt", "command": "awk 'NR % 2 == 1' data.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Print lines 15 to 25 of document.txt", "command": "sed -n '15,25p' document.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Count how many times the word 'error' appears in total across app.log", "command": "grep -o 'error' app.log | wc -l", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Find files modified today and search them for 'FATAL'", "command": "find . -mtime -1 -type f | xargs grep -l 'FATAL'", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Search for 'exception' in all .java files recursively, ignoring case", "command": "grep -rli 'exception' --include='*.java' .", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Replace the second occurrence of 'test' with 'prod' on each line of config.ini", "command": "sed 's/test/prod/2' config.ini", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Show only lines 100 and beyond in huge.log", "command": "tail -n +100 huge.log", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Print the last field of every line in path_list.txt", "command": "awk -F'/' '{print $NF}' path_list.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Count how many columns are in the header of data.csv", "command": "head -1 data.csv | tr ',' '\\n' | wc -l", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Check if query.sql contains the string 'DROP TABLE'", "command": "grep -q 'DROP TABLE' query.sql && echo found", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "List all unique file extensions in the current directory", "command": "ls | sed -n 's/.*\\.//p' | sort -u", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Find lines with trailing whitespace in file.py", "command": "grep -n ' $' file.py", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Convert CSV file data.csv to TSV", "command": "sed 's/,/\\t/g' data.csv > data.tsv", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Extract all URLs starting with http from page.txt", "command": "grep -Eo 'https?://[^ ]+' page.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Count the number of commas on each line of data.csv", "command": "awk -F',' '{print NF-1}' data.csv", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Print lines where column 1 matches a regex pattern '^A' in records.csv", "command": "awk -F',' '$1 ~ /^A/' records.csv", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Find the longest line in file.txt", "command": "awk '{ if (length($0) > max) {max=length($0); line=$0} } END {print line}' file.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Show the shortest line in words.txt", "command": "awk '{print length, $0}' words.txt | sort -n | head -1", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Delete all lines that are exactly 'EOF' in script.txt", "command": "sed '/^EOF$/d' script.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Replace multiple spaces with a single space in messy.txt", "command": "sed 's/  */ /g' messy.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Check the difference between two sorted files a.sorted and b.sorted side by side", "command": "diff -y a.sorted b.sorted", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Count how many times 'GET' appears versus 'POST' in access.log", "command": "grep -c 'GET' access.log; grep -c 'POST' access.log", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Find all lines that contain only numbers in mixed.txt", "command": "grep -E '^[0-9]+$' mixed.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Extract the domain part of each email in emails.txt", "command": "grep -Eo '@[A-Za-z0-9.-]+' emails.txt | tr -d '@'", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "List process names from ps output sorted by CPU usage", "command": "ps aux | sort -k3 -rn | awk '{print $11}'", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Print a frequency table of HTTP methods used in access.log", "command": "awk '{print $6}' access.log | tr -d '\"' | sort | uniq -c", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Show the difference in line count between file1.txt and file2.txt", "command": "diff <(wc -l < file1.txt) <(wc -l < file2.txt)", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Extract text between quotes in log.txt", "command": "grep -oP '(?<=\").*?(?=\")' log.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Capitalize the first letter of every line in names.txt", "command": "sed 's/^\\(.\\)/\\u\\1/' names.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Count blank lines versus non-blank lines in file.txt", "command": "grep -c '^$' file.txt; grep -vc '^$' file.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Remove the BOM from utf8file.txt", "command": "sed -i '1s/^\\xef\\xbb\\xbf//' utf8file.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Search for 'root' in /etc/passwd and show just the home directory field", "command": "grep '^root' /etc/passwd | cut -d':' -f6", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Print column headers of data.csv one per line", "command": "head -1 data.csv | tr ',' '\\n'", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Pull out just the timestamps from log.txt assuming they are the first field", "command": "awk '{print $1, $2}' log.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Find lines in orders.csv where the status column is 'cancelled'", "command": "awk -F',' '$4 == \"cancelled\"' orders.csv", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Convert all JSON keys to lowercase in data.json using jq", "command": "jq 'with_entries(.key |= ascii_downcase)' data.json", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Flatten a nested JSON array of arrays in nested.json", "command": "jq 'flatten' nested.json", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Get an array of all unique 'category' values from items.json", "command": "jq -r '[.[].category] | unique | .[]' items.json", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Delete a key named 'password' from each object in users.json", "command": "jq 'map(del(.password))' users.json", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Print the number of keys in each object of records.json", "command": "jq '.[] | length' records.json", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Check whether jobs.json is valid JSON", "command": "jq empty jobs.json && echo valid", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Convert a CSV file data.csv into JSON objects using jq", "command": "jq -R -s -c 'split(\"\\n\") | map(split(\",\"))' data.csv", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Sum all the 'price' fields in cart.json", "command": "jq '[.[].price] | add' cart.json", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Get the 3 highest 'score' values from results.json", "command": "jq '[.[].score] | sort | reverse | .[0:3]' results.json", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Find lines that changed between two config versions using diff and show only additions", "command": "diff old.conf new.conf | grep '^>'", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Show word frequency ignoring case and punctuation in book.txt", "command": "tr -d '[:punct:]' < book.txt | tr '[:upper:]' '[:lower:]' | tr -s ' ' '\\n' | sort | uniq -c | sort -rn", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Find files containing a specific regex pattern and list matching lines with filenames", "command": "grep -rn 'TODO:' . --include='*.py'", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Replace the extension .txt with .bak for all matching lines listing files", "command": "ls *.txt | sed 's/\\.txt$/.bak/'", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Extract column names from a pipe-delimited file data.psv", "command": "head -1 data.psv | tr '|' '\\n'", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Trim a CSV file to only the first 3 columns", "command": "cut -d',' -f1-3 data.csv", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Show the total size of all .log files combined", "command": "wc -c *.log | tail -1", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Count how many lines contain both 'error' and 'timeout' in app.log", "command": "grep -c 'error' app.log | grep 'timeout'", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Find and print lines matching 'error' AND 'timeout' together using awk", "command": "awk '/error/ && /timeout/' app.log", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Check which lines in file1.txt and file2.txt are identical using comm", "command": "comm file1.txt file2.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Replace Windows line endings with Unix line endings in winfile.txt", "command": "sed -i 's/\\r$//' winfile.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Count occurrences of the word 'the' in essay.txt ignoring case", "command": "grep -oi 'the' essay.txt | wc -l", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Show only the filename portion of each path in paths.txt", "command": "sed 's#.*/##' paths.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Strip the directory path and keep only the file extension of each line in files.txt", "command": "sed 's/.*\\.//' files.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Print lines from access.log between two timestamps using sed ranges", "command": "sed -n '/10:00:00/,/11:00:00/p' access.log", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Find the line number where 'START' first occurs in script.log", "command": "grep -n 'START' script.log | head -1 | cut -d':' -f1", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Merge lines of two files side by side with a tab separator", "command": "paste file1.txt file2.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Convert a space-separated file to comma-separated", "command": "tr -s ' ' ',' < data.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Remove a specific column (the 2nd) from a CSV file", "command": "cut -d',' -f1,3- data.csv", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Find all lines with exactly 5 fields in data.txt", "command": "awk 'NF == 5' data.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "List the top 3 longest lines in file.txt by character count", "command": "awk '{print length, $0}' file.txt | sort -rn | head -3", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Check if two JSON files config1.json and config2.json are semantically equal", "command": "diff <(jq -S . config1.json) <(jq -S . config2.json)", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Find and remove lines that are all whitespace in notes.txt", "command": "sed -i '/^[ \\t]*$/d' notes.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Count total number of lines across all .csv files in the directory", "command": "cat *.csv | wc -l", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Show unique values of the 'status' field in orders.json", "command": "jq -r '.[].status' orders.json | sort -u", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Convert tabs to spaces (4 per tab) throughout code.py", "command": "expand -t 4 code.py", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Replace spaces with tabs in table.txt", "command": "unexpand table.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Find lines matching an exact string 'v1.0.0' in CHANGELOG.md", "command": "grep -F 'v1.0.0' CHANGELOG.md", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Search case-insensitively and show only matched text, not whole lines, in log.txt for 'fatal error'", "command": "grep -io 'fatal error' log.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Count how many times a given IP 192.168.1.1 appears in access.log", "command": "grep -c '192.168.1.1' access.log", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Extract all hashtags from tweets.txt", "command": "grep -Eo '#[A-Za-z0-9_]+' tweets.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "List the unique domains visited based on urls.txt", "command": "sed -E 's#https?://([^/]+).*#\\1#' urls.txt | sort -u", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Print lines from stdin as they are piped, numbering each one", "command": "cat -n", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Show line count per file for all .txt files in the folder", "command": "wc -l *.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Get the last modified timestamp field from ls -l output sorted by date", "command": "ls -l --time-style=full-iso | sort -k6,7", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Remove duplicate words on the same line in repeated.txt", "command": "awk '{ for(i=1;i<=NF;i++) if (!seen[$i]++) printf \"%s \", $i; print \"\"; delete seen }' repeated.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Search for a pattern across all files recursively but exclude node_modules", "command": "grep -r 'TODO' . --exclude-dir=node_modules", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Print all lines that are duplicated across file1.txt and file2.txt combined", "command": "cat file1.txt file2.txt | sort | uniq -d", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Replace the 3rd field in a colon separated file with 'x' for every line", "command": "awk -F':' 'BEGIN{OFS=\":\"} {$3=\"x\"; print}' data.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Show how many lines were added and removed between two files using diff summary", "command": "diff --stat old.txt new.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Find lines where column 2 is numeric and greater than the average in scores.csv", "command": "awk -F',' '{sum+=$2; n++; a[NR]=$2} END{avg=sum/n; for(i=1;i<=NR;i++) if(a[i]>avg) print a[i]}' scores.csv", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Convert all CRLF line endings to LF in all .txt files in the current directory", "command": "sed -i 's/\\r$//' *.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Show the frequency of each character in password.txt", "command": "grep -o . password.txt | sort | uniq -c | sort -rn", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Print filenames and their line counts sorted by count descending", "command": "wc -l *.txt | sort -rn", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Delete everything after a '#' comment character on each line of config.conf", "command": "sed 's/#.*//' config.conf", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Join all lines of a file into one line separated by spaces", "command": "tr '\\n' ' ' < paragraph.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Count how many times each extension appears among files.txt entries", "command": "sed -n 's/.*\\.//p' files.txt | sort | uniq -c", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Show the 2nd to last line of a file", "command": "tail -2 file.txt | head -1", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Extract IPv4 addresses from server.log", "command": "grep -Eo '([0-9]{1,3}\\.){3}[0-9]{1,3}' server.log", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Find lines containing non-ASCII characters in text.txt", "command": "grep -P '[^\\x00-\\x7F]' text.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Remove duplicate CSV rows based on the first column only", "command": "awk -F',' '!seen[$1]++' data.csv", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Print just the values (no keys) from a JSON object in map.json", "command": "jq '.[]' map.json", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Combine select and map in jq to get active user emails from users.json", "command": "jq -r '.[] | select(.active == true) | .email' users.json", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Sort a JSON array of objects by the 'age' field using jq", "command": "jq 'sort_by(.age)' people.json", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Group objects in sales.json by the 'region' field", "command": "jq 'group_by(.region)' sales.json", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Turn a JSON object into key=value lines using jq", "command": "jq -r 'to_entries[] | \"\\(.key)=\\(.value)\"' settings.json", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Show how many requests per minute are in access.log", "command": "awk '{print substr($4,1,18)}' access.log | sort | uniq -c", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "List files with Windows-style line endings", "command": "grep -rl $'\\r' .  ", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Find all lines in a file with mixed tabs and spaces indentation", "command": "grep -P '^( \\t|\\t )' file.py", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Strip ANSI color codes from colored_output.txt", "command": "sed -r 's/\\x1b\\[[0-9;]*m//g' colored_output.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Print lines 1, 5, and 10 only from file.txt", "command": "sed -n '1p;5p;10p' file.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Count distinct values in the fourth column of a tab-separated file data.tsv", "command": "cut -f4 data.tsv | sort -u | wc -l", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Replace a literal dot with an underscore in filenames.txt, treating dot literally", "command": "sed 's/\\./_/g' filenames.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Search for lines matching a word boundary pattern 'cat' but not 'category' in words.txt", "command": "grep -w 'cat' words.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Find the 95th percentile response time from a column of numbers in times.csv", "command": "sort -n times.csv | awk '{a[NR]=$1} END{print a[int(NR*0.95)]}'", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Count how many unique users appear in a log where username is field 3", "command": "awk '{print $3}' userlog.txt | sort -u | wc -l", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Show lines in file.txt that contain a digit followed by a letter", "command": "grep -E '[0-9][a-zA-Z]' file.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Remove all punctuation from a sentence file clean_me.txt", "command": "tr -d '[:punct:]' < clean_me.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Keep only alphabetic characters in a file alnum.txt", "command": "tr -cd '[:alpha:]\\n' < alnum.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Print every third line of a file starting from line 1", "command": "awk 'NR % 3 == 1' file.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Find overlapping lines between three files using sort and comm with two passes", "command": "comm -12 <(sort a.txt) <(sort b.txt) | comm -12 - <(sort c.txt)", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Replace all occurrences of a path /old/path with /new/path in config files", "command": "sed -i 's#/old/path#/new/path#g' config.conf", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Check for duplicate email addresses in users.csv ignoring the header row", "command": "tail -n +2 users.csv | cut -d',' -f2 | sort | uniq -d", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Show the average line length in file.txt", "command": "awk '{total+=length($0)} END{print total/NR}' file.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Extract all quoted strings from a log file quotes.log", "command": "grep -oE '\"[^\"]*\"' quotes.log", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Count how many times each unique sentence appears in reviews.txt", "command": "sort reviews.txt | uniq -c | sort -rn", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Find lines that are palindromes in words.txt", "command": "awk '{if ($0 == \"\") next; r=\"\"; for(i=length($0);i>0;i--) r=r substr($0,i,1); if (r==$0) print}' words.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Remove the first and last character of every line in wrapped.txt", "command": "sed 's/^.\\(.*\\).$/\\1/' wrapped.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Search and highlight matches of 'warning' in color when printed from build.log", "command": "grep --color=always 'warning' build.log", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Display only matching portion with line numbers for a regex in config.ini", "command": "grep -no 'port=[0-9]*' config.ini", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Print a CSV file with quotes removed from every field", "command": "sed 's/\"//g' quoted.csv", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Extract the hour from each log timestamp assuming format HH:MM:SS at start of line 2", "command": "awk '{print substr($2,1,2)}' timestamps.log", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Count how many lines have more than 10 words in essay.txt", "command": "awk 'NF > 10' essay.txt | wc -l", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Find lines that contain only whitespace in file.txt", "command": "grep -E '^[[:space:]]+$' file.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "List all unique second-level domains from a list of URLs urls.txt", "command": "awk -F'/' '{print $3}' urls.txt | sort -u", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Print the sum of the first column in numbers.txt", "command": "awk '{s+=$1} END{print s}' numbers.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Count the number of fields in the first line of data.csv", "command": "head -1 data.csv | awk -F',' '{print NF}'", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Show lines in a file that have an odd number of characters", "command": "awk 'length($0) % 2 == 1' file.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Find and replace an IP address pattern with 'REDACTED' in access.log", "command": "sed -E 's/([0-9]{1,3}\\.){3}[0-9]{1,3}/REDACTED/g' access.log", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Count how many distinct error codes appear in errors.log", "command": "awk '{print $2}' errors.log | sort -u | wc -l", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Print only the even-numbered lines of file.txt", "command": "awk 'NR % 2 == 0' file.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Search for lines that match both 'start' and 'end' anywhere in build.log", "command": "grep -l 'start' build.log && grep -l 'end' build.log", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Extract the version number from a string like 'app-v2.3.1.tar.gz' in filenames.txt", "command": "grep -oE 'v[0-9]+\\.[0-9]+\\.[0-9]+' filenames.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Show a summary count of each unique value in the 'country' column of users.csv", "command": "awk -F',' 'NR>1{print $3}' users.csv | sort | uniq -c", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Delete the last line of a file using sed", "command": "sed '$d' file.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Print just the last word of every line in sentences.txt", "command": "awk '{print $NF}' sentences.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Remove empty lines and leading/trailing spaces from file.txt in one command", "command": "sed -e '/^[ \\t]*$/d' -e 's/^[ \\t]*//' -e 's/[ \\t]*$//' file.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Check whether a file contains any line longer than 120 characters", "command": "awk 'length($0) > 120 {print NR\": \"length($0); found=1} END{exit !found}' file.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Count how many times a backslash appears in script.sh", "command": "grep -o '\\\\' script.sh | wc -l", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "List the distinct HTTP methods used in a log file sorted alphabetically", "command": "awk '{print $6}' access.log | tr -d '\"' | sort -u", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Show which lines differ between two nearly identical config files, ignoring blank lines", "command": "diff -B config1.conf config2.conf", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Print the filename without extension for every .txt file in the folder", "command": "ls *.txt | sed 's/\\.txt$//'", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Get a count of how many times 'null' appears as a value in data.json", "command": "jq '[.. | select(. == null)] | length' data.json", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Extract all object keys recursively from a nested JSON file nested.json", "command": "jq '[paths] | map(join(\".\"))' nested.json", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Round all numeric 'price' fields to 2 decimals in items.json using jq", "command": "jq '.[].price |= (. * 100 | round / 100)' items.json", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Remove null fields from each object in records.json", "command": "jq 'map(with_entries(select(.value != null)))' records.json", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Convert a JSON file to pretty-printed YAML-like key: value lines with jq", "command": "jq -r 'to_entries[] | \"\\(.key): \\(.value)\"' simple.json", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Check if an array field 'tags' in items.json contains the value 'sale'", "command": "jq '.[] | select(.tags | index(\"sale\"))' items.json", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Print the min and max of a numeric column in stats.csv", "command": "awk -F',' 'NR==1{min=$2;max=$2} {if($2<min)min=$2; if($2>max)max=$2} END{print min, max}' stats.csv", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Count how many lines in a file start with an uppercase letter", "command": "grep -c '^[A-Z]' names.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Show only lines that contain exactly one comma in data.csv", "command": "awk -F',' 'NF==2' data.csv", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Find lines with unbalanced parentheses in code.py", "command": "awk '{o=gsub(/\\(/,\"(\"); c=gsub(/\\)/,\")\"); if(o!=c) print NR\": \"$0}' code.py", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Replace every instance of a Windows path backslash with a forward slash in paths.txt", "command": "sed 's#\\\\#/#g' paths.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Print lines of a log file that occurred in the last hour based on timestamp comparison with awk", "command": "awk -v cutoff=\"$(date -d '1 hour ago' +%H:%M:%S)\" '$2 > cutoff' app.log", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Count the number of distinct words in a text file ignoring case", "command": "tr '[:upper:]' '[:lower:]' < text.txt | tr -s '[:space:]' '\\n' | sort -u | wc -l", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Show lines in file.txt sorted by the number of words they contain", "command": "awk '{print NF, $0}' file.txt | sort -n", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Extract just the hostname from a set of URLs in urls.txt using sed", "command": "sed -E 's|^[a-z]+://([^/]+).*|\\1|' urls.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Find how many lines in two files are identical using diff with a count", "command": "diff old.txt new.txt | grep -c '^<'", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Compare the sorted contents of two files for equality, ignoring order", "command": "diff <(sort a.txt) <(sort b.txt)", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Print only lines that are valid email addresses in contacts.txt", "command": "grep -E '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$' contacts.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Show how many times a specific function name is called in source.c", "command": "grep -o 'my_function(' source.c | wc -l", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "List the 5 most common status codes in access.log as percentages", "command": "awk '{print $9}' access.log | sort | uniq -c | sort -rn | head -5 | awk '{printf \"%s: %d\\n\", $2, $1}'", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Trim a file down to unique rows based on columns 1 and 2 of a CSV", "command": "awk -F',' '!seen[$1,$2]++' data.csv", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Find lines where a column value is missing (empty) in a CSV file", "command": "awk -F',' '$3==\"\"' data.csv", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Count how many rows in sales.csv have a negative value in column 4", "command": "awk -F',' '$4<0' sales.csv | wc -l", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Show the running total of column 2 values line by line in running.csv", "command": "awk -F',' '{sum+=$2; print sum}' running.csv", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Print all lines in reverse field order for each row of data.csv", "command": "awk -F',' 'BEGIN{OFS=\",\"}{for(i=NF;i>=1;i--) printf \"%s%s\", $i, (i>1?OFS:\"\\n\")}' data.csv", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Delete lines 5 through 8 from a file using sed", "command": "sed '5,8d' file.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Replace a pattern only on lines that also match another pattern using sed", "command": "sed '/error/s/fail/failed/' app.log", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Count how many lines contain a URL in notes.txt", "command": "grep -cE 'https?://' notes.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Extract just the protocol (http or https) from each URL in urls.txt", "command": "grep -oE '^https?' urls.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Show file differences limited to lines matching a pattern 'version' only", "command": "diff <(grep version a.conf) <(grep version b.conf)", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Find which lines were removed when comparing old.txt to new.txt", "command": "diff old.txt new.txt | grep '^<'", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Print a tally of vowels found in text.txt", "command": "grep -o '[aeiouAEIOU]' text.txt | sort | uniq -c", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Show only the unique sorted list of file extensions used in a project directory", "command": "find . -type f | sed 's/.*\\.//' | sort -u", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Convert all field separators in a pipe-delimited file to commas", "command": "tr '|' ',' < data.psv > data.csv", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Count total number of '{' characters in config.json to estimate nesting", "command": "grep -o '{' config.json | wc -l", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Show the number of distinct values in the 'department' column of a CSV, skipping the header", "command": "tail -n +2 employees.csv | cut -d',' -f4 | sort -u | wc -l", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Print lines of a file where the first character is a digit", "command": "grep -E '^[0-9]' file.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Find rows where two columns are equal in a CSV file", "command": "awk -F',' '$2==$3' data.csv", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Show the count of lines matching 'success' versus 'failure' in test.log", "command": "grep -c 'success' test.log; grep -c 'failure' test.log", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Strip all non-numeric characters from each line of a mixed file", "command": "tr -cd '0-9\\n' < mixed.txt", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Count how many times each unique user agent appears in access.log assuming it's the last quoted field", "command": "awk -F'\"' '{print $(NF-1)}' access.log | sort | uniq -c | sort -rn", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Find the number of distinct dates present in a log file where the date is the first field", "command": "awk '{print $1}' app.log | sort -u | wc -l", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Print a sorted, deduplicated list of all imported modules in a Python file", "command": "grep -E '^import|^from' script.py | awk '{print $2}' | sort -u", "lang": "en", "source": "synthetic-textproc"}
+{"instruction": "Посчитай количество строк в файле access.log", "command": "wc -l access.log", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Сколько слов в файле notes.txt?", "command": "wc -w notes.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Покажи количество символов в readme.md", "command": "wc -c readme.md", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи количество строк, слов и байт в data.csv", "command": "wc data.csv", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Найди все строки с 'ERROR' в app.log", "command": "grep 'ERROR' app.log", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Поищи 'timeout' без учёта регистра в server.log", "command": "grep -i 'timeout' server.log", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Посчитай сколько строк содержат 'WARNING' в app.log", "command": "grep -c 'WARNING' app.log", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Покажи строки, не содержащие 'DEBUG' в app.log", "command": "grep -v 'DEBUG' app.log", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Рекурсивно найди 'TODO' в директории src", "command": "grep -r 'TODO' src/", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Найди слово 'main' целиком в main.c", "command": "grep -w 'main' main.c", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи номера строк с совпадением 'fail' в build.log", "command": "grep -n 'fail' build.log", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Найди строки по регулярке '^[0-9]+' в data.txt", "command": "grep -E '^[0-9]+' data.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Покажи имена файлов с 'password' в /etc", "command": "grep -rl 'password' /etc", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи 2 строки контекста вокруг совпадений 'exception' в app.log", "command": "grep -C 2 'exception' app.log", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Найди строки, заканчивающиеся на '.com' в domains.txt", "command": "grep '\\.com$' domains.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выбери строки, начинающиеся с '#' в config.yaml", "command": "grep '^#' config.yaml", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Поищи '404' сразу в access.log и error.log", "command": "grep '404' access.log error.log", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Найди строки с 'cat' или 'dog' в pets.txt", "command": "grep -E 'cat|dog' pets.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Посчитай уникальные IP, вернувшие 500 в access.log", "command": "grep ' 500 ' access.log | awk '{print $1}' | sort -u | wc -l", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Замени 'foo' на 'bar' в config.txt", "command": "sed 's/foo/bar/' config.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Замени все 'foo' на 'bar' в config.txt и сохрани изменения", "command": "sed -i 's/foo/bar/g' config.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Удали пустые строки из notes.txt", "command": "sed '/^$/d' notes.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Удали первую строку файла header.csv", "command": "sed '1d' header.csv", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Покажи только строки с 10 по 20 в big.log", "command": "sed -n '10,20p' big.log", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Убери пробелы в конце строк файла lines.txt", "command": "sed 's/[ \\t]*$//' lines.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Вставь строку перед первой строкой в script.sh", "command": "sed '1i\\#!/bin/bash' script.sh", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Добавь строку 'END' после последней строки report.txt", "command": "sed '$a\\END' report.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Замени табуляции на запятые в data.tsv", "command": "sed 's/\\t/,/g' data.tsv", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Закомментируй каждую строку init.sql, добавив -- в начало", "command": "sed 's/^/--/' init.sql", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Поменяй 'localhost' на '127.0.0.1' в hosts.conf с сохранением файла", "command": "sed -i 's/localhost/127.0.0.1/g' hosts.conf", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи только строки с совпадением 'ERROR' через sed", "command": "sed -n '/ERROR/p' app.log", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Удали строки с 'DEBUG' из app.log и покажи результат", "command": "sed '/DEBUG/d' app.log", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи 3-ю колонку data.csv с разделителем запятая", "command": "awk -F',' '{print $3}' data.csv", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Просуммируй значения второй колонки в sales.csv", "command": "awk -F',' '{sum += $2} END {print sum}' sales.csv", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Покажи строки, где 5-е поле больше 100, в report.csv", "command": "awk -F',' '$5 > 100' report.csv", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи количество полей в каждой строке data.txt", "command": "awk '{print NF}' data.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Подсчитай общее число строк через awk в data.txt", "command": "awk 'END {print NR}' data.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Найди строки длиннее 80 символов в code.py", "command": "awk 'length($0) > 80' code.py", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи первую и третью колонки users.csv через пробел", "command": "awk -F',' '{print $1, $3}' users.csv", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Вычисли среднее значение 4-й колонки в metrics.csv", "command": "awk -F',' '{sum+=$4; n++} END {print sum/n}' metrics.csv", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи только уникальные значения первой колонки log.csv", "command": "awk -F',' '{print $1}' log.csv | sort -u", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи строки, где вторая колонка равна 'active'", "command": "awk -F',' '$2 == \"active\"' users.csv", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Перегони data.csv из запятых в табуляцию", "command": "awk -F',' 'BEGIN{OFS=\"\\t\"} {$1=$1; print}' data.csv", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Отсортируй names.txt по алфавиту", "command": "sort names.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Отсортируй numbers.txt по числовому значению", "command": "sort -n numbers.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Отсортируй scores.csv по второй колонке численно", "command": "sort -t',' -k2,2n scores.csv", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Отсортируй sizes.txt в обратном порядке", "command": "sort -r sizes.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Отсортируй data.csv сначала по 3-й колонке, потом по 1-й", "command": "sort -t',' -k3,3 -k1,1 data.csv", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Отсортируй list.txt и убери дубликаты", "command": "sort -u list.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Отсортируй big.txt без учёта регистра", "command": "sort -f big.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Отсортируй версии IP в ips.txt в человекочитаемом порядке", "command": "sort -V ips.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Найди повторяющиеся строки в list.txt", "command": "sort list.txt | uniq -d", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Посчитай количество повторов каждой строки в log.txt", "command": "sort log.txt | uniq -c", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Покажи только строки, встречающиеся ровно один раз в data.txt", "command": "sort data.txt | uniq -u", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи уникальные значения с частотой, сортированные по убыванию", "command": "sort names.txt | uniq -c | sort -rn", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Удали подряд идущие дубликаты строк в output.txt без сортировки", "command": "uniq output.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Извлеки первое поле из /etc/passwd с разделителем ':'", "command": "cut -d':' -f1 /etc/passwd", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Получи колонки со 2 по 4 из data.csv", "command": "cut -d',' -f2-4 data.csv", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи только первые 10 символов каждой строки names.txt", "command": "cut -c1-10 names.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Извлеки поля имени пользователя и шелла из /etc/passwd", "command": "cut -d':' -f1,7 /etc/passwd", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Переведи текст из input.txt в верхний регистр", "command": "tr 'a-z' 'A-Z' < input.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Удали все цифры из text.txt", "command": "tr -d '0-9' < text.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Сожми несколько пробелов в один в messy.txt", "command": "tr -s ' ' < messy.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Замени пробелы на переносы строк в words.txt", "command": "tr ' ' '\\n' < words.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Удали символы возврата каретки из windows_file.txt", "command": "tr -d '\\r' < windows_file.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Сравни два файла old.txt и new.txt", "command": "diff old.txt new.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Покажи unified diff для v1.py и v2.py", "command": "diff -u v1.py v2.py", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Проверь, идентичны ли file_a.txt и file_b.txt", "command": "diff -q file_a.txt file_b.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Сравни две директории dir1 и dir2 рекурсивно", "command": "diff -r dir1 dir2", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Покажи различия config.yaml и config.yaml.bak без учёта пробелов", "command": "diff -w config.yaml config.yaml.bak", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Покажи первые 10 строк access.log", "command": "head access.log", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи первые 5 строк data.csv", "command": "head -n 5 data.csv", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Покажи последние 10 строк error.log", "command": "tail error.log", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи последние 20 строк error.log", "command": "tail -n 20 error.log", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Следи за обновлениями server.log в реальном времени", "command": "tail -f server.log", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Покажи все строки report.txt кроме последних 5", "command": "head -n -5 report.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Покажи все строки data.txt после третьей", "command": "tail -n +4 data.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Отформатируй JSON файл config.json", "command": "jq '.' config.json", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Извлеки поле 'name' из каждого объекта users.json", "command": "jq '.[].name' users.json", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Получи значение 'version' из package.json", "command": "jq -r '.version' package.json", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Отфильтруй users.json на записи, где age больше 30", "command": "jq '.[] | select(.age > 30)' users.json", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Посчитай количество объектов в массиве data.json", "command": "jq 'length' data.json", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Преврати JSON массив из data.json в CSV с полями name и email", "command": "jq -r '.[] | [.name, .email] | @csv' data.json", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Извлеки все ключи верхнего уровня объекта config.json", "command": "jq 'keys' config.json", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Сожми многострочный JSON pretty.json в одну строку", "command": "jq -c '.' pretty.json", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Получи вложенное поле user.address.city из profile.json", "command": "jq -r '.user.address.city' profile.json", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Объедини два JSON файла a.json и b.json", "command": "jq -s '.[0] * .[1]' a.json b.json", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Посчитай уникальные IP-адреса в access.log", "command": "awk '{print $1}' access.log | sort -u | wc -l", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Найди 10 самых частых слов в essay.txt", "command": "tr -s ' \\t' '\\n' < essay.txt | sort | uniq -c | sort -rn | head -10", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Покажи топ-5 IP по количеству запросов в access.log", "command": "awk '{print $1}' access.log | sort | uniq -c | sort -rn | head -5", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Извлеки все email-адреса из contacts.txt", "command": "grep -Eo '[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}' contacts.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Найди строки с ответом 404 в access.log и выведи только URL", "command": "grep ' 404 ' access.log | awk '{print $7}'", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Посчитай сколько раз встречается каждый HTTP код в access.log", "command": "awk '{print $9}' access.log | sort | uniq -c | sort -rn", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Замени все табы на 4 пробела в code.py и сохрани файл", "command": "sed -i 's/\\t/    /g' code.py", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Убери HTML-теги из page.html", "command": "sed 's/<[^>]*>//g' page.html", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Найди добавленные строки (начинаются с +) в changes.diff", "command": "grep '^+' changes.diff", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи список .log файлов в /var/log, отсортированных по размеру", "command": "ls -lS /var/log/*.log", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Извлеки второе слово каждой строки sentence.txt", "command": "awk '{print $2}' sentence.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Удали последнюю колонку из table.csv", "command": "awk -F',' 'BEGIN{OFS=\",\"} {NF--; print}' table.csv", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Покажи строки data.txt, повторяющиеся больше 3 раз", "command": "sort data.txt | uniq -c | awk '$1 > 3'", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Убери пробелы в начале и конце каждой строки messy.txt", "command": "sed -e 's/^[ \\t]*//' -e 's/[ \\t]*$//' messy.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Посчитай сколько пустых строк в file.txt", "command": "grep -c '^$' file.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Объедини строки pairs.txt по две в одну", "command": "paste -d' ' - - < pairs.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Пронумеруй строки poem.txt", "command": "nl poem.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Переверни порядок строк в list.txt", "command": "tac list.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Переверни символы в каждой строке words.txt", "command": "rev words.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Найди строки, которые есть в file1.txt, но отсутствуют в file2.txt", "command": "comm -23 <(sort file1.txt) <(sort file2.txt)", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Найди общие строки file1.txt и file2.txt", "command": "comm -12 <(sort file1.txt) <(sort file2.txt)", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Разбей big.log на куски по 1000 строк с префиксом part_", "command": "split -l 1000 big.log part_", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Извлеки все числа из mixed.txt", "command": "grep -Eo '[0-9]+' mixed.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Удали дублирующиеся строки в data.csv, сохранив исходный порядок", "command": "awk '!seen[$0]++' data.csv", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи только нечётные строки data.txt", "command": "awk 'NR % 2 == 1' data.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Покажи строки с 15 по 25 в document.txt", "command": "sed -n '15,25p' document.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Посчитай сколько раз всего встречается слово 'error' в app.log", "command": "grep -o 'error' app.log | wc -l", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Найди файлы, изменённые сегодня, и поищи в них 'FATAL'", "command": "find . -mtime -1 -type f | xargs grep -l 'FATAL'", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Поищи 'exception' во всех .java файлах рекурсивно без учёта регистра", "command": "grep -rli 'exception' --include='*.java' .", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Замени второе вхождение 'test' на 'prod' в каждой строке config.ini", "command": "sed 's/test/prod/2' config.ini", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Покажи строки начиная со 100-й в huge.log", "command": "tail -n +100 huge.log", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи последнее поле каждой строки path_list.txt", "command": "awk -F'/' '{print $NF}' path_list.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Посчитай сколько колонок в заголовке data.csv", "command": "head -1 data.csv | tr ',' '\\n' | wc -l", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Проверь, содержит ли query.sql строку 'DROP TABLE'", "command": "grep -q 'DROP TABLE' query.sql && echo found", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи список уникальных расширений файлов в текущей директории", "command": "ls | sed -n 's/.*\\.//p' | sort -u", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Найди строки с пробелами в конце в file.py", "command": "grep -n ' $' file.py", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Преобразуй CSV-файл data.csv в TSV", "command": "sed 's/,/\\t/g' data.csv > data.tsv", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Извлеки все URL, начинающиеся с http, из page.txt", "command": "grep -Eo 'https?://[^ ]+' page.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Посчитай количество запятых в каждой строке data.csv", "command": "awk -F',' '{print NF-1}' data.csv", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи строки, где первая колонка соответствует регулярке '^A' в records.csv", "command": "awk -F',' '$1 ~ /^A/' records.csv", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Найди самую длинную строку в file.txt", "command": "awk '{ if (length($0) > max) {max=length($0); line=$0} } END {print line}' file.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Покажи самую короткую строку в words.txt", "command": "awk '{print length, $0}' words.txt | sort -n | head -1", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Удали все строки, равные 'EOF', в script.txt", "command": "sed '/^EOF$/d' script.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Замени несколько пробелов одним в messy.txt", "command": "sed 's/  */ /g' messy.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Сравни два отсортированных файла a.sorted и b.sorted бок о бок", "command": "diff -y a.sorted b.sorted", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Посчитай сколько раз встречается 'GET' и 'POST' в access.log", "command": "grep -c 'GET' access.log; grep -c 'POST' access.log", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Найди строки, состоящие только из цифр, в mixed.txt", "command": "grep -E '^[0-9]+$' mixed.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Извлеки домен каждого email в emails.txt", "command": "grep -Eo '@[A-Za-z0-9.-]+' emails.txt | tr -d '@'", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи имена процессов из вывода ps, отсортированные по CPU", "command": "ps aux | sort -k3 -rn | awk '{print $11}'", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Построй таблицу частот HTTP методов в access.log", "command": "awk '{print $6}' access.log | tr -d '\"' | sort | uniq -c", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Покажи разницу в количестве строк между file1.txt и file2.txt", "command": "diff <(wc -l < file1.txt) <(wc -l < file2.txt)", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Извлеки текст в кавычках из log.txt", "command": "grep -oP '(?<=\").*?(?=\")' log.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Сделай первую букву каждой строки names.txt заглавной", "command": "sed 's/^\\(.\\)/\\u\\1/' names.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Посчитай пустые и непустые строки в file.txt", "command": "grep -c '^$' file.txt; grep -vc '^$' file.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Убери BOM из utf8file.txt", "command": "sed -i '1s/^\\xef\\xbb\\xbf//' utf8file.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Найди 'root' в /etc/passwd и выведи только поле домашней директории", "command": "grep '^root' /etc/passwd | cut -d':' -f6", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи заголовки колонок data.csv по одному в строке", "command": "head -1 data.csv | tr ',' '\\n'", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Вытащи только временные метки из log.txt, считая их первым полем", "command": "awk '{print $1, $2}' log.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Найди строки в orders.csv, где колонка статуса равна 'cancelled'", "command": "awk -F',' '$4 == \"cancelled\"' orders.csv", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Преврати все ключи JSON в нижний регистр в data.json через jq", "command": "jq 'with_entries(.key |= ascii_downcase)' data.json", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Разверни вложенный массив массивов в nested.json", "command": "jq 'flatten' nested.json", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Получи массив уникальных значений 'category' из items.json", "command": "jq -r '[.[].category] | unique | .[]' items.json", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Удали ключ 'password' из каждого объекта users.json", "command": "jq 'map(del(.password))' users.json", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи количество ключей в каждом объекте records.json", "command": "jq '.[] | length' records.json", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Проверь, является ли jobs.json валидным JSON", "command": "jq empty jobs.json && echo valid", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Преобразуй CSV файл data.csv в JSON объекты через jq", "command": "jq -R -s -c 'split(\"\\n\") | map(split(\",\"))' data.csv", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Просуммируй все поля 'price' в cart.json", "command": "jq '[.[].price] | add' cart.json", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Получи 3 самых больших значения 'score' из results.json", "command": "jq '[.[].score] | sort | reverse | .[0:3]' results.json", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Найди строки, изменённые между версиями конфигурации, и покажи только добавленные", "command": "diff old.conf new.conf | grep '^>'", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Посчитай частоту слов без учёта регистра и пунктуации в book.txt", "command": "tr -d '[:punct:]' < book.txt | tr '[:upper:]' '[:lower:]' | tr -s ' ' '\\n' | sort | uniq -c | sort -rn", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Найди файлы с определённым regex-паттерном и выведи совпадения с именами файлов", "command": "grep -rn 'TODO:' . --include='*.py'", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Замени расширение .txt на .bak для списка файлов", "command": "ls *.txt | sed 's/\\.txt$/.bak/'", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Извлеки названия колонок из файла с разделителем | data.psv", "command": "head -1 data.psv | tr '|' '\\n'", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Оставь в CSV только первые 3 колонки", "command": "cut -d',' -f1-3 data.csv", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Покажи общий размер всех .log файлов", "command": "wc -c *.log | tail -1", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Посчитай сколько строк содержат одновременно 'error' и 'timeout' в app.log", "command": "awk '/error/ && /timeout/' app.log", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Проверь, какие строки в file1.txt и file2.txt одинаковы, через comm", "command": "comm file1.txt file2.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Замени Windows-окончания строк на Unix в winfile.txt", "command": "sed -i 's/\\r$//' winfile.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Посчитай сколько раз слово 'the' встречается в essay.txt без учёта регистра", "command": "grep -oi 'the' essay.txt | wc -l", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Оставь только имя файла из каждого пути в paths.txt", "command": "sed 's#.*/##' paths.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Оставь только расширение файла для каждой строки files.txt", "command": "sed 's/.*\\.//' files.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи строки access.log между двумя временными метками через диапазон sed", "command": "sed -n '/10:00:00/,/11:00:00/p' access.log", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Найди номер строки первого появления 'START' в script.log", "command": "grep -n 'START' script.log | head -1 | cut -d':' -f1", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Соедини строки двух файлов построчно через табуляцию", "command": "paste file1.txt file2.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Преобразуй файл с пробелами в качестве разделителя в файл с запятыми", "command": "tr -s ' ' ',' < data.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Удали определённую (2-ю) колонку из CSV файла", "command": "cut -d',' -f1,3- data.csv", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Найди все строки с ровно 5 полями в data.txt", "command": "awk 'NF == 5' data.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи топ-3 самых длинных строк в file.txt по числу символов", "command": "awk '{print length, $0}' file.txt | sort -rn | head -3", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Проверь, семантически равны ли два JSON файла config1.json и config2.json", "command": "diff <(jq -S . config1.json) <(jq -S . config2.json)", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Найди и удали строки, состоящие только из пробелов, в notes.txt", "command": "sed -i '/^[ \\t]*$/d' notes.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Посчитай общее количество строк во всех .csv файлах директории", "command": "cat *.csv | wc -l", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи уникальные значения поля 'status' в orders.json", "command": "jq -r '.[].status' orders.json | sort -u", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Замени табы на пробелы (по 4) во всём файле code.py", "command": "expand -t 4 code.py", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Замени пробелы на табы в table.txt", "command": "unexpand table.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Найди строки с точным совпадением строки 'v1.0.0' в CHANGELOG.md", "command": "grep -F 'v1.0.0' CHANGELOG.md", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Найди без учёта регистра и выведи только совпавший текст 'fatal error' в log.txt", "command": "grep -io 'fatal error' log.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Посчитай сколько раз встречается IP 192.168.1.1 в access.log", "command": "grep -c '192.168.1.1' access.log", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Извлеки все хэштеги из tweets.txt", "command": "grep -Eo '#[A-Za-z0-9_]+' tweets.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи список уникальных доменов из urls.txt", "command": "sed -E 's#https?://([^/]+).*#\\1#' urls.txt | sort -u", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Пронумеруй строки, приходящие через stdin в потоке", "command": "cat -n", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Покажи количество строк для каждого .txt файла в папке", "command": "wc -l *.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Отсортируй вывод ls -l по дате последнего изменения", "command": "ls -l --time-style=full-iso | sort -k6,7", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Удали повторяющиеся слова в одной строке файла repeated.txt", "command": "awk '{ for(i=1;i<=NF;i++) if (!seen[$i]++) printf \"%s \", $i; print \"\"; delete seen }' repeated.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Поищи паттерн по всем файлам рекурсивно, исключая node_modules", "command": "grep -r 'TODO' . --exclude-dir=node_modules", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи строки, повторяющиеся и в file1.txt, и в file2.txt вместе", "command": "cat file1.txt file2.txt | sort | uniq -d", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Замени 3-е поле в файле с разделителем ':' значением 'x' во всех строках", "command": "awk -F':' 'BEGIN{OFS=\":\"} {$3=\"x\"; print}' data.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Покажи сводку добавленных и удалённых строк между двумя файлами", "command": "diff --stat old.txt new.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Переведи все окончания строк CRLF в LF во всех .txt файлах текущей директории", "command": "sed -i 's/\\r$//' *.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Покажи частоту каждого символа в password.txt", "command": "grep -o . password.txt | sort | uniq -c | sort -rn", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи имена файлов и число строк в них, отсортированные по убыванию", "command": "wc -l *.txt | sort -rn", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Удали всё после символа комментария '#' в каждой строке config.conf", "command": "sed 's/#.*//' config.conf", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Склей все строки файла в одну через пробел", "command": "tr '\\n' ' ' < paragraph.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Посчитай сколько раз встречается каждое расширение в списке файлов files.txt", "command": "sed -n 's/.*\\.//p' files.txt | sort | uniq -c", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Покажи предпоследнюю строку файла", "command": "tail -2 file.txt | head -1", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Извлеки IPv4-адреса из server.log", "command": "grep -Eo '([0-9]{1,3}\\.){3}[0-9]{1,3}' server.log", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Найди строки с не-ASCII символами в text.txt", "command": "grep -P '[^\\x00-\\x7F]' text.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Удали дублирующиеся строки CSV по первой колонке", "command": "awk -F',' '!seen[$1]++' data.csv", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи только значения (без ключей) из JSON объекта map.json", "command": "jq '.[]' map.json", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Объедини select и map в jq, чтобы получить email активных пользователей из users.json", "command": "jq -r '.[] | select(.active == true) | .email' users.json", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Отсортируй JSON массив объектов по полю 'age' через jq", "command": "jq 'sort_by(.age)' people.json", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Сгруппируй объекты sales.json по полю 'region'", "command": "jq 'group_by(.region)' sales.json", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Преврати JSON объект в строки key=value через jq", "command": "jq -r 'to_entries[] | \"\\(.key)=\\(.value)\"' settings.json", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Покажи количество запросов в минуту по access.log", "command": "awk '{print substr($4,1,18)}' access.log | sort | uniq -c", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Найди файлы с Windows-окончаниями строк", "command": "grep -rl $'\\r' .  ", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Найди строки со смешанными табами и пробелами в отступах файла file.py", "command": "grep -P '^( \\t|\\t )' file.py", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Убери ANSI цветовые коды из colored_output.txt", "command": "sed -r 's/\\x1b\\[[0-9;]*m//g' colored_output.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи только строки 1, 5 и 10 из file.txt", "command": "sed -n '1p;5p;10p' file.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Посчитай количество уникальных значений в четвёртой колонке файла с табуляцией data.tsv", "command": "cut -f4 data.tsv | sort -u | wc -l", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Замени точку на подчёркивание в filenames.txt, воспринимая точку буквально", "command": "sed 's/\\./_/g' filenames.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Найди строки со словом 'cat' как отдельным словом, но не 'category', в words.txt", "command": "grep -w 'cat' words.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Найди 95-й перцентиль времени отклика в колонке чисел times.csv", "command": "sort -n times.csv | awk '{a[NR]=$1} END{print a[int(NR*0.95)]}'", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Посчитай сколько уникальных пользователей в логе, где имя пользователя - третье поле", "command": "awk '{print $3}' userlog.txt | sort -u | wc -l", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Покажи строки file.txt, где цифра идёт сразу после буквы", "command": "grep -E '[0-9][a-zA-Z]' file.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Убери всю пунктуацию из файла clean_me.txt", "command": "tr -d '[:punct:]' < clean_me.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Оставь только буквенные символы в файле alnum.txt", "command": "tr -cd '[:alpha:]\\n' < alnum.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи каждую третью строку файла начиная с первой", "command": "awk 'NR % 3 == 1' file.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Найди строки, пересекающиеся сразу в трёх файлах через sort и comm", "command": "comm -12 <(sort a.txt) <(sort b.txt) | comm -12 - <(sort c.txt)", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Замени все вхождения пути /old/path на /new/path в конфигурационных файлах", "command": "sed -i 's#/old/path#/new/path#g' config.conf", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Проверь наличие дублирующихся email в users.csv, пропуская заголовок", "command": "tail -n +2 users.csv | cut -d',' -f2 | sort | uniq -d", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Покажи среднюю длину строки в file.txt", "command": "awk '{total+=length($0)} END{print total/NR}' file.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Извлеки все строки в кавычках из лог-файла quotes.log", "command": "grep -oE '\"[^\"]*\"' quotes.log", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Посчитай сколько раз встречается каждое уникальное предложение в reviews.txt", "command": "sort reviews.txt | uniq -c | sort -rn", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Найди слова-палиндромы в words.txt", "command": "awk '{if ($0 == \"\") next; r=\"\"; for(i=length($0);i>0;i--) r=r substr($0,i,1); if (r==$0) print}' words.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Удали первый и последний символ каждой строки wrapped.txt", "command": "sed 's/^.\\(.*\\).$/\\1/' wrapped.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Подсвети совпадения слова 'warning' цветом при выводе из build.log", "command": "grep --color=always 'warning' build.log", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи только совпавшую часть с номерами строк для регулярки в config.ini", "command": "grep -no 'port=[0-9]*' config.ini", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Убери кавычки из каждого поля CSV файла quoted.csv", "command": "sed 's/\"//g' quoted.csv", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Извлеки час из каждой временной метки лога, считая что формат ЧЧ:ММ:СС второе поле", "command": "awk '{print substr($2,1,2)}' timestamps.log", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Посчитай сколько строк содержат больше 10 слов в essay.txt", "command": "awk 'NF > 10' essay.txt | wc -l", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Найди строки, состоящие только из пробельных символов, в file.txt", "command": "grep -E '^[[:space:]]+$' file.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи список уникальных доменов второго уровня из списка URL urls.txt", "command": "awk -F'/' '{print $3}' urls.txt | sort -u", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи сумму первой колонки в numbers.txt", "command": "awk '{s+=$1} END{print s}' numbers.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Посчитай количество полей в первой строке data.csv", "command": "head -1 data.csv | awk -F',' '{print NF}'", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Покажи строки файла с нечётным числом символов", "command": "awk 'length($0) % 2 == 1' file.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Замени паттерн IP-адреса на 'REDACTED' в access.log", "command": "sed -E 's/([0-9]{1,3}\\.){3}[0-9]{1,3}/REDACTED/g' access.log", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Посчитай сколько уникальных кодов ошибок в errors.log", "command": "awk '{print $2}' errors.log | sort -u | wc -l", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи только строки с чётным номером в file.txt", "command": "awk 'NR % 2 == 0' file.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи номер версии из строки вида 'app-v2.3.1.tar.gz' в filenames.txt", "command": "grep -oE 'v[0-9]+\\.[0-9]+\\.[0-9]+' filenames.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Покажи сводку по количеству каждого уникального значения колонки 'country' в users.csv", "command": "awk -F',' 'NR>1{print $3}' users.csv | sort | uniq -c", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Удали последнюю строку файла через sed", "command": "sed '$d' file.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи только последнее слово каждой строки sentences.txt", "command": "awk '{print $NF}' sentences.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Удали пустые строки и пробелы по краям строк в file.txt одной командой", "command": "sed -e '/^[ \\t]*$/d' -e 's/^[ \\t]*//' -e 's/[ \\t]*$//' file.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Проверь, есть ли в файле строка длиннее 120 символов", "command": "awk 'length($0) > 120 {print NR\": \"length($0); found=1} END{exit !found}' file.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Посчитай сколько раз обратный слэш встречается в script.sh", "command": "grep -o '\\\\' script.sh | wc -l", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи список уникальных HTTP методов в логе по алфавиту", "command": "awk '{print $6}' access.log | tr -d '\"' | sort -u", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Покажи, какие строки отличаются между почти одинаковыми конфигами, игнорируя пустые строки", "command": "diff -B config1.conf config2.conf", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи имя файла без расширения для каждого .txt файла в папке", "command": "ls *.txt | sed 's/\\.txt$//'", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Посчитай сколько раз значение 'null' встречается в data.json", "command": "jq '[.. | select(. == null)] | length' data.json", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Извлеки все ключи объектов рекурсивно из вложенного JSON nested.json", "command": "jq '[paths] | map(join(\".\"))' nested.json", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Округли все числовые поля 'price' до 2 знаков в items.json через jq", "command": "jq '.[].price |= (. * 100 | round / 100)' items.json", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Удали пустые (null) поля из каждого объекта records.json", "command": "jq 'map(with_entries(select(.value != null)))' records.json", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Преобразуй JSON файл в строки вида key: value через jq", "command": "jq -r 'to_entries[] | \"\\(.key): \\(.value)\"' simple.json", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Проверь, содержит ли поле-массив 'tags' значение 'sale' в items.json", "command": "jq '.[] | select(.tags | index(\"sale\"))' items.json", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Найди минимум и максимум числовой колонки в stats.csv", "command": "awk -F',' 'NR==1{min=$2;max=$2} {if($2<min)min=$2; if($2>max)max=$2} END{print min, max}' stats.csv", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Посчитай сколько строк начинается с заглавной буквы", "command": "grep -c '^[A-Z]' names.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи строки, где ровно одна запятая, в data.csv", "command": "awk -F',' 'NF==2' data.csv", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Найди строки с несбалансированными скобками в code.py", "command": "awk '{o=gsub(/\\(/,\"(\"); c=gsub(/\\)/,\")\"); if(o!=c) print NR\": \"$0}' code.py", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Замени обратный слэш Windows-пути на прямой слэш в paths.txt", "command": "sed 's#\\\\#/#g' paths.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи строки лога за последний час, сравнивая метки времени через awk", "command": "awk -v cutoff=\"$(date -d '1 hour ago' +%H:%M:%S)\" '$2 > cutoff' app.log", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Посчитай количество уникальных слов в тексте без учёта регистра", "command": "tr '[:upper:]' '[:lower:]' < text.txt | tr -s '[:space:]' '\\n' | sort -u | wc -l", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Отсортируй строки file.txt по количеству слов в них", "command": "awk '{print NF, $0}' file.txt | sort -n", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Извлеки только хостнейм из набора URL в urls.txt через sed", "command": "sed -E 's|^[a-z]+://([^/]+).*|\\1|' urls.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Посчитай сколько строк совпадает в двух файлах через diff", "command": "diff old.txt new.txt | grep -c '^<'", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Сравни отсортированное содержимое двух файлов на равенство, игнорируя порядок", "command": "diff <(sort a.txt) <(sort b.txt)", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи только валидные email-адреса из contacts.txt", "command": "grep -E '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$' contacts.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Покажи сколько раз вызывается определённая функция в source.c", "command": "grep -o 'my_function(' source.c | wc -l", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи 5 самых частых кодов ответа в access.log в процентах", "command": "awk '{print $9}' access.log | sort | uniq -c | sort -rn | head -5 | awk '{printf \"%s: %d\\n\", $2, $1}'", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Оставь уникальные строки CSV по колонкам 1 и 2", "command": "awk -F',' '!seen[$1,$2]++' data.csv", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Найди строки, где значение колонки пустое, в CSV файле", "command": "awk -F',' '$3==\"\"' data.csv", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Посчитай сколько строк в sales.csv имеют отрицательное значение в 4-й колонке", "command": "awk -F',' '$4<0' sales.csv | wc -l", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи накопительную сумму значений 2-й колонки построчно в running.csv", "command": "awk -F',' '{sum+=$2; print sum}' running.csv", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи все строки data.csv с полями в обратном порядке", "command": "awk -F',' 'BEGIN{OFS=\",\"}{for(i=NF;i>=1;i--) printf \"%s%s\", $i, (i>1?OFS:\"\\n\")}' data.csv", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Удали строки с 5 по 8 из файла через sed", "command": "sed '5,8d' file.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Замени паттерн только в строках, подходящих под другой паттерн, через sed", "command": "sed '/error/s/fail/failed/' app.log", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Посчитай сколько строк содержат ссылку в notes.txt", "command": "grep -cE 'https?://' notes.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи только протокол (http или https) из каждого URL в urls.txt", "command": "grep -oE '^https?' urls.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Сравни файлы только по строкам, содержащим слово 'version'", "command": "diff <(grep version a.conf) <(grep version b.conf)", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Найди строки, которые были удалены при сравнении old.txt и new.txt", "command": "diff old.txt new.txt | grep '^<'", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Посчитай количество гласных букв в text.txt", "command": "grep -o '[aeiouAEIOU]' text.txt | sort | uniq -c", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи уникальный отсортированный список расширений файлов в проекте", "command": "find . -type f | sed 's/.*\\.//' | sort -u", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Преобразуй разделители поля с | на запятые в файле", "command": "tr '|' ',' < data.psv > data.csv", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Посчитай общее число символов '{' в config.json для оценки вложенности", "command": "grep -o '{' config.json | wc -l", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Посчитай количество уникальных значений колонки 'department' в CSV, пропуская заголовок", "command": "tail -n +2 employees.csv | cut -d',' -f4 | sort -u | wc -l", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи строки файла, где первый символ - цифра", "command": "grep -E '^[0-9]' file.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Найди строки, где две колонки равны, в CSV файле", "command": "awk -F',' '$2==$3' data.csv", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Покажи количество строк с 'success' и с 'failure' в test.log", "command": "grep -c 'success' test.log; grep -c 'failure' test.log", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Убери все нецифровые символы из каждой строки смешанного файла", "command": "tr -cd '0-9\\n' < mixed.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Посчитай частоту каждого уникального user agent в access.log, считая его последним полем в кавычках", "command": "awk -F'\"' '{print $(NF-1)}' access.log | sort | uniq -c | sort -rn", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Найди количество уникальных дат в лог-файле, где дата - первое поле", "command": "awk '{print $1}' app.log | sort -u | wc -l", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи отсортированный уникальный список импортированных модулей в Python файле", "command": "grep -E '^import|^from' script.py | awk '{print $2}' | sort -u", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Покажи строки двух файлов, уникальные для каждого, бок о бок", "command": "diff --side-by-side file1.txt file2.txt", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Преврати пары ключ-значение из .env файла в JSON через jq", "command": "jq -R -s 'split(\"\\n\") | map(select(length > 0) | split(\"=\")) | map({(.[0]): .[1]}) | add' .env", "lang": "ru", "source": "synthetic-textproc"}
+{"instruction": "Выведи число строк, которые отличаются между двумя файлами", "command": "diff old.txt new.txt | grep -c '^>'", "lang": "ru", "source": "synthetic-textproc"}

@@ -1,0 +1,600 @@
+{"instruction": "Create a new empty file called notes.txt", "command": "touch notes.txt", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Make a directory named project", "command": "mkdir project", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Create nested directories src/components/ui", "command": "mkdir -p src/components/ui", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "How do I create a file with some initial content?", "command": "echo 'hello world' > notes.txt", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Copy backup.tar.gz to the backups directory", "command": "cp backup.tar.gz backups/", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Copy the whole project directory recursively to /mnt/d/backup", "command": "cp -r project /mnt/d/backup", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "duplicate config.yaml as config.yaml.bak", "command": "cp config.yaml config.yaml.bak", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "copy all .txt files into the archive folder", "command": "cp *.txt archive/", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Move report.docx into the drafts folder", "command": "mv report.docx drafts/", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "rename notes.txt to notes_old.txt", "command": "mv notes.txt notes_old.txt", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Move all .log files into old_logs", "command": "mv *.log old_logs/", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "how do i rename a directory called build to dist", "command": "mv build dist", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Delete the file app.log", "command": "rm app.log", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "remove the build directory and everything in it", "command": "rm -rf build", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "get rid of node_modules", "command": "rm -rf node_modules", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Delete all .tmp files in the current directory", "command": "rm -f *.tmp", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "delete empty directories here", "command": "find . -type d -empty -delete", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Remove the empty folder tmp", "command": "rmdir tmp", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "How can I delete files older than 30 days in /var/log?", "command": "find /var/log -mtime +30 -type f -delete", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Permanently wipe archive.zip without confirmation", "command": "rm -f archive.zip", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "List all files in the current directory including hidden ones", "command": "ls -la", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "show files sorted by modification time, newest first", "command": "ls -lt", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "list files with human readable sizes", "command": "ls -lh", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "List only directories in the current folder", "command": "ls -d */", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "show a tree view of the project directory", "command": "tree project", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "How do I find all .py files recursively?", "command": "find . -name '*.py'", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "find all files larger than 100MB", "command": "find . -type f -size +100M", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Find files modified in the last 24 hours", "command": "find . -type f -mtime -1", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "locate every empty file in this directory", "command": "find . -type f -empty", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "find files owned by user alice", "command": "find / -user alice", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "search for a file named database.db anywhere on disk", "command": "find / -name database.db 2>/dev/null", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "find and delete all .tmp files recursively", "command": "find . -name '*.tmp' -exec rm {} \\;", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "find all .log files and compress them with gzip", "command": "find . -name '*.log' -exec gzip {} \\;", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "find all shell scripts and make them executable", "command": "find . -name '*.sh' -exec chmod +x {} \\;", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Find core dump files and remove them using xargs", "command": "find . -name 'core.*' | xargs rm -f", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "count how many .jpg files are in this directory tree", "command": "find . -name '*.jpg' | wc -l", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Change permissions of script.sh so it's executable", "command": "chmod +x script.sh", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "make deploy.sh executable for everyone", "command": "chmod a+x deploy.sh", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "set permissions of config.yaml to read-only for owner", "command": "chmod 400 config.yaml", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "recursively set 755 permissions on the build directory", "command": "chmod -R 755 build", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "chmod the entire build folder to 777 for a quick test", "command": "chmod -R 777 ./build", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "remove write permission for others on notes.txt", "command": "chmod o-w notes.txt", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Change the owner of app.log to www-data", "command": "chown www-data app.log", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "recursively change ownership of /var/www/html to www-data", "command": "chown -R www-data:www-data /var/www/html", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "change both owner and group of backup.tar.gz to deploy", "command": "chown deploy:deploy backup.tar.gz", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "change just the group of data.csv to staff", "command": "chgrp staff data.csv", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Create a symlink named latest pointing to release_v2", "command": "ln -s release_v2 latest", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "make a symbolic link to /etc/nginx/nginx.conf called nginx.conf in my home dir", "command": "ln -s /etc/nginx/nginx.conf ~/nginx.conf", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "How do I check where a symlink points to?", "command": "readlink -f latest", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "find all broken symlinks in this directory", "command": "find . -xtype l", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "remove a symlink called latest without deleting the target", "command": "rm latest", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Check the disk usage of the project directory", "command": "du -sh project", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "show disk usage of each subdirectory sorted by size", "command": "du -h --max-depth=1 | sort -h", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "how much space does backup.tar.gz take up", "command": "du -h backup.tar.gz", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "find the 10 largest files in /home/user", "command": "du -ah /home/user | sort -rh | head -10", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "check overall disk space usage on this system", "command": "df -h", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "show free disk space for the root filesystem", "command": "df -h /", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Create a hard link named notes_link.txt pointing to notes.txt", "command": "ln notes.txt notes_link.txt", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "copy a file preserving timestamps and permissions", "command": "cp -p report.docx drafts/report.docx", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "copy a directory but follow symlinks instead of copying them", "command": "cp -rL project /mnt/d/backup", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "move a file only if the destination doesn't already exist", "command": "mv -n notes.txt drafts/", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "interactively confirm before overwriting when copying", "command": "cp -i config.yaml backups/", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "safely delete a file by moving it to trash instead of rm", "command": "mv archive.zip ~/.local/share/Trash/files/", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "rename all .jpeg files to .jpg", "command": "for f in *.jpeg; do mv \"$f\" \"${f%.jpeg}.jpg\"; done", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "batch rename files by adding a prefix", "command": "for f in *.txt; do mv \"$f\" \"old_$f\"; done", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "list files sorted by size, largest first", "command": "ls -lS", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "recursively list all files under /home/user/projects/text2bash", "command": "find /home/user/projects/text2bash -type f", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "show only the file names without path for everything in the directory", "command": "ls -1", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "What's the command to see which process has a file open?", "command": "lsof notes.txt", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Check if a given file exists", "command": "test -f notes.txt && echo exists", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Create 5 numbered files file1.txt through file5.txt", "command": "touch file{1..5}.txt", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "How do I create a backup copy with today's date in the filename?", "command": "cp report.docx report_$(date +%F).docx", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "compress the logs directory into a tar.gz archive", "command": "tar -czf logs.tar.gz logs/", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "extract backup.tar.gz into the current directory", "command": "tar -xzf backup.tar.gz", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "list the contents of archive.zip without extracting it", "command": "unzip -l archive.zip", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "unzip archive.zip into the downloads folder", "command": "unzip archive.zip -d downloads", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Move multiple files at once into the uploads folder", "command": "mv photo.jpg video.mp4 music.mp3 uploads/", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "copy only .csv files from data to backups, preserving structure", "command": "cp -r data/*.csv backups/", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "find all files that don't belong to any user", "command": "find / -nouser", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "check which files in the current directory were changed in the last hour", "command": "find . -mmin -60", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "make a directory writable only by the owner", "command": "chmod 700 project", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "find all world-writable files and list them", "command": "find / -perm -o+w -type f 2>/dev/null", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "recursively remove write permission for group and others", "command": "chmod -R go-w project", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "set the sticky bit on the uploads directory", "command": "chmod +t uploads", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "rename a symlink without touching its target", "command": "mv latest latest_old", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "find files with permission 777 and fix them to 644", "command": "find . -type f -perm 777 -exec chmod 644 {} \\;", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "list all symbolic links in the current directory", "command": "find . -maxdepth 1 -type l", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "delete all files except .gitignore in this folder", "command": "find . -maxdepth 1 -type f ! -name '.gitignore' -delete", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "show the size of every file in the current directory in KB", "command": "du -k *", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "How do I see disk usage of a directory without going into subdirectories?", "command": "du -sh --max-depth=0 project", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "copy a file to multiple destinations at once", "command": "cp notes.txt backups/ && cp notes.txt drafts/", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "create an empty directory structure for a new project", "command": "mkdir -p new_project/{src,tests,docs}", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "remove all empty files recursively", "command": "find . -type f -empty -delete", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Find files modified between 2 and 5 days ago", "command": "find . -type f -mtime +2 -mtime -5", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "search for files matching report*.pdf", "command": "find . -name 'report*.pdf'", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "check the total size of all mp3 files combined", "command": "du -ch *.mp3 | tail -1", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "list hidden files only", "command": "ls -d .*", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "move a directory and rename it in one step", "command": "mv old_logs archived_logs_2023", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "What command removes a non-empty directory without rm -rf?", "command": "find old_logs -delete", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "set default permissions so new files aren't world writable", "command": "umask 022", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "change ownership recursively but only of directories", "command": "find project -type d -exec chown deploy:deploy {} \\;", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "copy a file and verify the checksum matches afterwards", "command": "cp data.csv backups/data.csv && md5sum data.csv backups/data.csv", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "find duplicate files by checksum in the downloads folder", "command": "find downloads -type f -exec md5sum {} \\; | sort | uniq -w32 -d", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "list files modified today", "command": "find . -maxdepth 1 -daystart -mtime 0", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "show total disk usage of all .log files under /var/log", "command": "find /var/log -name '*.log' -exec du -ch {} + | tail -1", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "rename a file to lowercase", "command": "mv README.md readme.md", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "quickly check free inodes on the filesystem", "command": "df -i", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "remove a dangling symlink pointing to a deleted file", "command": "find . -xtype l -delete", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "copy only files modified in the last day to a backup folder", "command": "find . -mtime -1 -type f -exec cp {} backups/ \\;", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "list the 5 most recently modified files", "command": "ls -lt | head -5", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "check which directories are using the most disk space in /home", "command": "du -h /home/* | sort -rh | head", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "make all .sh scripts in the bin folder executable recursively", "command": "chmod -R +x bin/", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "create a symlink to a directory called current pointing to release_v2", "command": "ln -s release_v2 current", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "safely move a file only after confirming it's not a symlink", "command": "test ! -L script.sh && mv script.sh drafts/", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "delete all files with the .bak extension", "command": "find . -name '*.bak' -delete", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "show how deep the project directory tree goes", "command": "find project -type d | awk -F/ '{print NF}' | sort -n | tail -1", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "list every file bigger than 1GB on the whole system", "command": "find / -xdev -type f -size +1G 2>/dev/null", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Copy a directory structure without copying the actual files", "command": "find project -type d -exec mkdir -p /mnt/d/backup/{} \\;", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "flatten a nested directory by moving all files up one level", "command": "find subdir -mindepth 2 -type f -exec mv -t subdir {} +", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "check if script.sh is executable", "command": "test -x script.sh && echo executable", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "change permission so only the owner can read and write config.yaml", "command": "chmod 600 config.yaml", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "list files owned by the current user only", "command": "find . -user $(whoami)", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "archive and compress the entire src directory keeping permissions", "command": "tar -cpzf src.tar.gz src/", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "rename many files replacing spaces with underscores", "command": "for f in *\\ *; do mv \"$f\" \"${f// /_}\"; done", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "find all .DS_Store files and delete them", "command": "find . -name '.DS_Store' -delete", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "show disk usage for the whole home directory in gigabytes", "command": "du -sh --block-size=G /home/user", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "recursively copy a directory but exclude node_modules", "command": "rsync -av --exclude 'node_modules' project/ /mnt/d/backup/", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "sync two folders so backups mirrors project exactly", "command": "rsync -av --delete project/ backups/", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "move a file to a new location while renaming it at the same time", "command": "mv report.docx /mnt/d/backup/final_report.docx", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "How do I check who owns a particular file?", "command": "stat -c '%U' notes.txt", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "check the group ownership of the uploads folder", "command": "stat -c '%G' uploads", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "list all files along with their permission bits in octal", "command": "stat -c '%a %n' *", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "find all setuid files on the system", "command": "find / -perm -4000 -type f 2>/dev/null", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "quickly remove every .pyc file in the project", "command": "find . -name '*.pyc' -delete", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "delete all empty subdirectories but keep the root directory", "command": "find . -mindepth 1 -type d -empty -delete", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "show which files changed since the last backup", "command": "find project -newer backup.tar.gz", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Create a file only if it doesn't already exist", "command": "[ -f notes.txt ] || touch notes.txt", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "list files recursively with full paths", "command": "find . -type f -printf '%p\\n'", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "copy a single file to several remote-like named copies", "command": "cp notes.txt notes_copy1.txt && cp notes.txt notes_copy2.txt", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "remove write permissions from all files in a directory recursively", "command": "chmod -R a-w project", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "find which file is consuming the most space in /var/log", "command": "du -a /var/log | sort -n -r | head -1", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "list files and directories, directories first", "command": "ls -lAp | grep /", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "create a backup suffix copy when overwriting with cp", "command": "cp --backup=numbered config.yaml backups/config.yaml", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "swap the names of two files safely", "command": "mv notes.txt notes_tmp.txt && mv report.docx notes.txt && mv notes_tmp.txt report.docx", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "How do I count the number of files in a directory?", "command": "ls -1 | wc -l", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "count how many directories exist under project", "command": "find project -type d | wc -l", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "find all files with no read permission for the owner", "command": "find . -type f ! -perm -u+r", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "list the oldest file in the current directory", "command": "ls -tr | head -1", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "move everything except hidden files into the archive folder", "command": "find . -maxdepth 1 ! -name '.*' ! -name '.' -exec mv -t archive/ {} +", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "check available disk space before copying a large archive", "command": "df -h . && cp archive.zip backups/", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "find all files with spaces in their names", "command": "find . -name '* *'", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "recursively find and rename .txt files to .md", "command": "find . -name '*.txt' -exec sh -c 'mv \"$0\" \"${0%.txt}.md\"' {} \\;", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "change permissions so the script runs setuid root", "command": "chmod u+s script.sh", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "remove the setuid bit from a file", "command": "chmod u-s script.sh", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "list files modified by a specific user in the last week", "command": "find . -user alice -mtime -7", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "make a directory and its contents read-only recursively", "command": "chmod -R 555 project", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "find files with a specific inode number", "command": "find . -inum 123456", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "create a symlink relative to the current directory", "command": "ln -s ./config.yaml current_config.yaml", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "delete symlinks only, not their targets", "command": "find . -type l -delete", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "copy only the newest file matching a pattern", "command": "cp $(ls -t *.log | head -1) latest.log", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "rename a batch of numbered files to have leading zeros", "command": "for f in file*.txt; do printf -v new '%s' \"$f\"; mv \"$f\" \"$new\"; done", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "check disk usage excluding a specific subdirectory", "command": "du -sh --exclude=node_modules project", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "show total size used by all files matching *.mp4", "command": "du -ch *.mp4 | tail -1", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "list files with their inode numbers", "command": "ls -i", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "find all files accessed in the last 10 minutes", "command": "find . -amin -10", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "recursively change file permissions but leave directories untouched", "command": "find project -type f -exec chmod 644 {} \\;", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "recursively set directory permissions to 755 but leave files alone", "command": "find project -type d -exec chmod 755 {} \\;", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "check the size difference between two files", "command": "diff <(wc -c < notes.txt) <(wc -c < notes_old.txt)", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "move a large file and show progress", "command": "rsync -ah --progress backup.tar.gz /mnt/d/backup/", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "find and list all .env files which might contain secrets", "command": "find . -name '.env'", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "remove all files in the current directory but keep subdirectories", "command": "find . -maxdepth 1 -type f -delete", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "list all mounted filesystems and their usage", "command": "df -hT", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "create a timestamped backup directory", "command": "mkdir backup_$(date +%Y%m%d_%H%M%S)", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "check which user owns the most files in /home", "command": "find /home -type f -printf '%u\\n' | sort | uniq -c | sort -rn | head -1", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "find the newest file in a directory", "command": "ls -t | head -1", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "remove all .cache directories recursively", "command": "find . -type d -name '.cache' -exec rm -rf {} +", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "copy files while excluding a specific extension", "command": "rsync -av --exclude='*.log' project/ /mnt/d/backup/", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "find files bigger than 50MB and list them with sizes", "command": "find . -type f -size +50M -exec ls -lh {} \\;", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "change ownership of a symlink without following it", "command": "chown -h deploy:deploy latest", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "check total size of a directory in megabytes only", "command": "du -sm project", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "list all files with 644 permissions", "command": "find . -type f -perm 644", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "create multiple nested backup folders for each day of the week", "command": "mkdir -p backups/{mon,tue,wed,thu,fri,sat,sun}", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Create an empty file called TODO.md", "command": "touch TODO.md", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Make a directory called assets inside the project folder", "command": "mkdir project/assets", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Create the directory path logs/2024/january", "command": "mkdir -p logs/2024/january", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "copy image.png to the assets folder keeping the same name", "command": "cp image.png assets/image.png", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Copy style.css and index.html into the release_v2 folder", "command": "cp style.css index.html release_v2/", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "duplicate the entire src folder as src_backup", "command": "cp -r src src_backup", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Move invoice.pdf to the drafts directory", "command": "mv invoice.pdf drafts/", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "rename server.js to app.js", "command": "mv server.js app.js", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Move every .csv file in downloads into data", "command": "mv downloads/*.csv data/", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "how do I rename cache to old_cache", "command": "mv cache old_cache", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Delete video.mp4 permanently", "command": "rm video.mp4", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "remove the cache directory recursively without prompting", "command": "rm -rf cache", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "get rid of all .pyc files in this folder only, not subfolders", "command": "rm -f ./*.pyc", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Delete every .swp file left behind by vim", "command": "find . -name '*.swp' -delete", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "remove the uploads folder only if it's empty", "command": "rmdir uploads", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "How do I delete files bigger than 1GB under /tmp?", "command": "find /tmp -type f -size +1G -delete", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "wipe out all contents of the tmp directory but keep the folder itself", "command": "rm -rf tmp/*", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "List files in /etc sorted alphabetically", "command": "ls /etc", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "show detailed listing of /opt/app/data", "command": "ls -l /opt/app/data", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "List files recursively in a tree-like indented format without the tree command", "command": "find . | sed 's|[^/]*/|  |g'", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "How do I find .css files under the assets directory only?", "command": "find assets -name '*.css'", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "find all directories named cache anywhere under the project", "command": "find project -type d -name cache", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Find files that belong to group developers", "command": "find / -group developers 2>/dev/null", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "search for presentation.pptx starting from the home directory", "command": "find ~ -name presentation.pptx", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "find and gzip every .csv file under data, keeping originals", "command": "find data -name '*.csv' -exec gzip -k {} \\;", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "find all markdown files and count their total lines", "command": "find . -name '*.md' -exec cat {} + | wc -l", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Find every .class file and delete it with xargs", "command": "find . -name '*.class' | xargs rm -f", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "count the number of directories under /srv/data", "command": "find /srv/data -type d | wc -l", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Make main.py executable", "command": "chmod +x main.py", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "remove execute permission from script.sh for the group", "command": "chmod g-x script.sh", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "set index.html to be readable and writable by owner and group only", "command": "chmod 660 index.html", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "recursively chmod the uploads directory to 750", "command": "chmod -R 750 uploads", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "give everyone full access to the cache directory temporarily", "command": "chmod -R 777 cache", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Change the owner of database.db to admin", "command": "chown admin database.db", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "recursively change ownership of /srv/data to deploy", "command": "chown -R deploy:deploy /srv/data", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "change owner and group of presentation.pptx to bob and staff", "command": "chown bob:staff presentation.pptx", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "change the group of music.mp3 to users", "command": "chgrp users music.mp3", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Create a symlink called config pointing to config.yaml", "command": "ln -s config.yaml config", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "make a symlink called home_docs pointing to /home/user/documents", "command": "ln -s /home/user/documents home_docs", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "How do I tell if a path is a symlink or a real file?", "command": "file notes.txt", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "find broken symlinks under /home/user and remove them", "command": "find /home/user -xtype l -delete", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Check disk usage of the assets folder", "command": "du -sh assets", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "show disk usage of logs sorted from biggest to smallest", "command": "du -h logs/* | sort -rh", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "how much space does the cache folder use", "command": "du -sh cache", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "find the 5 largest files under /srv/data", "command": "du -ah /srv/data | sort -rh | head -5", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "check disk usage for the /opt partition", "command": "df -h /opt", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Create a hard link called data_link.csv pointing to data.csv", "command": "ln data.csv data_link.csv", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "copy a file preserving all attributes using cp -a", "command": "cp -a backup.tar.gz /mnt/d/backup/", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "move a folder only if it doesn't already exist at the destination", "command": "mv -n drafts /mnt/d/backup/", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "prompt before deleting each file in old_logs", "command": "rm -i old_logs/*", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "rename all .jpg files to have a .jpeg extension instead", "command": "for f in *.jpg; do mv \"$f\" \"${f%.jpg}.jpeg\"; done", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "batch rename files by removing a prefix called old_", "command": "for f in old_*; do mv \"$f\" \"${f#old_}\"; done", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "list files sorted by size, smallest first", "command": "ls -lSr", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "recursively list all directories under /srv/data", "command": "find /srv/data -type d", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Check if the directory downloads exists", "command": "test -d downloads && echo exists", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Create 3 empty log files named app1.log app2.log app3.log", "command": "touch app{1..3}.log", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "compress the assets folder into assets.zip", "command": "zip -r assets.zip assets/", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "extract archive.zip preserving directory structure", "command": "unzip archive.zip", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "list what's inside backup.tar.gz without extracting", "command": "tar -tzf backup.tar.gz", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Move several photos at once into photos_2023", "command": "mv photo1.jpg photo2.jpg photo3.jpg photos_2023/", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "copy only .png files from assets to photos_2023", "command": "cp assets/*.png photos_2023/", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "find files with no group assigned", "command": "find / -nogroup 2>/dev/null", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "check which files in /etc were modified in the last 2 hours", "command": "find /etc -mmin -120", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "make the cache directory readable only by root", "command": "chmod 700 cache", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "recursively remove execute permission for others on the bin folder", "command": "chmod -R o-x bin", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "rename current symlink to current_backup without touching the target", "command": "mv current current_backup", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "find files with permission 666 and change them to 644", "command": "find . -type f -perm 666 -exec chmod 644 {} \\;", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "list symbolic links recursively under project", "command": "find project -type l", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "delete all files except README.md in the drafts folder", "command": "find drafts -maxdepth 1 -type f ! -name 'README.md' -delete", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "show the size of index.html and style.css in bytes", "command": "du -b index.html style.css", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "create a new project folder with src, tests and docs subfolders in one command", "command": "mkdir -p webapp/{src,tests,docs}", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "remove all empty .txt files recursively", "command": "find . -name '*.txt' -empty -delete", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Find files modified exactly 7 days ago", "command": "find . -type f -mtime 7", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "search for files matching invoice_2024*.pdf", "command": "find . -name 'invoice_2024*.pdf'", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "check the combined size of all pdf invoices", "command": "du -ch invoice*.pdf | tail -1", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "list only directories, not files, with sizes", "command": "du -h --max-depth=1 -- */", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "move drafts into archive and rename it to drafts_archive", "command": "mv drafts archive/drafts_archive", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "remove a non-empty cache directory using find instead of rm -rf", "command": "find cache -delete", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "set umask so files are created with 644 and directories 755", "command": "umask 022", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "recursively change ownership but only of .log files", "command": "find . -name '*.log' -exec chown deploy:deploy {} \\;", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "copy database.db and confirm the copy is identical using diff", "command": "cp database.db backups/database.db && diff database.db backups/database.db", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "find duplicate images by checksum under photos_2023", "command": "find photos_2023 -type f -exec md5sum {} \\; | sort | uniq -w32 -d", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "list files created today in the uploads folder", "command": "find uploads -maxdepth 1 -daystart -mtime 0", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "show total size of all .csv files under data", "command": "find data -name '*.csv' -exec du -ch {} + | tail -1", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "rename INDEX.HTML to index.html", "command": "mv INDEX.HTML index.html", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "check disk usage per filesystem type", "command": "df -hT", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "remove dangling symlinks under uploads", "command": "find uploads -xtype l -delete", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "copy files changed in the last 3 days into a dated backup folder", "command": "find . -mtime -3 -type f -exec cp {} backup_$(date +%F)/ \\;", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "list the 3 oldest files in downloads", "command": "ls -tr downloads | head -3", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "check which user directories use the most space under /home", "command": "du -sh /home/* | sort -rh", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "make every script under project executable recursively", "command": "chmod -R +x project", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "create a symlink called www pointing to /var/www/html", "command": "ln -s /var/www/html www", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "move a file only after confirming it's a regular file", "command": "test -f invoice.pdf && mv invoice.pdf archive/", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "delete all files ending in ~ left by editors", "command": "find . -name '*~' -delete", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "check the maximum directory depth under /home/user", "command": "find /home/user -type d | awk -F/ '{print NF}' | sort -n | tail -1", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "list every file bigger than 500MB under /srv", "command": "find /srv -type f -size +500M", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "recreate the same directory tree for an empty backup skeleton", "command": "find project -type d -exec mkdir -p backup_skeleton/{} \\;", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "flatten all files from assets/icons up into assets", "command": "find assets/icons -type f -exec mv -t assets {} +", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "check whether cache is writable", "command": "test -w cache && echo writable", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "set presentation.pptx to be readable by everyone but writable only by owner", "command": "chmod 644 presentation.pptx", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "list files owned by group staff only", "command": "find . -group staff", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "archive the whole webapp directory into a dated tarball", "command": "tar -czf webapp_$(date +%F).tar.gz webapp/", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "rename files by lowercasing all .JPG extensions to .jpg", "command": "for f in *.JPG; do mv \"$f\" \"${f%.JPG}.jpg\"; done", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "find all Thumbs.db files and remove them", "command": "find . -name 'Thumbs.db' -delete", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "show disk usage of /opt/app/data in megabytes", "command": "du -sh --block-size=M /opt/app/data", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "recursively copy project excluding the .git folder", "command": "rsync -av --exclude '.git' project/ /mnt/d/backup/", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "sync photos_2023 to an external drive, deleting extras there", "command": "rsync -av --delete photos_2023/ /mnt/d/backup/photos_2023/", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "move music.mp3 to a new folder while giving it a cleaner name", "command": "mv music.mp3 /home/user/Music/favorite_song.mp3", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "How do I check who owns the uploads directory?", "command": "stat -c '%U' uploads", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "check the group ownership of database.db", "command": "stat -c '%G' database.db", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "list permission bits for every file in assets in octal form", "command": "stat -c '%a %n' assets/*", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "find all files with the setgid bit set", "command": "find / -perm -2000 -type f 2>/dev/null", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "quickly remove every .class file in the build directory", "command": "find build -name '*.class' -delete", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "delete empty subfolders under downloads but keep downloads itself", "command": "find downloads -mindepth 1 -type d -empty -delete", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "show files in src changed since the last git commit tag file build.marker", "command": "find src -newer build.marker", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Create config.yaml only if it's missing", "command": "[ -f config.yaml ] || touch config.yaml", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "list all files under uploads with their full absolute path", "command": "find uploads -type f -printf '%p\\n'", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "make three numbered copies of readme.md", "command": "cp readme.md readme_1.md && cp readme.md readme_2.md && cp readme.md readme_3.md", "lang": "en", "source": "synthetic-fileops"}
+{"instruction": "Создай новый пустой файл notes.txt", "command": "touch notes.txt", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Сделай директорию с именем project", "command": "mkdir project", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Создай вложенные папки src/components/ui", "command": "mkdir -p src/components/ui", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Как создать файл сразу с каким-то содержимым?", "command": "echo 'hello world' > notes.txt", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Скопируй backup.tar.gz в папку backups", "command": "cp backup.tar.gz backups/", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Скопируй всю директорию project рекурсивно в /mnt/d/backup", "command": "cp -r project /mnt/d/backup", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "сделай копию config.yaml с именем config.yaml.bak", "command": "cp config.yaml config.yaml.bak", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "скопируй все файлы .txt в папку archive", "command": "cp *.txt archive/", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Перемести report.docx в папку drafts", "command": "mv report.docx drafts/", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "переименуй notes.txt в notes_old.txt", "command": "mv notes.txt notes_old.txt", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Перемести все .log файлы в old_logs", "command": "mv *.log old_logs/", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "как переименовать директорию build в dist", "command": "mv build dist", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Удали файл app.log", "command": "rm app.log", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "удали директорию build вместе со всем содержимым", "command": "rm -rf build", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "убери node_modules", "command": "rm -rf node_modules", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Удали все файлы с расширением .tmp в текущей директории", "command": "rm -f *.tmp", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "удали пустые папки здесь", "command": "find . -type d -empty -delete", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Удали пустую папку tmp", "command": "rmdir tmp", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Как удалить файлы старше 30 дней в /var/log?", "command": "find /var/log -mtime +30 -type f -delete", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Безвозвратно удали archive.zip без подтверждения", "command": "rm -f archive.zip", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Покажи все файлы в текущей директории, включая скрытые", "command": "ls -la", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "покажи файлы, отсортированные по времени изменения, сначала новые", "command": "ls -lt", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "список файлов с размерами в читаемом формате", "command": "ls -lh", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Покажи только директории в текущей папке", "command": "ls -d */", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "покажи дерево директории project", "command": "tree project", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Как найти все файлы .py рекурсивно?", "command": "find . -name '*.py'", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "найди все файлы больше 100 мегабайт", "command": "find . -type f -size +100M", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Найди файлы, изменённые за последние 24 часа", "command": "find . -type f -mtime -1", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "найди все пустые файлы в этой директории", "command": "find . -type f -empty", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "найди файлы, принадлежащие пользователю alice", "command": "find / -user alice", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "найди файл с именем database.db где угодно на диске", "command": "find / -name database.db 2>/dev/null", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "найди и удали рекурсивно все файлы .tmp", "command": "find . -name '*.tmp' -exec rm {} \\;", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "найди все файлы .log и сожми их с помощью gzip", "command": "find . -name '*.log' -exec gzip {} \\;", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "найди все shell-скрипты и сделай их исполняемыми", "command": "find . -name '*.sh' -exec chmod +x {} \\;", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Найди файлы core dump и удали их через xargs", "command": "find . -name 'core.*' | xargs rm -f", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "посчитай сколько файлов .jpg в этом дереве каталогов", "command": "find . -name '*.jpg' | wc -l", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Сделай script.sh исполняемым", "command": "chmod +x script.sh", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "сделай deploy.sh исполняемым для всех", "command": "chmod a+x deploy.sh", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "установи права только на чтение для владельца config.yaml", "command": "chmod 400 config.yaml", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "рекурсивно установи права 755 на директорию build", "command": "chmod -R 755 build", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "дай права 777 на всю папку build для быстрого теста", "command": "chmod -R 777 ./build", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "убери право записи для остальных на notes.txt", "command": "chmod o-w notes.txt", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Смени владельца app.log на www-data", "command": "chown www-data app.log", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "рекурсивно смени владельца /var/www/html на www-data", "command": "chown -R www-data:www-data /var/www/html", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "смени и владельца, и группу backup.tar.gz на deploy", "command": "chown deploy:deploy backup.tar.gz", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "смени только группу data.csv на staff", "command": "chgrp staff data.csv", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Создай симлинк с именем latest на release_v2", "command": "ln -s release_v2 latest", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "сделай символическую ссылку на /etc/nginx/nginx.conf с именем nginx.conf в домашней папке", "command": "ln -s /etc/nginx/nginx.conf ~/nginx.conf", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Как узнать, куда ведёт симлинк?", "command": "readlink -f latest", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "найди все битые симлинки в этой директории", "command": "find . -xtype l", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "удали симлинк latest, не трогая исходный файл", "command": "rm latest", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Проверь размер папки project на диске", "command": "du -sh project", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "покажи размер каждой подпапки, отсортированный по размеру", "command": "du -h --max-depth=1 | sort -h", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "сколько места занимает backup.tar.gz", "command": "du -h backup.tar.gz", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "найди 10 самых больших файлов в /home/user", "command": "du -ah /home/user | sort -rh | head -10", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "проверь общее использование диска в системе", "command": "df -h", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "покажи свободное место на корневой файловой системе", "command": "df -h /", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Создай жёсткую ссылку notes_link.txt на notes.txt", "command": "ln notes.txt notes_link.txt", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "скопируй файл с сохранением времени и прав доступа", "command": "cp -p report.docx drafts/report.docx", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "скопируй директорию, но переходи по симлинкам, а не копируй их как ссылки", "command": "cp -rL project /mnt/d/backup", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "перемести файл только если цели ещё не существует", "command": "mv -n notes.txt drafts/", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "спрашивай подтверждение перед перезаписью при копировании", "command": "cp -i config.yaml backups/", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "безопасно удали файл, переместив его в корзину вместо rm", "command": "mv archive.zip ~/.local/share/Trash/files/", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "переименуй все файлы .jpeg в .jpg", "command": "for f in *.jpeg; do mv \"$f\" \"${f%.jpeg}.jpg\"; done", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "массово переименуй файлы, добавив префикс", "command": "for f in *.txt; do mv \"$f\" \"old_$f\"; done", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "покажи файлы отсортированные по размеру, самые большие сначала", "command": "ls -lS", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "рекурсивно выведи все файлы в /home/user/projects/text2bash", "command": "find /home/user/projects/text2bash -type f", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "покажи только имена файлов без путей для всего в директории", "command": "ls -1", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Как узнать, какой процесс держит открытым файл?", "command": "lsof notes.txt", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Проверь, существует ли файл", "command": "test -f notes.txt && echo exists", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Создай 5 пронумерованных файлов от file1.txt до file5.txt", "command": "touch file{1..5}.txt", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Как сделать резервную копию файла с сегодняшней датой в имени?", "command": "cp report.docx report_$(date +%F).docx", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "сожми директорию logs в архив tar.gz", "command": "tar -czf logs.tar.gz logs/", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "распакуй backup.tar.gz в текущую директорию", "command": "tar -xzf backup.tar.gz", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "покажи содержимое archive.zip без распаковки", "command": "unzip -l archive.zip", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "распакуй archive.zip в папку downloads", "command": "unzip archive.zip -d downloads", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Перемести сразу несколько файлов в папку uploads", "command": "mv photo.jpg video.mp4 music.mp3 uploads/", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "скопируй только .csv файлы из data в backups, сохраняя структуру", "command": "cp -r data/*.csv backups/", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "найди все файлы, не принадлежащие никакому пользователю", "command": "find / -nouser", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "проверь какие файлы в текущей директории изменились за последний час", "command": "find . -mmin -60", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "сделай директорию доступной на запись только владельцу", "command": "chmod 700 project", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "найди все файлы, доступные на запись всем, и выведи список", "command": "find / -perm -o+w -type f 2>/dev/null", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "рекурсивно убери право записи для группы и остальных", "command": "chmod -R go-w project", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "установи sticky bit на директорию uploads", "command": "chmod +t uploads", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "переименуй симлинк, не трогая его цель", "command": "mv latest latest_old", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "найди файлы с правами 777 и исправь их на 644", "command": "find . -type f -perm 777 -exec chmod 644 {} \\;", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "выведи все символические ссылки в текущей директории", "command": "find . -maxdepth 1 -type l", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "удали все файлы кроме .gitignore в этой папке", "command": "find . -maxdepth 1 -type f ! -name '.gitignore' -delete", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "покажи размер каждого файла в текущей директории в килобайтах", "command": "du -k *", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Как посмотреть размер директории без учёта подпапок?", "command": "du -sh --max-depth=0 project", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "скопируй файл сразу в несколько мест", "command": "cp notes.txt backups/ && cp notes.txt drafts/", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "создай пустую структуру папок для нового проекта", "command": "mkdir -p new_project/{src,tests,docs}", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "удали все пустые файлы рекурсивно", "command": "find . -type f -empty -delete", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Найди файлы, изменённые от 2 до 5 дней назад", "command": "find . -type f -mtime +2 -mtime -5", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "найди файлы по шаблону report*.pdf", "command": "find . -name 'report*.pdf'", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "проверь общий размер всех mp3 файлов вместе", "command": "du -ch *.mp3 | tail -1", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "покажи только скрытые файлы", "command": "ls -d .*", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "перемести директорию и одновременно переименуй её", "command": "mv old_logs archived_logs_2023", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Какой командой удалить непустую директорию без rm -rf?", "command": "find old_logs -delete", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "настрой маску прав по умолчанию, чтобы новые файлы не были доступны всем на запись", "command": "umask 022", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "смени владельца рекурсивно, но только для директорий", "command": "find project -type d -exec chown deploy:deploy {} \\;", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "скопируй файл и проверь что контрольная сумма совпадает", "command": "cp data.csv backups/data.csv && md5sum data.csv backups/data.csv", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "найди дублирующиеся файлы по контрольной сумме в папке downloads", "command": "find downloads -type f -exec md5sum {} \\; | sort | uniq -w32 -d", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "покажи файлы, изменённые сегодня", "command": "find . -maxdepth 1 -daystart -mtime 0", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "покажи суммарный размер всех .log файлов в /var/log", "command": "find /var/log -name '*.log' -exec du -ch {} + | tail -1", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "переименуй файл в нижний регистр", "command": "mv README.md readme.md", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "быстро проверь свободные иноды на файловой системе", "command": "df -i", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "удали висящий симлинк на удалённый файл", "command": "find . -xtype l -delete", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "скопируй в backups только файлы, изменённые за последний день", "command": "find . -mtime -1 -type f -exec cp {} backups/ \\;", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "покажи 5 последних изменённых файлов", "command": "ls -lt | head -5", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "проверь какие директории в /home занимают больше всего места", "command": "du -h /home/* | sort -rh | head", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "сделай все .sh скрипты в папке bin исполняемыми рекурсивно", "command": "chmod -R +x bin/", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "создай симлинк на директорию current, указывающий на release_v2", "command": "ln -s release_v2 current", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "безопасно перемести файл, только убедившись что это не симлинк", "command": "test ! -L script.sh && mv script.sh drafts/", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "удали все файлы с расширением .bak", "command": "find . -name '*.bak' -delete", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "покажи насколько глубокое дерево директории project", "command": "find project -type d | awk -F/ '{print NF}' | sort -n | tail -1", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "найди все файлы больше 1 гигабайта во всей системе", "command": "find / -xdev -type f -size +1G 2>/dev/null", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "скопируй структуру директорий без самих файлов", "command": "find project -type d -exec mkdir -p /mnt/d/backup/{} \\;", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "выровняй вложенную директорию, переместив все файлы на один уровень выше", "command": "find subdir -mindepth 2 -type f -exec mv -t subdir {} +", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "проверь исполняемый ли файл script.sh", "command": "test -x script.sh && echo executable", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "дай права так, чтобы только владелец мог читать и писать config.yaml", "command": "chmod 600 config.yaml", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "покажи файлы принадлежащие только текущему пользователю", "command": "find . -user $(whoami)", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "заархивируй и сожми всю директорию src, сохранив права доступа", "command": "tar -cpzf src.tar.gz src/", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "переименуй много файлов, заменив пробелы на подчёркивания", "command": "for f in *\\ *; do mv \"$f\" \"${f// /_}\"; done", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "найди все файлы .DS_Store и удали их", "command": "find . -name '.DS_Store' -delete", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "покажи использование диска для всей домашней директории в гигабайтах", "command": "du -sh --block-size=G /home/user", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "рекурсивно скопируй директорию, исключив node_modules", "command": "rsync -av --exclude 'node_modules' project/ /mnt/d/backup/", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "синхронизируй две папки, чтобы backups точно отражала project", "command": "rsync -av --delete project/ backups/", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "перемести файл в новое место, одновременно переименовав его", "command": "mv report.docx /mnt/d/backup/final_report.docx", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Как узнать, кто владелец конкретного файла?", "command": "stat -c '%U' notes.txt", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "проверь группу-владельца папки uploads", "command": "stat -c '%G' uploads", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "выведи все файлы с их правами доступа в восьмеричном виде", "command": "stat -c '%a %n' *", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "найди все файлы с установленным setuid в системе", "command": "find / -perm -4000 -type f 2>/dev/null", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "быстро удали все файлы .pyc в проекте", "command": "find . -name '*.pyc' -delete", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "удали все пустые подпапки, но оставь корневую директорию", "command": "find . -mindepth 1 -type d -empty -delete", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "покажи какие файлы изменились с момента последнего бэкапа", "command": "find project -newer backup.tar.gz", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Создай файл только если он ещё не существует", "command": "[ -f notes.txt ] || touch notes.txt", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "выведи файлы рекурсивно с полными путями", "command": "find . -type f -printf '%p\\n'", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "скопируй один файл в несколько копий с разными именами", "command": "cp notes.txt notes_copy1.txt && cp notes.txt notes_copy2.txt", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "убери права на запись у всех файлов в директории рекурсивно", "command": "chmod -R a-w project", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "узнай какой файл занимает больше всего места в /var/log", "command": "du -a /var/log | sort -n -r | head -1", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "покажи файлы и директории, сначала директории", "command": "ls -lAp | grep /", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "сделай резервную копию с номерным суффиксом при перезаписи через cp", "command": "cp --backup=numbered config.yaml backups/config.yaml", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "поменяй местами имена двух файлов безопасно", "command": "mv notes.txt notes_tmp.txt && mv report.docx notes.txt && mv notes_tmp.txt report.docx", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Как посчитать количество файлов в директории?", "command": "ls -1 | wc -l", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "посчитай сколько директорий внутри project", "command": "find project -type d | wc -l", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "найди все файлы без права чтения для владельца", "command": "find . -type f ! -perm -u+r", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "покажи самый старый файл в текущей директории", "command": "ls -tr | head -1", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "перемести всё кроме скрытых файлов в папку archive", "command": "find . -maxdepth 1 ! -name '.*' ! -name '.' -exec mv -t archive/ {} +", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "проверь свободное место на диске перед копированием большого архива", "command": "df -h . && cp archive.zip backups/", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "найди все файлы с пробелами в именах", "command": "find . -name '* *'", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "рекурсивно найди и переименуй .txt файлы в .md", "command": "find . -name '*.txt' -exec sh -c 'mv \"$0\" \"${0%.txt}.md\"' {} \\;", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "сделай так, чтобы скрипт запускался с правами root через setuid", "command": "chmod u+s script.sh", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "убери бит setuid с файла", "command": "chmod u-s script.sh", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "найди файлы, изменённые конкретным пользователем за последнюю неделю", "command": "find . -user alice -mtime -7", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "сделай директорию и её содержимое доступными только для чтения рекурсивно", "command": "chmod -R 555 project", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "найди файлы с определённым номером инода", "command": "find . -inum 123456", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "создай симлинк относительно текущей директории", "command": "ln -s ./config.yaml current_config.yaml", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "удали только симлинки, не трогая их цели", "command": "find . -type l -delete", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "скопируй только самый новый файл по шаблону", "command": "cp $(ls -t *.log | head -1) latest.log", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "проверь использование диска, исключив определённую подпапку", "command": "du -sh --exclude=node_modules project", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "покажи общий размер всех файлов по шаблону *.mp4", "command": "du -ch *.mp4 | tail -1", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "покажи файлы с их номерами инодов", "command": "ls -i", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "найди все файлы, к которым обращались за последние 10 минут", "command": "find . -amin -10", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "рекурсивно смени права на файлы, не трогая директории", "command": "find project -type f -exec chmod 644 {} \\;", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "рекурсивно установи права 755 на директории, не трогая файлы", "command": "find project -type d -exec chmod 755 {} \\;", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "сравни размер двух файлов", "command": "diff <(wc -c < notes.txt) <(wc -c < notes_old.txt)", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "перемести большой файл с отображением прогресса", "command": "rsync -ah --progress backup.tar.gz /mnt/d/backup/", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "найди все файлы .env, которые могут содержать секреты", "command": "find . -name '.env'", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "удали все файлы в текущей директории, но оставь подпапки", "command": "find . -maxdepth 1 -type f -delete", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "покажи все смонтированные файловые системы и их использование", "command": "df -hT", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "создай директорию с бэкапом с меткой времени в названии", "command": "mkdir backup_$(date +%Y%m%d_%H%M%S)", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "узнай какой пользователь владеет больше всего файлов в /home", "command": "find /home -type f -printf '%u\\n' | sort | uniq -c | sort -rn | head -1", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "найди самый новый файл в директории", "command": "ls -t | head -1", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "удали все директории .cache рекурсивно", "command": "find . -type d -name '.cache' -exec rm -rf {} +", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "скопируй файлы, исключив определённое расширение", "command": "rsync -av --exclude='*.log' project/ /mnt/d/backup/", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "найди файлы больше 50 мегабайт и выведи их с размерами", "command": "find . -type f -size +50M -exec ls -lh {} \\;", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "смени владельца симлинка не переходя по нему", "command": "chown -h deploy:deploy latest", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "проверь общий размер директории только в мегабайтах", "command": "du -sm project", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "покажи все файлы с правами 644", "command": "find . -type f -perm 644", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "создай несколько вложенных папок для бэкапов на каждый день недели", "command": "mkdir -p backups/{mon,tue,wed,thu,fri,sat,sun}", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Создай пустой файл TODO.md", "command": "touch TODO.md", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Сделай папку assets внутри project", "command": "mkdir project/assets", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Создай путь директорий logs/2024/january", "command": "mkdir -p logs/2024/january", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "скопируй image.png в папку assets с тем же именем", "command": "cp image.png assets/image.png", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Скопируй style.css и index.html в папку release_v2", "command": "cp style.css index.html release_v2/", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "сделай полную копию папки src под именем src_backup", "command": "cp -r src src_backup", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Перемести invoice.pdf в директорию drafts", "command": "mv invoice.pdf drafts/", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "переименуй server.js в app.js", "command": "mv server.js app.js", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Перемести все .csv файлы из downloads в data", "command": "mv downloads/*.csv data/", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "как переименовать cache в old_cache", "command": "mv cache old_cache", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Удали video.mp4 безвозвратно", "command": "rm video.mp4", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "удали директорию cache рекурсивно без запроса подтверждения", "command": "rm -rf cache", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "убери все .pyc файлы только в этой папке, не в подпапках", "command": "rm -f ./*.pyc", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Удали все файлы .swp, оставленные vim", "command": "find . -name '*.swp' -delete", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "удали папку uploads только если она пустая", "command": "rmdir uploads", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Как удалить файлы больше 1 гигабайта в /tmp?", "command": "find /tmp -type f -size +1G -delete", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "очисти содержимое папки tmp, но оставь саму папку", "command": "rm -rf tmp/*", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Покажи файлы в /etc в алфавитном порядке", "command": "ls /etc", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "покажи подробный листинг /opt/app/data", "command": "ls -l /opt/app/data", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Как найти .css файлы только внутри папки assets?", "command": "find assets -name '*.css'", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "найди все директории с именем cache внутри project", "command": "find project -type d -name cache", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "найди файлы, принадлежащие группе developers", "command": "find / -group developers 2>/dev/null", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "найди presentation.pptx начиная с домашней директории", "command": "find ~ -name presentation.pptx", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "найди и сожми gzip все .csv файлы в data, сохранив оригиналы", "command": "find data -name '*.csv' -exec gzip -k {} \\;", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "найди все markdown файлы и посчитай их суммарное количество строк", "command": "find . -name '*.md' -exec cat {} + | wc -l", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "найди все файлы .class и удали их через xargs", "command": "find . -name '*.class' | xargs rm -f", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "посчитай количество директорий внутри /srv/data", "command": "find /srv/data -type d | wc -l", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Сделай main.py исполняемым", "command": "chmod +x main.py", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "убери право на выполнение script.sh для группы", "command": "chmod g-x script.sh", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "сделай index.html доступным на чтение и запись только владельцу и группе", "command": "chmod 660 index.html", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "рекурсивно установи права 750 на директорию uploads", "command": "chmod -R 750 uploads", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "дай всем полный доступ к директории cache временно", "command": "chmod -R 777 cache", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Смени владельца database.db на admin", "command": "chown admin database.db", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "рекурсивно смени владельца /srv/data на deploy", "command": "chown -R deploy:deploy /srv/data", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "смени владельца и группу presentation.pptx на bob и staff", "command": "chown bob:staff presentation.pptx", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "смени группу music.mp3 на users", "command": "chgrp users music.mp3", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Создай симлинк config, указывающий на config.yaml", "command": "ln -s config.yaml config", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "сделай симлинк home_docs, указывающий на /home/user/documents", "command": "ln -s /home/user/documents home_docs", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Как узнать, является ли путь симлинком или обычным файлом?", "command": "file notes.txt", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "найди битые симлинки в /home/user и удали их", "command": "find /home/user -xtype l -delete", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Проверь размер папки assets на диске", "command": "du -sh assets", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "покажи размер папки logs от большего к меньшему", "command": "du -h logs/* | sort -rh", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "сколько места занимает папка cache", "command": "du -sh cache", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "найди 5 самых больших файлов в /srv/data", "command": "du -ah /srv/data | sort -rh | head -5", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "проверь использование диска для раздела /opt", "command": "df -h /opt", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Создай жёсткую ссылку data_link.csv на data.csv", "command": "ln data.csv data_link.csv", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "скопируй файл с сохранением всех атрибутов через cp -a", "command": "cp -a backup.tar.gz /mnt/d/backup/", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "перемести папку только если её ещё нет в целевом месте", "command": "mv -n drafts /mnt/d/backup/", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "спрашивай подтверждение перед удалением каждого файла в old_logs", "command": "rm -i old_logs/*", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "переименуй все файлы .jpg в .jpeg", "command": "for f in *.jpg; do mv \"$f\" \"${f%.jpg}.jpeg\"; done", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "массово убери префикс old_ из имён файлов", "command": "for f in old_*; do mv \"$f\" \"${f#old_}\"; done", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "покажи файлы отсортированные по размеру, сначала самые маленькие", "command": "ls -lSr", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "рекурсивно выведи все директории внутри /srv/data", "command": "find /srv/data -type d", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Проверь существует ли директория downloads", "command": "test -d downloads && echo exists", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Создай 3 пустых лог-файла app1.log app2.log app3.log", "command": "touch app{1..3}.log", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "сожми папку assets в assets.zip", "command": "zip -r assets.zip assets/", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "распакуй archive.zip с сохранением структуры папок", "command": "unzip archive.zip", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "покажи что внутри backup.tar.gz без распаковки", "command": "tar -tzf backup.tar.gz", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "перемести сразу несколько фото в photos_2023", "command": "mv photo1.jpg photo2.jpg photo3.jpg photos_2023/", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "скопируй только .png файлы из assets в photos_2023", "command": "cp assets/*.png photos_2023/", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "найди файлы без назначенной группы", "command": "find / -nogroup 2>/dev/null", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "проверь какие файлы в /etc изменились за последние 2 часа", "command": "find /etc -mmin -120", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "сделай директорию cache доступной на чтение только для root", "command": "chmod 700 cache", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "рекурсивно убери право на выполнение для остальных в папке bin", "command": "chmod -R o-x bin", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "переименуй симлинк current в current_backup, не трогая цель", "command": "mv current current_backup", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "найди файлы с правами 666 и смени их на 644", "command": "find . -type f -perm 666 -exec chmod 644 {} \\;", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "выведи символические ссылки рекурсивно внутри project", "command": "find project -type l", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "удали все файлы кроме README.md в папке drafts", "command": "find drafts -maxdepth 1 -type f ! -name 'README.md' -delete", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "покажи размер index.html и style.css в байтах", "command": "du -b index.html style.css", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "создай новую папку проекта с подпапками src, tests и docs одной командой", "command": "mkdir -p webapp/{src,tests,docs}", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "удали все пустые .txt файлы рекурсивно", "command": "find . -name '*.txt' -empty -delete", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Найди файлы, изменённые ровно 7 дней назад", "command": "find . -type f -mtime 7", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "найди файлы по шаблону invoice_2024*.pdf", "command": "find . -name 'invoice_2024*.pdf'", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "проверь суммарный размер всех pdf счетов", "command": "du -ch invoice*.pdf | tail -1", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "покажи размеры только директорий, не файлов", "command": "du -h --max-depth=1 -- */", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "перемести drafts в archive и переименуй в drafts_archive", "command": "mv drafts archive/drafts_archive", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "удали непустую директорию cache через find вместо rm -rf", "command": "find cache -delete", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "настрой umask так, чтобы файлы создавались с правами 644, а директории 755", "command": "umask 022", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "рекурсивно смени владельца, но только для .log файлов", "command": "find . -name '*.log' -exec chown deploy:deploy {} \\;", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "скопируй database.db и убедись что копия идентична через diff", "command": "cp database.db backups/database.db && diff database.db backups/database.db", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "найди дублирующиеся изображения по контрольной сумме в photos_2023", "command": "find photos_2023 -type f -exec md5sum {} \\; | sort | uniq -w32 -d", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "покажи файлы, созданные сегодня в папке uploads", "command": "find uploads -maxdepth 1 -daystart -mtime 0", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "покажи суммарный размер всех .csv файлов внутри data", "command": "find data -name '*.csv' -exec du -ch {} + | tail -1", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "переименуй INDEX.HTML в index.html", "command": "mv INDEX.HTML index.html", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "проверь использование диска по типам файловых систем", "command": "df -hT", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "удали висящие симлинки внутри uploads", "command": "find uploads -xtype l -delete", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "скопируй файлы, изменённые за последние 3 дня, в папку с датой", "command": "find . -mtime -3 -type f -exec cp {} backup_$(date +%F)/ \\;", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "покажи 3 самых старых файла в downloads", "command": "ls -tr downloads | head -3", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "проверь какие домашние папки занимают больше всего места в /home", "command": "du -sh /home/* | sort -rh", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "сделай все скрипты внутри project исполняемыми рекурсивно", "command": "chmod -R +x project", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "создай симлинк www, указывающий на /var/www/html", "command": "ln -s /var/www/html www", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "перемести файл только после проверки что это обычный файл", "command": "test -f invoice.pdf && mv invoice.pdf archive/", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "удали все файлы, заканчивающиеся на ~, оставленные редакторами", "command": "find . -name '*~' -delete", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "проверь максимальную глубину вложенности директорий в /home/user", "command": "find /home/user -type d | awk -F/ '{print NF}' | sort -n | tail -1", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "выведи все файлы больше 500 мегабайт в /srv", "command": "find /srv -type f -size +500M", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "воссоздай такую же структуру директорий для пустого бэкап-скелета", "command": "find project -type d -exec mkdir -p backup_skeleton/{} \\;", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "выровняй файлы из assets/icons, переместив их в assets", "command": "find assets/icons -type f -exec mv -t assets {} +", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "проверь доступна ли папка cache для записи", "command": "test -w cache && echo writable", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "сделай presentation.pptx доступным на чтение всем, а на запись только владельцу", "command": "chmod 644 presentation.pptx", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "покажи файлы, принадлежащие только группе staff", "command": "find . -group staff", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "заархивируй всю папку webapp в архив с датой в имени", "command": "tar -czf webapp_$(date +%F).tar.gz webapp/", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "переименуй расширения .JPG в нижний регистр .jpg", "command": "for f in *.JPG; do mv \"$f\" \"${f%.JPG}.jpg\"; done", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "найди все файлы Thumbs.db и удали их", "command": "find . -name 'Thumbs.db' -delete", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "покажи использование диска /opt/app/data в мегабайтах", "command": "du -sh --block-size=M /opt/app/data", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "рекурсивно скопируй project, исключив папку .git", "command": "rsync -av --exclude '.git' project/ /mnt/d/backup/", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "синхронизируй photos_2023 на внешний диск, удаляя лишнее там", "command": "rsync -av --delete photos_2023/ /mnt/d/backup/photos_2023/", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "перемести music.mp3 в новую папку с более понятным именем", "command": "mv music.mp3 /home/user/Music/favorite_song.mp3", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Как узнать, кто владелец папки uploads?", "command": "stat -c '%U' uploads", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "проверь группу-владельца database.db", "command": "stat -c '%G' database.db", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "выведи права доступа всех файлов в assets в восьмеричном виде", "command": "stat -c '%a %n' assets/*", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "найди все файлы с установленным битом setgid", "command": "find / -perm -2000 -type f 2>/dev/null", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "быстро удали все .class файлы в директории build", "command": "find build -name '*.class' -delete", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "удали пустые подпапки внутри downloads, но оставь саму папку", "command": "find downloads -mindepth 1 -type d -empty -delete", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "покажи файлы в src, изменённые после файла-метки build.marker", "command": "find src -newer build.marker", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "Создай config.yaml только если его не существует", "command": "[ -f config.yaml ] || touch config.yaml", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "выведи все файлы внутри uploads с полным абсолютным путём", "command": "find uploads -type f -printf '%p\\n'", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "сделай три нумерованных копии readme.md", "command": "cp readme.md readme_1.md && cp readme.md readme_2.md && cp readme.md readme_3.md", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "убери право записи у всех файлов внутри drafts", "command": "chmod -R a-w drafts", "lang": "ru", "source": "synthetic-fileops"}
+{"instruction": "найди самый большой файл внутри /opt/app/data", "command": "du -a /opt/app/data | sort -n -r | head -1", "lang": "ru", "source": "synthetic-fileops"}

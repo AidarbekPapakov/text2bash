@@ -1,0 +1,600 @@
+{"instruction": "Hold htop at its current version so it won't be upgraded", "command": "sudo apt-mark hold htop", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "List all containers including stopped ones", "command": "docker ps -a", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Activate the virtual environment .venv", "command": "source .venv/bin/activate", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "List outdated npm packages", "command": "npm outdated", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Remove vue from the project", "command": "npm uninstall vue", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Find which package provides the file /usr/bin/redis-tools", "command": "dpkg -S /usr/bin/redis-tools", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install eslint using pnpm", "command": "pnpm add eslint", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Show detailed info about black", "command": "pip show black", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install webpack using pnpm", "command": "pnpm add webpack", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Remove wget along with its unused dependencies", "command": "sudo apt autoremove -y wget", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Show where black is installed", "command": "pip show -f black", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Do a full distribution upgrade", "command": "sudo apt full-upgrade -y", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install typescript at an exact version 4.17.21", "command": "npm install typescript@4.17.21", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Purge curl completely including config files", "command": "sudo apt purge -y curl", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "List top-level installed npm packages", "command": "npm list --depth=0", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Unhold tmux so it can be upgraded again", "command": "sudo apt-mark unhold tmux", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install a .deb file named unzip.deb", "command": "sudo dpkg -i unzip.deb", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Add react as a dev dependency with yarn", "command": "yarn add --dev react", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Show detailed info about fastapi", "command": "pip show fastapi", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Show where pydantic is installed", "command": "pip show -f pydantic", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Search for jq in apt repositories", "command": "apt search jq", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Log in to docker hub", "command": "docker login", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Show resource usage stats for running containers", "command": "docker stats", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install react with yarn", "command": "yarn add react", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Remove all unused images", "command": "docker image prune -a -f", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Remove webpack from the project", "command": "npm uninstall webpack", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Add the universe repository on Ubuntu", "command": "sudo add-apt-repository universe", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Show logs for container worker", "command": "docker logs worker", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install htop using apt", "command": "sudo apt install -y htop", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install prettier at an exact version 4.17.21", "command": "npm install prettier@4.17.21", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Clean up everything unused by docker", "command": "docker system prune -a -f", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Uninstall torch", "command": "pip uninstall -y torch", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "List docker-compose services and their status", "command": "docker compose ps", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Run the start script", "command": "npm start", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install prettier and dotenv together with npm", "command": "npm install prettier dotenv", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Create a virtual environment named .venv", "command": "python3 -m venv .venv", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Unhold net-tools so it can be upgraded again", "command": "sudo apt-mark unhold net-tools", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Check which npm packages are deprecated", "command": "npm outdated --long", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install numpy into the conda environment myenv", "command": "conda install -n myenv numpy", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Reinstall htop from scratch", "command": "sudo apt install --reinstall -y htop", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Create a virtual environment named env", "command": "python3 -m venv env", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Tag the image postgres:16 as myregistry.com/postgres:16", "command": "docker tag postgres:16 myregistry.com/postgres:16", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Check the docker version", "command": "docker version", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Run the image mongo:7 in detached mode", "command": "docker run -d mongo:7", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Create venv and install uvicorn inside it", "command": "python3 -m venv venv && source venv/bin/activate && pip install uvicorn", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Remove vue with pnpm", "command": "pnpm remove vue", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Activate the conda environment mlproject", "command": "conda activate mlproject", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "List all installed packages containing nginx", "command": "dpkg -l | grep nginx", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Execute a bash shell inside the running container db", "command": "docker exec -it db /bin/bash", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Upgrade fastapi to the latest version", "command": "pip install --upgrade fastapi", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install all dependencies using pnpm", "command": "pnpm install", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Run nginx:latest with an environment variable set and a volume mounted", "command": "docker run -d -e ENV=production -v /data:/app/data nginx:latest", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install jest globally with npm", "command": "npm install -g jest", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Clear the npm cache", "command": "npm cache clean --force", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Run mongo:7 named worker with port mapping, env var and restart policy", "command": "docker run -d --name worker -p 5432:5432 -e POSTGRES_PASSWORD=secret --restart unless-stopped mongo:7", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install torch and flask at once with pip", "command": "pip install torch flask", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Run ubuntu:22.04 and map port 8080 to 80", "command": "docker run -d -p 8080:80 ubuntu:22.04", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install a .deb file named vim.deb", "command": "sudo dpkg -i vim.deb", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Run the image redis:7 in detached mode", "command": "docker run -d redis:7", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install react globally with npm", "command": "npm install -g react", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Follow logs for container db in real time", "command": "docker logs -f db", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install uvicorn and sqlalchemy at once with pip", "command": "pip install uvicorn sqlalchemy", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Remove all unused volumes", "command": "docker volume prune -f", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Pull the image httpd:2.4 from docker hub", "command": "docker pull httpd:2.4", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Run alpine:3.19 named test-container with port mapping, env var and restart policy", "command": "docker run -d --name test-container -p 5432:5432 -e POSTGRES_PASSWORD=secret --restart unless-stopped alpine:3.19", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Update apt and install tmux in one command", "command": "sudo apt update && sudo apt install -y tmux", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Build with a custom Dockerfile named Dockerfile.prod and tag myapp:prod", "command": "docker build -f Dockerfile.prod -t myapp:prod .", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Upgrade all installed packages", "command": "sudo apt upgrade -y", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "List all conda environments", "command": "conda env list", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Remove dotenv with pnpm", "command": "pnpm remove dotenv", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install openssh-server and unzip together", "command": "sudo apt install -y openssh-server unzip", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install matplotlib for the current user only", "command": "pip install --user matplotlib", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Find which package provides the file /usr/bin/curl", "command": "dpkg -S /usr/bin/curl", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Run python:3.12-slim removing the container automatically after it exits", "command": "docker run --rm python:3.12-slim", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install wget and build-essential together", "command": "sudo apt install -y wget build-essential", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install jest as a dev dependency", "command": "npm install --save-dev jest", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Search for curl in apt repositories", "command": "apt search curl", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Reinstall openssh-server from scratch", "command": "sudo apt install --reinstall -y openssh-server", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install matplotlib without using cache", "command": "pip install --no-cache-dir matplotlib", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install next globally with npm", "command": "npm install -g next", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install vue using pnpm", "command": "pnpm add vue", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Pin flask to an exact version 2.0.1", "command": "pip install flask==2.0.1", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Link the current package globally for local development", "command": "npm link", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Initialize a new npm project with defaults", "command": "npm init -y", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install chalk as a dev dependency", "command": "npm install --save-dev chalk", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install pandas for the current user only", "command": "pip install --user pandas", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install lodash with npm", "command": "npm install lodash", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install vite using pnpm", "command": "pnpm add vite", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Copy a file from container db to the local path ./out.txt", "command": "docker cp db:/app/output.txt ./out.txt", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Create a virtual environment named venv", "command": "python3 -m venv venv", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Copy a file from container redis1 to the local path ./out.txt", "command": "docker cp redis1:/app/output.txt ./out.txt", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install next and webpack together with npm", "command": "npm install next webpack", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Run mysql:8 named myapp with port mapping, env var and restart policy", "command": "docker run -d --name myapp -p 5432:5432 -e POSTGRES_PASSWORD=secret --restart unless-stopped mysql:8", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Remove the package jq", "command": "sudo apt remove -y jq", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Run postgres:16 and map port 8080 to 80", "command": "docker run -d -p 8080:80 postgres:16", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Start the stopped container redis1", "command": "docker start redis1", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Run the build script with yarn", "command": "yarn build", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Search for tmux in apt repositories", "command": "apt search tmux", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "List all available versions of git", "command": "apt-cache policy git", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Remove the package curl", "command": "sudo apt remove -y curl", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Check the installed npm version", "command": "npm --version", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "List all installed pip packages", "command": "pip list", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Inspect the container redis1", "command": "docker inspect redis1", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Copy a file from container test-container to the local path ./out.txt", "command": "docker cp test-container:/app/output.txt ./out.txt", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Stop the container named cache", "command": "docker stop cache", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Build a docker image tagged myapp:latest from the current directory", "command": "docker build -t myapp:latest .", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Show detailed info about requests", "command": "pip show requests", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Push myapp:latest to the registry", "command": "docker push myapp:latest", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Simulate installing tmux without actually doing it", "command": "sudo apt install -s tmux", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Export the conda environment myenv to a yaml file", "command": "conda env export -n myenv > environment.yml", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Remove the image python:3.12-slim", "command": "docker rmi python:3.12-slim", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Update all npm packages", "command": "npm update", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Tag the image ubuntu:22.04 as myregistry.com/ubuntu:22.04", "command": "docker tag ubuntu:22.04 myregistry.com/ubuntu:22.04", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Create a conda environment from environment.yml", "command": "conda env create -f environment.yml", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "List all available versions of nginx", "command": "apt-cache policy nginx", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Remove the image ubuntu:22.04", "command": "docker rmi ubuntu:22.04", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "List all installed packages containing curl", "command": "dpkg -l | grep curl", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "List all docker images", "command": "docker images", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Run the image mysql:8 in detached mode", "command": "docker run -d mysql:8", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Follow logs for container cache in real time", "command": "docker logs -f cache", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install build-essential using apt", "command": "sudo apt install -y build-essential", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Remove the conda environment torch-env", "command": "conda env remove -n torch-env", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Automatically fix npm audit vulnerabilities", "command": "npm audit fix", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install jest with yarn", "command": "yarn add jest", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Show detailed info about jq", "command": "apt show jq", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Run httpd:2.4 removing the container automatically after it exits", "command": "docker run --rm httpd:2.4", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install unzip using apt", "command": "sudo apt install -y unzip", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install chalk at an exact version 4.17.21", "command": "npm install chalk@4.17.21", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Upgrade django to the latest version", "command": "pip install --upgrade django", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Load an image from a tar file image.tar", "command": "docker load -i image.tar", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Create venv and install uvicorn inside it", "command": "python3 -m venv .venv && source .venv/bin/activate && pip install uvicorn", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Show where matplotlib is installed", "command": "pip show -f matplotlib", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Pin numpy to an exact version 2.0.1", "command": "pip install numpy==2.0.1", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install fastapi from a local wheel file fastapi.whl", "command": "pip install fastapi.whl", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Remove express using yarn", "command": "yarn remove express", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Remove the package vim", "command": "sudo apt remove -y vim", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install a .deb file named curl.deb", "command": "sudo dpkg -i curl.deb", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Unhold redis-tools so it can be upgraded again", "command": "sudo apt-mark unhold redis-tools", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Unhold vim so it can be upgraded again", "command": "sudo apt-mark unhold vim", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install vite as a dev dependency", "command": "npm install --save-dev vite", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install nodemon using pnpm", "command": "pnpm add nodemon", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "How do I install nginx with apt-get?", "command": "sudo apt-get install -y nginx", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Clear the apt package cache", "command": "sudo apt clean", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Reinstall nginx from scratch", "command": "sudo apt install --reinstall -y nginx", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Show detailed info about build-essential", "command": "apt show build-essential", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Activate the conda environment dataenv", "command": "conda activate dataenv", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Fix broken dependencies after a failed dpkg install", "command": "sudo apt --fix-broken install", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install pytest using pip", "command": "pip install pytest", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Update apt and install build-essential in one command", "command": "sudo apt update && sudo apt install -y build-essential", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Run the test script", "command": "npm test", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install fastapi==0.104.1 with pip3", "command": "pip3 install fastapi==0.104.1", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Show detailed info about htop", "command": "apt show htop", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Remove typescript with pnpm", "command": "pnpm remove typescript", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Create venv and install fastapi inside it", "command": "python3 -m venv myenv && source myenv/bin/activate && pip install fastapi", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Simulate installing unzip without actually doing it", "command": "sudo apt install -s unzip", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install flask in editable mode from the current directory", "command": "pip install -e .", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Run the build script", "command": "npm run build", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Uninstall scikit-learn", "command": "pip uninstall -y scikit-learn", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Rebuild and start docker-compose services", "command": "docker compose up -d --build", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install boto3 from a local wheel file boto3.whl", "command": "pip install boto3.whl", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Show the history of layers for image node:20-alpine", "command": "docker history node:20-alpine", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Add jest as a dev dependency with yarn", "command": "yarn add --dev jest", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Remove the container test-container", "command": "docker rm test-container", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Activate the virtual environment env", "command": "source env/bin/activate", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install next with npm", "command": "npm install next", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Hold postgresql-client at its current version so it won't be upgraded", "command": "sudo apt-mark hold postgresql-client", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Start all services defined in docker-compose.yml", "command": "docker compose up -d", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "How do I install tmux with apt-get?", "command": "sudo apt-get install -y tmux", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Hold unzip at its current version so it won't be upgraded", "command": "sudo apt-mark hold unzip", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install django using pip", "command": "pip install django", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install django==4.2.7 with pip3", "command": "pip3 install django==4.2.7", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Inspect the container db", "command": "docker inspect db", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install sqlalchemy in editable mode from the current directory", "command": "pip install -e .", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Remove vite from the project", "command": "npm uninstall vite", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Stop the container named worker", "command": "docker stop worker", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Update the apt package list", "command": "sudo apt update", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Check if unzip is installed", "command": "dpkg -s unzip", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "List files installed by python3-dev", "command": "dpkg -L python3-dev", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install requests from a local wheel file requests.whl", "command": "pip install requests.whl", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Clean up unused apt packages", "command": "sudo apt autoremove -y", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install boto3 using pip", "command": "pip install boto3", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Show detailed info about pytest", "command": "pip show pytest", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Remove all stopped containers", "command": "docker container prune -f", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Run httpd:2.4 interactively with a shell", "command": "docker run -it httpd:2.4 /bin/bash", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Freeze current packages into requirements.txt", "command": "pip freeze > requirements.txt", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Activate the conda environment myenv", "command": "conda activate myenv", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Add webpack as a dev dependency with yarn", "command": "yarn add --dev webpack", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Remove curl along with its unused dependencies", "command": "sudo apt autoremove -y curl", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Remove webpack with pnpm", "command": "pnpm remove webpack", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install pytest for the current user only", "command": "pip install --user pytest", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Create venv and install boto3 inside it", "command": "python3 -m venv myenv && source myenv/bin/activate && pip install boto3", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Check which version of pip is installed", "command": "pip --version", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Downgrade build-essential to a specific version 1.2.3-1", "command": "sudo apt install build-essential=1.2.3-1", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Uninstall numpy", "command": "pip uninstall -y numpy", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install matplotlib and boto3 at once with pip", "command": "pip install matplotlib boto3", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install all dependencies with yarn", "command": "yarn install", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install torch into the conda environment torch-env", "command": "conda install -n torch-env torch", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Execute a bash shell inside the running container myapp", "command": "docker exec -it myapp /bin/bash", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Create a conda environment named myenv with python 3.11", "command": "conda create -n myenv python=3.11", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Check if vim is installed", "command": "dpkg -s vim", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install nodemon at an exact version 4.17.21", "command": "npm install nodemon@4.17.21", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install packages from requirements.txt", "command": "pip install -r requirements.txt", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Uninstall boto3", "command": "pip uninstall -y boto3", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install htop and git together", "command": "sudo apt install -y htop git", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Remove the conda environment mlproject", "command": "conda env remove -n mlproject", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Stop all services from docker-compose.yml", "command": "docker compose down", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install vue with npm", "command": "npm install vue", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Remove the container db", "command": "docker rm db", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install jest and typescript together with npm", "command": "npm install jest typescript", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Save the image httpd:2.4 to a tar file", "command": "docker save -o httpd_2.4.tar httpd:2.4", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Add next as a dev dependency with yarn", "command": "yarn add --dev next", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install nodemon with yarn", "command": "yarn add nodemon", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install typescript as a dev dependency", "command": "npm install --save-dev typescript", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install nginx using apt", "command": "sudo apt install -y nginx", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install next and jest together with npm", "command": "npm install next jest", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "List all running containers", "command": "docker ps", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "List all installed packages containing openssh-server", "command": "dpkg -l | grep openssh-server", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Purge htop completely including config files", "command": "sudo apt purge -y htop", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Upgrade numpy to the latest version", "command": "pip install --upgrade numpy", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install pandas without using cache", "command": "pip install --no-cache-dir pandas", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Show detailed info about openssh-server", "command": "apt show openssh-server", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install pandas using pip", "command": "pip install pandas", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Check if tmux is installed", "command": "dpkg -s tmux", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install flask without using cache", "command": "pip install --no-cache-dir flask", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Run the dev script with pnpm", "command": "pnpm run dev", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Execute a bash shell inside the running container worker", "command": "docker exec -it worker /bin/bash", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install prettier with npm", "command": "npm install prettier", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Add vite as a dev dependency with yarn", "command": "yarn add --dev vite", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Run node:20-alpine interactively with a shell", "command": "docker run -it node:20-alpine /bin/bash", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Show logs for container redis1", "command": "docker logs redis1", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "List all manually installed packages", "command": "apt-mark showmanual", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install lodash using pnpm", "command": "pnpm add lodash", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Check if htop is installed", "command": "dpkg -s htop", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Forcefully remove the running container api", "command": "docker rm -f api", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Remove the container redis1", "command": "docker rm redis1", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Audit the project for vulnerabilities", "command": "npm audit", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Upgrade pip itself", "command": "pip install --upgrade pip", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Tag the image python:3.12-slim as myregistry.com/python:3.12-slim", "command": "docker tag python:3.12-slim myregistry.com/python:3.12-slim", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "List files installed by htop", "command": "dpkg -L htop", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Downgrade openssh-server to a specific version 1.2.3-1", "command": "sudo apt install openssh-server=1.2.3-1", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Remove chalk from the project", "command": "npm uninstall chalk", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Remove jest using yarn", "command": "yarn remove jest", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Export the conda environment torch-env to a yaml file", "command": "conda env export -n torch-env > environment.yml", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Find which package provides the file /usr/bin/git", "command": "dpkg -S /usr/bin/git", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Run nginx:latest and map port 8080 to 80", "command": "docker run -d -p 8080:80 nginx:latest", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Remove express with pnpm", "command": "pnpm remove express", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Save the image mongo:7 to a tar file", "command": "docker save -o mongo_7.tar mongo:7", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Remove the image alpine:3.19", "command": "docker rmi alpine:3.19", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Update and upgrade in one go", "command": "sudo apt update && sudo apt upgrade -y", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Remove typescript using yarn", "command": "yarn remove typescript", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Check for outdated pip packages", "command": "pip list --outdated", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Purge nginx completely including config files", "command": "sudo apt purge -y nginx", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Update apt and install jq in one command", "command": "sudo apt update && sudo apt install -y jq", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Simulate installing postgresql-client without actually doing it", "command": "sudo apt install -s postgresql-client", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Deactivate the current conda environment", "command": "conda deactivate", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Purge net-tools completely including config files", "command": "sudo apt purge -y net-tools", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Forcefully remove the running container myapp", "command": "docker rm -f myapp", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Save the image mysql:8 to a tar file", "command": "docker save -o mysql_8.tar mysql:8", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Check for broken packages", "command": "sudo dpkg --configure -a", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Pull the image alpine:3.19 from docker hub", "command": "docker pull alpine:3.19", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Start the stopped container web", "command": "docker start web", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Stop the container named redis1", "command": "docker stop redis1", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install pandas and pydantic at once with pip", "command": "pip install pandas pydantic", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install requests==2.31.0 with pip3", "command": "pip3 install requests==2.31.0", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Inspect the container worker", "command": "docker inspect worker", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install requests in editable mode from the current directory", "command": "pip install -e .", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install typescript globally with npm", "command": "npm install -g typescript", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Run alpine:3.19 removing the container automatically after it exits", "command": "docker run --rm alpine:3.19", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install numpy==1.26.0 with pip3", "command": "pip3 install numpy==1.26.0", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install webpack with npm", "command": "npm install webpack", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install webpack with yarn", "command": "yarn add webpack", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Follow logs for container web in real time", "command": "docker logs -f web", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Start the stopped container myapp", "command": "docker start myapp", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Remove vite using yarn", "command": "yarn remove vite", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install dependencies and then run the build in one command", "command": "npm install && npm run build", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "List all available versions of jq", "command": "apt-cache policy jq", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "View logs from all docker-compose services", "command": "docker compose logs -f", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install next and react together with npm", "command": "npm install next react", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Deactivate the current virtual environment", "command": "deactivate", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "How do I install python3-dev with apt-get?", "command": "sudo apt-get install -y python3-dev", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Upgrade scikit-learn to the latest version", "command": "pip install --upgrade scikit-learn", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Remove react from the project", "command": "npm uninstall react", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install prettier globally with npm", "command": "npm install -g prettier", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Activate the virtual environment venv", "command": "source venv/bin/activate", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Run nginx:latest interactively with a shell", "command": "docker run -it nginx:latest /bin/bash", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "List files installed by openssh-server", "command": "dpkg -L openssh-server", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install all dependencies from package.json", "command": "npm install", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install sqlalchemy into the conda environment torch-env", "command": "conda install -n torch-env sqlalchemy", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Add eslint as a dev dependency with yarn", "command": "yarn add --dev eslint", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install chalk with yarn", "command": "yarn add chalk", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Run the image nginx:latest in detached mode", "command": "docker run -d nginx:latest", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Pin pytest to an exact version 2.0.1", "command": "pip install pytest==2.0.1", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Show the history of layers for image mongo:7", "command": "docker history mongo:7", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "List all installed packages containing tmux", "command": "dpkg -l | grep tmux", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Downgrade tmux to a specific version 1.2.3-1", "command": "sudo apt install tmux=1.2.3-1", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Install black from a local wheel file black.whl", "command": "pip install black.whl", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Run redis:7 with an environment variable set and a volume mounted", "command": "docker run -d -e ENV=production -v /data:/app/data redis:7", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Create a conda environment named dataenv with python 3.11", "command": "conda create -n dataenv python=3.11", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Remove jest with pnpm", "command": "pnpm remove jest", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Remove lodash using yarn", "command": "yarn remove lodash", "lang": "en", "source": "synthetic-pkgmgmt"}
+{"instruction": "Покажи статистику использования ресурсов запущенными контейнерами", "command": "docker stats", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи пакет git через apt", "command": "sudo apt install -y git", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Останови контейнер с именем myapp", "command": "docker stop myapp", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Активируй conda-окружение myenv", "command": "conda activate myenv", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи webpack через npm", "command": "npm install webpack", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Как установить build-essential с помощью apt-get?", "command": "sudo apt-get install -y build-essential", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Откати пакет nginx до версии 1.2.3-1", "command": "sudo apt install nginx=1.2.3-1", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Покажи логи контейнера redis1", "command": "docker logs redis1", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Запусти скрипт test", "command": "npm test", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи pydantic через pip", "command": "pip install pydantic", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Запусти postgres:16 с переменной окружения и смонтированным томом", "command": "docker run -d -e ENV=production -v /data:/app/data postgres:16", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Активируй виртуальное окружение .venv", "command": "source .venv/bin/activate", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Слинкуй текущий пакет глобально для локальной разработки", "command": "npm link", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи pytest в режиме редактирования из текущей директории", "command": "pip install -e .", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Обнови apt и установи postgresql-client одной командой", "command": "sudo apt update && sudo apt install -y postgresql-client", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи сразу react и axios через npm", "command": "npm install react axios", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Удали пакет curl", "command": "sudo apt remove -y curl", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Удали chalk через yarn", "command": "yarn remove chalk", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи axios через npm", "command": "npm install axios", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи dotenv через pnpm", "command": "pnpm add dotenv", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи fastapi в режиме редактирования из текущей директории", "command": "pip install -e .", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Создай виртуальное окружение с именем myenv", "command": "python3 -m venv myenv", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Запусти mysql:8 интерактивно с шеллом", "command": "docker run -it mysql:8 /bin/bash", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Смотри логи контейнера db в реальном времени", "command": "docker logs -f db", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи зависимости и сразу запусти сборку одной командой", "command": "npm install && npm run build", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Инициализируй новый npm-проект со значениями по умолчанию", "command": "npm init -y", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Обнови список пакетов apt", "command": "sudo apt update", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Удали пакет net-tools", "command": "sudo apt remove -y net-tools", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Скачай образ redis:7 из docker hub", "command": "docker pull redis:7", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Проверь, установлен ли пакет nginx", "command": "dpkg -s nginx", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи .deb файл с именем wget.deb", "command": "sudo dpkg -i wget.deb", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи pandas==2.1.4 с помощью pip3", "command": "pip3 install pandas==2.1.4", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Исправь поломанные зависимости после неудачной установки dpkg", "command": "sudo apt --fix-broken install", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Запусти mongo:7 с именем worker, маппингом порта, переменной окружения и политикой перезапуска", "command": "docker run -d --name worker -p 5432:5432 -e POSTGRES_PASSWORD=secret --restart unless-stopped mongo:7", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Откати пакет postgresql-client до версии 1.2.3-1", "command": "sudo apt install postgresql-client=1.2.3-1", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи все зависимости через pnpm", "command": "pnpm install", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Запусти образ alpine:3.19 в фоновом режиме", "command": "docker run -d alpine:3.19", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Удали все неиспользуемые тома", "command": "docker volume prune -f", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи nodemon глобально через npm", "command": "npm install -g nodemon", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи сразу eslint и dotenv через npm", "command": "npm install eslint dotenv", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Переустанови пакет htop с нуля", "command": "sudo apt install --reinstall -y htop", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Удали lodash через yarn", "command": "yarn remove lodash", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Добавь typescript как dev-зависимость через yarn", "command": "yarn add --dev typescript", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Запусти ubuntu:22.04 с переменной окружения и смонтированным томом", "command": "docker run -d -e ENV=production -v /data:/app/data ubuntu:22.04", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Покажи файлы, установленные пакетом curl", "command": "dpkg -L curl", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Покажи, где установлен пакет uvicorn", "command": "pip show -f uvicorn", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Покажи доступные версии пакета python3-dev", "command": "apt-cache policy python3-dev", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Активируй conda-окружение torch-env", "command": "conda activate torch-env", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Экспортируй conda-окружение mlproject в yaml файл", "command": "conda env export -n mlproject > environment.yml", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Скопируй файл из контейнера redis1 в локальный путь ./out.txt", "command": "docker cp redis1:/app/output.txt ./out.txt", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Полностью удали jq вместе с конфигами", "command": "sudo apt purge -y jq", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Удали axios через yarn", "command": "yarn remove axios", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Принудительно удали запущенный контейнер redis1", "command": "docker rm -f redis1", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Покажи сервисы docker-compose и их статус", "command": "docker compose ps", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Найди пакет wget в репозиториях apt", "command": "apt search wget", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Выведи список всех установленных пакетов pip", "command": "pip list", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи requests через pip", "command": "pip install requests", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи black из локального wheel-файла black.whl", "command": "pip install black.whl", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Добавь chalk как dev-зависимость через yarn", "command": "yarn add --dev chalk", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Создай venv и установи в него boto3", "command": "python3 -m venv env && source env/bin/activate && pip install boto3", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Запусти mongo:7 интерактивно с шеллом", "command": "docker run -it mongo:7 /bin/bash", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи black через pip", "command": "pip install black", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Запусти postgres:16 с маппингом порта 8080 на 80", "command": "docker run -d -p 8080:80 postgres:16", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи сразу flask и scikit-learn через pip", "command": "pip install flask scikit-learn", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Деактивируй текущее conda-окружение", "command": "conda deactivate", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Автоматически исправь уязвимости, найденные npm audit", "command": "npm audit fix", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи pandas без использования кэша", "command": "pip install --no-cache-dir pandas", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Покажи подробную информацию о пакете matplotlib", "command": "pip show matplotlib", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи пакет curl через apt", "command": "sudo apt install -y curl", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи пакет postgresql-client через apt", "command": "sudo apt install -y postgresql-client", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Собери docker-образ с тегом myapp:latest из текущей директории", "command": "docker build -t myapp:latest .", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Добавь webpack как dev-зависимость через yarn", "command": "yarn add --dev webpack", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Запусти скрипт start", "command": "npm start", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Покажи логи контейнера worker", "command": "docker logs worker", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Удали образ node:20-alpine", "command": "docker rmi node:20-alpine", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Проверь, установлен ли пакет curl", "command": "dpkg -s curl", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Запусти dev-скрипт через pnpm", "command": "pnpm run dev", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Узнай, какой пакет предоставляет файл /usr/bin/net-tools", "command": "dpkg -S /usr/bin/net-tools", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи сразу prettier и eslint через npm", "command": "npm install prettier eslint", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи prettier как dev-зависимость", "command": "npm install --save-dev prettier", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Переустанови пакет build-essential с нуля", "command": "sudo apt install --reinstall -y build-essential", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Покажи историю слоёв образа alpine:3.19", "command": "docker history alpine:3.19", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи react через yarn", "command": "yarn add react", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Запусти образ ubuntu:22.04 в фоновом режиме", "command": "docker run -d ubuntu:22.04", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Обнови список пакетов и установи все обновления одной командой", "command": "sudo apt update && sudo apt upgrade -y", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Останови все сервисы из docker-compose.yml", "command": "docker compose down", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Проверь, что будет при установке htop, без реальной установки", "command": "sudo apt install -s htop", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи black только для текущего пользователя", "command": "pip install --user black", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Как установить redis-tools с помощью apt-get?", "command": "sudo apt-get install -y redis-tools", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи prettier точной версии 4.17.21", "command": "npm install prettier@4.17.21", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Авторизуйся в docker hub", "command": "docker login", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Запусти образ redis:7 в фоновом режиме", "command": "docker run -d redis:7", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Удали next из проекта", "command": "npm uninstall next", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Создай venv и установи в него uvicorn", "command": "python3 -m venv env && source env/bin/activate && pip install uvicorn", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Добавь vue как dev-зависимость через yarn", "command": "yarn add --dev vue", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи pydantic в conda-окружение dataenv", "command": "conda install -n dataenv pydantic", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Закрепи requests на точной версии 2.0.1", "command": "pip install requests==2.0.1", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Обнови все установленные пакеты", "command": "sudo apt upgrade -y", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Скачай образ mongo:7 из docker hub", "command": "docker pull mongo:7", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Покажи подробную информацию о пакете git", "command": "apt show git", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Сними блокировку обновления с nginx", "command": "sudo apt-mark unhold nginx", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Зафиксируй redis-tools на текущей версии, чтобы он не обновлялся", "command": "sudo apt-mark hold redis-tools", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Деактивируй текущее виртуальное окружение", "command": "deactivate", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи jest точной версии 4.17.21", "command": "npm install jest@4.17.21", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Создай conda-окружение torch-env с python 3.11", "command": "conda create -n torch-env python=3.11", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Очисти кэш пакетов apt", "command": "sudo apt clean", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи сразу python3-dev и redis-tools", "command": "sudo apt install -y python3-dev redis-tools", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Закрепи django на точной версии 2.0.1", "command": "pip install django==2.0.1", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Очисти всё неиспользуемое в docker", "command": "docker system prune -a -f", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Зайди в bash внутри запущенного контейнера worker", "command": "docker exec -it worker /bin/bash", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Добавь репозиторий universe в Ubuntu", "command": "sudo add-apt-repository universe", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Закрепи pytest на точной версии 2.0.1", "command": "pip install pytest==2.0.1", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Сними блокировку обновления с redis-tools", "command": "sudo apt-mark unhold redis-tools", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Запусти redis:7 с маппингом порта 8080 на 80", "command": "docker run -d -p 8080:80 redis:7", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Запусти сборку через yarn", "command": "yarn build", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Удали образ postgres:16", "command": "docker rmi postgres:16", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Добавь dotenv как dev-зависимость через yarn", "command": "yarn add --dev dotenv", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи eslint глобально через npm", "command": "npm install -g eslint", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи requests==2.31.0 с помощью pip3", "command": "pip3 install requests==2.31.0", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи .deb файл с именем htop.deb", "command": "sudo dpkg -i htop.deb", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Проверь, установлен ли пакет net-tools", "command": "dpkg -s net-tools", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Покажи список всех docker-образов", "command": "docker images", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи jest глобально через npm", "command": "npm install -g jest", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Покажи файлы, установленные пакетом vim", "command": "dpkg -L vim", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Запусти mysql:8 с переменной окружения и смонтированным томом", "command": "docker run -d -e ENV=production -v /data:/app/data mysql:8", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Удали react через pnpm", "command": "pnpm remove react", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Полностью удали python3-dev вместе с конфигами", "command": "sudo apt purge -y python3-dev", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Активируй виртуальное окружение venv", "command": "source venv/bin/activate", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи .deb файл с именем git.deb", "command": "sudo dpkg -i git.deb", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Активируй виртуальное окружение myenv", "command": "source myenv/bin/activate", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Удали dotenv из проекта", "command": "npm uninstall dotenv", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Скопируй файл из контейнера worker в локальный путь ./out.txt", "command": "docker cp worker:/app/output.txt ./out.txt", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Запусти nginx:latest интерактивно с шеллом", "command": "docker run -it nginx:latest /bin/bash", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи next через yarn", "command": "yarn add next", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи axios точной версии 4.17.21", "command": "npm install axios@4.17.21", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи numpy в режиме редактирования из текущей директории", "command": "pip install -e .", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи сразу black и scikit-learn через pip", "command": "pip install black scikit-learn", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Покажи файлы, установленные пакетом tmux", "command": "dpkg -L tmux", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Откати пакет net-tools до версии 1.2.3-1", "command": "sudo apt install net-tools=1.2.3-1", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Удали unzip вместе с неиспользуемыми зависимостями", "command": "sudo apt autoremove -y unzip", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Протегируй образ python:3.12-slim как myregistry.com/python:3.12-slim", "command": "docker tag python:3.12-slim myregistry.com/python:3.12-slim", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи lodash через npm", "command": "npm install lodash", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи vue точной версии 4.17.21", "command": "npm install vue@4.17.21", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Удали vue через pnpm", "command": "pnpm remove vue", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Обнови все npm-пакеты", "command": "npm update", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи next через npm", "command": "npm install next", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Удали неиспользуемые пакеты apt", "command": "sudo apt autoremove -y", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Смотри логи всех сервисов docker-compose", "command": "docker compose logs -f", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Создай venv и установи в него numpy", "command": "python3 -m venv venv && source venv/bin/activate && pip install numpy", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Покажи подробную информацию о контейнере myapp", "command": "docker inspect myapp", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Принудительно удали запущенный контейнер worker", "command": "docker rm -f worker", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи сразу build-essential и vim", "command": "sudo apt install -y build-essential vim", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Покажи историю слоёв образа nginx:latest", "command": "docker history nginx:latest", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Удали все неиспользуемые образы", "command": "docker image prune -a -f", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Выведи список установленных пакетов с именем unzip", "command": "dpkg -l | grep unzip", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи vite как dev-зависимость", "command": "npm install --save-dev vite", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Запусти все сервисы из docker-compose.yml", "command": "docker compose up -d", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Создай venv и установи в него uvicorn", "command": "python3 -m venv myenv && source myenv/bin/activate && pip install uvicorn", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи numpy в conda-окружение mlproject", "command": "conda install -n mlproject numpy", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи flask в conda-окружение myenv", "command": "conda install -n myenv flask", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Запусти остановленный контейнер worker", "command": "docker start worker", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Удали nodemon через pnpm", "command": "pnpm remove nodemon", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Удали vite из проекта", "command": "npm uninstall vite", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи сразу black и uvicorn через pip", "command": "pip install black uvicorn", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Покажи все пакеты, установленные вручную", "command": "apt-mark showmanual", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Добавь axios как dev-зависимость через yarn", "command": "yarn add --dev axios", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Покажи подробную информацию о пакете pytest", "command": "pip show pytest", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Зафиксируй nginx на текущей версии, чтобы он не обновлялся", "command": "sudo apt-mark hold nginx", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи vite через pnpm", "command": "pnpm add vite", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Удали все остановленные контейнеры", "command": "docker container prune -f", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Проверь, что будет при установке redis-tools, без реальной установки", "command": "sudo apt install -s redis-tools", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Запусти остановленный контейнер redis1", "command": "docker start redis1", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи сразу typescript и dotenv через npm", "command": "npm install typescript dotenv", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Выведи список установленных пакетов с именем openssh-server", "command": "dpkg -l | grep openssh-server", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Создай виртуальное окружение с именем env", "command": "python3 -m venv env", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Проверь проект на уязвимости", "command": "npm audit", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Создай conda-окружение из файла environment.yml", "command": "conda env create -f environment.yml", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Сними блокировку обновления с curl", "command": "sudo apt-mark unhold curl", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи jest через npm", "command": "npm install jest", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи vite глобально через npm", "command": "npm install -g vite", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Удали nodemon через yarn", "command": "yarn remove nodemon", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Покажи подробную информацию о пакете net-tools", "command": "apt show net-tools", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Покажи логи контейнера myapp", "command": "docker logs myapp", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Активируй conda-окружение dataenv", "command": "conda activate dataenv", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Удали контейнер redis1", "command": "docker rm redis1", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Удали пакет black", "command": "pip uninstall -y black", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Покажи установленные npm-пакеты верхнего уровня", "command": "npm list --depth=0", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Скопируй файл из контейнера test-container в локальный путь ./out.txt", "command": "docker cp test-container:/app/output.txt ./out.txt", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Обнови pydantic до последней версии", "command": "pip install --upgrade pydantic", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи next как dev-зависимость", "command": "npm install --save-dev next", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи dotenv через npm", "command": "npm install dotenv", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Создай виртуальное окружение с именем .venv", "command": "python3 -m venv .venv", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Проверь наличие поломанных пакетов", "command": "sudo dpkg --configure -a", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Закрепи uvicorn на точной версии 2.0.1", "command": "pip install uvicorn==2.0.1", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Выведи список всех conda-окружений", "command": "conda env list", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Проверь версию docker", "command": "docker version", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Обнови сам pip", "command": "pip install --upgrade pip", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи pandas только для текущего пользователя", "command": "pip install --user pandas", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Узнай, какой пакет предоставляет файл /usr/bin/curl", "command": "dpkg -S /usr/bin/curl", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи сразу uvicorn и matplotlib через pip", "command": "pip install uvicorn matplotlib", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи scikit-learn только для текущего пользователя", "command": "pip install --user scikit-learn", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Сохрани образ ubuntu:22.04 в tar-файл", "command": "docker save -o ubuntu_22.04.tar ubuntu:22.04", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Останови контейнер с именем db", "command": "docker stop db", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Удали prettier через pnpm", "command": "pnpm remove prettier", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Протегируй образ nginx:latest как myregistry.com/nginx:latest", "command": "docker tag nginx:latest myregistry.com/nginx:latest", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Сохрани текущие пакеты в requirements.txt", "command": "pip freeze > requirements.txt", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Покажи все контейнеры, включая остановленные", "command": "docker ps -a", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Смотри логи контейнера api в реальном времени", "command": "docker logs -f api", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Покажи подробную информацию о пакете black", "command": "pip show black", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Обнови fastapi до последней версии", "command": "pip install --upgrade fastapi", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Полностью удали openssh-server вместе с конфигами", "command": "sudo apt purge -y openssh-server", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Проверь, какие npm-пакеты устарели", "command": "npm outdated --long", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Собери образ с кастомным Dockerfile.prod и тегом myapp:prod", "command": "docker build -f Dockerfile.prod -t myapp:prod .", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи пакеты из requirements.txt", "command": "pip install -r requirements.txt", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Запусти alpine:3.19 с именем worker, маппингом порта, переменной окружения и политикой перезапуска", "command": "docker run -d --name worker -p 5432:5432 -e POSTGRES_PASSWORD=secret --restart unless-stopped alpine:3.19", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Удали контейнер api", "command": "docker rm api", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Отправь myapp:latest в реестр", "command": "docker push myapp:latest", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Удали образ nginx:latest", "command": "docker rmi nginx:latest", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи next точной версии 4.17.21", "command": "npm install next@4.17.21", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Протегируй образ node:20-alpine как myregistry.com/node:20-alpine", "command": "docker tag node:20-alpine myregistry.com/node:20-alpine", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи matplotlib без использования кэша", "command": "pip install --no-cache-dir matplotlib", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Запусти ubuntu:22.04 с автоматическим удалением контейнера после завершения", "command": "docker run --rm ubuntu:22.04", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Активируй виртуальное окружение env", "command": "source env/bin/activate", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Проверь, есть ли устаревшие пакеты pip", "command": "pip list --outdated", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Сохрани образ mysql:8 в tar-файл", "command": "docker save -o mysql_8.tar mysql:8", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи dotenv через yarn", "command": "yarn add dotenv", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Создай conda-окружение myenv с python 3.11", "command": "conda create -n myenv python=3.11", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Покажи устаревшие npm-пакеты", "command": "npm outdated", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Удали dotenv через pnpm", "command": "pnpm remove dotenv", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи scikit-learn без использования кэша", "command": "pip install --no-cache-dir scikit-learn", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Удали conda-окружение mlproject", "command": "conda env remove -n mlproject", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Как установить htop с помощью apt-get?", "command": "sudo apt-get install -y htop", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Обнови black до последней версии", "command": "pip install --upgrade black", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Найди пакет tmux в репозиториях apt", "command": "apt search tmux", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Обнови apt и установи redis-tools одной командой", "command": "sudo apt update && sudo apt install -y redis-tools", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Покажи, где установлен пакет numpy", "command": "pip show -f numpy", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Удали пакет wget", "command": "sudo apt remove -y wget", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Запусти mysql:8 с именем cache, маппингом порта, переменной окружения и политикой перезапуска", "command": "docker run -d --name cache -p 5432:5432 -e POSTGRES_PASSWORD=secret --restart unless-stopped mysql:8", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи typescript глобально через npm", "command": "npm install -g typescript", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи django из локального wheel-файла django.whl", "command": "pip install django.whl", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Проверь установленную версию npm", "command": "npm --version", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Покажи подробную информацию о контейнере api", "command": "docker inspect api", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Покажи доступные версии пакета wget", "command": "apt-cache policy wget", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Зайди в bash внутри запущенного контейнера test-container", "command": "docker exec -it test-container /bin/bash", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Удали net-tools вместе с неиспользуемыми зависимостями", "command": "sudo apt autoremove -y net-tools", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Узнай версию pip", "command": "pip --version", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Переустанови пакет openssh-server с нуля", "command": "sudo apt install --reinstall -y openssh-server", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи dotenv точной версии 4.17.21", "command": "npm install dotenv@4.17.21", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Удали пакет django", "command": "pip uninstall -y django", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи pytest==7.4.3 с помощью pip3", "command": "pip3 install pytest==7.4.3", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Обнови matplotlib до последней версии", "command": "pip install --upgrade matplotlib", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Полностью удали build-essential вместе с конфигами", "command": "sudo apt purge -y build-essential", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи numpy из локального wheel-файла numpy.whl", "command": "pip install numpy.whl", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Удали контейнер web", "command": "docker rm web", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Зафиксируй net-tools на текущей версии, чтобы он не обновлялся", "command": "sudo apt-mark hold net-tools", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Зафиксируй postgresql-client на текущей версии, чтобы он не обновлялся", "command": "sudo apt-mark hold postgresql-client", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Пересобери и запусти сервисы docker-compose", "command": "docker compose up -d --build", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Запусти mysql:8 с автоматическим удалением контейнера после завершения", "command": "docker run --rm mysql:8", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи все зависимости из package.json", "command": "npm install", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Запусти остановленный контейнер web", "command": "docker start web", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Найди пакет vim в репозиториях apt", "command": "apt search vim", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Загрузи образ из tar-файла image.tar", "command": "docker load -i image.tar", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Запусти httpd:2.4 интерактивно с шеллом", "command": "docker run -it httpd:2.4 /bin/bash", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи requests из локального wheel-файла requests.whl", "command": "pip install requests.whl", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Покажи подробную информацию о пакете boto3", "command": "pip show boto3", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Проверь, что будет при установке nginx, без реальной установки", "command": "sudo apt install -s nginx", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи eslint через pnpm", "command": "pnpm add eslint", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи сразу nodemon и lodash через npm", "command": "npm install nodemon lodash", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Покажи, где установлен пакет sqlalchemy", "command": "pip show -f sqlalchemy", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Сделай полное обновление дистрибутива", "command": "sudo apt full-upgrade -y", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Удали jest через yarn", "command": "yarn remove jest", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи все зависимости через yarn", "command": "yarn install", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Обнови apt и установи jq одной командой", "command": "sudo apt update && sudo apt install -y jq", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи typescript как dev-зависимость", "command": "npm install --save-dev typescript", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Покажи доступные версии пакета postgresql-client", "command": "apt-cache policy postgresql-client", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Покажи файлы, установленные пакетом wget", "command": "dpkg -L wget", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Смотри логи контейнера web в реальном времени", "command": "docker logs -f web", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи axios через pnpm", "command": "pnpm add axios", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Сохрани образ node:20-alpine в tar-файл", "command": "docker save -o node_20-alpine.tar node:20-alpine", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Покажи все запущенные контейнеры", "command": "docker ps", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Удали eslint из проекта", "command": "npm uninstall eslint", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Покажи, где установлен пакет torch", "command": "pip show -f torch", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Узнай, какой пакет предоставляет файл /usr/bin/wget", "command": "dpkg -S /usr/bin/wget", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи пакет openssh-server через apt", "command": "sudo apt install -y openssh-server", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Найди пакет nginx в репозиториях apt", "command": "apt search nginx", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи fastapi==0.104.1 с помощью pip3", "command": "pip3 install fastapi==0.104.1", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Запусти postgres:16 с автоматическим удалением контейнера после завершения", "command": "docker run --rm postgres:16", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Запусти alpine:3.19 с маппингом порта 8080 на 80", "command": "docker run -d -p 8080:80 alpine:3.19", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Запусти сборку проекта", "command": "npm run build", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Удали пакет git", "command": "sudo apt remove -y git", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Удали wget вместе с неиспользуемыми зависимостями", "command": "sudo apt autoremove -y wget", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Выведи список установленных пакетов с именем build-essential", "command": "dpkg -l | grep build-essential", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи prettier через yarn", "command": "yarn add prettier", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Очисти кэш npm", "command": "npm cache clean --force", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Удали lodash через pnpm", "command": "pnpm remove lodash", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Останови контейнер с именем web", "command": "docker stop web", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Удали lodash из проекта", "command": "npm uninstall lodash", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Удали пакет requests", "command": "pip uninstall -y requests", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи uvicorn через pip", "command": "pip install uvicorn", "lang": "ru", "source": "synthetic-pkgmgmt"}
+{"instruction": "Установи сразу git и tmux", "command": "sudo apt install -y git tmux", "lang": "ru", "source": "synthetic-pkgmgmt"}

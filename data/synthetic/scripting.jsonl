@@ -1,0 +1,600 @@
+{"instruction": "Check where the docker executable is located", "command": "which docker", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check if a directory exists, else create it", "command": "[ -d /var/log/myapp ] || mkdir -p /var/log/myapp", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check where the git executable is located", "command": "which git", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Store the number of files in a directory", "command": "count=$(ls | wc -l)", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Show cron jobs for user www-data", "command": "crontab -u www-data -l", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Use xargs together with find to change ownership of files", "command": "find /var/www -type f | xargs chown www-data:www-data", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Use xargs with a confirmation prompt before each command", "command": "find . -name '*.bak' | xargs -p rm", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Export the environment variable HTTP_PROXY with value http://proxy.local:8080", "command": "export HTTP_PROXY=\"http://proxy.local:8080\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Use xargs to chmod every file from a list", "command": "cat filelist.txt | xargs chmod 644", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Store the output of a command in a variable", "command": "files=$(ls)", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Print the current timestamp in nanoseconds", "command": "date +%s%N", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Break out of a while loop when a condition is met", "command": "while true; do [ -f /tmp/stop ] && break; sleep 1; done", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "List environment variables matching a pattern", "command": "env | grep -i java", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Use a nested for loop over two lists", "command": "for a in 1 2; do for b in x y; do echo \"$a-$b\"; done; done", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Export multiple variables on one line", "command": "export FOO=1 BAR=2 BAZ=3", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Unset the HTTP_PROXY variable", "command": "unset HTTP_PROXY", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Export the environment variable DEBUG with value 1", "command": "export DEBUG=\"1\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Compare the output of two commands using command substitution", "command": "[ \"$(md5sum < a.txt)\" = \"$(md5sum < b.txt)\" ] && echo \"same\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Find the full path of the bash interpreter itself", "command": "which bash", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Schedule /opt/scripts/archive_logs.sh to run every night at 11:30 PM via cron", "command": "(crontab -l 2>/dev/null; echo \"30 23 * * * /opt/scripts/archive_logs.sh\") | crontab -", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Create an alias named gp for 'git push'", "command": "alias gp='git push'", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Convert a Unix timestamp to a human readable date", "command": "date -d @1700000000 '+%Y-%m-%d %H:%M:%S'", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Loop through numbers with a custom step of 2", "command": "for i in $(seq 0 2 20); do echo $i; done", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Append history immediately after each command instead of on exit", "command": "export PROMPT_COMMAND='history -a'", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Add a cron job that runs on Mondays, Wednesdays, and Fridays at 7am", "command": "(crontab -l 2>/dev/null; echo \"0 7 * * 1,3,5 /opt/scripts/midweek.sh\") | crontab -", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Clear all environment variables and run a command in a clean environment", "command": "env -i bash -c 'echo $PATH'", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "List cron jobs for all users as root", "command": "for u in $(cut -f1 -d: /etc/passwd); do crontab -u \"$u\" -l 2>/dev/null; done", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Add a cron job to run /home/user/backup.sh every day at 3 AM", "command": "(crontab -l 2>/dev/null; echo \"0 3 * * * /home/user/backup.sh\") | crontab -", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Use a while loop with a counter limited to 10 iterations", "command": "i=0; while [ $i -lt 10 ]; do echo $i; i=$((i+1)); done", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check if a command is an alias, function, or binary", "command": "type ls", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check if a variable holds a valid IPv4 address", "command": "[[ \"$ip\" =~ ^[0-9]+\\.[0-9]+\\.[0-9]+\\.[0-9]+$ ]] && echo \"valid ip\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Export a default locale for the whole system session", "command": "export LANG=\"en_US.UTF-8\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Create an alias named gs for 'git status'", "command": "alias gs='git status'", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check which shell is set as the login shell", "command": "which $SHELL", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "List another user's crontab named alice", "command": "crontab -u alice -l", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Add a cron job to run /home/user/backup.sh every 6 hours", "command": "(crontab -l 2>/dev/null; echo \"0 */6 * * * /home/user/backup.sh\") | crontab -", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check if a string is a valid number in one line", "command": "[[ \"$val\" =~ ^[0-9]+$ ]] && echo \"number\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Add a cron job to run /home/user/scripts/healthcheck.sh every Sunday at midnight", "command": "(crontab -l 2>/dev/null; echo \"0 0 * * 0 /home/user/scripts/healthcheck.sh\") | crontab -", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Loop through a range of ports and check if each is open", "command": "for p in {8000..8010}; do nc -z localhost $p && echo \"$p open\"; done", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Print the full day name and date", "command": "date '+%A, %d %B %Y'", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Delete every file older than 7 days using find in a loop", "command": "for f in $(find . -mtime +7 -type f); do rm \"$f\"; done", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Capture the exit code of the last command", "command": "status=$?", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Get the number of running processes matching a name", "command": "n=$(pgrep -c nginx)", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check if two files have the same content", "command": "cmp -s file1.txt file2.txt && echo \"identical\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check if a symlink exists", "command": "[ -L /usr/bin/python ] && echo \"symlink\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "List aliases sorted alphabetically", "command": "alias | sort", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Print only aliases that reference git", "command": "alias | grep git", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Write a for loop that prints numbers 1 to 10", "command": "for i in {1..10}; do echo $i; done", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Add a cron job to run /opt/app/rotate_logs.sh every 6 hours", "command": "(crontab -l 2>/dev/null; echo \"0 */6 * * * /opt/app/rotate_logs.sh\") | crontab -", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Schedule a cron job to clean temp files every 30 minutes", "command": "(crontab -l 2>/dev/null; echo \"*/30 * * * * /opt/scripts/clean_tmp.sh\") | crontab -", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Create an alias named rm for 'rm -i'", "command": "alias rm='rm -i'", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Get the date of the last day of the current month", "command": "date -d 'next month -1 day' +%Y-%m-%d", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Add a cron job that runs at every system reboot", "command": "(crontab -l 2>/dev/null; echo \"@reboot /opt/scripts/startup.sh\") | crontab -", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Use command substitution to get the current directory name", "command": "dirname=$(basename \"$(pwd)\")", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Use command substitution to build a dynamic filename with a timestamp", "command": "fname=\"report_$(date +%s).csv\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check if an alias named gs already exists", "command": "alias gs 2>/dev/null && echo exists", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check if a command is a shell keyword", "command": "type -t if", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Use a C-style for loop to count down from 10 to 1", "command": "for ((i=10; i>=1; i--)); do echo $i; done", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Pipe a list of PIDs to xargs to kill them", "command": "ps -ef | grep myapp | awk '{print $2}' | xargs kill -9", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Rename all .jpeg files to .jpg in a loop", "command": "for f in *.jpeg; do mv \"$f\" \"${f%.jpeg}.jpg\"; done", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Export the environment variable EDITOR with value vim", "command": "export EDITOR=\"vim\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check if a number is greater than 10 in one line", "command": "[ \"$n\" -gt 10 ] && echo \"big\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Export a variable only for the duration of a single command without affecting the shell", "command": "env FOO=bar ./script.sh", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Remove the alias named ll", "command": "unalias ll", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Add a cron job to run /opt/scripts/cleanup.sh at 2:30 AM on weekdays", "command": "(crontab -l 2>/dev/null; echo \"30 2 * * 1-5 /opt/scripts/cleanup.sh\") | crontab -", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Unset the API_KEY environment variable", "command": "unset API_KEY", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Loop over all .txt files and print their names", "command": "for f in *.txt; do echo $f; done", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Combine find and xargs to remove empty directories", "command": "find . -type d -empty | xargs rmdir", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Loop and skip hidden files", "command": "for f in *; do [[ \"$f\" == .* ]] && continue; echo \"$f\"; done", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Export the environment variable MAVEN_OPTS with value -Xmx2048m", "command": "export MAVEN_OPTS=\"-Xmx2048m\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Print an environment variable value using printenv", "command": "printenv HOME", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check where the curl executable is located", "command": "which curl", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Run a script every minute via cron", "command": "(crontab -l 2>/dev/null; echo \"* * * * * /home/user/ping.sh\") | crontab -", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check where the alias 'll' is defined by searching shell config files", "command": "grep -rn \"alias ll\" ~/.bashrc ~/.bash_aliases 2>/dev/null", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Loop over lines of output from a remote command over ssh", "command": "ssh user@host 'ls /var/log' | while read -r f; do echo \"$f\"; done", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Define an alias for quickly editing the bashrc file", "command": "alias ebrc='vim ~/.bashrc'", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check whether the DEBUG variable is set", "command": "[[ -n \"$DEBUG\" ]] && echo set || echo unset", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Loop through command-line arguments", "command": "for arg in \"$@\"; do echo \"$arg\"; done", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Show only the HOME and SHELL environment variables", "command": "env | grep -E '^(HOME|SHELL)='", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Print the date 3 days in the future", "command": "date -d '+3 days'", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Use xargs to compress each file individually", "command": "ls *.csv | xargs -n 1 gzip", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Use xargs to create multiple directories from a list", "command": "cat dirs.txt | xargs mkdir -p", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Show history with timestamps", "command": "HISTTIMEFORMAT='%F %T ' history", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Capture multi-line command output into a variable", "command": "output=$(ls -la /tmp)", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Schedule /home/user/weekly_report.sh to run every Saturday at noon via cron", "command": "(crontab -l 2>/dev/null; echo \"0 12 * * 6 /home/user/weekly_report.sh\") | crontab -", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Load environment variables from a .env file", "command": "export $(grep -v '^#' .env | xargs)", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Find all locations of a command in PATH", "command": "which -a python", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Write a while loop that decrements a counter to zero", "command": "n=5; while [ $n -gt 0 ]; do echo $n; n=$((n-1)); done", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Save the current history to the history file immediately", "command": "history -w", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Reload .bashrc to apply new aliases", "command": "source ~/.bashrc", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Name a backup file with today's date appended", "command": "cp config.yml config_$(date +%F).yml", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Add a cron job to run /home/user/backup.sh at 2:30 AM on weekdays", "command": "(crontab -l 2>/dev/null; echo \"30 2 * * 1-5 /home/user/backup.sh\") | crontab -", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check if a file is executable", "command": "[ -x /usr/bin/python3 ] && echo \"executable\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check if docker is installed before running a script", "command": "command -v docker >/dev/null 2>&1 || { echo 'docker not found'; exit 1; }", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Add a cron job to run /opt/app/rotate_logs.sh at 9 AM on the first day of the month", "command": "(crontab -l 2>/dev/null; echo \"0 9 1 * * /opt/app/rotate_logs.sh\") | crontab -", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Write a for loop that sends a GET request to each endpoint in a list", "command": "for url in \"${urls[@]}\"; do curl -s \"$url\"; done", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Create an alias that ignores previous alias and runs the real command", "command": "alias ls='\\ls --color=auto'", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check what the alias gs expands to", "command": "alias gs", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Print the current day of the week", "command": "date +%A", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Make a variable read-only so it can't be changed", "command": "readonly API_KEY=sk-12345abcde", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Rerun the last command that started with ssh", "command": "!ssh", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Get the current date in a filename-safe format for a log file", "command": "logfile=backup_$(date +%Y%m%d_%H%M%S).log", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Avoid storing duplicate consecutive commands in history", "command": "export HISTCONTROL=ignoredups", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check if a variable is set and not empty before using it", "command": ": \"${REQUIRED_VAR:?Error: REQUIRED_VAR is not set}\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check where the awk executable is located", "command": "which awk", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Schedule /opt/scripts/billing.sh to run on the 1st and 15th at 4:15 AM via cron", "command": "(crontab -l 2>/dev/null; echo \"15 4 1,15 * * /opt/scripts/billing.sh\") | crontab -", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Add a cron job to run /home/user/scripts/healthcheck.sh every Friday at 10 PM", "command": "(crontab -l 2>/dev/null; echo \"0 22 * * 5 /home/user/scripts/healthcheck.sh\") | crontab -", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Print all exported environment variables", "command": "env", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Print only the names of exported variables", "command": "export -p | cut -d' ' -f3 | cut -d= -f1", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Build a tar filename using the output of hostname and date", "command": "tar -czf \"backup_$(hostname)_$(date +%F).tar.gz\" /data", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Print the current date combined with the hostname in one line", "command": "echo \"$(hostname) - $(date)\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Show the last 20 commands from history", "command": "history 20", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Create an alias named gc for 'git commit'", "command": "alias gc='git commit'", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Add a cron job to run a disk-usage check every hour", "command": "(crontab -l 2>/dev/null; echo \"0 * * * * /opt/scripts/disk_check.sh\") | crontab -", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Loop through files modified today", "command": "for f in $(find . -mtime 0 -type f); do echo \"$f\"; done", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Create an alias named update for 'sudo apt update && sudo apt upgrade -y'", "command": "alias update='sudo apt update && sudo apt upgrade -y'", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Schedule a reboot every day at 4 AM", "command": "(crontab -l 2>/dev/null; echo \"0 4 * * * /sbin/reboot\") | crontab -", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Create an alias named py for 'python3'", "command": "alias py='python3'", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Create an alias named df for 'df -h'", "command": "alias df='df -h'", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Create an alias named myip for 'curl -s ifconfig.me'", "command": "alias myip='curl -s ifconfig.me'", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Delete a specific line from history by its number", "command": "history -d 42", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Disable saving a specific command to history", "command": "export HISTIGNORE='ls:cd:pwd'", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Loop a fixed number of times using seq", "command": "for i in $(seq 1 100); do echo $i; done", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check if a command succeeded and print a message", "command": "ping -c1 example.com && echo ok || echo fail", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Print an environment variable's value only if it's set, otherwise print nothing", "command": "echo \"${API_KEY:-}\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Increase the number of lines kept in the history file itself", "command": "export HISTFILESIZE=10000", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check if a variable is empty in one line", "command": "[[ -z \"$VAR\" ]] && echo \"empty\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Loop through array indices instead of values", "command": "arr=(a b c); for i in \"${!arr[@]}\"; do echo \"$i: ${arr[$i]}\"; done", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Export the environment variable JAVA_HOME with value /usr/lib/jvm/java-17", "command": "export JAVA_HOME=\"/usr/lib/jvm/java-17\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Count how many arguments xargs would pass per invocation", "command": "echo a b c d | xargs -n 2 echo", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Use xargs to count words across all matched files", "command": "find . -name '*.md' | xargs wc -w | tail -1", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Schedule /home/user/send_summary.sh to run every Monday at 8 AM via cron", "command": "(crontab -l 2>/dev/null; echo \"0 8 * * 1 /home/user/send_summary.sh\") | crontab -", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Open the crontab for editing", "command": "crontab -e", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Find all core dump files and remove them with xargs", "command": "find / -name 'core.*' 2>/dev/null | xargs -r rm -f", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Install a crontab from the file mycron.txt", "command": "crontab mycron.txt", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Edit the crontab of user deploy", "command": "crontab -u deploy -e", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Use until loop to wait for a file to appear", "command": "until [ -f /tmp/ready ]; do sleep 1; done", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check if a variable is either foo or bar", "command": "[[ \"$v\" == \"foo\" || \"$v\" == \"bar\" ]] && echo \"match\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Add /opt/bin to the PATH permanently in .bashrc", "command": "echo 'export PATH=\"/opt/bin:$PATH\"' >> ~/.bashrc", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Save the current environment to a file for later restoration", "command": "env > /tmp/saved_env.txt", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Get the hostname and store it in a variable", "command": "host=$(hostname)", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Print yesterday's date", "command": "date -d 'yesterday' +%Y-%m-%d", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Add a cron job to run /opt/scripts/cleanup.sh every Sunday at midnight", "command": "(crontab -l 2>/dev/null; echo \"0 0 * * 0 /opt/scripts/cleanup.sh\") | crontab -", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Use xargs to touch a batch of files from a list", "command": "cat newfiles.txt | xargs touch", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Get the length of a variable's value", "command": "echo \"${#PASSWORD}\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Iterate over key-value pairs of an associative array", "command": "declare -A m=([a]=1 [b]=2); for k in \"${!m[@]}\"; do echo \"$k=${m[$k]}\"; done", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Print the current month and year only", "command": "date +%B\\ %Y", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Write an infinite while loop that checks a server every 5 seconds", "command": "while true; do curl -s http://localhost:8080/health; sleep 5; done", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Reload history from the history file into the current session", "command": "history -r", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Create an alias named hist for 'history | tail -30'", "command": "alias hist='history | tail -30'", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Measure how long a command takes using date timestamps", "command": "start=$(date +%s); sleep 2; end=$(date +%s); echo \"$((end-start))s\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Export the environment variable TZ with value Europe/Moscow", "command": "export TZ=\"Europe/Moscow\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check where the python3 executable is located", "command": "which python3", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check if PATH contains a specific directory", "command": "echo \"$PATH\" | tr \":\" \"\\n\" | grep -qx \"/usr/local/bin\" && echo yes", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Append a new line to the existing crontab without overwriting it", "command": "(crontab -l 2>/dev/null; echo \"0 1 * * * /opt/scripts/vacuum.sh\") | crontab -", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Find large files and list their sizes with xargs", "command": "find . -size +100M | xargs du -sh", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Export the environment variable DATABASE_URL with value postgres://localhost/mydb", "command": "export DATABASE_URL=\"postgres://localhost/mydb\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Use xargs to tag and push multiple docker images", "command": "cat images.txt | xargs -I {} docker push {}", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check disk usage and alert if over 90 percent", "command": "[ \"$(df / | tail -1 | awk '{print $5}' | tr -d \"%\")\" -gt 90 ] && echo \"disk full\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Add a cron job to run /home/user/scripts/healthcheck.sh every day at 3 AM", "command": "(crontab -l 2>/dev/null; echo \"0 3 * * * /home/user/scripts/healthcheck.sh\") | crontab -", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Print all variables starting with AWS", "command": "env | grep ^AWS", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Print just the current hour", "command": "date +%H", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check if two environment variables have the same value", "command": "[ \"$VAR1\" = \"$VAR2\" ] && echo \"same\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Export a function so it's available to subshells", "command": "export -f my_function", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Use xargs to check HTTP status codes for a list of URLs", "command": "cat urls.txt | xargs -I {} curl -o /dev/null -s -w '%{http_code}\\n' {}", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Create an alias named .. for 'cd ..'", "command": "alias ..='cd ..'", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check if a file exists in one line", "command": "[ -f /etc/passwd ] && echo \"exists\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Ternary-style one-liner to set a default value", "command": "result=$([ -n \"$1\" ] && echo \"$1\" || echo \"default\")", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Use command substitution inside an if statement", "command": "if [ \"$(whoami)\" = \"root\" ]; then echo \"is root\"; fi", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Schedule /opt/scripts/vacuum_db.sh to run every day at 1 AM via cron", "command": "(crontab -l 2>/dev/null; echo \"0 1 * * * /opt/scripts/vacuum_db.sh\") | crontab -", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Add a cron job to run /home/user/backup.sh every 15 minutes", "command": "(crontab -l 2>/dev/null; echo \"*/15 * * * * /home/user/backup.sh\") | crontab -", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Loop over the output of a command with while read", "command": "ls *.log | while read -r f; do wc -l \"$f\"; done", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Export all current shell variables for child processes", "command": "set -a", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Format a given date string into a different format", "command": "date -d '2026-05-01' '+%d/%m/%Y'", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Remove a cron job that runs sync_db.sh", "command": "crontab -l | grep -v sync_db.sh | crontab -", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check where the jq executable is located", "command": "which jq", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Print the date of next Friday", "command": "date -d 'next friday' +%Y-%m-%d", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Use xargs to rename files by replacing spaces with underscores", "command": "find . -name '* *' | while read -r f; do mv \"$f\" \"${f// /_}\"; done", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Loop over files and append their names to a manifest", "command": "for f in *.zip; do echo \"$f\" >> manifest.txt; done", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Continue a for loop on an error from one iteration", "command": "for f in *.sql; do mysql mydb < \"$f\" || continue; done", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Define a global alias usable in a pipeline", "command": "alias -g G='| grep'", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check where the node executable is located", "command": "which node", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Export a proxy variable for apt and curl to use", "command": "export http_proxy=\"http://proxy.local:3128\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Run a command for each line of a file excluding comments", "command": "grep -v '^#' hosts.txt | while read -r h; do ping -c1 \"$h\"; done", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Remove a specific cron job by filtering it out before reinstalling crontab", "command": "crontab -l | grep -v backup.sh | crontab -", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Schedule /opt/scripts/sync.sh to run every 10 minutes via cron", "command": "(crontab -l 2>/dev/null; echo \"*/10 * * * * /opt/scripts/sync.sh\") | crontab -", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Add a cron job to run /home/user/sync_db.sh every 5 minutes", "command": "(crontab -l 2>/dev/null; echo \"*/5 * * * * /home/user/sync_db.sh\") | crontab -", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Create an alias for listing files sorted by modification time", "command": "alias lt='ls -lt'", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Print each argument on its own line with xargs", "command": "echo a b c | xargs -n 1", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Use xargs with a null delimiter to handle filenames with newlines", "command": "find . -type f -print0 | xargs -0 -n1 echo", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check the number of CPU cores using command substitution", "command": "cores=$(nproc)", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Clear the entire command history", "command": "history -c", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Create an alias named ports for 'netstat -tulanp'", "command": "alias ports='netstat -tulanp'", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check if a file is newer than another file", "command": "[ file1.txt -nt file2.txt ] && echo \"newer\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Exit the script early if a required argument is missing", "command": "[ -z \"$1\" ] && { echo \"usage: $0 arg\"; exit 1; }", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Delete all .tmp files found with find using xargs", "command": "find . -name '*.tmp' | xargs rm -f", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Print even numbers from 1 to 20 in a for loop", "command": "for i in {1..20}; do (( i % 2 == 0 )) && echo $i; done", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Embed a command's output directly into an echo statement", "command": "echo \"Current user: $(whoami)\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Use command substitution to get the first line of a file", "command": "first=$(head -n 1 file.txt)", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Use a while loop to read a file line by line", "command": "while read -r line; do echo \"$line\"; done < file.txt", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Loop over lines of a CSV and print the first column", "command": "while IFS=, read -r col1 col2; do echo $col1; done < data.csv", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Use command substitution to get git branch name", "command": "branch=$(git rev-parse --abbrev-ref HEAD)", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Loop over files and print only those bigger than 1KB", "command": "for f in *; do [ $(stat -c%s \"$f\") -gt 1024 ] && echo \"$f\"; done", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Create an alias that shows disk usage of the current directory", "command": "alias duh='du -sh *'", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check if a variable named CI is defined and not empty", "command": "[ -n \"${CI+x}\" ] && echo \"defined\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check if the current user has any cron jobs at all", "command": "crontab -l 2>/dev/null | wc -l", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Download every URL in a file in parallel with xargs", "command": "cat urls.txt | xargs -P 8 -I {} curl -O {}", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Print the current date and time with seconds", "command": "date '+%Y-%m-%d %H:%M:%S'", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check if a command exists and print its version if so", "command": "command -v git >/dev/null 2>&1 && git --version", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Use xargs to run docker rm on all stopped containers", "command": "docker ps -aq -f status=exited | xargs -r docker rm", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Print the date one week from now", "command": "date -d '+7 days' +%Y-%m-%d", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check if a directory is empty in one line", "command": "[ -z \"$(ls -A mydir)\" ] && echo \"empty dir\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check if the script is running as root", "command": "[ \"$(id -u)\" -eq 0 ] && echo \"root\" || echo \"not root\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Use command substitution to list files sorted by size", "command": "biggest=$(ls -S | head -1)", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Loop over an array of strings", "command": "arr=(\"alpha\" \"beta\" \"gamma\"); for item in \"${arr[@]}\"; do echo \"$item\"; done", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Export the environment variable TERM with value xterm-256color", "command": "export TERM=\"xterm-256color\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "List all cron jobs for the current user", "command": "crontab -l", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check where the ssh executable is located", "command": "which ssh", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Make an alias permanent by adding it to .bashrc", "command": "echo \"alias ll='ls -alF'\" >> ~/.bashrc", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Convert a lowercase variable value to uppercase", "command": "echo \"${NAME^^}\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Use command substitution to list only directories", "command": "dirs=$(find . -maxdepth 1 -type d)", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Add a cron job to run /home/user/scripts/healthcheck.sh at 9 AM on the first day of the month", "command": "(crontab -l 2>/dev/null; echo \"0 9 1 * * /home/user/scripts/healthcheck.sh\") | crontab -", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check if two strings are equal using double brackets", "command": "[[ \"$a\" == \"$b\" ]] && echo \"equal\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "List all shell variables and functions", "command": "set", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Add a cron job to run /home/user/backup.sh every Friday at 10 PM", "command": "(crontab -l 2>/dev/null; echo \"0 22 * * 5 /home/user/backup.sh\") | crontab -", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check if a command's output is empty", "command": "[ -z \"$(ls -A /tmp/empty_dir)\" ] && echo \"empty\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Use nested command substitution to get the size of the largest file", "command": "size=$(stat -c %s \"$(ls -S | head -1)\")", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check if a process is running and kill it if so", "command": "pgrep nginx && pkill nginx", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Create an alias named ll for 'ls -alF'", "command": "alias ll='ls -alF'", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Print the date one month ago", "command": "date -d '-1 month' +%Y-%m-%d", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Show the value of the PATH environment variable", "command": "echo $PATH", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Use type to see the full definition of a shell function", "command": "type my_function", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Capture the output of a failed command along with its exit status", "command": "output=$(some_cmd 2>&1); status=$?; echo \"$output ($status)\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Print the current date in YYYY-MM-DD format", "command": "date +%Y-%m-%d", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Append a value to an existing PATH-like variable", "command": "export PYTHONPATH=\"$PYTHONPATH:/home/user/libs\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Create an alias named reload for 'source ~/.bashrc'", "command": "alias reload='source ~/.bashrc'", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Move all files listed in a text file to a target directory", "command": "cat files.txt | xargs -I {} mv {} /mnt/backup/", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check the type of a shell builtin", "command": "type cd", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Run a command with a temporary environment variable", "command": "FOO=bar ./run.sh", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Determine if a given name is a function", "command": "type -t my_function", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Ping a list of hosts in a for loop", "command": "for host in host1 host2 host3; do ping -c 1 $host; done", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Export the environment variable NODE_ENV with value production", "command": "export NODE_ENV=\"production\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Loop through files and skip ones larger than 1MB", "command": "for f in *; do [ $(stat -c%s \"$f\") -gt 1048576 ] && continue; echo \"$f\"; done", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Use a for loop to rename files adding a prefix", "command": "for f in *.txt; do mv \"$f\" \"old_$f\"; done", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Remove all cron jobs for the current user", "command": "crontab -r", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Get the current Unix timestamp", "command": "date +%s", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Convert all filenames in the current directory to lowercase using a loop", "command": "for f in *; do mv \"$f\" \"$(echo \"$f\" | tr \"[:upper:]\" \"[:lower:]\")\"; done", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Show the 5 most frequently used commands from history", "command": "history | awk '{print $2}' | sort | uniq -c | sort -rn | head -5", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Print the current time in 12-hour format with AM/PM", "command": "date +%I:%M:%S\\ %p", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Temporarily override LANG for a single command", "command": "LANG=C ls", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Calculate the number of days between two dates", "command": "echo $(( ($(date -d 2026-12-31 +%s) - $(date -d 2026-01-01 +%s)) / 86400 ))", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Export the environment variable AWS_PROFILE with value production", "command": "export AWS_PROFILE=\"production\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Create an alias named grep for 'grep --color=auto'", "command": "alias grep='grep --color=auto'", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Create an alias named free for 'free -h'", "command": "alias free='free -h'", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Export the environment variable PATH with value /usr/local/bin:$PATH", "command": "export PATH=\"/usr/local/bin:$PATH\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Get the day of the year as a number", "command": "date +%j", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Rerun the last command", "command": "!!", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Show a cron schedule that runs only in business hours on weekdays", "command": "(crontab -l 2>/dev/null; echo \"0 9-17 * * 1-5 /opt/scripts/poll.sh\") | crontab -", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check if the current directory is a git repository", "command": "[ -d .git ] && echo \"git repo\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Export the environment variable LC_ALL with value en_US.UTF-8", "command": "export LC_ALL=\"en_US.UTF-8\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Delete history entries matching a pattern using grep and a subshell rewrite", "command": "history | grep -v 'rm -rf' > /tmp/hist_clean.txt", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Loop and sum numbers from a file", "command": "total=0; while read -r n; do total=$((total+n)); done < numbers.txt; echo $total", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Loop over all subdirectories and run a command in each", "command": "for d in */; do (cd \"$d\" && git pull); done", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Pass each line of a file as an argument to echo", "command": "xargs -a names.txt -n 1 echo", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check if cron has a job containing backup.sh", "command": "crontab -l | grep backup.sh", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Pipe crontab output to a file for inspection", "command": "crontab -l > /tmp/current_cron.txt", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "List all currently defined aliases", "command": "alias", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Print the date formatted for a log entry prefix", "command": "date '+[%Y-%m-%d %H:%M:%S]'", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Loop to compress every subdirectory into a tar.gz", "command": "for d in */; do tar -czf \"${d%/}.tar.gz\" \"$d\"; done", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Export the environment variable API_KEY with value sk-12345abcde", "command": "export API_KEY=\"sk-12345abcde\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Use backtick syntax to capture the current date", "command": "now=`date +%s`", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Print the value of a variable or a default if it's unset", "command": "echo \"${PORT:-8080}\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Set the maximum number of commands kept in history", "command": "export HISTSIZE=5000", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Back up the current crontab to a file", "command": "crontab -l > crontab_backup.txt", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Create 5 directories named dir1 through dir5", "command": "for i in {1..5}; do mkdir dir$i; done", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Print the ISO 8601 week number of the current date", "command": "date +%V", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Show the current date in a specific timezone", "command": "TZ='America/New_York' date", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Export the environment variable PYTHONPATH with value /home/user/libs", "command": "export PYTHONPATH=\"/home/user/libs\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Pass the output of find directly as arguments to ls", "command": "ls -l $(find . -name \"*.conf\")", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Export the environment variable LANG with value en_US.UTF-8", "command": "export LANG=\"en_US.UTF-8\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Export the environment variable GOPATH with value /home/user/go", "command": "export GOPATH=\"/home/user/go\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Print the date in UTC", "command": "date -u +%Y-%m-%dT%H:%M:%SZ", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Find and delete files safely handling spaces in names", "command": "find . -name '*.log' -print0 | xargs -0 rm -f", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Count how many environment variables are currently set", "command": "env | wc -l", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "List the last 3 lines of bash history without line numbers", "command": "history | tail -3 | sed 's/^[ ]*[0-9]*[ ]*//'", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Get the modification date of a file", "command": "date -r file.txt", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check if a port is in use in one line", "command": "nc -z localhost 8080 && echo \"in use\" || echo \"free\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Strip a trailing slash from a path stored in a variable", "command": "echo \"${DIR%/}\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Add a cron job to run /usr/local/bin/report.sh every 15 minutes", "command": "(crontab -l 2>/dev/null; echo \"*/15 * * * * /usr/local/bin/report.sh\") | crontab -", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Retry a command up to 3 times using a while loop", "command": "n=0; while [ $n -lt 3 ]; do curl -sf http://example.com && break; n=$((n+1)); done", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Search command history for a command containing git", "command": "history | grep git", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Run xargs with 4 parallel processes", "command": "cat urls.txt | xargs -P 4 -n 1 curl -O", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check if a string matches a pattern with double brackets", "command": "[[ \"$name\" == *.txt ]] && echo \"text file\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Show history entries between line 100 and 110", "command": "history | sed -n '100,110p'", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Remove all defined aliases", "command": "unalias -a", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check free memory and print a warning if low", "command": "[ \"$(free -m | awk 'NR==2{print $4}')\" -lt 500 ] && echo \"low memory\"", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Add a cron job to run /home/user/backup.sh every 5 minutes", "command": "(crontab -l 2>/dev/null; echo \"*/5 * * * * /home/user/backup.sh\") | crontab -", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Check silently whether a command exists without printing output", "command": "command -v htop >/dev/null 2>&1", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Grep for a pattern in every file found by find, via xargs", "command": "find . -name '*.py' | xargs grep -l 'TODO'", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Count lines in each file listed, using xargs", "command": "ls *.txt | xargs wc -l", "lang": "en", "source": "synthetic-scripting"}
+{"instruction": "Проверь, является ли команда алиасом, функцией или бинарником", "command": "type ls", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Добавь задание в cron, чтобы запускать /home/user/backup.sh каждые день at 3 AM", "command": "(crontab -l 2>/dev/null; echo \"0 3 * * * /home/user/backup.sh\") | crontab -", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Удали все определённые алиасы", "command": "unalias -a", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Определи, является ли заданное имя функцией", "command": "type -t my_function", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Экспортируй переменную окружения NODE_ENV со значением production", "command": "export NODE_ENV=\"production\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Используй xargs, чтобы запушить несколько образов docker", "command": "cat images.txt | xargs -I {} docker push {}", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Проверь, успешно ли выполнилась команда, и выведи сообщение", "command": "ping -c1 example.com && echo ok || echo fail", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Выведи текущую дату вместе с именем хоста в одну строку", "command": "echo \"$(hostname) - $(date)\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Используй подстановку команд, чтобы получить имя текущей директории", "command": "dirname=$(basename \"$(pwd)\")", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Проверь, что разворачивает алиас gs", "command": "alias gs", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Выведи только текущий месяц и год", "command": "date +%B\\ %Y", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Найди в истории команд все, что содержит git", "command": "history | grep git", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Пройди по числам с шагом 2 с помощью seq", "command": "for i in $(seq 0 2 20); do echo $i; done", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Используй xargs, чтобы удалить все остановленные контейнеры docker", "command": "docker ps -aq -f status=exited | xargs -r docker rm", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Проверь, содержит ли переменная корректный IPv4-адрес", "command": "[[ \"$ip\" =~ ^[0-9]+\\.[0-9]+\\.[0-9]+\\.[0-9]+$ ]] && echo \"valid ip\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Выйди из цикла while, когда выполнится условие", "command": "while true; do [ -f /tmp/stop ] && break; sleep 1; done", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Пройди циклом по диапазону портов и проверь, какие из них открыты", "command": "for p in {8000..8010}; do nc -z localhost $p && echo \"$p open\"; done", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Повтори последнюю команду, начинавшуюся с ssh", "command": "!ssh", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Очисти всю историю команд", "command": "history -c", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Узнай, где расположен исполняемый файл python3", "command": "which python3", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Преобразуй строку даты в другой формат", "command": "date -d '2026-05-01' '+%d/%m/%Y'", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Перезагрузи историю из файла истории в текущую сессию", "command": "history -r", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Проверь, существует ли команда, и выведи её версию, если да", "command": "command -v git >/dev/null 2>&1 && git --version", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Используй подстановку команд внутри условия if", "command": "if [ \"$(whoami)\" = \"root\" ]; then echo \"is root\"; fi", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Экспортируй функцию, чтобы она была доступна в подшеллах", "command": "export -f my_function", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Проверь, что переменная пустая, в одну строку", "command": "[[ -z \"$VAR\" ]] && echo \"empty\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Используй цикл for, чтобы переименовать файлы, добавив префикс", "command": "for f in *.txt; do mv \"$f\" \"old_$f\"; done", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Получи номер дня в году", "command": "date +%j", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Проверь, содержит ли PATH конкретную директорию", "command": "echo \"$PATH\" | tr \":\" \"\\n\" | grep -qx \"/usr/local/bin\" && echo yes", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Узнай длину значения переменной", "command": "echo \"${#PASSWORD}\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Экспортируй переменную окружения LANG со значением en_US.UTF-8", "command": "export LANG=\"en_US.UTF-8\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Напиши цикл for, отправляющий GET-запрос на каждый адрес из списка", "command": "for url in \"${urls[@]}\"; do curl -s \"$url\"; done", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Проверь, существует ли уже алиас с именем gs", "command": "alias gs 2>/dev/null && echo exists", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Пройди по всем подпапкам и выполни команду в каждой", "command": "for d in */; do (cd \"$d\" && git pull); done", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Экспортируй переменную окружения EDITOR со значением vim", "command": "export EDITOR=\"vim\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Используй переименование файлов, заменив пробелы на подчёркивания", "command": "find . -name '* *' | while read -r f; do mv \"$f\" \"${f// /_}\"; done", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Покажи только переменные окружения HOME и SHELL", "command": "env | grep -E '^(HOME|SHELL)='", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Настрой cron-задание для очистки временных файлов каждые 30 минут", "command": "(crontab -l 2>/dev/null; echo \"*/30 * * * * /opt/scripts/clean_tmp.sh\") | crontab -", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Проверь, что переменная задана и не пуста, прежде чем использовать её", "command": ": \"${REQUIRED_VAR:?Error: REQUIRED_VAR is not set}\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Узнай, где расположен исполняемый файл node", "command": "which node", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Добавь задание в cron, чтобы запускать /home/user/backup.sh каждые Friдень at 10 PM", "command": "(crontab -l 2>/dev/null; echo \"0 22 * * 5 /home/user/backup.sh\") | crontab -", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Отключи сохранение конкретных команд в историю", "command": "export HISTIGNORE='ls:cd:pwd'", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Настрой расписание cron, работающее только в рабочие часы по будням", "command": "(crontab -l 2>/dev/null; echo \"0 9-17 * * 1-5 /opt/scripts/poll.sh\") | crontab -", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Передай вывод find напрямую как аргументы для ls", "command": "ls -l $(find . -name \"*.conf\")", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Найди шаблон во всех файлах, найденных find, через xargs", "command": "find . -name '*.py' | xargs grep -l 'TODO'", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Сохрани вывод команды в переменную", "command": "files=$(ls)", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Объедини find и xargs, чтобы удалить пустые директории", "command": "find . -type d -empty | xargs rmdir", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Удали все файлы старше 7 дней с помощью find в цикле", "command": "for f in $(find . -mtime +7 -type f); do rm \"$f\"; done", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Получи имя хоста и сохрани его в переменную", "command": "host=$(hostname)", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Перезагрузи .bashrc, чтобы применить новые алиасы", "command": "source ~/.bashrc", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Экспортируй переменную окружения DEBUG со значением 1", "command": "export DEBUG=\"1\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Выведи все переменные, начинающиеся с AWS", "command": "env | grep ^AWS", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Добавь задание в cron, чтобы запускать /home/user/sync_db.sh каждые 5 minutes", "command": "(crontab -l 2>/dev/null; echo \"*/5 * * * * /home/user/sync_db.sh\") | crontab -", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Удали алиас с именем ll", "command": "unalias ll", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Преобразуй временную метку Unix в читаемую дату", "command": "date -d @1700000000 '+%Y-%m-%d %H:%M:%S'", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Используй C-подобный цикл for для отсчёта от 10 до 1", "command": "for ((i=10; i>=1; i--)); do echo $i; done", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Проверь пингом список хостов в цикле for", "command": "for host in host1 host2 host3; do ping -c 1 $host; done", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Используй цикл while со счётчиком, ограниченным 10 итерациями", "command": "i=0; while [ $i -lt 10 ]; do echo $i; i=$((i+1)); done", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Пройди по парам ключ-значение ассоциативного массива", "command": "declare -A m=([a]=1 [b]=2); for k in \"${!m[@]}\"; do echo \"$k=${m[$k]}\"; done", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Экспортируй переменную окружения TERM со значением xterm-256color", "command": "export TERM=\"xterm-256color\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Узнай, где расположен исполняемый файл jq", "command": "which jq", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Передай каждую строку файла как аргумент команде echo", "command": "xargs -a names.txt -n 1 echo", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Запусти команду с временной переменной окружения", "command": "FOO=bar ./run.sh", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Запланируй выполнение /opt/scripts/billing.sh через cron (on the 1st and 15th at 4:15 AM)", "command": "(crontab -l 2>/dev/null; echo \"15 4 1,15 * * /opt/scripts/billing.sh\") | crontab -", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Добавь задание в cron, чтобы запускать /home/user/scripts/healthcheck.sh каждые Sunдень at midnight", "command": "(crontab -l 2>/dev/null; echo \"0 0 * * 0 /home/user/scripts/healthcheck.sh\") | crontab -", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Добавь задание в cron, чтобы запускать /usr/local/bin/report.sh каждые 15 minutes", "command": "(crontab -l 2>/dev/null; echo \"*/15 * * * * /usr/local/bin/report.sh\") | crontab -", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Удали все задания cron текущего пользователя", "command": "crontab -r", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Запланируй перезагрузку каждый день в 4 утра", "command": "(crontab -l 2>/dev/null; echo \"0 4 * * * /sbin/reboot\") | crontab -", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Проверь равенство двух строк через двойные квадратные скобки", "command": "[[ \"$a\" == \"$b\" ]] && echo \"equal\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Запусти xargs с 4 параллельными процессами", "command": "cat urls.txt | xargs -P 4 -n 1 curl -O", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Запланируй выполнение /home/user/weekly_report.sh через cron (every Saturday at noon)", "command": "(crontab -l 2>/dev/null; echo \"0 12 * * 6 /home/user/weekly_report.sh\") | crontab -", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Напиши for-цикл, который печатает числа от 1 до 10", "command": "for i in {1..10}; do echo $i; done", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Экспортируй несколько переменных в одной строке", "command": "export FOO=1 BAR=2 BAZ=3", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Создай алиас с именем myip для команды 'curl -s ifconfig.me'", "command": "alias myip='curl -s ifconfig.me'", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Покажи алиасы в алфавитном порядке", "command": "alias | sort", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Сохрани код завершения последней команды", "command": "status=$?", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Установи crontab из файла mycron.txt", "command": "crontab mycron.txt", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Узнай, где расположен исполняемый файл git", "command": "which git", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Пройди циклом по файлам и добавь их имена в манифест", "command": "for f in *.zip; do echo \"$f\" >> manifest.txt; done", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Повтори команду до 3 раз с помощью цикла while", "command": "n=0; while [ $n -lt 3 ]; do curl -sf http://example.com && break; n=$((n+1)); done", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Убери завершающий слеш из пути, хранящегося в переменной", "command": "echo \"${DIR%/}\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Выведи дату через неделю от текущей", "command": "date -d '+7 days' +%Y-%m-%d", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Удали переменную окружения API_KEY", "command": "unset API_KEY", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Проверь, больше ли число 10, в одну строку", "command": "[ \"$n\" -gt 10 ] && echo \"big\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Создай алиас с именем ll для команды 'ls -alF'", "command": "alias ll='ls -alF'", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Выведи значение переменной, только если она задана, иначе ничего", "command": "echo \"${API_KEY:-}\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Очисти все переменные окружения и выполни команду в чистом окружении", "command": "env -i bash -c 'echo $PATH'", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Экспортируй переменную окружения MAVEN_OPTS со значением -Xmx2048m", "command": "export MAVEN_OPTS=\"-Xmx2048m\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Однострочный тернарный приём для установки значения по умолчанию", "command": "result=$([ -n \"$1\" ] && echo \"$1\" || echo \"default\")", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Проверь, есть ли у текущего пользователя задания cron", "command": "crontab -l 2>/dev/null | wc -l", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Используй подстановку команд, чтобы получить первую строку файла", "command": "first=$(head -n 1 file.txt)", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Циклом упакуй каждую подпапку в tar.gz", "command": "for d in */; do tar -czf \"${d%/}.tar.gz\" \"$d\"; done", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Проверь, существует ли директория, иначе создай её", "command": "[ -d /var/log/myapp ] || mkdir -p /var/log/myapp", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Перемести все файлы из текстового файла в целевую директорию", "command": "cat files.txt | xargs -I {} mv {} /mnt/backup/", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Используй xargs, чтобы изменить права на все файлы из списка", "command": "cat filelist.txt | xargs chmod 644", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Узнай, где расположен исполняемый файл curl", "command": "which curl", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Проверь, существует ли символическая ссылка", "command": "[ -L /usr/bin/python ] && echo \"symlink\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Сделай резервную копию текущего crontab в файл", "command": "crontab -l > crontab_backup.txt", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Проверь, одинаковы ли значения двух переменных окружения", "command": "[ \"$VAR1\" = \"$VAR2\" ] && echo \"same\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Создай алиас с именем gp для команды 'git push'", "command": "alias gp='git push'", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Переименуй все файлы .jpeg в .jpg с помощью цикла", "command": "for f in *.jpeg; do mv \"$f\" \"${f%.jpeg}.jpg\"; done", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Используй xargs, чтобы посчитать слова во всех найденных файлах", "command": "find . -name '*.md' | xargs wc -w | tail -1", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Используй обратные кавычки, чтобы получить текущую дату", "command": "now=`date +%s`", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Запускай скрипт каждую минуту через cron", "command": "(crontab -l 2>/dev/null; echo \"* * * * * /home/user/ping.sh\") | crontab -", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Покажи все задания cron текущего пользователя", "command": "crontab -l", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Прерви выполнение скрипта, если не передан обязательный аргумент", "command": "[ -z \"$1\" ] && { echo \"usage: $0 arg\"; exit 1; }", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Сохрани многострочный вывод команды в переменную", "command": "output=$(ls -la /tmp)", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Молча проверь, существует ли команда, без вывода", "command": "command -v htop >/dev/null 2>&1", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Выведи вчерашнюю дату", "command": "date -d 'yesterday' +%Y-%m-%d", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Выведи только текущий час", "command": "date +%H", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Увеличь количество строк, хранимых в файле истории", "command": "export HISTFILESIZE=10000", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Найди все файлы core dump и удали их через xargs", "command": "find / -name 'core.*' 2>/dev/null | xargs -r rm -f", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Измерь длительность выполнения команды с помощью временных меток date", "command": "start=$(date +%s); sleep 2; end=$(date +%s); echo \"$((end-start))s\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Задай максимальное количество команд, хранимых в истории", "command": "export HISTSIZE=5000", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Проверь существование файла в одну строку", "command": "[ -f /etc/passwd ] && echo \"exists\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Используй xargs с подтверждением перед каждой командой", "command": "find . -name '*.bak' | xargs -p rm", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Создай алиас с именем ports для команды 'netstat -tulanp'", "command": "alias ports='netstat -tulanp'", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Добавь задание в cron, чтобы запускать /home/user/scripts/healthcheck.sh каждые Friдень at 10 PM", "command": "(crontab -l 2>/dev/null; echo \"0 22 * * 5 /home/user/scripts/healthcheck.sh\") | crontab -", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Покажи последние 20 команд из истории", "command": "history 20", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Узнай количество ядер процессора через подстановку команд", "command": "cores=$(nproc)", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Выведи дату в UTC", "command": "date -u +%Y-%m-%dT%H:%M:%SZ", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Посчитай, сколько переменных окружения установлено сейчас", "command": "env | wc -l", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Экспортируй переменную окружения JAVA_HOME со значением /usr/lib/jvm/java-17", "command": "export JAVA_HOME=\"/usr/lib/jvm/java-17\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Получи текущую временную метку Unix", "command": "date +%s", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Назови файл бэкапа с сегодняшней датой в конце", "command": "cp config.yml config_$(date +%F).yml", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Передавай xargs не более двух аргументов за раз", "command": "echo a b c d | xargs -n 2 echo", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Добавь задание в cron, чтобы запускать /home/user/scripts/healthcheck.sh at 9 AM on the first день of the month", "command": "(crontab -l 2>/dev/null; echo \"0 9 1 * * /home/user/scripts/healthcheck.sh\") | crontab -", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Получи количество запущенных процессов с заданным именем", "command": "n=$(pgrep -c nginx)", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Используй вложенную подстановку команд, чтобы получить размер самого большого файла", "command": "size=$(stat -c %s \"$(ls -S | head -1)\")", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Экспортируй переменную окружения TZ со значением Europe/Moscow", "command": "export TZ=\"Europe/Moscow\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Экспортируй переменную proxy для использования apt и curl", "command": "export http_proxy=\"http://proxy.local:3128\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Напиши бесконечный цикл while, который проверяет сервер каждые 5 секунд", "command": "while true; do curl -s http://localhost:8080/health; sleep 5; done", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Проверь использование диска и предупреди, если больше 90 процентов", "command": "[ \"$(df / | tail -1 | awk '{print $5}' | tr -d \"%\")\" -gt 90 ] && echo \"disk full\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Загрузи переменные окружения из файла .env", "command": "export $(grep -v '^#' .env | xargs)", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Экспортируй переменную окружения HTTP_PROXY со значением http://proxy.local:8080", "command": "export HTTP_PROXY=\"http://proxy.local:8080\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Покажи все текущие алиасы", "command": "alias", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Используй цикл until, чтобы ждать появления файла", "command": "until [ -f /tmp/ready ]; do sleep 1; done", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Продолжи цикл for при ошибке на одной из итераций", "command": "for f in *.sql; do mysql mydb < \"$f\" || continue; done", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Проверь, является ли команда ключевым словом оболочки", "command": "type -t if", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Удали переменную HTTP_PROXY", "command": "unset HTTP_PROXY", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Создай алиас с именем py для команды 'python3'", "command": "alias py='python3'", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Посчитай строки в каждом перечисленном файле с помощью xargs", "command": "ls *.txt | xargs wc -l", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Не сохраняй повторяющиеся подряд команды в историю", "command": "export HISTCONTROL=ignoredups", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Выведи текущий день недели", "command": "date +%A", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Проверь, выполняется ли скрипт от root", "command": "[ \"$(id -u)\" -eq 0 ] && echo \"root\" || echo \"not root\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Экспортируй переменную только на время выполнения одной команды, не затрагивая оболочку", "command": "env FOO=bar ./script.sh", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Выведи только имена экспортированных переменных", "command": "export -p | cut -d' ' -f3 | cut -d= -f1", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Проверь тип встроенной команды оболочки", "command": "type cd", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Добавь задание в cron, чтобы запускать /home/user/backup.sh at 2:30 AM on weekденьs", "command": "(crontab -l 2>/dev/null; echo \"30 2 * * 1-5 /home/user/backup.sh\") | crontab -", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Напиши цикл while, уменьшающий счётчик до нуля", "command": "n=5; while [ $n -gt 0 ]; do echo $n; n=$((n-1)); done", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Используй цикл while, чтобы прочитать файл построчно", "command": "while read -r line; do echo \"$line\"; done < file.txt", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Выведи дату в формате префикса для записи в лог", "command": "date '+[%Y-%m-%d %H:%M:%S]'", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Используй xargs с нулевым разделителем для имён файлов с переносами строк", "command": "find . -type f -print0 | xargs -0 -n1 echo", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Выведи текущую дату и время с секундами", "command": "date '+%Y-%m-%d %H:%M:%S'", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Пройди циклом, пропуская скрытые файлы", "command": "for f in *; do [[ \"$f\" == .* ]] && continue; echo \"$f\"; done", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Открой crontab для редактирования", "command": "crontab -e", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Выведи значение переменной окружения через printenv", "command": "printenv HOME", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Создай алиас с именем gs для команды 'git status'", "command": "alias gs='git status'", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Сделай алиас постоянным, добавив его в .bashrc", "command": "echo \"alias ll='ls -alF'\" >> ~/.bashrc", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Экспортируй переменную окружения PYTHONPATH со значением /home/user/libs", "command": "export PYTHONPATH=\"/home/user/libs\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Выведи текущее время в 12-часовом формате с AM/PM", "command": "date +%I:%M:%S\\ %p", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Выведи все экспортированные переменные окружения", "command": "env", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Покажи все переменные и функции оболочки", "command": "set", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Проверь, является ли строка числом, в одну строку", "command": "[[ \"$val\" =~ ^[0-9]+$ ]] && echo \"number\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Создай алиас с именем rm для команды 'rm -i'", "command": "alias rm='rm -i'", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Скачай все URL из файла параллельно с помощью xargs", "command": "cat urls.txt | xargs -P 8 -I {} curl -O {}", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Выведи текущую временную метку в наносекундах", "command": "date +%s%N", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Покажи значение переменной окружения PATH", "command": "echo $PATH", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Экспортируй локаль по умолчанию для всей сессии системы", "command": "export LANG=\"en_US.UTF-8\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Сравни вывод двух команд с помощью подстановки команд", "command": "[ \"$(md5sum < a.txt)\" = \"$(md5sum < b.txt)\" ] && echo \"same\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Создай алиас с именем reload для команды 'source ~/.bashrc'", "command": "alias reload='source ~/.bashrc'", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Проверь, установлен ли docker, перед запуском скрипта", "command": "command -v docker >/dev/null 2>&1 || { echo 'docker not found'; exit 1; }", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Экспортируй переменную окружения API_KEY со значением sk-12345abcde", "command": "export API_KEY=\"sk-12345abcde\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Проверь, какая оболочка задана как логин-шелл", "command": "which $SHELL", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Вставь вывод команды прямо в вызов echo", "command": "echo \"Current user: $(whoami)\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Посчитай количество дней между двумя датами", "command": "echo $(( ($(date -d 2026-12-31 +%s) - $(date -d 2026-01-01 +%s)) / 86400 ))", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Покажи последние 3 строки истории bash без номеров строк", "command": "history | tail -3 | sed 's/^[ ]*[0-9]*[ ]*//'", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Проверь, одинаковы ли два файла по содержимому", "command": "cmp -s file1.txt file2.txt && echo \"identical\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Получи дату последнего дня текущего месяца", "command": "date -d 'next month -1 day' +%Y-%m-%d", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Добавь задание в cron, чтобы запускать /opt/scripts/cleanup.sh at 2:30 AM on weekденьs", "command": "(crontab -l 2>/dev/null; echo \"30 2 * * 1-5 /opt/scripts/cleanup.sh\") | crontab -", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Определи алиас для быстрого редактирования файла bashrc", "command": "alias ebrc='vim ~/.bashrc'", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Экспортируй переменную окружения DATABASE_URL со значением postgres://localhost/mydb", "command": "export DATABASE_URL=\"postgres://localhost/mydb\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Покажи 5 самых часто используемых команд из истории", "command": "history | awk '{print $2}' | sort | uniq -c | sort -rn | head -5", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Проверь, установлена ли переменная DEBUG", "command": "[[ -n \"$DEBUG\" ]] && echo set || echo unset", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Узнай, где расположен исполняемый файл ssh", "command": "which ssh", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Пройди по индексам массива вместо значений", "command": "arr=(a b c); for i in \"${!arr[@]}\"; do echo \"$i: ${arr[$i]}\"; done", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Переведи все имена файлов в текущей директории в нижний регистр с помощью цикла", "command": "for f in *; do mv \"$f\" \"$(echo \"$f\" | tr \"[:upper:]\" \"[:lower:]\")\"; done", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Найди все расположения команды в PATH", "command": "which -a python", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Создай алиас с именем grep для команды 'grep --color=auto'", "command": "alias grep='grep --color=auto'", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Покажи crontab другого пользователя alice", "command": "crontab -u alice -l", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Получи текущую дату в формате, безопасном для имени файла лога", "command": "logfile=backup_$(date +%Y%m%d_%H%M%S).log", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Выведи значение переменной или значение по умолчанию, если она не задана", "command": "echo \"${PORT:-8080}\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Получи дату изменения файла", "command": "date -r file.txt", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Узнай, где расположен исполняемый файл docker", "command": "which docker", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Создай алиас с именем update для команды 'sudo apt update && sudo apt upgrade -y'", "command": "alias update='sudo apt update && sudo apt upgrade -y'", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Проверь, пуст ли вывод команды", "command": "[ -z \"$(ls -A /tmp/empty_dir)\" ] && echo \"empty\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Создай алиас с именем df для команды 'df -h'", "command": "alias df='df -h'", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Сохрани текущее окружение в файл для последующего восстановления", "command": "env > /tmp/saved_env.txt", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Добавь задание в cron, чтобы запускать /home/user/backup.sh каждые 6 hours", "command": "(crontab -l 2>/dev/null; echo \"0 */6 * * * /home/user/backup.sh\") | crontab -", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Запланируй выполнение /home/user/send_summary.sh через cron (every Monday at 8 AM)", "command": "(crontab -l 2>/dev/null; echo \"0 8 * * 1 /home/user/send_summary.sh\") | crontab -", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Найди и удали файлы, безопасно обрабатывая пробелы в именах", "command": "find . -name '*.log' -print0 | xargs -0 rm -f", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Выведи дату следующей пятницы", "command": "date -d 'next friday' +%Y-%m-%d", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Проверь, запущен ли процесс, и завершить его, если да", "command": "pgrep nginx && pkill nginx", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Выведи чётные числа от 1 до 20 в цикле for", "command": "for i in {1..20}; do (( i % 2 == 0 )) && echo $i; done", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Создай алиас с именем free для команды 'free -h'", "command": "alias free='free -h'", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Добавь задание в cron, чтобы запускать /opt/app/rotate_logs.sh at 9 AM on the first день of the month", "command": "(crontab -l 2>/dev/null; echo \"0 9 1 * * /opt/app/rotate_logs.sh\") | crontab -", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Пройди циклом по аргументам командной строки", "command": "for arg in \"$@\"; do echo \"$arg\"; done", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Настрой задание cron по понедельникам, средам и пятницам в 7 утра", "command": "(crontab -l 2>/dev/null; echo \"0 7 * * 1,3,5 /opt/scripts/midweek.sh\") | crontab -", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Выведи номер недели ISO 8601 текущей даты", "command": "date +%V", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Покажи задания cron пользователя www-data", "command": "crontab -u www-data -l", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Запланируй выполнение /opt/scripts/sync.sh через cron (every 10 minutes)", "command": "(crontab -l 2>/dev/null; echo \"*/10 * * * * /opt/scripts/sync.sh\") | crontab -", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Добавь задание в cron, чтобы запускать /home/user/backup.sh каждые 15 minutes", "command": "(crontab -l 2>/dev/null; echo \"*/15 * * * * /home/user/backup.sh\") | crontab -", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Пройди по строкам CSV и выведи первый столбец", "command": "while IFS=, read -r col1 col2; do echo $col1; done < data.csv", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Пройди по файлам и выведи только те, что больше 1 КБ", "command": "for f in *; do [ $(stat -c%s \"$f\") -gt 1024 ] && echo \"$f\"; done", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Выведи полное название дня недели и дату", "command": "date '+%A, %d %B %Y'", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Узнай, где расположен исполняемый файл awk", "command": "which awk", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Передай список PID в xargs, чтобы завершить процессы", "command": "ps -ef | grep myapp | awk '{print $2}' | xargs kill -9", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Создай алиас для вывода файлов, отсортированных по времени изменения", "command": "alias lt='ls -lt'", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Выведи только алиасы, связанные с git", "command": "alias | grep git", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Покажи историю с временными метками", "command": "HISTTIMEFORMAT='%F %T ' history", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Выведи текущую дату в формате YYYY-MM-DD", "command": "date +%Y-%m-%d", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Запланируй выполнение /opt/scripts/archive_logs.sh через cron (every night at 11:30 PM)", "command": "(crontab -l 2>/dev/null; echo \"30 23 * * * /opt/scripts/archive_logs.sh\") | crontab -", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Сформируй имя tar-файла из вывода hostname и date", "command": "tar -czf \"backup_$(hostname)_$(date +%F).tar.gz\" /data", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Создай алиас с именем gc для команды 'git commit'", "command": "alias gc='git commit'", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Добавь задание в cron, чтобы запускать /home/user/scripts/healthcheck.sh каждые день at 3 AM", "command": "(crontab -l 2>/dev/null; echo \"0 3 * * * /home/user/scripts/healthcheck.sh\") | crontab -", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Добавь задание в cron, чтобы запускать /opt/app/rotate_logs.sh каждые 6 hours", "command": "(crontab -l 2>/dev/null; echo \"0 */6 * * * /opt/app/rotate_logs.sh\") | crontab -", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Сделай переменную неизменяемой (read-only)", "command": "readonly API_KEY=sk-12345abcde", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Проверь, является ли файл исполняемым", "command": "[ -x /usr/bin/python3 ] && echo \"executable\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Определи глобальный алиас для использования в конвейере", "command": "alias -g G='| grep'", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Добавляй команду в историю сразу после выполнения, а не при выходе", "command": "export PROMPT_COMMAND='history -a'", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Проверь, есть ли в cron задание с backup.sh", "command": "crontab -l | grep backup.sh", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Добавь задание в cron, чтобы запускать /home/user/backup.sh каждые 5 minutes", "command": "(crontab -l 2>/dev/null; echo \"*/5 * * * * /home/user/backup.sh\") | crontab -", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Проверь, занят ли порт, в одну строку", "command": "nc -z localhost 8080 && echo \"in use\" || echo \"free\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Повтори последнюю команду", "command": "!!", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Немедленно сохрани текущую историю в файл истории", "command": "history -w", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Экспортируй все текущие переменные оболочки для дочерних процессов", "command": "set -a", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Создай алиас, показывающий использование диска текущей директорией", "command": "alias duh='du -sh *'", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Найди большие файлы и выведи их размеры через xargs", "command": "find . -size +100M | xargs du -sh", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Пройди циклом по файлам, изменённым сегодня", "command": "for f in $(find . -mtime 0 -type f); do echo \"$f\"; done", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Проверь, новее ли один файл другого", "command": "[ file1.txt -nt file2.txt ] && echo \"newer\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Пройди по файлам, пропуская те, что больше 1 МБ", "command": "for f in *; do [ $(stat -c%s \"$f\") -gt 1048576 ] && continue; echo \"$f\"; done", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Выведи дату месяц назад", "command": "date -d '-1 month' +%Y-%m-%d", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Экспортируй переменную окружения GOPATH со значением /home/user/go", "command": "export GOPATH=\"/home/user/go\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Создай алиас с именем .. для команды 'cd ..'", "command": "alias ..='cd ..'", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Покажи текущую дату в конкретном часовом поясе", "command": "TZ='America/New_York' date", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Используй type, чтобы увидеть полное определение функции оболочки", "command": "type my_function", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Удали задание cron, которое запускает sync_db.sh", "command": "crontab -l | grep -v sync_db.sh | crontab -", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Покажи переменные окружения, соответствующие шаблону", "command": "env | grep -i java", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Добавь значение к уже существующей переменной PYTHONPATH", "command": "export PYTHONPATH=\"$PYTHONPATH:/home/user/libs\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Удали конкретное задание cron, отфильтровав его перед переустановкой crontab", "command": "crontab -l | grep -v backup.sh | crontab -", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Пройди циклом по выводу команды с помощью while read", "command": "ls *.log | while read -r f; do wc -l \"$f\"; done", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Используй подстановку команд, чтобы получить имя ветки git", "command": "branch=$(git rev-parse --abbrev-ref HEAD)", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Добавь новую строку в существующий crontab, не перезаписывая его", "command": "(crontab -l 2>/dev/null; echo \"0 1 * * * /opt/scripts/vacuum.sh\") | crontab -", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Проверь, пуста ли директория, в одну строку", "command": "[ -z \"$(ls -A mydir)\" ] && echo \"empty dir\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Запланируй выполнение /opt/scripts/vacuum_db.sh через cron (every day at 1 AM)", "command": "(crontab -l 2>/dev/null; echo \"0 1 * * * /opt/scripts/vacuum_db.sh\") | crontab -", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Пройди циклом и просуммируй числа из файла", "command": "total=0; while read -r n; do total=$((total+n)); done < numbers.txt; echo $total", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Временно переопредели LANG для одной команды", "command": "LANG=C ls", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Экспортируй переменную окружения AWS_PROFILE со значением production", "command": "export AWS_PROFILE=\"production\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Покажи записи истории между строками 100 и 110", "command": "history | sed -n '100,110p'", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Сохрани вывод неудачной команды вместе с её кодом завершения", "command": "output=$(some_cmd 2>&1); status=$?; echo \"$output ($status)\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Повтори цикл фиксированное количество раз с помощью seq", "command": "for i in $(seq 1 100); do echo $i; done", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Проверь, равна ли переменная foo или bar", "command": "[[ \"$v\" == \"foo\" || \"$v\" == \"bar\" ]] && echo \"match\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Преобразуй значение переменной в верхний регистр", "command": "echo \"${NAME^^}\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Пройди циклом по массиву строк", "command": "arr=(\"alpha\" \"beta\" \"gamma\"); for item in \"${arr[@]}\"; do echo \"$item\"; done", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Сохрани количество файлов в директории", "command": "count=$(ls | wc -l)", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Используй xargs, чтобы создать пустые файлы из списка", "command": "cat newfiles.txt | xargs touch", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Удали из истории записи, соответствующие шаблону, используя grep", "command": "history | grep -v 'rm -rf' > /tmp/hist_clean.txt", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Выведи дату через 3 дня", "command": "date -d '+3 days'", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Проверь, где определён алиас 'll', поискав в конфигурационных файлах оболочки", "command": "grep -rn \"alias ll\" ~/.bashrc ~/.bash_aliases 2>/dev/null", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Найди полный путь к самому интерпретатору bash", "command": "which bash", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Добавь задание cron для проверки использования диска каждый час", "command": "(crontab -l 2>/dev/null; echo \"0 * * * * /opt/scripts/disk_check.sh\") | crontab -", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Удали все файлы .tmp, найденные find, с помощью xargs", "command": "find . -name '*.tmp' | xargs rm -f", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Используй подстановку команд, чтобы получить список файлов по размеру", "command": "biggest=$(ls -S | head -1)", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Экспортируй переменную окружения LC_ALL со значением en_US.UTF-8", "command": "export LC_ALL=\"en_US.UTF-8\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Проверь, является ли текущая директория git-репозиторием", "command": "[ -d .git ] && echo \"git repo\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Добавь задание в cron, чтобы запускать /opt/scripts/cleanup.sh каждые Sunдень at midnight", "command": "(crontab -l 2>/dev/null; echo \"0 0 * * 0 /opt/scripts/cleanup.sh\") | crontab -", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Покажи задания cron всех пользователей от root", "command": "for u in $(cut -f1 -d: /etc/passwd); do crontab -u \"$u\" -l 2>/dev/null; done", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Проверь свободную память и выведи предупреждение, если её мало", "command": "[ \"$(free -m | awk 'NR==2{print $4}')\" -lt 500 ] && echo \"low memory\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Удали конкретную строку истории по её номеру", "command": "history -d 42", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Пройди циклом по строкам вывода удалённой команды через ssh", "command": "ssh user@host 'ls /var/log' | while read -r f; do echo \"$f\"; done", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Проверь, определена ли переменная CI и не пуста ли она", "command": "[ -n \"${CI+x}\" ] && echo \"defined\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Используй подстановку команд для динамического имени файла с меткой времени", "command": "fname=\"report_$(date +%s).csv\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Создай 5 директорий с именами dir1-dir5", "command": "for i in {1..5}; do mkdir dir$i; done", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Используй xargs, чтобы создать несколько директорий из списка", "command": "cat dirs.txt | xargs mkdir -p", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Выполни команду для каждой строки файла, пропуская комментарии", "command": "grep -v '^#' hosts.txt | while read -r h; do ping -c1 \"$h\"; done", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Создай алиас, который игнорирует предыдущий алиас и запускает настоящую команду", "command": "alias ls='\\ls --color=auto'", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Пройди циклом по всем .txt файлам и выведи их имена", "command": "for f in *.txt; do echo $f; done", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Используй вложенный цикл for по двум спискам", "command": "for a in 1 2; do for b in x y; do echo \"$a-$b\"; done; done", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Используй xargs, чтобы проверить коды HTTP-статуса для списка URL", "command": "cat urls.txt | xargs -I {} curl -o /dev/null -s -w '%{http_code}\\n' {}", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Проверь, соответствует ли строка шаблону, через двойные скобки", "command": "[[ \"$name\" == *.txt ]] && echo \"text file\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Экспортируй переменную окружения PATH со значением /usr/local/bin:$PATH", "command": "export PATH=\"/usr/local/bin:$PATH\"", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Отредактируй crontab пользователя deploy", "command": "crontab -u deploy -e", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Выведи каждый аргумент на отдельной строке с помощью xargs", "command": "echo a b c | xargs -n 1", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Используй xargs вместе с find, чтобы изменить владельца файлов", "command": "find /var/www -type f | xargs chown www-data:www-data", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Добавь /opt/bin в PATH навсегда через .bashrc", "command": "echo 'export PATH=\"/opt/bin:$PATH\"' >> ~/.bashrc", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Используй подстановку команд, чтобы получить список только директорий", "command": "dirs=$(find . -maxdepth 1 -type d)", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Используй xargs, чтобы сжать каждый файл по отдельности", "command": "ls *.csv | xargs -n 1 gzip", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Добавь задание cron, которое выполняется при каждой перезагрузке системы", "command": "(crontab -l 2>/dev/null; echo \"@reboot /opt/scripts/startup.sh\") | crontab -", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Перенаправь вывод crontab в файл для просмотра", "command": "crontab -l > /tmp/current_cron.txt", "lang": "ru", "source": "synthetic-scripting"}
+{"instruction": "Создай алиас с именем hist для команды 'history | tail -30'", "command": "alias hist='history | tail -30'", "lang": "ru", "source": "synthetic-scripting"}
