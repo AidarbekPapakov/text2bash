@@ -284,6 +284,102 @@ One gotcha worth remembering: the trailing `&` is baked into the
 since the embedded `&` ends the command before the redirection applies).
 Fine for normal use, worth knowing if I ever script around it.
 
+## Why not just more epochs: an error analysis
+
+Got asked a fair question: why stop at 3 epochs? Honest answer at the
+time was "it worked and I didn't push further." Not good enough, so I
+added loss logging (`train/plot_training.py`) and actually looked.
+Re-ran the 3-epoch config to get the curve (`train/plots/loss_3epochs.png`),
+then trained the same thing to 10 epochs to see what happens past the
+point I'd stopped at. Train loss keeps falling the whole way (1.349 →
+1.024), but eval_loss bottoms out around epoch 8 (1.273) and climbs back
+to 1.346 by epoch 10 — a clean, textbook overfitting curve
+(`train/plots/loss_10epochs.png`). So 3 epochs wasn't wrong, exactly,
+but it also wasn't the real answer — it just happened to land on the
+right side of a line I hadn't drawn yet.
+
+Before reaching for the usual anti-overfitting toolbox (dropout, weight
+decay, more data in general), I wanted to know what the model actually
+gets wrong, because "overfitting" doesn't tell you *which* fix will
+actually move the needle. A few hypotheses, checked against the data
+rather than assumed:
+
+- **Is it Russian?** No. RU looks better in the aggregate numbers (28.8%
+  vs 11.3% exact match), but that's an illusion — the RU eval set just
+  happens to be less tldr-heavy (51% vs 67%) and weighted more toward
+  the easy synthetic categories. Comparing tldr-only, RU and EN are the
+  same (10.9% vs 6.8%, though n=129 for RU is small). Language
+  comprehension isn't the bottleneck.
+- **Is it a command category, like process management?** No, if
+  anything the opposite — `synthetic-procsys` (kill/ps-style commands)
+  is the single *best* category at 80% exact match. Every synthetic
+  category does well (65-92% fuzzy), because they're all templated over
+  a small, common tool vocabulary the model has seen ~560 times each.
+- **It's tldr.** 7.1% exact match, and tldr is 65% of the eval set, so
+  it's quietly dragging down the whole headline number. Dug into why:
+  tldr covers 5,174 distinct CLI tools in training, averaging only 6.3
+  examples per tool — and each tool has many different subcommand/flag
+  combinations documented, so any one specific instruction→flags
+  mapping is thin. It's not that the tools are unseen (only 1.7% of
+  eval tldr tools never appear in training at all) — it's that the
+  model hasn't seen any given tool enough times to really learn it. Of
+  1,578 tldr failures, only 22.6% even get the right top-level tool;
+  40.2% guess something else entirely (fuzzy < 0.4 — e.g. an
+  instruction about `jj sparse set` gets answered with `crane push`).
+  Only 13% are genuine near-misses (right idea, wrong flag).
+
+So the honest framing isn't "the model overfits," it's "the model is
+trying to memorize a long tail of CLI trivia it doesn't have enough
+exposure to learn properly, and more epochs just means memorizing the
+training half of that tail harder." Generic regularization wouldn't
+really touch that. Two more targeted fixes instead, both landed in one
+retrain rather than two separate ~9-hour runs:
+
+1. **Stop guessing the epoch count.** Added
+   `load_best_model_at_end` / `metric_for_best_model="eval_loss"` to
+   `train/finetune_lora.py` — train to a generous upper bound and let
+   the Trainer hand back the actual eval_loss minimum instead of
+   whatever epoch I happened to pick in advance.
+2. **Give rare tools more airtime.** `train/augmentation.py`'s
+   `oversample_rare_tldr` duplicates (3x) the ~1,860 training tldr
+   examples whose tool shows up twice or less — directly targeting the
+   thin-signal problem instead of leaving exposure proportional to
+   whatever the scrape happened to contain. Adds 3,720 rows (49,279 →
+   52,999, +7.5%).
+
+The combined run (`train/out/lora-adapter-v2`,
+`train/plots/loss_v2_oversample_earlystop.png`) trained to a 10-epoch
+cap, and early stopping did restore the right checkpoint — step 25,600,
+epoch ~8, eval_loss 1.284, not the degraded epoch-10 weights at 1.355. I
+checked this wasn't just trusting the Trainer's word for it: diffed the
+saved adapter's checksum against each checkpoint's, and it matches
+checkpoint-25600 exactly.
+
+Did it help? A bit, and in the right place:
+
+- Overall exact match: 13.04% → 13.46% (+0.42pp) — small, because tldr
+  is a hard, broad problem and I only touched one slice of it.
+- tldr overall: 7.1% → 8.0% (+0.9pp).
+- The slice I actually targeted — rare-tool tldr examples (n=188) —
+  went 7.4% → 10.1%, a +2.7pp / ~36% relative improvement. This is the
+  real signal: the fix worked where it was supposed to.
+- Wrong-tool-guess rate among tldr failures dropped from 77.4% to 74.2%
+  — the model hallucinates a plausible-but-wrong tool less often, though
+  still a lot.
+- A few of the tiny synthetic categories dipped slightly (`synthetic-git`
+  -7.9pp, `synthetic-scripting` -5.7pp), but those buckets are n=24-38 —
+  a couple of flipped predictions swings them several points. Not
+  treating that as a real regression without more eval data.
+
+Honest takeaway: tldr's ~7-8% exact-match ceiling is mostly a long-tail
+knowledge problem, and 3x duplication of 5.7% of the data nibbles at it
+rather than solving it. A real fix would mean generating paraphrased
+instructions per tool, not just duplicating what's already there, or
+collecting more tldr examples per tool in the first place — a data
+problem, not a training-loop problem. Early stopping, though, is a
+clean, unambiguous win with no downside, so that one's staying on by
+default regardless of what happens with the data side.
+
 ## Open items / things I haven't done
 
 - **Scale.** 140k+ examples was the original back-of-envelope target;
