@@ -19,6 +19,8 @@ from transformers import (
     TrainingArguments,
 )
 
+from augmentation import oversample_rare_tldr
+
 PROMPT_TEMPLATE = "### Instruction:\n{instruction}\n### Command:\n"
 
 
@@ -27,9 +29,7 @@ def load_jsonl(path):
         return [json.loads(line) for line in f]
 
 
-def build_dataset(path, tokenizer, max_length):
-    records = load_jsonl(path)
-
+def build_dataset(records, tokenizer, max_length):
     def tokenize(example):
         prompt = PROMPT_TEMPLATE.format(instruction=example["instruction"])
         completion = example["command"] + tokenizer.eos_token
@@ -74,6 +74,10 @@ def main():
     ap.add_argument("--logging_steps", type=int, default=10)
     ap.add_argument("--save_steps", type=int, default=200)
     ap.add_argument("--cpu", action="store_true", help="Force CPU training even if CUDA is available")
+    ap.add_argument("--no_oversample_rare_tldr", action="store_true",
+                     help="Disable oversampling of low-frequency tldr tools (on by default)")
+    ap.add_argument("--no_load_best_model", action="store_true",
+                     help="Disable restoring the best eval_loss checkpoint at the end (on by default)")
     args = ap.parse_args()
 
     use_cuda = torch.cuda.is_available() and not args.cpu
@@ -97,8 +101,11 @@ def main():
     model = get_peft_model(model, lora_config)
     model.print_trainable_parameters()
 
-    train_ds = build_dataset(args.train_file, tokenizer, args.max_length)
-    eval_ds = build_dataset(args.eval_file, tokenizer, args.max_length)
+    train_records = load_jsonl(args.train_file)
+    if not args.no_oversample_rare_tldr:
+        train_records = oversample_rare_tldr(train_records)
+    train_ds = build_dataset(train_records, tokenizer, args.max_length)
+    eval_ds = build_dataset(load_jsonl(args.eval_file), tokenizer, args.max_length)
 
     if args.train_subset:
         train_ds = train_ds.select(range(min(args.train_subset, len(train_ds))))
@@ -124,6 +131,9 @@ def main():
         use_cpu=not use_cuda,
         bf16=use_cuda,
         remove_unused_columns=False,
+        load_best_model_at_end=not args.no_load_best_model,
+        metric_for_best_model="eval_loss",
+        greater_is_better=False,
     )
 
     trainer = Trainer(
