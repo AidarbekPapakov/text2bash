@@ -1,5 +1,7 @@
 # text2bash
 
+[![CI](https://github.com/AidarbekPapakov/text2bash/actions/workflows/ci.yml/badge.svg)](https://github.com/AidarbekPapakov/text2bash/actions/workflows/ci.yml)
+
 A small local language model that translates natural-language requests —
 in English or Russian — into bash commands, so you don't have to google
 command syntax. Fine-tuned Qwen3-0.6B-Base with LoRA; runs locally,
@@ -117,31 +119,50 @@ inference compute; see `NOTES.md` Phase 5 for the measurement). No
 language flag needed; the model handles English and Russian input
 directly.
 
-## Reproducing from scratch
+## Reproduce
 
 ```bash
 python3 -m venv .venv && source .venv/bin/activate
-pip install torch transformers peft accelerate datasets huggingface_hub \
-            bitsandbytes torchao jupyter nbformat nbconvert ipykernel \
-            tiktoken sentencepiece protobuf
 
-# Phase 1-2: build the dataset (seed + synthetic) -> data/final/dataset_v1.jsonl
-#   see NOTES.md for the exact download/generation steps
+# install: core (CLI/model stack) + train (dataset build, Trainer, data
+# download/upload) + eval (quantization sweep extras)
+pip install -e ".[core,train,eval]"
 
-# Phase 3: fine-tune
-python train/finetune_lora.py --epochs 3 --lr 8e-4 --batch_size 8 --grad_accum 2
+# download data: restores data/seed/ and data/final/{dataset_v1,train}.jsonl
+# from the Hugging Face dataset repo they're published to (see Data sources
+# & licenses below)
+python scripts/download_data.py <repo_id>
 
-# Phase 4: evaluate against baseline
-python eval/evaluate.py --label baseline --output_json eval/out/baseline.json
-python eval/evaluate.py --adapter_dir train/out/lora-adapter --label finetuned --output_json eval/out/finetuned.json
+# train
+python -m train.finetune_lora --epochs 3 --lr 8e-4 --batch_size 8 --grad_accum 2
 
-# Phase 4.1: quantization sweep (optional)
-python train/merge_adapter.py
-python eval/quantize_eval.py --n_samples 300
+# merge adapter
+python -m train.merge_adapter
 
-# Phase 5: use it
+# evaluate
+python -m eval.evaluate --label baseline --output_json eval/out/baseline.json
+python -m eval.evaluate --adapter_dir train/out/lora-adapter --label finetuned --output_json eval/out/finetuned.json
+
+# quantization sweep (optional)
+python -m eval.quantize_eval --n_samples 300
+
+# use it
 python cli/text2bash.py "your request here"
 ```
+
+## Development
+
+```bash
+pip install -e ".[dev]"   # pytest, ruff, and (via a self-reference to the
+                           # `train` extra) datasets, needed to test build_dataset
+
+ruff check .
+ruff format --check .
+pytest
+```
+
+CI (`.github/workflows/ci.yml`) runs the same three commands on every push
+and PR, CPU-only with no model downloads.
 
 Full phase-by-phase detail, every decision made and why, and every
 number measured along the way is in `NOTES.md` — written to be read cold
@@ -157,6 +178,9 @@ data/
 notebooks/
   model_selection.ipynb      executed zero-shot bake-off across 5 candidate models
   training_decisions.ipynb   HPO/QLoRA/QAT research + quantization dtype/hardware table
+common/
+  bash.py          shared `is_valid_bash` used by the CLI, server, eval harness, and generate.py
+  data_files.py    the list of data files scripts/upload_dataset.py and download_data.py manage
 train/
   finetune_lora.py   LoRA fine-tuning (GPU/CPU, configurable)
   generate.py         adapter sanity-check generation
@@ -168,6 +192,10 @@ eval/
 cli/
   text2bash.py   the actual CLI (print-only)
   server.py      optional persistent server for fast repeat calls
+scripts/
+  upload_dataset.py   publishes the large data files to a Hugging Face dataset repo
+  download_data.py    restores them from there
+tests/             pytest suite, CPU-only, no network
 NOTES.md         full project history: every phase, decision, and measurement
 ```
 
@@ -181,6 +209,11 @@ NOTES.md         full project history: every phase, decision, and measurement
   (Apache-2.0).
 - Synthetic augmentation data was generated specifically for this
   project, not sourced from a third party.
+- The large seed/training files (`data/seed/*`, `data/final/dataset_v1.jsonl`,
+  `data/final/train.jsonl`) are published as a Hugging Face dataset and
+  restored with `scripts/download_data.py` rather than kept in git;
+  `data/final/eval.jsonl` stays in git so the eval set is visible without a
+  download step.
 
 ## Known limitations
 
