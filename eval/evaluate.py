@@ -11,45 +11,46 @@ Usage:
   python eval/evaluate.py --adapter_dir train/out/lora-adapter --label finetuned
   python eval/evaluate.py --label base                      # zero-shot baseline
 """
+
 import argparse
 import difflib
 import json
-import subprocess
+from typing import Any
 
-import torch
-from peft import PeftModel
-from transformers import AutoModelForCausalLM, AutoTokenizer
+from common.bash import is_valid_bash
 
 PROMPT_TEMPLATE = "### Instruction:\n{instruction}\n### Command:\n"
 
 
-def load_jsonl(path):
+def load_jsonl(path: str) -> list[dict]:
     with open(path, encoding="utf-8") as f:
         return [json.loads(line) for line in f]
 
 
-def is_valid_bash(cmd):
-    if not cmd.strip():
-        return False
-    try:
-        p = subprocess.run(["bash", "-n", "-c", cmd], capture_output=True, text=True, timeout=5)
-        return p.returncode == 0
-    except Exception:
-        return False
-
-
-def normalize(cmd):
+def normalize(cmd: str) -> str:
     return " ".join(cmd.split())
 
 
-def fuzzy_ratio(a, b):
+def fuzzy_ratio(a: str, b: str) -> float:
     return difflib.SequenceMatcher(None, normalize(a), normalize(b)).ratio()
 
 
-def generate_batch(model, tokenizer, instructions, device, max_new_tokens=48, batch_size=16):
+def generate_batch(
+    model: Any,
+    tokenizer: Any,
+    instructions: list[str],
+    device: str,
+    max_new_tokens: int = 48,
+    batch_size: int = 16,
+) -> list[str]:
+    # Deferred so importing this module (e.g. to test normalize/fuzzy_ratio)
+    # doesn't require torch -- same reasoning as cli/text2bash.py's
+    # generate_direct().
+    import torch
+
     outputs = []
     for i in range(0, len(instructions), batch_size):
-        batch = instructions[i:i + batch_size]
+        batch = instructions[i : i + batch_size]
         prompts = [PROMPT_TEMPLATE.format(instruction=instr) for instr in batch]
         inputs = tokenizer(prompts, return_tensors="pt", padding=True).to(device)
         with torch.no_grad():
@@ -60,26 +61,43 @@ def generate_batch(model, tokenizer, instructions, device, max_new_tokens=48, ba
                 pad_token_id=tokenizer.pad_token_id,
             )
         for j in range(len(batch)):
-            gen_ids = out[j][inputs["input_ids"].shape[1]:]
+            gen_ids = out[j][inputs["input_ids"].shape[1] :]
             text = tokenizer.decode(gen_ids, skip_special_tokens=True)
             command = text.strip().split("\n")[0]
             outputs.append(command)
     return outputs
 
 
-def evaluate(model, tokenizer, device, records, label, max_new_tokens=48, batch_size=16):
+def evaluate(
+    model: Any,
+    tokenizer: Any,
+    device: str,
+    records: list[dict],
+    label: str,
+    max_new_tokens: int = 48,
+    batch_size: int = 16,
+) -> tuple[dict, list[dict]]:
     instructions = [r["instruction"] for r in records]
     predictions = generate_batch(model, tokenizer, instructions, device, max_new_tokens, batch_size)
 
     per_lang = {}
     rows = []
-    for r, pred in zip(records, predictions):
+    for r, pred in zip(records, predictions, strict=True):
         ref = r["command"]
         em = normalize(pred) == normalize(ref)
         fz = fuzzy_ratio(pred, ref)
         valid = is_valid_bash(pred)
-        rows.append({"instruction": r["instruction"], "lang": r["lang"], "reference": ref,
-                      "prediction": pred, "exact_match": em, "fuzzy": fz, "valid_bash": valid})
+        rows.append(
+            {
+                "instruction": r["instruction"],
+                "lang": r["lang"],
+                "reference": ref,
+                "prediction": pred,
+                "exact_match": em,
+                "fuzzy": fz,
+                "valid_bash": valid,
+            }
+        )
         bucket = per_lang.setdefault(r["lang"], {"n": 0, "em": 0, "fz": 0.0, "valid": 0})
         bucket["n"] += 1
         bucket["em"] += int(em)
@@ -102,10 +120,19 @@ def evaluate(model, tokenizer, device, records, label, max_new_tokens=48, batch_
     return summary, rows
 
 
-def main():
+def main() -> None:
+    # Deferred for the same reason as generate_batch() above.
+    import torch
+    from peft import PeftModel
+    from transformers import AutoModelForCausalLM, AutoTokenizer
+
     ap = argparse.ArgumentParser()
     ap.add_argument("--base_model", default="Qwen/Qwen3-0.6B-Base")
-    ap.add_argument("--adapter_dir", default=None, help="If set, evaluate base+adapter (fine-tuned). If omitted, evaluate zero-shot base.")
+    ap.add_argument(
+        "--adapter_dir",
+        default=None,
+        help="If set, evaluate base+adapter (fine-tuned). If omitted, evaluate zero-shot base.",
+    )
     ap.add_argument("--eval_file", default="data/final/eval.jsonl")
     ap.add_argument("--n_samples", type=int, default=None, help="Subsample eval set for speed")
     ap.add_argument("--label", default="model")
@@ -132,9 +159,11 @@ def main():
 
     records = load_jsonl(args.eval_file)
     if args.n_samples:
-        records = records[:args.n_samples]
+        records = records[: args.n_samples]
 
-    summary, rows = evaluate(model, tokenizer, device, records, args.label, args.max_new_tokens, args.batch_size)
+    summary, rows = evaluate(
+        model, tokenizer, device, records, args.label, args.max_new_tokens, args.batch_size
+    )
 
     print(json.dumps(summary, indent=2))
 

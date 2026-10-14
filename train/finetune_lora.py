@@ -4,33 +4,26 @@ Runs on GPU automatically when CUDA is available (pass --cpu to force CPU, match
 the project's original CPU-only premise). Use --max_steps for a quick
 pipeline-verification run, or omit it (use --epochs) for a full run.
 """
+
 import argparse
 import json
 import os
+from typing import Any
 
-import torch
 from datasets import Dataset
-from peft import LoraConfig, get_peft_model
-from transformers import (
-    AutoModelForCausalLM,
-    AutoTokenizer,
-    DataCollatorForSeq2Seq,
-    Trainer,
-    TrainingArguments,
-)
 
-from augmentation import oversample_rare_tldr
+from train.augmentation import oversample_rare_tldr
 
 PROMPT_TEMPLATE = "### Instruction:\n{instruction}\n### Command:\n"
 
 
-def load_jsonl(path):
+def load_jsonl(path: str) -> list[dict]:
     with open(path, encoding="utf-8") as f:
         return [json.loads(line) for line in f]
 
 
-def build_dataset(records, tokenizer, max_length):
-    def tokenize(example):
+def build_dataset(records: list[dict], tokenizer: Any, max_length: int) -> Dataset:
+    def tokenize(example: dict) -> dict:
         prompt = PROMPT_TEMPLATE.format(instruction=example["instruction"])
         completion = example["command"] + tokenizer.eos_token
 
@@ -53,19 +46,40 @@ def build_dataset(records, tokenizer, max_length):
     return ds.map(tokenize, remove_columns=ds.column_names)
 
 
-def main():
+def main() -> None:
+    # Deferred so importing this module (e.g. to test build_dataset) doesn't
+    # require the full torch/peft/transformers stack -- same reasoning as
+    # cli/text2bash.py's generate_direct().
+    import torch
+    from peft import LoraConfig, get_peft_model
+    from transformers import (
+        AutoModelForCausalLM,
+        AutoTokenizer,
+        DataCollatorForSeq2Seq,
+        Trainer,
+        TrainingArguments,
+    )
+
     ap = argparse.ArgumentParser()
     ap.add_argument("--base_model", default="Qwen/Qwen3-0.6B-Base")
     ap.add_argument("--train_file", default="data/final/train.jsonl")
     ap.add_argument("--eval_file", default="data/final/eval.jsonl")
     ap.add_argument("--output_dir", default="train/out/lora-adapter")
     ap.add_argument("--max_length", type=int, default=96)
-    ap.add_argument("--train_subset", type=int, default=None,
-                     help="If set, use only this many training examples (for quick verification runs)")
+    ap.add_argument(
+        "--train_subset",
+        type=int,
+        default=None,
+        help="If set, use only this many training examples (for quick verification runs)",
+    )
     ap.add_argument("--eval_subset", type=int, default=None)
     ap.add_argument("--epochs", type=float, default=1.0)
-    ap.add_argument("--max_steps", type=int, default=-1,
-                     help="If >0, stop after this many steps regardless of --epochs")
+    ap.add_argument(
+        "--max_steps",
+        type=int,
+        default=-1,
+        help="If >0, stop after this many steps regardless of --epochs",
+    )
     ap.add_argument("--batch_size", type=int, default=8)
     ap.add_argument("--grad_accum", type=int, default=4)
     ap.add_argument("--lr", type=float, default=2e-4)
@@ -73,16 +87,25 @@ def main():
     ap.add_argument("--lora_alpha", type=int, default=16)
     ap.add_argument("--logging_steps", type=int, default=10)
     ap.add_argument("--save_steps", type=int, default=200)
-    ap.add_argument("--cpu", action="store_true", help="Force CPU training even if CUDA is available")
-    ap.add_argument("--no_oversample_rare_tldr", action="store_true",
-                     help="Disable oversampling of low-frequency tldr tools (on by default)")
-    ap.add_argument("--no_load_best_model", action="store_true",
-                     help="Disable restoring the best eval_loss checkpoint at the end (on by default)")
+    ap.add_argument(
+        "--cpu", action="store_true", help="Force CPU training even if CUDA is available"
+    )
+    ap.add_argument(
+        "--no_oversample_rare_tldr",
+        action="store_true",
+        help="Disable oversampling of low-frequency tldr tools (on by default)",
+    )
+    ap.add_argument(
+        "--no_load_best_model",
+        action="store_true",
+        help="Disable restoring the best eval_loss checkpoint at the end (on by default)",
+    )
     args = ap.parse_args()
 
     use_cuda = torch.cuda.is_available() and not args.cpu
     dtype = torch.bfloat16 if use_cuda else torch.float32
-    print(f"Device: {'cuda (' + torch.cuda.get_device_name(0) + ')' if use_cuda else 'cpu'}, dtype: {dtype}")
+    device_desc = "cuda (" + torch.cuda.get_device_name(0) + ")" if use_cuda else "cpu"
+    print(f"Device: {device_desc}, dtype: {dtype}")
 
     tokenizer = AutoTokenizer.from_pretrained(args.base_model)
     if tokenizer.pad_token is None:
