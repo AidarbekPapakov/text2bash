@@ -14,13 +14,13 @@ concurrent model.generate() calls.
 Start:   python cli/server.py
 Stop:    Ctrl+C (or `kill $(cat ~/.text2bash/server.pid)`)
 """
+
 import argparse
 import json
 import logging
 import os
 import signal
 import socketserver
-import subprocess
 import sys
 import warnings
 from pathlib import Path
@@ -30,9 +30,12 @@ os.environ.setdefault("TRANSFORMERS_VERBOSITY", "error")
 warnings.filterwarnings("ignore")
 logging.getLogger("torch.utils._pytree").setLevel(logging.ERROR)
 
-import torch
-from peft import PeftModel
-from transformers import AutoModelForCausalLM, AutoTokenizer, logging as hf_logging
+import torch  # noqa: E402
+from peft import PeftModel  # noqa: E402
+from transformers import AutoModelForCausalLM, AutoTokenizer  # noqa: E402
+from transformers import logging as hf_logging  # noqa: E402
+
+from common.bash import is_valid_bash  # noqa: E402
 
 hf_logging.set_verbosity_error()
 
@@ -44,18 +47,12 @@ DEFAULT_SOCKET = Path.home() / ".text2bash" / "server.sock"
 DEFAULT_PID_FILE = Path.home() / ".text2bash" / "server.pid"
 
 
-def is_valid_bash(cmd):
-    try:
-        p = subprocess.run(["bash", "-n", "-c", cmd], capture_output=True, text=True, timeout=5)
-        return p.returncode == 0
-    except Exception:
-        return False
-
-
 class Text2BashServer(socketserver.UnixStreamServer):
     allow_reuse_address = True
 
-    def __init__(self, socket_path, base_model, adapter_dir, default_max_new_tokens):
+    def __init__(
+        self, socket_path: Path, base_model: str, adapter_dir: str, default_max_new_tokens: int
+    ) -> None:
         self.default_max_new_tokens = default_max_new_tokens
 
         print("Loading model (CPU)...", file=sys.stderr)
@@ -67,7 +64,7 @@ class Text2BashServer(socketserver.UnixStreamServer):
 
         super().__init__(str(socket_path), _Handler)
 
-    def generate(self, instruction, max_new_tokens=None):
+    def generate(self, instruction: str, max_new_tokens: int | None = None) -> str:
         prompt = PROMPT_TEMPLATE.format(instruction=instruction)
         inputs = self.tokenizer(prompt, return_tensors="pt")
         with torch.no_grad():
@@ -77,23 +74,28 @@ class Text2BashServer(socketserver.UnixStreamServer):
                 do_sample=False,
                 pad_token_id=self.tokenizer.eos_token_id,
             )
-        text = self.tokenizer.decode(out[0][inputs["input_ids"].shape[1]:], skip_special_tokens=True)
+        text = self.tokenizer.decode(
+            out[0][inputs["input_ids"].shape[1] :], skip_special_tokens=True
+        )
         return text.strip().split("\n")[0]
 
 
 class _Handler(socketserver.StreamRequestHandler):
-    def handle(self):
+    def handle(self) -> None:
         try:
             line = self.rfile.readline()
             req = json.loads(line)
             command = self.server.generate(req["instruction"], req.get("max_new_tokens"))
             resp = {"command": command, "valid_bash": is_valid_bash(command)}
         except Exception as e:
+            # Broad on purpose: a single malformed/failing request must not
+            # take down the server loop for every other client.
+            logging.exception("request failed")
             resp = {"error": str(e)}
         self.wfile.write((json.dumps(resp) + "\n").encode())
 
 
-def main():
+def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--base_model", default=DEFAULT_BASE_MODEL)
     ap.add_argument("--adapter_dir", default=DEFAULT_ADAPTER_DIR)
@@ -111,7 +113,7 @@ def main():
     DEFAULT_PID_FILE.parent.mkdir(parents=True, exist_ok=True)
     DEFAULT_PID_FILE.write_text(str(os.getpid()))
 
-    def cleanup(*_):
+    def cleanup(*_: object) -> None:
         socket_path.unlink(missing_ok=True)
         DEFAULT_PID_FILE.unlink(missing_ok=True)
         sys.exit(0)

@@ -1,8 +1,9 @@
 """Training-data augmentation for text2bash. See NOTES.md's error analysis."""
+
 import collections
 
 
-def toolname(command):
+def toolname(command: str) -> str:
     command = command.strip()
     if command.startswith("sudo "):
         command = command[5:]
@@ -10,7 +11,7 @@ def toolname(command):
     return parts[0] if parts else ""
 
 
-def oversample_rare_tldr(records, factor=3, threshold=2):
+def oversample_rare_tldr(records: list[dict], factor: int = 3, threshold: int = 2) -> list[dict]:
     """Duplicate tldr examples whose tool appears <= threshold times in training.
 
     tldr covers thousands of distinct CLI tools with only a handful of examples
@@ -23,6 +24,8 @@ def oversample_rare_tldr(records, factor=3, threshold=2):
     for r in tldr:
         if freq[toolname(r["command"])] <= threshold:
             augmented.extend([r] * (factor - 1))
-    print(f"Oversampled rare tldr examples: {len(augmented) - len(records)} duplicates added "
-          f"({len(records)} -> {len(augmented)} total training examples)")
+    print(
+        f"Oversampled rare tldr examples: {len(augmented) - len(records)} duplicates added "
+        f"({len(records)} -> {len(augmented)} total training examples)"
+    )
     return augmented

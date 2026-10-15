@@ -3,6 +3,7 @@
 Needed before post-training quantization: bitsandbytes/torchao quantize a model's own
 weights at load time, so the LoRA delta must already be folded into the base weights.
 """
+
 import argparse
 
 import torch
@@ -10,7 +11,7 @@ from peft import PeftModel
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
 
-def main():
+def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--base_model", default="Qwen/Qwen3-0.6B-Base")
     ap.add_argument("--adapter_dir", default="train/out/lora-adapter")

@@ -1,0 +1,53 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "text2bash"
+version = "0.1.0"
+description = "LoRA-fine-tuned small LM that translates English/Russian requests into bash commands."
+requires-python = ">=3.12"
+
+[project.optional-dependencies]
+# Base ML stack used by the CLI, server, training, and eval scripts.
+core = [
+    "torch==2.14.1",
+    "transformers==5.18.0",
+    "peft==0.21.2",
+]
+# Needed to build the training dataset, run finetune_lora.py's full training
+# loop (accelerate backs the Trainer), plot loss curves, and run
+# scripts/upload_dataset.py / scripts/download_data.py.
+train = [
+    "datasets==5.0.1",
+    "accelerate==1.15.0",
+    "matplotlib==3.11.2",
+    "huggingface_hub==1.33.0",
+]
+# Only needed for eval/quantize_eval.py's int8/fp4 (bitsandbytes) and
+# fp8/int4 (torchao) quantization sweep.
+eval = [
+    "bitsandbytes==0.50.2",
+    "torchao==0.18.0",
+]
+# pytest/ruff weren't found in .venv (pip freeze didn't list them), so these
+# two pins are not read from the local environment -- verify/adjust them.
+# `train` is pulled in via self-reference because tests/test_finetune_lora.py
+# imports train.finetune_lora, which needs `datasets`.
+dev = [
+    "text2bash[train]",
+    "pytest==8.3.4",
+    "ruff==0.8.4",
+]
+
+[tool.setuptools]
+packages = ["common", "train", "eval", "cli"]
+
+[tool.ruff]
+line-length = 100
+# notebooks/ is frozen research history (see ground rules: don't change
+# anything the notebooks report) -- not part of the reviewable source tree.
+extend-exclude = ["notebooks"]
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "B", "I", "UP", "SIM"]

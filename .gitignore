@@ -1,6 +1,7 @@
 .venv/
 __pycache__/
 *.pyc
+*.egg-info/
 .claude/
 
 # trained weights -- regenerate with train/finetune_lora.py, see NOTES.md
